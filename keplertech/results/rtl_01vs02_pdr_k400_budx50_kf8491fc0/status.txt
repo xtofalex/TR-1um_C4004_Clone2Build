@@ -1,0 +1,17 @@
+cmd (cwd = results/rtl_01vs02_pdr_k400_budx50_kf8491fc0): kepler-formal -sv -v sec --sec-engine pdr -k 400 --sec-reset-cycles 3 --sec-reset-port rst=1 --report-skipped-pos --design1 ../../cfg/rtl_01.v --design2 ../../cfg/rtl_02.v 
+kepler-formal: kepler-formal version: 1.0.0 kepler-formal git hash: 8491fc08b2b755de5bf2b37071483cfa5320ae77 naja version: 0.7.33 naja git hash: cb142398 
+KEPLER_SEC_DIAG=1
+KEPLER_SEC_PDR_STATS=1
+KEPLER_SEC_PDR_DUAL_RAIL_SINGLETON_DECISION_BUDGET=2000000000
+KEPLER_SEC_PDR_DUAL_RAIL_SINGLETON_CONFLICT_BUDGET=50000000
+KEPLER_SEC_PDR_DUAL_RAIL_SINGLETON_TICK_BUDGET=25000000000
+wall-clock cap: 7200 s
+exit: 1  wall: 3382 s  cpu: user 3174.64 s, sys 75.66 s  peak RSS: 2165 MB
+SEC partially proved equivalence at k = 32: 8/12 outputs proved; remaining outputs are inconclusive.
+SEC verification did not prove all observed outputs.
+SEC summary: signal_correspondence scope=registers_and_outputs completed=1 signals=1455 classes=43 rounds=6 solver_calls=406 proved_outputs=0/8 state_equalities=74 seconds=35.1
+SEC summary: signal_correspondence scope=all_signals completed=0 signals=21155 classes=0 rounds=12 solver_calls=1080 proved_outputs=0/8 state_equalities=0 seconds=149.0
+  - bus_d[0]: dual-rail PDR steady-state proof was inconclusive
+  - bus_d[1]: dual-rail PDR steady-state proof was inconclusive
+  - bus_d[2]: dual-rail PDR steady-state proof was inconclusive
+  - bus_d[3]: dual-rail PDR steady-state proof was inconclusive

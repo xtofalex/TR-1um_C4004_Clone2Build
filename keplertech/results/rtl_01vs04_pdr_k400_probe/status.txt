@@ -1,0 +1,7 @@
+cmd (cwd = results/rtl_01vs04_pdr_k400_probe): kepler-formal -sv -v sec --sec-engine pdr -k 400 --sec-reset-cycles 3 --sec-reset-port rst=1 --report-skipped-pos --design1 ../../cfg/rtl_01.v --design2 ../../cfg/rtl_04.v 
+kepler-formal: kepler-formal version: 1.0.0 kepler-formal git hash: fd24770df6c3297cf31cf0ae4908214501e22ac2 naja version: 0.7.33 naja git hash: cb142398 
+KEPLER_SEC_DIAG=1
+wall-clock cap: 600 s
+STOPPED by wall-clock cap (600 s): result is the depth reached, not a verdict
+exit: 142  wall: 600 s  cpu: user 509.04 s, sys 5.16 s  peak RSS: 993 MB
+

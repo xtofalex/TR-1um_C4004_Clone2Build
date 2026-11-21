@@ -1,0 +1,9 @@
+kepler-formal cmd (cwd = results/repro_aw5_w4_pdr_k400_kf8491fc0): -sv -v sec --sec-engine pdr -k 400 --sec-reset-cycles 3 --sec-reset-port rst=1 --report-skipped-pos --design1 a_aw5_w4.v --design2 b_aw5_w4.v
+kepler-formal: kepler-formal version: 1.0.0 kepler-formal git hash: 8491fc08b2b755de5bf2b37071483cfa5320ae77 naja version: 0.7.33 naja git hash: cb142398 
+KEPLER_SEC_DIAG=1
+wall-clock cap: 300 s
+exit: 0  wall: 7,98 s  cpu: user 5,43 s, sys 0,15 s
+peak RSS: 83 MB
+[2026-11-20 17:57:14.458] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2840] No binary-defined difference was found. SEC proved equivalence under the dual-rail steady-state abstraction at k = 1.
+SEC diag: PDR steady-state check end index=0 output_range=0..4 status=equivalent bound=1
+SEC summary: signal_correspondence scope=registers_and_outputs completed=1 signals=1107 classes=534 rounds=1 solver_calls=18 proved_outputs=4/4 state_equalities=256 seconds=1.8

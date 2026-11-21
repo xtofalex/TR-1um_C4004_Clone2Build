@@ -1,0 +1,34 @@
+[2026-11-19 02:13:59.871] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2325] KEPLER FORMAL: Run.
+[2026-11-19 02:13:59.871] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2398] Input format: SV2V
+[2026-11-19 02:13:59.871] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2405] SystemVerilog compilation units: one per file
+[2026-11-19 02:13:59.871] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2408] Run log: miter_log_0.txt
+[2026-11-19 02:13:59.871] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:739] Netlist 1: ../../cfg/rtlbb_06.v
+[2026-11-19 02:13:59.871] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:739] Netlist 2: ../../../TR-1um_C4004_10/openroad/c4004_core_syn.v
+[2026-11-19 02:13:59.871] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2417] Boundary pair 0: design 1 `u_sram`; design 2 `u_sram`
+[2026-11-19 02:13:59.871] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2685] Solver: KISSAT
+[2026-11-19 02:13:59.871] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2686] Verification: sec
+[2026-11-19 02:13:59.871] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2688] SEC max_k: 400
+[2026-11-19 02:13:59.871] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2689] SEC engine: pdr
+[2026-11-19 02:13:59.871] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2690] SEC encoding: dual_rail_steady
+[2026-11-19 02:13:59.871] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2694] SEC internal relations: learn=true allow_x_equality=true binary_relation_round=true
+[2026-11-19 02:13:59.871] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2696] SEC reset bootstrap: 3 cycle(s)
+[2026-11-19 02:13:59.871] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2701] SEC reset bootstrap port: rst active=1
+[2026-11-19 02:13:59.871] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2705] Compact mode: disabled
+[2026-11-19 02:13:59.871] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2706] Skipped PO reports: enabled
+[2026-11-19 02:13:59.872] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2707] SEC latch abstraction: enabled
+[2026-11-19 02:13:59.872] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2708] SEC data-enabled latch model: enabled
+[2026-11-19 02:13:59.872] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2710] Library: ../../../TR-1um_C4004_10/module/STDCELL/tr1um_typ_5v0_25c.lib
+[2026-11-19 02:13:59.872] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2710] Library: ../../../TR-1um_C4004_10/module/SRAM128/SRAM128.lib
+[2026-11-19 02:13:59.874] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2934] Loading library file: ../../../TR-1um_C4004_10/module/STDCELL/tr1um_typ_5v0_25c.lib
+[2026-11-19 02:23:24.419] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2758] SEC checked-output coverage: 73.91% (17/23 covered/existing outputs).
+[2026-11-19 02:23:24.419] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2787] SEC skipped observed outputs due to extraction or coverage limitations:
+  - d_out[2]: dual-rail PDR steady-state proof was inconclusive
+  - d_out[3]: dual-rail PDR steady-state proof was inconclusive
+  - __kepler_boundary_p0_n44494e_bp0[0]: dual-rail PDR steady-state proof was inconclusive
+  - __kepler_boundary_p0_n44494e_bp1[0]: dual-rail PDR steady-state proof was inconclusive
+  - __kepler_boundary_p0_n44494e_bp2[0]: dual-rail PDR steady-state proof was inconclusive
+  - __kepler_boundary_p0_n44494e_bp3[0]: dual-rail PDR steady-state proof was inconclusive
+
+[2026-11-19 02:23:24.420] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2849] SEC partially proved equivalence at k = 33: 17/23 outputs proved; remaining outputs are inconclusive.
+[2026-11-19 02:23:24.420] [kepler_formal_main_logger] [warning] [KeplerFormal.cpp:2851] SEC verification did not prove all observed outputs.
+[2026-11-19 02:23:24.420] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2853] SEC partial-proof details: Exact dual-rail PDR proved 17 of 23 observed outputs; remaining outputs are inconclusive

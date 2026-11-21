@@ -1,0 +1,30 @@
+[2026-11-19 01:07:37.547] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2325] KEPLER FORMAL: Run.
+[2026-11-19 01:07:37.547] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2398] Input format: SYSTEMVERILOG
+[2026-11-19 01:07:37.547] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2405] SystemVerilog compilation units: one per file
+[2026-11-19 01:07:37.547] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2408] Run log: miter_log_0.txt
+[2026-11-19 01:07:37.547] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:739] Netlist 1: ../../cfg/rtl_01.v
+[2026-11-19 01:07:37.547] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:739] Netlist 2: ../../cfg/rtl_02.v
+[2026-11-19 01:07:37.547] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2685] Solver: KISSAT
+[2026-11-19 01:07:37.547] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2686] Verification: sec
+[2026-11-19 01:07:37.547] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2688] SEC max_k: 80
+[2026-11-19 01:07:37.547] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2689] SEC engine: k_induction
+[2026-11-19 01:07:37.548] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2690] SEC encoding: dual_rail_steady
+[2026-11-19 01:07:37.548] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2694] SEC internal relations: learn=true allow_x_equality=true binary_relation_round=true
+[2026-11-19 01:07:37.548] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2696] SEC reset bootstrap: 3 cycle(s)
+[2026-11-19 01:07:37.548] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2701] SEC reset bootstrap port: rst active=1
+[2026-11-19 01:07:37.548] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2705] Compact mode: disabled
+[2026-11-19 01:07:37.548] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2706] Skipped PO reports: enabled
+[2026-11-19 01:07:37.548] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2707] SEC latch abstraction: enabled
+[2026-11-19 01:07:37.548] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2708] SEC data-enabled latch model: enabled
+[2026-11-19 01:07:37.548] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:3390] Parsing systemverilog file(s) for design 1
+2026-11-19 01:07:37,549 [naja] [warning] Slang emitted 2 diagnostic(s) (2 warning(s), 0 error(s)); see 'naja_sv_diagnostics.log'
+2026-11-19 01:07:37,553 [naja] [warning] Only the first occurrence of each SystemVerilog warning code is emitted on the console; all occurrences are written to 'naja_sv_diagnostics.log'
+2026-11-19 01:07:37,553 [naja] [warning] ../../cfg/rtl_01.v:271:9: Case comparison operator '===' lowered as 2-state comparison in SNL (X/Z distinction is not preserved)
+2026-11-19 01:07:37,571 [naja] [warning] SystemVerilog diagnostics summary: status=success, slang=2 (warnings=2, errors=0), elaboration_warnings=8 (codes=1), unsupported_warnings=0 (codes=0), unsupported_errors=0 (codes=0); report='naja_sv_diagnostics.log'
+2026-11-19 01:07:37,572 [naja] [info] Found top design: cpu_top
+2026-11-19 01:07:37,572 [naja] [info] Parsing systemverilog file(s) for design 2
+2026-11-19 01:07:37,573 [naja] [warning] Slang emitted 2 diagnostic(s) (2 warning(s), 0 error(s)); see 'naja_sv_diagnostics.log'
+2026-11-19 01:07:37,576 [naja] [warning] Only the first occurrence of each SystemVerilog warning code is emitted on the console; all occurrences are written to 'naja_sv_diagnostics.log'
+2026-11-19 01:07:37,576 [naja] [warning] ../../cfg/rtl_02.v:273:9: Case comparison operator '===' lowered as 2-state comparison in SNL (X/Z distinction is not preserved)
+2026-11-19 01:07:37,588 [naja] [warning] SystemVerilog diagnostics summary: status=success, slang=2 (warnings=2, errors=0), elaboration_warnings=8 (codes=1), unsupported_warnings=0 (codes=0), unsupported_errors=0 (codes=0); report='naja_sv_diagnostics.log'
+2026-11-19 01:07:37,588 [naja] [info] Found top design: cpu_top

@@ -1,0 +1,85 @@
+[2026-11-19 01:35:51.777] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2325] KEPLER FORMAL: Run.
+[2026-11-19 01:35:51.778] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2398] Input format: SV2V
+[2026-11-19 01:35:51.778] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2405] SystemVerilog compilation units: one per file
+[2026-11-19 01:35:51.778] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2408] Run log: miter_log_0.txt
+[2026-11-19 01:35:51.778] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:739] Netlist 1: ../../cfg/rtlbb_06.v
+[2026-11-19 01:35:51.778] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:739] Netlist 2: ../../../TR-1um_C4004_09/openroad/c4004_core_syn.v
+[2026-11-19 01:35:51.778] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2417] Boundary pair 0: design 1 `u_sram`; design 2 `u_sram`
+[2026-11-19 01:35:51.778] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2685] Solver: KISSAT
+[2026-11-19 01:35:51.778] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2686] Verification: sec
+[2026-11-19 01:35:51.778] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2688] SEC max_k: 20
+[2026-11-19 01:35:51.778] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2689] SEC engine: k_induction
+[2026-11-19 01:35:51.778] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2690] SEC encoding: dual_rail_steady
+[2026-11-19 01:35:51.778] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2694] SEC internal relations: learn=true allow_x_equality=true binary_relation_round=true
+[2026-11-19 01:35:51.778] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2696] SEC reset bootstrap: 3 cycle(s)
+[2026-11-19 01:35:51.778] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2701] SEC reset bootstrap port: rst active=1
+[2026-11-19 01:35:51.778] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2705] Compact mode: disabled
+[2026-11-19 01:35:51.778] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2706] Skipped PO reports: enabled
+[2026-11-19 01:35:51.778] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2707] SEC latch abstraction: enabled
+[2026-11-19 01:35:51.778] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2708] SEC data-enabled latch model: enabled
+[2026-11-19 01:35:51.778] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2710] Library: ../../../TR-1um_C4004_09/module/STDCELL/tr1um_typ_5v0_25c.lib
+[2026-11-19 01:35:51.778] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2710] Library: ../../../TR-1um_C4004_09/module/SRAM128/SRAM128.lib
+[2026-11-19 01:35:51.779] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2934] Loading library file: ../../../TR-1um_C4004_09/module/STDCELL/tr1um_typ_5v0_25c.lib
+2026-11-19 01:35:51,782 [naja] [warning] In SNLLibertyConstructor, cell OSS_ESD_5V_DIO defines a `function` for 0 of 1 non-input terms; leaving all truth tables uninitialized.
+2026-11-19 01:35:51,782 [naja] [warning] In SNLLibertyConstructor, cell REG8x16 defines a `function` for 0 of 8 non-input terms; leaving all truth tables uninitialized.
+2026-11-19 01:35:51,783 [naja] [info] Loading library file: ../../../TR-1um_C4004_09/module/SRAM128/SRAM128.lib
+2026-11-19 01:35:51,783 [naja] [warning] In SNLLibertyConstructor, cell SRAM128 defines a `function` for 0 of 4 non-input terms; leaving all truth tables uninitialized.
+2026-11-19 01:35:51,784 [naja] [info] Parsing systemverilog file(s) for design 1
+2026-11-19 01:35:51,787 [naja] [warning] Slang emitted 2 diagnostic(s) (2 warning(s), 0 error(s)); see 'naja_sv_diagnostics.log'
+2026-11-19 01:35:51,790 [naja] [warning] Only the first occurrence of each SystemVerilog warning code is emitted on the console; all occurrences are written to 'naja_sv_diagnostics.log'
+2026-11-19 01:35:51,790 [naja] [warning] ../../cfg/rtlbb_06.v:85:9: Case comparison operator '===' lowered as 2-state comparison in SNL (X/Z distinction is not preserved)
+2026-11-19 01:35:51,811 [naja] [warning] SystemVerilog diagnostics summary: status=success, slang=2 (warnings=2, errors=0), elaboration_warnings=8 (codes=1), unsupported_warnings=0 (codes=0), unsupported_errors=0 (codes=0); report='naja_sv_diagnostics.log'
+2026-11-19 01:35:51,812 [naja] [info] Found top design: c4004_core
+2026-11-19 01:35:51,813 [naja] [info] Loading library file: ../../../TR-1um_C4004_09/module/STDCELL/tr1um_typ_5v0_25c.lib
+2026-11-19 01:35:51,816 [naja] [warning] In SNLLibertyConstructor, cell OSS_ESD_5V_DIO defines a `function` for 0 of 1 non-input terms; leaving all truth tables uninitialized.
+2026-11-19 01:35:51,816 [naja] [warning] In SNLLibertyConstructor, cell REG8x16 defines a `function` for 0 of 8 non-input terms; leaving all truth tables uninitialized.
+2026-11-19 01:35:51,816 [naja] [info] Loading library file: ../../../TR-1um_C4004_09/module/SRAM128/SRAM128.lib
+2026-11-19 01:35:51,816 [naja] [warning] In SNLLibertyConstructor, cell SRAM128 defines a `function` for 0 of 4 non-input terms; leaving all truth tables uninitialized.
+2026-11-19 01:35:51,817 [naja] [info] Parsing verilog file(s) for design 2
+2026-11-19 01:35:51,825 [naja] [info] Found top design: c4004_core
+[2026-11-19 01:49:23.804] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2758] SEC checked-output coverage: 4.35% (1/23 covered/existing outputs).
+[2026-11-19 01:49:23.805] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2787] SEC skipped observed outputs due to extraction or coverage limitations:
+  - d_out[0]: dual-rail k-induction proof was inconclusive for this output
+  - d_out[1]: dual-rail k-induction proof was inconclusive for this output
+  - d_out[2]: dual-rail k-induction proof was inconclusive for this output
+  - d_out[3]: dual-rail k-induction proof was inconclusive for this output
+  - d_oe[0]: dual-rail k-induction proof was inconclusive for this output
+  - d_hiz[0]: dual-rail k-induction proof was inconclusive for this output
+  - cm_rom[0]: dual-rail k-induction proof was inconclusive for this output
+  - cm_ram[0]: dual-rail k-induction proof was inconclusive for this output
+  - cm_ram[1]: dual-rail k-induction proof was inconclusive for this output
+  - cm_ram[2]: dual-rail k-induction proof was inconclusive for this output
+  - cm_ram[3]: dual-rail k-induction proof was inconclusive for this output
+  - __kepler_boundary_p0_n4131_bp0[0]: dual-rail k-induction proof was inconclusive for this output
+  - __kepler_boundary_p0_n4132_bp0[0]: dual-rail k-induction proof was inconclusive for this output
+  - __kepler_boundary_p0_n4345_bp0[0]: dual-rail k-induction proof was inconclusive for this output
+  - __kepler_boundary_p0_n4130_bp0[0]: dual-rail k-induction proof was inconclusive for this output
+  - __kepler_boundary_p0_n4133_bp0[0]: dual-rail k-induction proof was inconclusive for this output
+  - __kepler_boundary_p0_n4134_bp0[0]: dual-rail k-induction proof was inconclusive for this output
+  - __kepler_boundary_p0_n5752_bp0[0]: dual-rail k-induction proof was inconclusive for this output
+  - __kepler_boundary_p0_n44494e_bp0[0]: dual-rail k-induction proof was inconclusive for this output
+  - __kepler_boundary_p0_n44494e_bp1[0]: dual-rail k-induction proof was inconclusive for this output
+  - __kepler_boundary_p0_n44494e_bp2[0]: dual-rail k-induction proof was inconclusive for this output
+  - __kepler_boundary_p0_n44494e_bp3[0]: dual-rail k-induction proof was inconclusive for this output
+
+[2026-11-19 01:49:23.805] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2849] SEC partially proved equivalence at k = 20: 1/23 outputs proved; remaining outputs are inconclusive.
+[2026-11-19 01:49:23.805] [kepler_formal_main_logger] [warning] [KeplerFormal.cpp:2851] SEC verification did not prove all observed outputs.
+[2026-11-19 01:49:23.805] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2853] SEC partial-proof details: Dual-rail k-induction proved 1 of 23 observed outputs; remaining outputs are inconclusive
+      811,91 real       782,11 user        11,01 sys
+           429932544  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+             3487192  page reclaims
+                  67  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                  20  voluntary context switches
+              251577  involuntary context switches
+       3490392376662  instructions retired
+       2104898418853  cycles elapsed
+           431047616  peak memory footprint

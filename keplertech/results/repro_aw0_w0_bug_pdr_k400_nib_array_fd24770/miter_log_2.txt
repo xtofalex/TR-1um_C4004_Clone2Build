@@ -1,0 +1,84 @@
+[2026-11-20 23:02:30.923] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2325] KEPLER FORMAL: Run.
+[2026-11-20 23:02:30.923] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2398] Input format: SYSTEMVERILOG
+[2026-11-20 23:02:30.923] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2405] SystemVerilog compilation units: one per file
+[2026-11-20 23:02:30.923] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2408] Run log: miter_log_2.txt
+[2026-11-20 23:02:30.923] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:739] Netlist 1: a_aw0_w0.v
+[2026-11-20 23:02:30.924] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:739] Netlist 2: b_aw0_w0.v
+[2026-11-20 23:02:30.924] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2685] Solver: KISSAT
+[2026-11-20 23:02:30.924] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2686] Verification: sec
+[2026-11-20 23:02:30.924] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2688] SEC max_k: 400
+[2026-11-20 23:02:30.924] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2689] SEC engine: pdr
+[2026-11-20 23:02:30.924] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2690] SEC encoding: dual_rail_steady
+[2026-11-20 23:02:30.924] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2694] SEC internal relations: learn=true allow_x_equality=true binary_relation_round=true
+[2026-11-20 23:02:30.924] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2696] SEC reset bootstrap: 3 cycle(s)
+[2026-11-20 23:02:30.924] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2701] SEC reset bootstrap port: rst active=1
+[2026-11-20 23:02:30.924] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2705] Compact mode: disabled
+[2026-11-20 23:02:30.924] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2706] Skipped PO reports: enabled
+[2026-11-20 23:02:30.924] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2707] SEC latch abstraction: enabled
+[2026-11-20 23:02:30.924] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2708] SEC data-enabled latch model: enabled
+[2026-11-20 23:02:30.925] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:3390] Parsing systemverilog file(s) for design 1
+[2026-11-20 23:02:38.807] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2758] SEC checked-output coverage: 100.00% (7/7 covered/existing outputs).
+[2026-11-20 23:02:38.808] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2865] Difference was found. SEC found a counterexample at k = 25.
+[2026-11-20 23:02:38.808] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2868] SEC counterexample details:
+Counterexample reaches the first bad frame at cycle 25.
+Input trace:
+  cycle 0: rst[0]=0, push[0]=0, pop[0]=1, target[0]=1, target[1]=1, target[2]=0, target[3]=1, target[4]=0, target[5]=1, target[6]=0, target[7]=0, target[8]=1, target[9]=1, target[10]=1, target[11]=1
+  cycle 1: rst[0]=0, push[0]=0, pop[0]=1, target[0]=1, target[1]=1, target[2]=0, target[3]=1, target[4]=0, target[5]=0, target[6]=0, target[7]=0, target[8]=1, target[9]=1, target[10]=0, target[11]=1
+  cycle 2: rst[0]=0, push[0]=1, pop[0]=0, target[0]=0, target[1]=0, target[2]=0, target[3]=0, target[4]=0, target[5]=0, target[6]=0, target[7]=0, target[8]=0, target[9]=0, target[10]=0, target[11]=0
+  cycle 3: rst[0]=0, push[0]=0, pop[0]=1, target[0]=0, target[1]=0, target[2]=0, target[3]=0, target[4]=0, target[5]=0, target[6]=0, target[7]=0, target[8]=0, target[9]=0, target[10]=0, target[11]=0
+  cycle 4: rst[0]=0, push[0]=0, pop[0]=1, target[0]=1, target[1]=1, target[2]=1, target[3]=1, target[4]=1, target[5]=1, target[6]=1, target[7]=1, target[8]=1, target[9]=1, target[10]=1, target[11]=1
+  cycle 5: rst[0]=0, push[0]=0, pop[0]=1, target[0]=1, target[1]=1, target[2]=1, target[3]=1, target[4]=1, target[5]=1, target[6]=1, target[7]=1, target[8]=1, target[9]=1, target[10]=1, target[11]=1
+  cycle 6: rst[0]=0, push[0]=0, pop[0]=1, target[0]=1, target[1]=1, target[2]=0, target[3]=1, target[4]=1, target[5]=1, target[6]=0, target[7]=0, target[8]=1, target[9]=1, target[10]=1, target[11]=1
+  cycle 7: rst[0]=0, push[0]=0, pop[0]=1, target[0]=1, target[1]=1, target[2]=0, target[3]=1, target[4]=1, target[5]=1, target[6]=0, target[7]=0, target[8]=1, target[9]=1, target[10]=1, target[11]=1
+  cycle 8: rst[0]=0, push[0]=1, pop[0]=0, target[0]=0, target[1]=0, target[2]=0, target[3]=0, target[4]=0, target[5]=0, target[6]=0, target[7]=0, target[8]=1, target[9]=0, target[10]=0, target[11]=0
+  cycle 9: rst[0]=0, push[0]=0, pop[0]=1, target[0]=0, target[1]=0, target[2]=0, target[3]=0, target[4]=0, target[5]=0, target[6]=0, target[7]=0, target[8]=0, target[9]=0, target[10]=0, target[11]=0
+  cycle 10: rst[0]=0, push[0]=0, pop[0]=1, target[0]=1, target[1]=1, target[2]=1, target[3]=1, target[4]=1, target[5]=1, target[6]=1, target[7]=1, target[8]=0, target[9]=1, target[10]=1, target[11]=1
+  cycle 11: rst[0]=0, push[0]=0, pop[0]=1, target[0]=1, target[1]=1, target[2]=1, target[3]=1, target[4]=1, target[5]=1, target[6]=1, target[7]=1, target[8]=0, target[9]=1, target[10]=1, target[11]=1
+  cycle 12: rst[0]=0, push[0]=0, pop[0]=1, target[0]=1, target[1]=1, target[2]=0, target[3]=1, target[4]=1, target[5]=1, target[6]=0, target[7]=0, target[8]=0, target[9]=1, target[10]=1, target[11]=1
+  cycle 13: rst[0]=0, push[0]=0, pop[0]=1, target[0]=1, target[1]=1, target[2]=0, target[3]=1, target[4]=1, target[5]=1, target[6]=0, target[7]=0, target[8]=0, target[9]=1, target[10]=1, target[11]=1
+  cycle 14: rst[0]=0, push[0]=1, pop[0]=0, target[0]=0, target[1]=0, target[2]=1, target[3]=1, target[4]=1, target[5]=1, target[6]=1, target[7]=0, target[8]=0, target[9]=0, target[10]=0, target[11]=1
+  cycle 15: rst[0]=0, push[0]=0, pop[0]=1, target[0]=0, target[1]=0, target[2]=0, target[3]=0, target[4]=1, target[5]=0, target[6]=0, target[7]=0, target[8]=0, target[9]=0, target[10]=0, target[11]=0
+  cycle 16: rst[0]=0, push[0]=0, pop[0]=0, target[0]=0, target[1]=1, target[2]=0, target[3]=0, target[4]=0, target[5]=0, target[6]=0, target[7]=0, target[8]=1, target[9]=1, target[10]=1, target[11]=0
+  cycle 17: rst[0]=0, push[0]=0, pop[0]=1, target[0]=0, target[1]=1, target[2]=0, target[3]=0, target[4]=0, target[5]=0, target[6]=0, target[7]=0, target[8]=1, target[9]=1, target[10]=1, target[11]=0
+  cycle 18: rst[0]=0, push[0]=0, pop[0]=0, target[0]=0, target[1]=1, target[2]=0, target[3]=0, target[4]=0, target[5]=0, target[6]=0, target[7]=0, target[8]=1, target[9]=1, target[10]=1, target[11]=0
+  cycle 19: rst[0]=0, push[0]=0, pop[0]=1, target[0]=0, target[1]=1, target[2]=0, target[3]=0, target[4]=0, target[5]=0, target[6]=0, target[7]=0, target[8]=1, target[9]=1, target[10]=1, target[11]=0
+  cycle 20: rst[0]=0, push[0]=0, pop[0]=1, target[0]=0, target[1]=0, target[2]=0, target[3]=0, target[4]=0, target[5]=0, target[6]=0, target[7]=0, target[8]=0, target[9]=1, target[10]=0, target[11]=0
+  cycle 21: rst[0]=0, push[0]=1, pop[0]=1, target[0]=0, target[1]=0, target[2]=0, target[3]=0, target[4]=0, target[5]=0, target[6]=0, target[7]=0, target[8]=0, target[9]=0, target[10]=0, target[11]=0
+  cycle 22: rst[0]=0, push[0]=0, pop[0]=1, target[0]=1, target[1]=0, target[2]=0, target[3]=0, target[4]=0, target[5]=0, target[6]=0, target[7]=0, target[8]=0, target[9]=0, target[10]=0, target[11]=0
+  cycle 23: rst[0]=0, push[0]=1, pop[0]=1, target[0]=1, target[1]=0, target[2]=0, target[3]=0, target[4]=0, target[5]=0, target[6]=0, target[7]=0, target[8]=0, target[9]=0, target[10]=0, target[11]=0
+  cycle 24: rst[0]=0, push[0]=0, pop[0]=0, target[0]=0, target[1]=0, target[2]=0, target[3]=0, target[4]=0, target[5]=0, target[6]=0, target[7]=0, target[8]=0, target[9]=0, target[10]=0, target[11]=0
+  cycle 25: rst[0]=0, push[0]=0, pop[0]=0, target[0]=0, target[1]=0, target[2]=0, target[3]=0, target[4]=0, target[5]=0, target[6]=0, target[7]=0, target[8]=0, target[9]=0, target[10]=0, target[11]=0
+Observed output mismatches at cycle 25:
+  bus[0]: design0=0, design1=1
+Traceback for first differing point `bus[0]` at cycle 25:
+  design0 cone to environment inputs:
+    step 0: 96.Y[0]
+    step 1: 22.[0], 91.Y[0], 91.Y[1], 91.Y[2], 91.Y[3], Constant 0
+    step 2: 122.Q[0], 18.[0], 21.[0], 87.[0], 88.[0], 89.[0], 90.[0]
+    step 3: 121.Y[0], 16.[0], 17.[0], 19.[0], 20.[0], clk[0], mem_mem.RDATA[0], mem_mem.RDATA[1], mem_mem.RDATA[2], mem_mem.RDATA[3]
+    step 4: 10.[0], 106.Q[0], 106.Q[1], 106.Q[2], 12.[0], 120.Y[0], 2.[0], 3.[0], 4.[0], 5.[0], 6.[0], 7.[0], ... +9 more
+    step 5: 1.[0], 105.Y[0], 105.Y[1], 105.Y[2], 119.[0], 68.Y[0], 68.Y[1], 68.Y[2], 68.Y[3], 76.Y[0], 76.Y[1], 76.Y[2], ... +2 more
+    step 6: 0.[0], 101.[0], 104.Y[0], 104.Y[1], 104.Y[2], 118.Q[0], 118.Q[1], 118.Q[2], 36.Y[0], 36.Y[1], 42.[0], 44.Y[0], ... +11 more
+    step 7: 102.[0], 103.Y[0], 103.Y[1], 103.Y[2], 117.Y[0], 117.Y[1], 117.Y[2], 127.Q[0], 137.Q[0], 137.Q[10], 137.Q[11], 137.Q[1], ... +36 more
+    step 8: 116.Y[0], 116.Y[1], 116.Y[2], 126.Y[0], 136.Y[0], 136.Y[10], 136.Y[11], 136.Y[1], 136.Y[2], 136.Y[3], 136.Y[4], 136.Y[5], ... +21 more
+    step 9: 114.Y[0], 114.Y[1], 114.Y[2], 115.[0], 125.Y[0], 133.Q[0], 135.Y[0], 135.Y[10], 135.Y[11], 135.Y[1], 135.Y[2], 135.Y[3], ... +19 more
+    step 10: 107.S[0], 108.S[0], 109.S[0], 113.Y[0], 113.Y[1], 113.Y[2], 124.[0], 132.Y[0], 134.[0], 142.Y[0], 142.Y[10], 142.Y[11], ... +24 more
+    step 11: 107.CO[0], 108.CO[0], 110.S[0], 111.S[0], 112.S[0], 123.[0], 131.Y[0], 141.Y[0], 141.Y[10], 141.Y[11], 141.Y[1], 141.Y[2], ... +10 more
+    ... +2 more trace steps
+  design1 cone to environment inputs:
+    step 0: 102.Y[0]
+    step 1: 22.[0], 97.Y[0], 97.Y[1], 97.Y[2], 97.Y[3], Constant 0
+    step 2: 128.Q[0], 18.[0], 21.[0], 96.Y[0], 96.Y[1], 96.Y[2], 96.Y[3]
+    step 3: 127.Y[0], 155.Q[0], 16.[0], 17.[0], 19.[0], 20.[0], 88.[0], 89.[0], 90.[0], 91.[0], 95.Y[0], 95.Y[1], ... +3 more
+    step 4: 112.Q[0], 112.Q[1], 112.Q[2], 126.Y[0], 154.Y[0], 160.Q[0], 160.Q[1], 160.Q[2], 160.Q[3], 92.[0], 94.Y[0], 94.Y[1], ... +8 more
+    step 5: 10.[0], 111.Y[0], 111.Y[1], 111.Y[2], 12.[0], 125.[0], 153.Y[0], 159.Y[0], 159.Y[10], 159.Y[11], 159.Y[1], 159.Y[2], ... +30 more
+    step 6: 1.[0], 107.[0], 110.Y[0], 110.Y[1], 110.Y[2], 151.Y[0], 152.[0], 158.Y[0], 158.Y[10], 158.Y[11], 158.Y[1], 158.Y[2], ... +19 more
+    step 7: 0.[0], 108.[0], 109.Y[0], 109.Y[1], 109.Y[2], 124.Q[0], 124.Q[1], 124.Q[2], 133.Q[0], 156.Y[0], 156.Y[10], 156.Y[11], ... +25 more
+    step 8: 123.Y[0], 123.Y[1], 123.Y[2], 132.Y[0], 143.Q[0], 143.Q[10], 143.Q[11], 143.Q[1], 143.Q[2], 143.Q[3], 143.Q[4], 143.Q[5], ... +31 more
+    step 9: 122.Y[0], 122.Y[1], 122.Y[2], 131.Y[0], 142.Y[0], 142.Y[10], 142.Y[11], 142.Y[1], 142.Y[2], 142.Y[3], 142.Y[4], 142.Y[5], ... +18 more
+    step 10: 120.Y[0], 120.Y[1], 120.Y[2], 121.[0], 130.[0], 139.Q[0], 141.Y[0], 141.Y[10], 141.Y[11], 141.Y[1], 141.Y[2], 141.Y[3], ... +20 more
+    step 11: 113.S[0], 114.S[0], 115.S[0], 119.Y[0], 119.Y[1], 119.Y[2], 129.[0], 138.Y[0], 140.[0], 148.Y[0], 148.Y[10], 148.Y[11], ... +23 more
+    ... +3 more trace steps
+  cone terms only in design0: 101.[0], 102.[0], 103.Y[0], 103.Y[1], 103.Y[2], 104.Y[0], 104.Y[1], 104.Y[2], 105.Y[0], 105.Y[1], 105.Y[2], 106.Q[0], 106.Q[1], 106.Q[2], 107.CO[0], 107.S[0], 108.CO[0], 108.S[0], 109.S[0], 110.CO[0], ... +111 more
+  cone terms only in design1: 102.Y[0], 107.[0], 108.[0], 109.Y[0], 109.Y[1], 109.Y[2], 110.Y[0], 110.Y[1], 110.Y[2], 111.Y[0], 111.Y[1], 111.Y[2], 112.Q[0], 112.Q[1], 112.Q[2], 113.CO[0], 113.S[0], 114.CO[0], 114.S[0], 115.S[0], ... +179 more
+

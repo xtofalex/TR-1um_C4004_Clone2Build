@@ -1,0 +1,24 @@
+kepler-formal cmd (cwd = results/repro_aw0_w0_pdr_k400_nib_array_fd24770): -sv -v sec --sec-engine pdr -k 400 --sec-reset-cycles 3 --sec-reset-port rst=1 --report-skipped-pos --design1 a_aw0_w0.v --design2 b_aw0_w0.v
+source: repro/shadow_nib.v  defines:  
+kepler-formal: kepler-formal version: 1.0.0 kepler-formal git hash: fd24770df6c3297cf31cf0ae4908214501e22ac2 naja version: 0.7.33 naja git hash: cb142398 
+KEPLER_SEC_DIAG=1
+wall-clock cap: 600 s
+exit: 1  wall: 307,35 s  cpu: user 287,79 s, sys 4,94 s
+peak RSS: 804 MB
+  - bus[0]: dual-rail PDR steady-state proof was inconclusive
+  - bus[1]: dual-rail PDR steady-state proof was inconclusive
+  - bus[2]: dual-rail PDR steady-state proof was inconclusive
+  - bus[3]: dual-rail PDR steady-state proof was inconclusive
+[2026-11-20 23:07:38.200] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2849] SEC partially proved equivalence at k = 23: 3/7 outputs proved; remaining outputs are inconclusive.
+[2026-11-20 23:07:38.200] [kepler_formal_main_logger] [warning] [KeplerFormal.cpp:2851] SEC verification did not prove all observed outputs.
+SEC diag: PDR steady-state check end index=0 output_range=0..7 status=inconclusive bound=6
+SEC diag: PDR steady-state check end index=1 output_range=0..3 status=inconclusive bound=6
+SEC diag: PDR steady-state check end index=2 output_range=0..1 status=inconclusive bound=23
+SEC diag: PDR steady-state check end index=3 output_range=1..3 status=inconclusive bound=7
+SEC diag: PDR steady-state check end index=4 output_range=1..2 status=inconclusive bound=22
+SEC diag: PDR steady-state check end index=5 output_range=2..3 status=inconclusive bound=21
+SEC diag: PDR steady-state check end index=6 output_range=3..7 status=inconclusive bound=8
+SEC diag: PDR steady-state check end index=7 output_range=3..5 status=inconclusive bound=8
+SEC diag: PDR steady-state check end index=8 output_range=3..4 status=inconclusive bound=21
+SEC diag: PDR steady-state check end index=9 output_range=4..5 status=equivalent bound=1
+SEC diag: PDR steady-state check end index=10 output_range=5..7 status=equivalent bound=1

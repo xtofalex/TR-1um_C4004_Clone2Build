@@ -1,0 +1,28 @@
+[2026-11-20 22:59:53.354] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2325] KEPLER FORMAL: Run.
+[2026-11-20 22:59:53.355] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2398] Input format: SYSTEMVERILOG
+[2026-11-20 22:59:53.355] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2405] SystemVerilog compilation units: one per file
+[2026-11-20 22:59:53.355] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2408] Run log: miter_log_0.txt
+[2026-11-20 22:59:53.355] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:739] Netlist 1: a_aw0_w0.v
+[2026-11-20 22:59:53.355] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:739] Netlist 2: b_aw0_w0.v
+[2026-11-20 22:59:53.355] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2685] Solver: KISSAT
+[2026-11-20 22:59:53.355] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2686] Verification: sec
+[2026-11-20 22:59:53.355] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2688] SEC max_k: 400
+[2026-11-20 22:59:53.355] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2689] SEC engine: pdr
+[2026-11-20 22:59:53.355] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2690] SEC encoding: dual_rail_steady
+[2026-11-20 22:59:53.355] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2694] SEC internal relations: learn=true allow_x_equality=true binary_relation_round=true
+[2026-11-20 22:59:53.355] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2696] SEC reset bootstrap: 3 cycle(s)
+[2026-11-20 22:59:53.355] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2701] SEC reset bootstrap port: rst active=1
+[2026-11-20 22:59:53.355] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2705] Compact mode: disabled
+[2026-11-20 22:59:53.355] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2706] Skipped PO reports: enabled
+[2026-11-20 22:59:53.355] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2707] SEC latch abstraction: enabled
+[2026-11-20 22:59:53.355] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2708] SEC data-enabled latch model: enabled
+[2026-11-20 22:59:53.357] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:3390] Parsing systemverilog file(s) for design 1
+[2026-11-20 22:59:53.413] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2758] SEC checked-output coverage: 42.86% (3/7 covered/existing outputs).
+[2026-11-20 22:59:53.413] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2787] SEC skipped observed outputs due to extraction or coverage limitations:
+  - bus[0]: design0 no-driver connectivity: Depends on skipped state `mem_mem.RDATA[0]`: Structured memory dependency `mem_mem.WDATA[0]` was skipped because its iso has no drivers during cloud expansion | design1 no-driver connectivity: its iso has no drivers during cloud expansion
+  - bus[1]: design0 no-driver connectivity: Depends on skipped state `mem_mem.RDATA[1]`: Structured memory dependency `mem_mem.WDATA[0]` was skipped because its iso has no drivers during cloud expansion | design1 no-driver connectivity: its iso has no drivers during cloud expansion
+  - bus[2]: design0 no-driver connectivity: Depends on skipped state `mem_mem.RDATA[2]`: Structured memory dependency `mem_mem.WDATA[0]` was skipped because its iso has no drivers during cloud expansion | design1 no-driver connectivity: its iso has no drivers during cloud expansion
+  - bus[3]: design0 no-driver connectivity: Depends on skipped state `mem_mem.RDATA[3]`: Structured memory dependency `mem_mem.WDATA[0]` was skipped because its iso has no drivers during cloud expansion | design1 no-driver connectivity: its iso has no drivers during cloud expansion
+
+[2026-11-20 22:59:53.413] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2849] SEC partially proved equivalence at k = 1: 3/7 outputs proved; remaining outputs are inconclusive.
+[2026-11-20 22:59:53.413] [kepler_formal_main_logger] [warning] [KeplerFormal.cpp:2851] SEC verification did not prove all observed outputs.

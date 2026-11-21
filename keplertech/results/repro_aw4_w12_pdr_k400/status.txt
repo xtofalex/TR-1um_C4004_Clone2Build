@@ -1,0 +1,23 @@
+kepler-formal cmd (cwd = results/repro_aw4_w12_pdr_k400): -sv -v sec --sec-engine pdr -k 400 --sec-reset-cycles 3 --sec-reset-port rst=1 --report-skipped-pos --design1 a_aw4_w12.v --design2 b_aw4_w12.v
+KEPLER_SEC_DIAG=1
+wall-clock cap: 300 s
+STOPPED by wall-clock cap (300 s)
+exit: 142  wall: 300,06 s  cpu: user 276,46 s, sys 5,30 s
+peak RSS: 692 MB
+SEC diag: PDR steady-state check end index=0 output_range=0..12 status=inconclusive bound=2
+SEC diag: PDR steady-state check end index=1 output_range=0..6 status=inconclusive bound=2
+SEC diag: PDR steady-state check end index=2 output_range=0..3 status=inconclusive bound=2
+SEC diag: PDR steady-state check end index=3 output_range=0..1 status=equivalent bound=10
+SEC diag: PDR steady-state check end index=4 output_range=1..3 status=inconclusive bound=3
+SEC diag: PDR steady-state check end index=5 output_range=1..2 status=equivalent bound=15
+SEC diag: PDR steady-state check end index=6 output_range=2..3 status=equivalent bound=17
+SEC diag: PDR steady-state check end index=7 output_range=3..6 status=inconclusive bound=2
+SEC diag: PDR steady-state check end index=8 output_range=3..4 status=inconclusive bound=20
+SEC diag: PDR steady-state check end index=9 output_range=4..6 status=inconclusive bound=2
+SEC diag: PDR steady-state check end index=10 output_range=4..5 status=equivalent bound=3
+SEC diag: PDR steady-state check end index=11 output_range=5..6 status=inconclusive bound=11
+SEC diag: PDR steady-state check end index=12 output_range=6..12 status=inconclusive bound=2
+SEC diag: PDR steady-state check end index=13 output_range=6..9 status=inconclusive bound=2
+SEC diag: PDR steady-state check end index=14 output_range=6..7 status=inconclusive bound=5
+SEC diag: PDR steady-state check end index=15 output_range=7..9 status=inconclusive bound=2
+SEC diag: PDR steady-state check end index=16 output_range=7..8 status=inconclusive bound=4

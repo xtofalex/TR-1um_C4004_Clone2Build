@@ -1,0 +1,27 @@
+=== Naja SystemVerilog Diagnostics ===
+format.version=1
+status=in_progress
+report.path="naja_sv_diagnostics.log"
+console.warning_policy=first_occurrence_per_code
+
+=== Slang Diagnostics ===
+diagnostic stage="slang" severity="warning" code="slang_diagnostic" file="b_aw0_w0.v" line=34 column=25 message="implicit conversion truncates from 3 to 2 bits"
+diagnostic stage="slang" severity="warning" code="slang_diagnostic" file="b_aw0_w0.v" line=34 column=33 message="implicit conversion expands from 2 to 3 bits"
+
+=== Naja Elaboration Warnings ===
+diagnostic stage="naja_elaboration" severity="warning" code="case_comparison_two_state" file="b_aw0_w0.v" line=85 column=24 message="Case comparison operator '===' lowered as 2-state comparison in SNL (X/Z distinction is not preserved)"
+
+=== Summary ===
+summary.status=success
+count.slang.total=2
+count.slang.note=0
+count.slang.warning=2
+count.slang.error=0
+count.slang.fatal=0
+count.naja_elaboration.warning_occurrences=1
+count.naja_elaboration.warning_codes=1
+count.naja_unsupported_warning.occurrences=0
+count.naja_unsupported_warning.codes=0
+count.naja_unsupported_error.occurrences=0
+count.naja_unsupported_error.codes=0
+report.path="naja_sv_diagnostics.log"

@@ -1,0 +1,346 @@
+[2026-11-20 17:57:10.080] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2334] KEPLER FORMAL: Run.
+[2026-11-20 17:57:10.081] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2407] Input format: SYSTEMVERILOG
+[2026-11-20 17:57:10.081] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2414] SystemVerilog compilation units: one per file
+[2026-11-20 17:57:10.081] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2417] Run log: miter_log_0.txt
+[2026-11-20 17:57:10.081] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:740] Netlist 1: a_aw5_w8.v
+[2026-11-20 17:57:10.081] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:740] Netlist 2: b_aw5_w8.v
+[2026-11-20 17:57:10.081] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2694] Solver: KISSAT
+[2026-11-20 17:57:10.081] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2695] Verification: sec
+[2026-11-20 17:57:10.081] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2697] SEC max_k: 400
+[2026-11-20 17:57:10.081] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2698] SEC engine: pdr
+[2026-11-20 17:57:10.081] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2699] SEC encoding: dual_rail_steady
+[2026-11-20 17:57:10.082] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2705] SEC internal relations: learn=true allow_x_equality=true binary_relation_round=true signal_correspondence=true
+[2026-11-20 17:57:10.082] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2707] SEC reset bootstrap: 3 cycle(s)
+[2026-11-20 17:57:10.082] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2712] SEC reset bootstrap port: rst active=1
+[2026-11-20 17:57:10.082] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2716] Compact mode: disabled
+[2026-11-20 17:57:10.082] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2717] Skipped PO reports: enabled
+[2026-11-20 17:57:10.082] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2718] SEC latch abstraction: enabled
+[2026-11-20 17:57:10.082] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2719] SEC data-enabled latch model: enabled
+[2026-11-20 17:57:10.082] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:3401] Parsing systemverilog file(s) for design 1
+2026-11-20 17:57:10,084 [naja] [info] SystemVerilog diagnostics summary: status=success, no diagnostics; report='naja_sv_diagnostics.log'
+2026-11-20 17:57:10,085 [naja] [info] Found top design: top
+2026-11-20 17:57:10,085 [naja] [info] Parsing systemverilog file(s) for design 2
+2026-11-20 17:57:10,087 [naja] [info] SystemVerilog diagnostics summary: status=success, no diagnostics; report='naja_sv_diagnostics.log'
+2026-11-20 17:57:10,088 [naja] [info] Found top design: top
+SEC diag: start run
+SEC diag: extract(top) collect begin
+SEC diag: extract(top) collect end inputs=26 outputs=60
+SEC diag: extract(top) opaque_reached_outputs=0
+SEC diag: extract(top) initial_observed_outputs=8
+SEC diag: extract(top) build begin
+SEC diag: extract(top) build end
+SEC diag: extract(top) boundary normalized env=12 state=14 outputs=8 pending=6
+SEC diag: extract(top) mapped boundary vars=26
+SEC diag: extract(top) structured memory dependency build begin outputs=37
+SEC diag: extract(top) structured memory dependency build end outputs=37
+SEC diag: extract(top) mapped boundary vars=26
+SEC diag: extract(top) materialized output exprs observed=8 total=92
+SEC diag: top input rst[0] is not clock-only: sequential non-clock pin 111//D (naja_dff)
+SEC diag: top input push[0] is not clock-only: sequential non-clock pin 109//D (naja_dff__w5)
+SEC diag: top input pop[0] is not clock-only: combinational output not clock-only after 107//S (naja_mux2__w5)
+SEC diag: extract(top) immutable clock structure indexed terms=431 pure_terms=4
+SEC diag: extract(top) dependency build begin outputs=7
+SEC diag: extract(top) dependency build end outputs=7
+SEC diag: extract(top) mapped boundary vars=282
+SEC diag: extract(top) rebuilt next-state exprs=270 init=0 data_latches=0
+SEC diag: extract(top) filtered env=12 state=270
+SEC diag: extract(top) structured_memories=1 structured_memory_cells=256
+SEC diag: extract(top) kept_states=[109.Q[0]@v18, 109.Q[1]@v17, 109.Q[2]@v16, 109.Q[3]@v15, 109.Q[4]@v14, 111.Q[0]@v19, mem_mem/.__MEM_CELL[0][0]@v587, mem_mem/.__MEM_CELL[0][1]@v588, mem_mem/.__MEM_CELL[0][2]@v589, mem_mem/.__MEM_CELL[0][3]@v590, mem_mem/.__MEM_CELL[0][4]@v591, mem_mem/.__MEM_CELL[0][5]@v592, mem_mem/.__MEM_CELL[0][6]@v593, mem_mem/.__MEM_CELL[0][7]@v594, mem_mem/.__MEM_CELL[1][0]@v595, mem_mem/.__MEM_CELL[1][1]@v596, mem_mem/.__MEM_CELL[1][2]@v597, mem_mem/.__MEM_CELL[1][3]@v598, mem_mem/.__MEM_CELL[1][4]@v599, mem_mem/.__MEM_CELL[1][5]@v600, mem_mem/.__MEM_CELL[1][6]@v601, mem_mem/.__MEM_CELL[1][7]@v602, mem_mem/.__MEM_CELL[2][0]@v603, mem_mem/.__MEM_CELL[2][1]@v604, mem_mem/.__MEM_CELL[2][2]@v605, mem_mem/.__MEM_CELL[2][3]@v606, mem_mem/.__MEM_CELL[2][4]@v607, mem_mem/.__MEM_CELL[2][5]@v608, mem_mem/.__MEM_CELL[2][6]@v609, mem_mem/.__MEM_CELL[2][7]@v610, mem_mem/.__MEM_CELL[3][0]@v611, mem_mem/.__MEM_CELL[3][1]@v612, mem_mem/.__MEM_CELL[3][2]@v613, mem_mem/.__MEM_CELL[3][3]@v614, mem_mem/.__MEM_CELL[3][4]@v615, mem_mem/.__MEM_CELL[3][5]@v616, mem_mem/.__MEM_CELL[3][6]@v617, mem_mem/.__MEM_CELL[3][7]@v618, mem_mem/.__MEM_CELL[4][0]@v619, mem_mem/.__MEM_CELL[4][1]@v620, mem_mem/.__MEM_CELL[4][2]@v621, mem_mem/.__MEM_CELL[4][3]@v622, mem_mem/.__MEM_CELL[4][4]@v623, mem_mem/.__MEM_CELL[4][5]@v624, mem_mem/.__MEM_CELL[4][6]@v625, mem_mem/.__MEM_CELL[4][7]@v626, mem_mem/.__MEM_CELL[5][0]@v627, mem_mem/.__MEM_CELL[5][1]@v628, mem_mem/.__MEM_CELL[5][2]@v629, mem_mem/.__MEM_CELL[5][3]@v630, mem_mem/.__MEM_CELL[5][4]@v631, mem_mem/.__MEM_CELL[5][5]@v632, mem_mem/.__MEM_CELL[5][6]@v633, mem_mem/.__MEM_CELL[5][7]@v634, mem_mem/.__MEM_CELL[6][0]@v635, mem_mem/.__MEM_CELL[6][1]@v636, mem_mem/.__MEM_CELL[6][2]@v637, mem_mem/.__MEM_CELL[6][3]@v638, mem_mem/.__MEM_CELL[6][4]@v639, mem_mem/.__MEM_CELL[6][5]@v640, mem_mem/.__MEM_CELL[6][6]@v641, mem_mem/.__MEM_CELL[6][7]@v642, mem_mem/.__MEM_CELL[7][0]@v643, mem_mem/.__MEM_CELL[7][1]@v644, mem_mem/.__MEM_CELL[7][2]@v645, mem_mem/.__MEM_CELL[7][3]@v646, mem_mem/.__MEM_CELL[7][4]@v647, mem_mem/.__MEM_CELL[7][5]@v648, mem_mem/.__MEM_CELL[7][6]@v649, mem_mem/.__MEM_CELL[7][7]@v650, mem_mem/.__MEM_CELL[8][0]@v651, mem_mem/.__MEM_CELL[8][1]@v652, mem_mem/.__MEM_CELL[8][2]@v653, mem_mem/.__MEM_CELL[8][3]@v654, mem_mem/.__MEM_CELL[8][4]@v655, mem_mem/.__MEM_CELL[8][5]@v656, mem_mem/.__MEM_CELL[8][6]@v657, mem_mem/.__MEM_CELL[8][7]@v658, mem_mem/.__MEM_CELL[9][0]@v659, mem_mem/.__MEM_CELL[9][1]@v660, mem_mem/.__MEM_CELL[9][2]@v661, mem_mem/.__MEM_CELL[9][3]@v662, mem_mem/.__MEM_CELL[9][4]@v663, mem_mem/.__MEM_CELL[9][5]@v664, mem_mem/.__MEM_CELL[9][6]@v665, mem_mem/.__MEM_CELL[9][7]@v666, mem_mem/.__MEM_CELL[10][0]@v667, mem_mem/.__MEM_CELL[10][1]@v668, mem_mem/.__MEM_CELL[10][2]@v669, mem_mem/.__MEM_CELL[10][3]@v670, mem_mem/.__MEM_CELL[10][4]@v671, mem_mem/.__MEM_CELL[10][5]@v672, mem_mem/.__MEM_CELL[10][6]@v673, mem_mem/.__MEM_CELL[10][7]@v674, mem_mem/.__MEM_CELL[11][0]@v675, mem_mem/.__MEM_CELL[11][1]@v676, mem_mem/.__MEM_CELL[11][2]@v677, mem_mem/.__MEM_CELL[11][3]@v678, mem_mem/.__MEM_CELL[11][4]@v679, mem_mem/.__MEM_CELL[11][5]@v680, mem_mem/.__MEM_CELL[11][6]@v681, mem_mem/.__MEM_CELL[11][7]@v682, mem_mem/.__MEM_CELL[12][0]@v683, mem_mem/.__MEM_CELL[12][1]@v684, mem_mem/.__MEM_CELL[12][2]@v685, mem_mem/.__MEM_CELL[12][3]@v686, mem_mem/.__MEM_CELL[12][4]@v687, mem_mem/.__MEM_CELL[12][5]@v688, mem_mem/.__MEM_CELL[12][6]@v689, mem_mem/.__MEM_CELL[12][7]@v690, mem_mem/.__MEM_CELL[13][0]@v691, mem_mem/.__MEM_CELL[13][1]@v692, mem_mem/.__MEM_CELL[13][2]@v693, mem_mem/.__MEM_CELL[13][3]@v694, mem_mem/.__MEM_CELL[13][4]@v695, mem_mem/.__MEM_CELL[13][5]@v696, mem_mem/.__MEM_CELL[13][6]@v697, mem_mem/.__MEM_CELL[13][7]@v698, mem_mem/.__MEM_CELL[14][0]@v699, mem_mem/.__MEM_CELL[14][1]@v700, mem_mem/.__MEM_CELL[14][2]@v701, mem_mem/.__MEM_CELL[14][3]@v702, mem_mem/.__MEM_CELL[14][4]@v703, mem_mem/.__MEM_CELL[14][5]@v704, mem_mem/.__MEM_CELL[14][6]@v705, mem_mem/.__MEM_CELL[14][7]@v706, mem_mem/.__MEM_CELL[15][0]@v707, mem_mem/.__MEM_CELL[15][1]@v708, mem_mem/.__MEM_CELL[15][2]@v709, mem_mem/.__MEM_CELL[15][3]@v710, mem_mem/.__MEM_CELL[15][4]@v711, mem_mem/.__MEM_CELL[15][5]@v712, mem_mem/.__MEM_CELL[15][6]@v713, mem_mem/.__MEM_CELL[15][7]@v714, mem_mem/.__MEM_CELL[16][0]@v715, mem_mem/.__MEM_CELL[16][1]@v716, mem_mem/.__MEM_CELL[16][2]@v717, mem_mem/.__MEM_CELL[16][3]@v718, mem_mem/.__MEM_CELL[16][4]@v719, mem_mem/.__MEM_CELL[16][5]@v720, mem_mem/.__MEM_CELL[16][6]@v721, mem_mem/.__MEM_CELL[16][7]@v722, mem_mem/.__MEM_CELL[17][0]@v723, mem_mem/.__MEM_CELL[17][1]@v724, mem_mem/.__MEM_CELL[17][2]@v725, mem_mem/.__MEM_CELL[17][3]@v726, mem_mem/.__MEM_CELL[17][4]@v727, mem_mem/.__MEM_CELL[17][5]@v728, mem_mem/.__MEM_CELL[17][6]@v729, mem_mem/.__MEM_CELL[17][7]@v730, mem_mem/.__MEM_CELL[18][0]@v731, mem_mem/.__MEM_CELL[18][1]@v732, mem_mem/.__MEM_CELL[18][2]@v733, mem_mem/.__MEM_CELL[18][3]@v734, mem_mem/.__MEM_CELL[18][4]@v735, mem_mem/.__MEM_CELL[18][5]@v736, mem_mem/.__MEM_CELL[18][6]@v737, mem_mem/.__MEM_CELL[18][7]@v738, mem_mem/.__MEM_CELL[19][0]@v739, mem_mem/.__MEM_CELL[19][1]@v740, mem_mem/.__MEM_CELL[19][2]@v741, mem_mem/.__MEM_CELL[19][3]@v742, mem_mem/.__MEM_CELL[19][4]@v743, mem_mem/.__MEM_CELL[19][5]@v744, mem_mem/.__MEM_CELL[19][6]@v745, mem_mem/.__MEM_CELL[19][7]@v746, mem_mem/.__MEM_CELL[20][0]@v747, mem_mem/.__MEM_CELL[20][1]@v748, mem_mem/.__MEM_CELL[20][2]@v749, mem_mem/.__MEM_CELL[20][3]@v750, mem_mem/.__MEM_CELL[20][4]@v751, mem_mem/.__MEM_CELL[20][5]@v752, mem_mem/.__MEM_CELL[20][6]@v753, mem_mem/.__MEM_CELL[20][7]@v754, mem_mem/.__MEM_CELL[21][0]@v755, mem_mem/.__MEM_CELL[21][1]@v756, mem_mem/.__MEM_CELL[21][2]@v757, mem_mem/.__MEM_CELL[21][3]@v758, mem_mem/.__MEM_CELL[21][4]@v759, mem_mem/.__MEM_CELL[21][5]@v760, mem_mem/.__MEM_CELL[21][6]@v761, mem_mem/.__MEM_CELL[21][7]@v762, mem_mem/.__MEM_CELL[22][0]@v763, mem_mem/.__MEM_CELL[22][1]@v764, mem_mem/.__MEM_CELL[22][2]@v765, mem_mem/.__MEM_CELL[22][3]@v766, mem_mem/.__MEM_CELL[22][4]@v767, mem_mem/.__MEM_CELL[22][5]@v768, mem_mem/.__MEM_CELL[22][6]@v769, mem_mem/.__MEM_CELL[22][7]@v770, mem_mem/.__MEM_CELL[23][0]@v771, mem_mem/.__MEM_CELL[23][1]@v772, mem_mem/.__MEM_CELL[23][2]@v773, mem_mem/.__MEM_CELL[23][3]@v774, mem_mem/.__MEM_CELL[23][4]@v775, mem_mem/.__MEM_CELL[23][5]@v776, mem_mem/.__MEM_CELL[23][6]@v777, mem_mem/.__MEM_CELL[23][7]@v778, mem_mem/.__MEM_CELL[24][0]@v779, mem_mem/.__MEM_CELL[24][1]@v780, mem_mem/.__MEM_CELL[24][2]@v781, mem_mem/.__MEM_CELL[24][3]@v782, mem_mem/.__MEM_CELL[24][4]@v783, mem_mem/.__MEM_CELL[24][5]@v784, mem_mem/.__MEM_CELL[24][6]@v785, mem_mem/.__MEM_CELL[24][7]@v786, mem_mem/.__MEM_CELL[25][0]@v787, mem_mem/.__MEM_CELL[25][1]@v788, mem_mem/.__MEM_CELL[25][2]@v789, mem_mem/.__MEM_CELL[25][3]@v790, mem_mem/.__MEM_CELL[25][4]@v791, mem_mem/.__MEM_CELL[25][5]@v792, mem_mem/.__MEM_CELL[25][6]@v793, mem_mem/.__MEM_CELL[25][7]@v794, mem_mem/.__MEM_CELL[26][0]@v795, mem_mem/.__MEM_CELL[26][1]@v796, mem_mem/.__MEM_CELL[26][2]@v797, mem_mem/.__MEM_CELL[26][3]@v798, mem_mem/.__MEM_CELL[26][4]@v799, mem_mem/.__MEM_CELL[26][5]@v800, mem_mem/.__MEM_CELL[26][6]@v801, mem_mem/.__MEM_CELL[26][7]@v802, mem_mem/.__MEM_CELL[27][0]@v803, mem_mem/.__MEM_CELL[27][1]@v804, mem_mem/.__MEM_CELL[27][2]@v805, mem_mem/.__MEM_CELL[27][3]@v806, mem_mem/.__MEM_CELL[27][4]@v807, mem_mem/.__MEM_CELL[27][5]@v808, mem_mem/.__MEM_CELL[27][6]@v809, mem_mem/.__MEM_CELL[27][7]@v810, mem_mem/.__MEM_CELL[28][0]@v811, mem_mem/.__MEM_CELL[28][1]@v812, mem_mem/.__MEM_CELL[28][2]@v813, mem_mem/.__MEM_CELL[28][3]@v814, mem_mem/.__MEM_CELL[28][4]@v815, mem_mem/.__MEM_CELL[28][5]@v816, mem_mem/.__MEM_CELL[28][6]@v817, mem_mem/.__MEM_CELL[28][7]@v818, mem_mem/.__MEM_CELL[29][0]@v819, mem_mem/.__MEM_CELL[29][1]@v820, mem_mem/.__MEM_CELL[29][2]@v821, mem_mem/.__MEM_CELL[29][3]@v822, mem_mem/.__MEM_CELL[29][4]@v823, mem_mem/.__MEM_CELL[29][5]@v824, mem_mem/.__MEM_CELL[29][6]@v825, mem_mem/.__MEM_CELL[29][7]@v826, mem_mem/.__MEM_CELL[30][0]@v827, mem_mem/.__MEM_CELL[30][1]@v828, mem_mem/.__MEM_CELL[30][2]@v829, mem_mem/.__MEM_CELL[30][3]@v830, mem_mem/.__MEM_CELL[30][4]@v831, mem_mem/.__MEM_CELL[30][5]@v832, mem_mem/.__MEM_CELL[30][6]@v833, mem_mem/.__MEM_CELL[30][7]@v834, mem_mem/.__MEM_CELL[31][0]@v835, mem_mem/.__MEM_CELL[31][1]@v836, mem_mem/.__MEM_CELL[31][2]@v837, mem_mem/.__MEM_CELL[31][3]@v838, mem_mem/.__MEM_CELL[31][4]@v839, mem_mem/.__MEM_CELL[31][5]@v840, mem_mem/.__MEM_CELL[31][6]@v841, mem_mem/.__MEM_CELL[31][7]@v842]
+SEC diag: extract(top) observed_support pc[0] = [v14, v15, v16, v17, v18, v19, v587, v595, v603, v611, v619, v627, v635, v643, v651, v659, v667, v675, v683, v691, v699, v707, v715, v723, v731, v739, v747, v755, v763, v771, v779, v787, v795, v803, v811, v819, v827, v835]
+SEC diag: extract(top) observed_support pc[1] = [v14, v15, v16, v17, v18, v19, v588, v596, v604, v612, v620, v628, v636, v644, v652, v660, v668, v676, v684, v692, v700, v708, v716, v724, v732, v740, v748, v756, v764, v772, v780, v788, v796, v804, v812, v820, v828, v836]
+SEC diag: extract(top) observed_support pc[2] = [v14, v15, v16, v17, v18, v19, v589, v597, v605, v613, v621, v629, v637, v645, v653, v661, v669, v677, v685, v693, v701, v709, v717, v725, v733, v741, v749, v757, v765, v773, v781, v789, v797, v805, v813, v821, v829, v837]
+SEC diag: extract(top) observed_support pc[3] = [v14, v15, v16, v17, v18, v19, v590, v598, v606, v614, v622, v630, v638, v646, v654, v662, v670, v678, v686, v694, v702, v710, v718, v726, v734, v742, v750, v758, v766, v774, v782, v790, v798, v806, v814, v822, v830, v838]
+SEC diag: extract(top) observed_support pc[4] = [v14, v15, v16, v17, v18, v19, v591, v599, v607, v615, v623, v631, v639, v647, v655, v663, v671, v679, v687, v695, v703, v711, v719, v727, v735, v743, v751, v759, v767, v775, v783, v791, v799, v807, v815, v823, v831, v839]
+SEC diag: extract(top) observed_support pc[5] = [v14, v15, v16, v17, v18, v19, v592, v600, v608, v616, v624, v632, v640, v648, v656, v664, v672, v680, v688, v696, v704, v712, v720, v728, v736, v744, v752, v760, v768, v776, v784, v792, v800, v808, v816, v824, v832, v840]
+SEC diag: extract(top) observed_support pc[6] = [v14, v15, v16, v17, v18, v19, v593, v601, v609, v617, v625, v633, v641, v649, v657, v665, v673, v681, v689, v697, v705, v713, v721, v729, v737, v745, v753, v761, v769, v777, v785, v793, v801, v809, v817, v825, v833, v841]
+SEC diag: extract(top) observed_support pc[7] = [v14, v15, v16, v17, v18, v19, v594, v602, v610, v618, v626, v634, v642, v650, v658, v666, v674, v682, v690, v698, v706, v714, v722, v730, v738, v746, v754, v762, v770, v778, v786, v794, v802, v810, v818, v826, v834, v842]
+SEC diag: extract(top) end
+SEC diag: extracted design0
+SEC diag: extract(top) collect begin
+SEC diag: extract(top) collect end inputs=35 outputs=71
+SEC diag: extract(top) opaque_reached_outputs=0
+SEC diag: extract(top) initial_observed_outputs=8
+SEC diag: extract(top) build begin
+SEC diag: extract(top) build end
+SEC diag: extract(top) boundary normalized env=12 state=23 outputs=8 pending=15
+SEC diag: extract(top) mapped boundary vars=35
+SEC diag: extract(top) structured memory dependency build begin outputs=37
+SEC diag: extract(top) structured memory dependency build end outputs=37
+SEC diag: extract(top) mapped boundary vars=35
+SEC diag: extract(top) materialized output exprs observed=8 total=92
+SEC diag: top input rst[0] is not clock-only: sequential non-clock pin 123//D (naja_dff__w8)
+SEC diag: top input push[0] is not clock-only: combinational output not clock-only after 122//A (naja_mux2__w8)
+SEC diag: top input pop[0] is not clock-only: sequential non-clock pin 118//D (naja_dff)
+SEC diag: top input target[7] is not clock-only: sequential non-clock pin 123//D (naja_dff__w8)
+SEC diag: top input target[6] is not clock-only: sequential non-clock pin 123//D (naja_dff__w8)
+SEC diag: top input target[5] is not clock-only: sequential non-clock pin 123//D (naja_dff__w8)
+SEC diag: top input target[4] is not clock-only: sequential non-clock pin 123//D (naja_dff__w8)
+SEC diag: top input target[3] is not clock-only: sequential non-clock pin 123//D (naja_dff__w8)
+SEC diag: top input target[2] is not clock-only: sequential non-clock pin 123//D (naja_dff__w8)
+SEC diag: top input target[1] is not clock-only: sequential non-clock pin 123//D (naja_dff__w8)
+SEC diag: top input target[0] is not clock-only: combinational output not clock-only after 119//B (naja_mux2__w8)
+SEC diag: extract(top) immutable clock structure indexed terms=594 pure_terms=6
+SEC diag: extract(top) dependency build begin outputs=16
+SEC diag: extract(top) dependency build end outputs=16
+SEC diag: extract(top) mapped boundary vars=291
+SEC diag: extract(top) rebuilt next-state exprs=279 init=0 data_latches=0
+SEC diag: extract(top) filtered env=12 state=279
+SEC diag: extract(top) structured_memories=1 structured_memory_cells=256
+SEC diag: extract(top) kept_states=[110.Q[0]@v18, 110.Q[1]@v17, 110.Q[2]@v16, 110.Q[3]@v15, 110.Q[4]@v14, 112.Q[0]@v19, 118.Q[0]@v20, 123.Q[0]@v28, 123.Q[1]@v27, 123.Q[2]@v26, 123.Q[3]@v25, 123.Q[4]@v24, 123.Q[5]@v23, 123.Q[6]@v22, 123.Q[7]@v21, mem_mem/.__MEM_CELL[0][0]@v804, mem_mem/.__MEM_CELL[0][1]@v805, mem_mem/.__MEM_CELL[0][2]@v806, mem_mem/.__MEM_CELL[0][3]@v807, mem_mem/.__MEM_CELL[0][4]@v808, mem_mem/.__MEM_CELL[0][5]@v809, mem_mem/.__MEM_CELL[0][6]@v810, mem_mem/.__MEM_CELL[0][7]@v811, mem_mem/.__MEM_CELL[1][0]@v812, mem_mem/.__MEM_CELL[1][1]@v813, mem_mem/.__MEM_CELL[1][2]@v814, mem_mem/.__MEM_CELL[1][3]@v815, mem_mem/.__MEM_CELL[1][4]@v816, mem_mem/.__MEM_CELL[1][5]@v817, mem_mem/.__MEM_CELL[1][6]@v818, mem_mem/.__MEM_CELL[1][7]@v819, mem_mem/.__MEM_CELL[2][0]@v820, mem_mem/.__MEM_CELL[2][1]@v821, mem_mem/.__MEM_CELL[2][2]@v822, mem_mem/.__MEM_CELL[2][3]@v823, mem_mem/.__MEM_CELL[2][4]@v824, mem_mem/.__MEM_CELL[2][5]@v825, mem_mem/.__MEM_CELL[2][6]@v826, mem_mem/.__MEM_CELL[2][7]@v827, mem_mem/.__MEM_CELL[3][0]@v828, mem_mem/.__MEM_CELL[3][1]@v829, mem_mem/.__MEM_CELL[3][2]@v830, mem_mem/.__MEM_CELL[3][3]@v831, mem_mem/.__MEM_CELL[3][4]@v832, mem_mem/.__MEM_CELL[3][5]@v833, mem_mem/.__MEM_CELL[3][6]@v834, mem_mem/.__MEM_CELL[3][7]@v835, mem_mem/.__MEM_CELL[4][0]@v836, mem_mem/.__MEM_CELL[4][1]@v837, mem_mem/.__MEM_CELL[4][2]@v838, mem_mem/.__MEM_CELL[4][3]@v839, mem_mem/.__MEM_CELL[4][4]@v840, mem_mem/.__MEM_CELL[4][5]@v841, mem_mem/.__MEM_CELL[4][6]@v842, mem_mem/.__MEM_CELL[4][7]@v843, mem_mem/.__MEM_CELL[5][0]@v844, mem_mem/.__MEM_CELL[5][1]@v845, mem_mem/.__MEM_CELL[5][2]@v846, mem_mem/.__MEM_CELL[5][3]@v847, mem_mem/.__MEM_CELL[5][4]@v848, mem_mem/.__MEM_CELL[5][5]@v849, mem_mem/.__MEM_CELL[5][6]@v850, mem_mem/.__MEM_CELL[5][7]@v851, mem_mem/.__MEM_CELL[6][0]@v852, mem_mem/.__MEM_CELL[6][1]@v853, mem_mem/.__MEM_CELL[6][2]@v854, mem_mem/.__MEM_CELL[6][3]@v855, mem_mem/.__MEM_CELL[6][4]@v856, mem_mem/.__MEM_CELL[6][5]@v857, mem_mem/.__MEM_CELL[6][6]@v858, mem_mem/.__MEM_CELL[6][7]@v859, mem_mem/.__MEM_CELL[7][0]@v860, mem_mem/.__MEM_CELL[7][1]@v861, mem_mem/.__MEM_CELL[7][2]@v862, mem_mem/.__MEM_CELL[7][3]@v863, mem_mem/.__MEM_CELL[7][4]@v864, mem_mem/.__MEM_CELL[7][5]@v865, mem_mem/.__MEM_CELL[7][6]@v866, mem_mem/.__MEM_CELL[7][7]@v867, mem_mem/.__MEM_CELL[8][0]@v868, mem_mem/.__MEM_CELL[8][1]@v869, mem_mem/.__MEM_CELL[8][2]@v870, mem_mem/.__MEM_CELL[8][3]@v871, mem_mem/.__MEM_CELL[8][4]@v872, mem_mem/.__MEM_CELL[8][5]@v873, mem_mem/.__MEM_CELL[8][6]@v874, mem_mem/.__MEM_CELL[8][7]@v875, mem_mem/.__MEM_CELL[9][0]@v876, mem_mem/.__MEM_CELL[9][1]@v877, mem_mem/.__MEM_CELL[9][2]@v878, mem_mem/.__MEM_CELL[9][3]@v879, mem_mem/.__MEM_CELL[9][4]@v880, mem_mem/.__MEM_CELL[9][5]@v881, mem_mem/.__MEM_CELL[9][6]@v882, mem_mem/.__MEM_CELL[9][7]@v883, mem_mem/.__MEM_CELL[10][0]@v884, mem_mem/.__MEM_CELL[10][1]@v885, mem_mem/.__MEM_CELL[10][2]@v886, mem_mem/.__MEM_CELL[10][3]@v887, mem_mem/.__MEM_CELL[10][4]@v888, mem_mem/.__MEM_CELL[10][5]@v889, mem_mem/.__MEM_CELL[10][6]@v890, mem_mem/.__MEM_CELL[10][7]@v891, mem_mem/.__MEM_CELL[11][0]@v892, mem_mem/.__MEM_CELL[11][1]@v893, mem_mem/.__MEM_CELL[11][2]@v894, mem_mem/.__MEM_CELL[11][3]@v895, mem_mem/.__MEM_CELL[11][4]@v896, mem_mem/.__MEM_CELL[11][5]@v897, mem_mem/.__MEM_CELL[11][6]@v898, mem_mem/.__MEM_CELL[11][7]@v899, mem_mem/.__MEM_CELL[12][0]@v900, mem_mem/.__MEM_CELL[12][1]@v901, mem_mem/.__MEM_CELL[12][2]@v902, mem_mem/.__MEM_CELL[12][3]@v903, mem_mem/.__MEM_CELL[12][4]@v904, mem_mem/.__MEM_CELL[12][5]@v905, mem_mem/.__MEM_CELL[12][6]@v906, mem_mem/.__MEM_CELL[12][7]@v907, mem_mem/.__MEM_CELL[13][0]@v908, mem_mem/.__MEM_CELL[13][1]@v909, mem_mem/.__MEM_CELL[13][2]@v910, mem_mem/.__MEM_CELL[13][3]@v911, mem_mem/.__MEM_CELL[13][4]@v912, mem_mem/.__MEM_CELL[13][5]@v913, mem_mem/.__MEM_CELL[13][6]@v914, mem_mem/.__MEM_CELL[13][7]@v915, mem_mem/.__MEM_CELL[14][0]@v916, mem_mem/.__MEM_CELL[14][1]@v917, mem_mem/.__MEM_CELL[14][2]@v918, mem_mem/.__MEM_CELL[14][3]@v919, mem_mem/.__MEM_CELL[14][4]@v920, mem_mem/.__MEM_CELL[14][5]@v921, mem_mem/.__MEM_CELL[14][6]@v922, mem_mem/.__MEM_CELL[14][7]@v923, mem_mem/.__MEM_CELL[15][0]@v924, mem_mem/.__MEM_CELL[15][1]@v925, mem_mem/.__MEM_CELL[15][2]@v926, mem_mem/.__MEM_CELL[15][3]@v927, mem_mem/.__MEM_CELL[15][4]@v928, mem_mem/.__MEM_CELL[15][5]@v929, mem_mem/.__MEM_CELL[15][6]@v930, mem_mem/.__MEM_CELL[15][7]@v931, mem_mem/.__MEM_CELL[16][0]@v932, mem_mem/.__MEM_CELL[16][1]@v933, mem_mem/.__MEM_CELL[16][2]@v934, mem_mem/.__MEM_CELL[16][3]@v935, mem_mem/.__MEM_CELL[16][4]@v936, mem_mem/.__MEM_CELL[16][5]@v937, mem_mem/.__MEM_CELL[16][6]@v938, mem_mem/.__MEM_CELL[16][7]@v939, mem_mem/.__MEM_CELL[17][0]@v940, mem_mem/.__MEM_CELL[17][1]@v941, mem_mem/.__MEM_CELL[17][2]@v942, mem_mem/.__MEM_CELL[17][3]@v943, mem_mem/.__MEM_CELL[17][4]@v944, mem_mem/.__MEM_CELL[17][5]@v945, mem_mem/.__MEM_CELL[17][6]@v946, mem_mem/.__MEM_CELL[17][7]@v947, mem_mem/.__MEM_CELL[18][0]@v948, mem_mem/.__MEM_CELL[18][1]@v949, mem_mem/.__MEM_CELL[18][2]@v950, mem_mem/.__MEM_CELL[18][3]@v951, mem_mem/.__MEM_CELL[18][4]@v952, mem_mem/.__MEM_CELL[18][5]@v953, mem_mem/.__MEM_CELL[18][6]@v954, mem_mem/.__MEM_CELL[18][7]@v955, mem_mem/.__MEM_CELL[19][0]@v956, mem_mem/.__MEM_CELL[19][1]@v957, mem_mem/.__MEM_CELL[19][2]@v958, mem_mem/.__MEM_CELL[19][3]@v959, mem_mem/.__MEM_CELL[19][4]@v960, mem_mem/.__MEM_CELL[19][5]@v961, mem_mem/.__MEM_CELL[19][6]@v962, mem_mem/.__MEM_CELL[19][7]@v963, mem_mem/.__MEM_CELL[20][0]@v964, mem_mem/.__MEM_CELL[20][1]@v965, mem_mem/.__MEM_CELL[20][2]@v966, mem_mem/.__MEM_CELL[20][3]@v967, mem_mem/.__MEM_CELL[20][4]@v968, mem_mem/.__MEM_CELL[20][5]@v969, mem_mem/.__MEM_CELL[20][6]@v970, mem_mem/.__MEM_CELL[20][7]@v971, mem_mem/.__MEM_CELL[21][0]@v972, mem_mem/.__MEM_CELL[21][1]@v973, mem_mem/.__MEM_CELL[21][2]@v974, mem_mem/.__MEM_CELL[21][3]@v975, mem_mem/.__MEM_CELL[21][4]@v976, mem_mem/.__MEM_CELL[21][5]@v977, mem_mem/.__MEM_CELL[21][6]@v978, mem_mem/.__MEM_CELL[21][7]@v979, mem_mem/.__MEM_CELL[22][0]@v980, mem_mem/.__MEM_CELL[22][1]@v981, mem_mem/.__MEM_CELL[22][2]@v982, mem_mem/.__MEM_CELL[22][3]@v983, mem_mem/.__MEM_CELL[22][4]@v984, mem_mem/.__MEM_CELL[22][5]@v985, mem_mem/.__MEM_CELL[22][6]@v986, mem_mem/.__MEM_CELL[22][7]@v987, mem_mem/.__MEM_CELL[23][0]@v988, mem_mem/.__MEM_CELL[23][1]@v989, mem_mem/.__MEM_CELL[23][2]@v990, mem_mem/.__MEM_CELL[23][3]@v991, mem_mem/.__MEM_CELL[23][4]@v992, mem_mem/.__MEM_CELL[23][5]@v993, mem_mem/.__MEM_CELL[23][6]@v994, mem_mem/.__MEM_CELL[23][7]@v995, mem_mem/.__MEM_CELL[24][0]@v996, mem_mem/.__MEM_CELL[24][1]@v997, mem_mem/.__MEM_CELL[24][2]@v998, mem_mem/.__MEM_CELL[24][3]@v999, mem_mem/.__MEM_CELL[24][4]@v1000, mem_mem/.__MEM_CELL[24][5]@v1001, mem_mem/.__MEM_CELL[24][6]@v1002, mem_mem/.__MEM_CELL[24][7]@v1003, mem_mem/.__MEM_CELL[25][0]@v1004, mem_mem/.__MEM_CELL[25][1]@v1005, mem_mem/.__MEM_CELL[25][2]@v1006, mem_mem/.__MEM_CELL[25][3]@v1007, mem_mem/.__MEM_CELL[25][4]@v1008, mem_mem/.__MEM_CELL[25][5]@v1009, mem_mem/.__MEM_CELL[25][6]@v1010, mem_mem/.__MEM_CELL[25][7]@v1011, mem_mem/.__MEM_CELL[26][0]@v1012, mem_mem/.__MEM_CELL[26][1]@v1013, mem_mem/.__MEM_CELL[26][2]@v1014, mem_mem/.__MEM_CELL[26][3]@v1015, mem_mem/.__MEM_CELL[26][4]@v1016, mem_mem/.__MEM_CELL[26][5]@v1017, mem_mem/.__MEM_CELL[26][6]@v1018, mem_mem/.__MEM_CELL[26][7]@v1019, mem_mem/.__MEM_CELL[27][0]@v1020, mem_mem/.__MEM_CELL[27][1]@v1021, mem_mem/.__MEM_CELL[27][2]@v1022, mem_mem/.__MEM_CELL[27][3]@v1023, mem_mem/.__MEM_CELL[27][4]@v1024, mem_mem/.__MEM_CELL[27][5]@v1025, mem_mem/.__MEM_CELL[27][6]@v1026, mem_mem/.__MEM_CELL[27][7]@v1027, mem_mem/.__MEM_CELL[28][0]@v1028, mem_mem/.__MEM_CELL[28][1]@v1029, mem_mem/.__MEM_CELL[28][2]@v1030, mem_mem/.__MEM_CELL[28][3]@v1031, mem_mem/.__MEM_CELL[28][4]@v1032, mem_mem/.__MEM_CELL[28][5]@v1033, mem_mem/.__MEM_CELL[28][6]@v1034, mem_mem/.__MEM_CELL[28][7]@v1035, mem_mem/.__MEM_CELL[29][0]@v1036, mem_mem/.__MEM_CELL[29][1]@v1037, mem_mem/.__MEM_CELL[29][2]@v1038, mem_mem/.__MEM_CELL[29][3]@v1039, mem_mem/.__MEM_CELL[29][4]@v1040, mem_mem/.__MEM_CELL[29][5]@v1041, mem_mem/.__MEM_CELL[29][6]@v1042, mem_mem/.__MEM_CELL[29][7]@v1043, mem_mem/.__MEM_CELL[30][0]@v1044, mem_mem/.__MEM_CELL[30][1]@v1045, mem_mem/.__MEM_CELL[30][2]@v1046, mem_mem/.__MEM_CELL[30][3]@v1047, mem_mem/.__MEM_CELL[30][4]@v1048, mem_mem/.__MEM_CELL[30][5]@v1049, mem_mem/.__MEM_CELL[30][6]@v1050, mem_mem/.__MEM_CELL[30][7]@v1051, mem_mem/.__MEM_CELL[31][0]@v1052, mem_mem/.__MEM_CELL[31][1]@v1053, mem_mem/.__MEM_CELL[31][2]@v1054, mem_mem/.__MEM_CELL[31][3]@v1055, mem_mem/.__MEM_CELL[31][4]@v1056, mem_mem/.__MEM_CELL[31][5]@v1057, mem_mem/.__MEM_CELL[31][6]@v1058, mem_mem/.__MEM_CELL[31][7]@v1059]
+SEC diag: extract(top) observed_support pc[0] = [v14, v15, v16, v17, v18, v19, v20, v28, v804, v812, v820, v828, v836, v844, v852, v860, v868, v876, v884, v892, v900, v908, v916, v924, v932, v940, v948, v956, v964, v972, v980, v988, v996, v1004, v1012, v1020, v1028, v1036, v1044, v1052]
+SEC diag: extract(top) observed_support pc[1] = [v14, v15, v16, v17, v18, v19, v20, v27, v805, v813, v821, v829, v837, v845, v853, v861, v869, v877, v885, v893, v901, v909, v917, v925, v933, v941, v949, v957, v965, v973, v981, v989, v997, v1005, v1013, v1021, v1029, v1037, v1045, v1053]
+SEC diag: extract(top) observed_support pc[2] = [v14, v15, v16, v17, v18, v19, v20, v26, v806, v814, v822, v830, v838, v846, v854, v862, v870, v878, v886, v894, v902, v910, v918, v926, v934, v942, v950, v958, v966, v974, v982, v990, v998, v1006, v1014, v1022, v1030, v1038, v1046, v1054]
+SEC diag: extract(top) observed_support pc[3] = [v14, v15, v16, v17, v18, v19, v20, v25, v807, v815, v823, v831, v839, v847, v855, v863, v871, v879, v887, v895, v903, v911, v919, v927, v935, v943, v951, v959, v967, v975, v983, v991, v999, v1007, v1015, v1023, v1031, v1039, v1047, v1055]
+SEC diag: extract(top) observed_support pc[4] = [v14, v15, v16, v17, v18, v19, v20, v24, v808, v816, v824, v832, v840, v848, v856, v864, v872, v880, v888, v896, v904, v912, v920, v928, v936, v944, v952, v960, v968, v976, v984, v992, v1000, v1008, v1016, v1024, v1032, v1040, v1048, v1056]
+SEC diag: extract(top) observed_support pc[5] = [v14, v15, v16, v17, v18, v19, v20, v23, v809, v817, v825, v833, v841, v849, v857, v865, v873, v881, v889, v897, v905, v913, v921, v929, v937, v945, v953, v961, v969, v977, v985, v993, v1001, v1009, v1017, v1025, v1033, v1041, v1049, v1057]
+SEC diag: extract(top) observed_support pc[6] = [v14, v15, v16, v17, v18, v19, v20, v22, v810, v818, v826, v834, v842, v850, v858, v866, v874, v882, v890, v898, v906, v914, v922, v930, v938, v946, v954, v962, v970, v978, v986, v994, v1002, v1010, v1018, v1026, v1034, v1042, v1050, v1058]
+SEC diag: extract(top) observed_support pc[7] = [v14, v15, v16, v17, v18, v19, v20, v21, v811, v819, v827, v835, v843, v851, v859, v867, v875, v883, v891, v899, v907, v915, v923, v931, v939, v947, v955, v963, v971, v979, v987, v995, v1003, v1011, v1019, v1027, v1035, v1043, v1051, v1059]
+SEC diag: extract(top) end
+SEC diag: extracted design1
+SEC diag: start run from extracted models
+SEC diag: aligning inputs/outputs
+SEC diag: checked_outputs=8 total_outputs=8 skipped=0
+SEC diag: aligned_inputs=12 aligned_outputs=8 state_bits0=262 state_bits1=271
+SEC diag: reset bootstrap cycles=3 ports=1
+SEC diag: dual-rail mode keeps reset-unanchored outputs in the rail-encoded proof
+SEC diag: dual-rail output requires engine proof: pc[0]
+SEC diag: dual-rail output requires engine proof: pc[1]
+SEC diag: dual-rail output requires engine proof: pc[2]
+SEC diag: dual-rail output requires engine proof: pc[3]
+SEC diag: dual-rail output requires engine proof: pc[4]
+SEC diag: dual-rail output requires engine proof: pc[5]
+SEC diag: dual-rail output requires engine proof: pc[6]
+SEC diag: dual-rail output requires engine proof: pc[7]
+SEC summary: encoding=dual_rail_steady rail_state_bits=1066 rail_outputs=8 dual_rail_state_relation_pairs=0
+SEC diag: internal relations round=0 partition=0..256 vars=23686 status=sat conflicts=2 decisions=22332 ticks=51432
+SEC diag: internal relation refuted: mem_mem/.__MEM_CELL[0][0] ~ mem_mem/.__MEM_CELL[0][0]
+SEC diag: internal relations round=0 active=262 structural=6 refuted=93 seconds=0.7
+SEC diag: internal relations round=1 partition=0..163 vars=19404 status=sat conflicts=2 decisions=24048 ticks=44727
+SEC diag: internal relations round=1 active=169 structural=6 refuted=10 seconds=0.5
+SEC diag: internal relations round=2 partition=0..153 vars=18596 status=sat conflicts=2 decisions=14785 ticks=34104
+SEC diag: internal relation refuted: mem_mem/.__MEM_CELL[4][0] ~ mem_mem/.__MEM_CELL[4][0]
+SEC diag: internal relations round=2 active=159 structural=6 refuted=1 seconds=0.5
+SEC diag: internal relations round=3 partition=0..152 vars=18524 status=sat conflicts=0 decisions=0 ticks=4
+SEC diag: internal relations round=3 active=158 structural=6 refuted=1 seconds=0.5
+SEC diag: internal relations round=4 partition=0..151 vars=18700 status=sat conflicts=2 decisions=14750 ticks=34386
+SEC diag: internal relations round=4 active=157 structural=6 refuted=2 seconds=0.5
+SEC diag: internal relations round=5 partition=0..149 vars=18521 status=sat conflicts=568 decisions=69395 ticks=801611
+SEC diag: internal relations round=5 active=155 structural=6 refuted=1 seconds=0.4
+SEC diag: internal relations round=6 partition=0..148 vars=18723 status=sat conflicts=219 decisions=23501 ticks=182807
+SEC diag: internal relations round=6 active=154 structural=6 refuted=2 seconds=0.7
+SEC diag: internal relations round=7 partition=0..146 vars=18533 status=sat conflicts=224 decisions=23135 ticks=179627
+SEC diag: internal relations round=7 active=152 structural=6 refuted=2 seconds=0.6
+SEC diag: internal relations round=8 partition=0..144 vars=18271 status=sat conflicts=222 decisions=29082 ticks=199978
+SEC diag: internal relations round=8 active=150 structural=6 refuted=2 seconds=0.4
+SEC diag: internal relations round=9 partition=0..142 vars=18113 status=sat conflicts=218 decisions=29352 ticks=193004
+SEC diag: internal relations round=9 active=148 structural=6 refuted=2 seconds=0.4
+SEC diag: internal relations round=10 partition=0..140 vars=17930 status=sat conflicts=216 decisions=23643 ticks=170814
+SEC diag: internal relations round=10 active=146 structural=6 refuted=2 seconds=0.3
+SEC diag: internal relations round=11 partition=0..138 vars=17779 status=sat conflicts=210 decisions=24215 ticks=175440
+SEC diag: internal relations round=11 active=144 structural=6 refuted=2 seconds=0.3
+SEC diag: internal relations round=12 partition=0..136 vars=17734 status=sat conflicts=417 decisions=82619 ticks=491995
+SEC diag: internal relations round=12 active=142 structural=6 refuted=1 seconds=0.3
+SEC diag: internal relations round=13 partition=0..135 vars=17985 status=sat conflicts=250 decisions=90526 ticks=322080
+SEC diag: internal relations round=13 active=141 structural=6 refuted=1 seconds=0.3
+SEC diag: internal relations round=14 partition=0..134 vars=17714 status=sat conflicts=417 decisions=81534 ticks=490632
+SEC diag: internal relations round=14 active=140 structural=6 refuted=2 seconds=0.3
+SEC diag: internal relations round=15 partition=0..132 vars=17590 status=sat conflicts=462 decisions=25419 ticks=513523
+SEC diag: internal relations round=15 active=138 structural=6 refuted=2 seconds=0.3
+SEC diag: internal relations round=16 partition=0..130 vars=17485 status=sat conflicts=458 decisions=24799 ticks=480932
+SEC diag: internal relations round=16 active=136 structural=6 refuted=2 seconds=0.3
+SEC diag: internal relations round=17 partition=0..128 vars=16962 status=sat conflicts=452 decisions=24692 ticks=469199
+SEC diag: internal relations round=17 active=134 structural=6 refuted=1 seconds=0.3
+SEC diag: internal relations round=18 partition=0..127 vars=17090 status=sat conflicts=2 decisions=15244 ticks=33085
+SEC diag: internal relations round=18 active=133 structural=6 refuted=1 seconds=0.3
+SEC diag: internal relations round=19 partition=0..126 vars=16955 status=sat conflicts=0 decisions=0 ticks=4
+SEC diag: internal relations round=19 active=132 structural=6 refuted=1 seconds=0.3
+SEC diag: internal relations round=20 partition=0..125 vars=16967 status=sat conflicts=2 decisions=15318 ticks=32771
+SEC diag: internal relations round=20 active=131 structural=6 refuted=1 seconds=0.3
+SEC diag: internal relations round=21 partition=0..124 vars=16736 status=sat conflicts=430 decisions=23890 ticks=458317
+SEC diag: internal relations round=21 active=130 structural=6 refuted=1 seconds=0.3
+SEC diag: internal relations round=22 partition=0..123 vars=16553 status=sat conflicts=430 decisions=27598 ticks=440955
+SEC diag: internal relations round=22 active=129 structural=6 refuted=1 seconds=0.3
+SEC diag: internal relations round=23 partition=0..122 vars=17042 status=sat conflicts=431 decisions=24092 ticks=430589
+SEC diag: internal relations round=23 active=128 structural=6 refuted=1 seconds=0.3
+SEC diag: internal relations round=24 partition=0..121 vars=16552 status=sat conflicts=417 decisions=24012 ticks=440153
+SEC diag: internal relations round=24 active=127 structural=6 refuted=1 seconds=0.6
+SEC diag: internal relations round=25 partition=0..120 vars=16669 status=sat conflicts=12 decisions=15418 ticks=38036
+SEC diag: internal relations round=25 active=126 structural=6 refuted=1 seconds=0.5
+SEC diag: internal relations round=26 partition=0..119 vars=16308 status=sat conflicts=417 decisions=27554 ticks=422474
+SEC diag: internal relations round=26 active=125 structural=6 refuted=1 seconds=0.4
+SEC diag: internal relations round=27 partition=0..118 vars=16486 status=sat conflicts=405 decisions=27128 ticks=412677
+SEC diag: internal relations round=27 active=124 structural=6 refuted=1 seconds=0.3
+SEC diag: internal relations round=28 partition=0..117 vars=16523 status=sat conflicts=0 decisions=0 ticks=4
+SEC diag: internal relations round=28 active=123 structural=6 refuted=1 seconds=0.2
+SEC diag: internal relations round=29 partition=0..116 vars=16724 status=sat conflicts=0 decisions=0 ticks=0
+SEC diag: internal relations round=29 active=122 structural=6 refuted=1 seconds=0.1
+SEC diag: internal relations round=30 partition=0..115 vars=16592 status=sat conflicts=495 decisions=24231 ticks=488017
+SEC diag: internal relations round=30 active=121 structural=6 refuted=6 seconds=0.3
+SEC diag: internal relations round=31 partition=0..109 vars=16204 status=sat conflicts=409 decisions=26317 ticks=380579
+SEC diag: internal relation refuted: mem_mem/.__MEM_CELL[3][1] ~ mem_mem/.__MEM_CELL[3][1]
+SEC diag: internal relations round=31 active=115 structural=6 refuted=2 seconds=0.4
+SEC diag: internal relations round=32 partition=0..107 vars=15698 status=sat conflicts=0 decisions=0 ticks=0
+SEC diag: internal relations round=32 active=113 structural=6 refuted=1 seconds=0.1
+SEC diag: internal relations round=33 partition=0..106 vars=15627 status=sat conflicts=0 decisions=0 ticks=4
+SEC diag: internal relation refuted: mem_mem/.__MEM_CELL[5][1] ~ mem_mem/.__MEM_CELL[5][1]
+SEC diag: internal relations round=33 active=112 structural=6 refuted=1 seconds=0.3
+SEC diag: internal relations round=34 partition=0..105 vars=15658 status=sat conflicts=0 decisions=0 ticks=0
+SEC diag: internal relations round=34 active=111 structural=6 refuted=2 seconds=0.1
+SEC diag: internal relations round=35 partition=0..103 vars=15287 status=sat conflicts=161 decisions=23065 ticks=137483
+SEC diag: internal relations round=35 active=109 structural=6 refuted=5 seconds=0.2
+SEC diag: internal relations round=36 partition=0..98 vars=14851 status=sat conflicts=0 decisions=0 ticks=0
+SEC diag: internal relations round=36 active=104 structural=6 refuted=1 seconds=0.1
+SEC diag: internal relations round=37 partition=0..97 vars=14665 status=sat conflicts=0 decisions=0 ticks=4
+SEC diag: internal relations round=37 active=103 structural=6 refuted=1 seconds=0.2
+SEC diag: internal relations round=38 partition=0..96 vars=15191 status=sat conflicts=159 decisions=23402 ticks=136834
+SEC diag: internal relations round=38 active=102 structural=6 refuted=1 seconds=0.4
+SEC diag: internal relations round=39 partition=0..95 vars=14999 status=sat conflicts=156 decisions=23490 ticks=133188
+SEC diag: internal relations round=39 active=101 structural=6 refuted=1 seconds=0.5
+SEC diag: internal relations round=40 partition=0..94 vars=14925 status=sat conflicts=140 decisions=23017 ticks=113527
+SEC diag: internal relations round=40 active=100 structural=6 refuted=1 seconds=0.2
+SEC diag: internal relations round=41 partition=0..93 vars=14783 status=sat conflicts=193 decisions=23871 ticks=180214
+SEC diag: internal relations round=41 active=99 structural=6 refuted=1 seconds=0.2
+SEC diag: internal relations round=42 partition=0..92 vars=14747 status=sat conflicts=0 decisions=0 ticks=4
+SEC diag: internal relations round=42 active=98 structural=6 refuted=1 seconds=0.2
+SEC diag: internal relations round=43 partition=0..91 vars=14727 status=sat conflicts=186 decisions=23746 ticks=164573
+SEC diag: internal relations round=43 active=97 structural=6 refuted=1 seconds=0.2
+SEC diag: internal relations round=44 partition=0..90 vars=14615 status=sat conflicts=132 decisions=23061 ticks=94893
+SEC diag: internal relations round=44 active=96 structural=6 refuted=1 seconds=0.2
+SEC diag: internal relations round=45 partition=0..89 vars=14642 status=sat conflicts=131 decisions=23042 ticks=89047
+SEC diag: internal relations round=45 active=95 structural=6 refuted=1 seconds=0.2
+SEC diag: internal relations round=46 partition=0..88 vars=14520 status=sat conflicts=0 decisions=0 ticks=0
+SEC diag: internal relations round=46 active=94 structural=6 refuted=1 seconds=0.1
+SEC diag: internal relations round=47 partition=0..87 vars=14452 status=sat conflicts=2 decisions=16036 ticks=30295
+SEC diag: internal relations round=47 active=93 structural=6 refuted=1 seconds=0.2
+SEC diag: internal relations round=48 partition=0..86 vars=14283 status=sat conflicts=129 decisions=23329 ticks=91407
+SEC diag: internal relations round=48 active=92 structural=6 refuted=1 seconds=0.2
+SEC diag: internal relations round=49 partition=0..85 vars=14295 status=sat conflicts=131 decisions=23325 ticks=85305
+SEC diag: internal relations round=49 active=91 structural=6 refuted=1 seconds=0.2
+SEC diag: internal relations round=50 partition=0..84 vars=14263 status=sat conflicts=126 decisions=23348 ticks=84931
+SEC diag: internal relations round=50 active=90 structural=6 refuted=1 seconds=0.2
+SEC diag: internal relations round=51 partition=0..83 vars=14086 status=sat conflicts=125 decisions=23488 ticks=83486
+SEC diag: internal relations round=51 active=89 structural=6 refuted=1 seconds=0.2
+SEC diag: internal relations round=52 partition=0..82 vars=14140 status=sat conflicts=124 decisions=23984 ticks=91732
+SEC diag: internal relations round=52 active=88 structural=6 refuted=1 seconds=0.2
+SEC diag: internal relations round=53 partition=0..81 vars=13786 status=sat conflicts=0 decisions=0 ticks=4
+SEC diag: internal relations round=53 active=87 structural=6 refuted=1 seconds=0.2
+SEC diag: internal relations round=54 partition=0..80 vars=13921 status=sat conflicts=312 decisions=51940 ticks=247362
+SEC diag: internal relations round=54 active=86 structural=6 refuted=1 seconds=0.5
+SEC diag: internal relations round=55 partition=0..79 vars=13944 status=sat conflicts=279 decisions=49913 ticks=236897
+SEC diag: internal relations round=55 active=85 structural=6 refuted=1 seconds=0.2
+SEC diag: internal relations round=56 partition=0..78 vars=13602 status=sat conflicts=237 decisions=57621 ticks=207902
+SEC diag: internal relations round=56 active=84 structural=6 refuted=1 seconds=0.2
+SEC diag: internal relations round=57 partition=0..77 vars=13516 status=sat conflicts=284 decisions=33167 ticks=168163
+SEC diag: internal relations round=57 active=83 structural=6 refuted=3 seconds=0.2
+SEC diag: internal relations round=58 partition=0..74 vars=13254 status=sat conflicts=234 decisions=34194 ticks=144209
+SEC diag: internal relations round=58 active=80 structural=6 refuted=1 seconds=0.2
+SEC diag: internal relations round=59 partition=0..73 vars=13213 status=sat conflicts=232 decisions=25763 ticks=120137
+SEC diag: internal relations round=59 active=79 structural=6 refuted=1 seconds=0.3
+SEC diag: internal relations round=60 partition=0..72 vars=13252 status=sat conflicts=0 decisions=0 ticks=0
+SEC diag: internal relations round=60 active=78 structural=6 refuted=1 seconds=0.1
+SEC diag: internal relations round=61 partition=0..71 vars=13385 status=sat conflicts=207 decisions=26381 ticks=157056
+SEC diag: internal relations round=61 active=77 structural=6 refuted=3 seconds=0.2
+SEC diag: internal relations round=62 partition=0..68 vars=13042 status=sat conflicts=207 decisions=26249 ticks=142410
+SEC diag: internal relations round=62 active=74 structural=6 refuted=1 seconds=0.2
+SEC diag: internal relations round=63 partition=0..67 vars=12911 status=sat conflicts=275 decisions=27643 ticks=176593
+SEC diag: internal relations round=63 active=73 structural=6 refuted=2 seconds=0.2
+SEC diag: internal relations round=0 partition=0..256 vars=10677 status=sat conflicts=496 decisions=11882 ticks=38950
+SEC diag: internal relations round=0 active=262 structural=6 refuted=8 seconds=0.2
+SEC diag: internal relations round=1 partition=0..248 vars=10415 status=sat conflicts=480 decisions=11749 ticks=44343
+SEC diag: internal relations round=1 active=254 structural=6 refuted=8 seconds=0.1
+SEC diag: internal relations round=2 partition=0..240 vars=10459 status=sat conflicts=464 decisions=11984 ticks=47084
+SEC diag: internal relations round=2 active=246 structural=6 refuted=8 seconds=0.1
+SEC diag: internal relations round=3 partition=0..232 vars=10055 status=sat conflicts=448 decisions=11814 ticks=36549
+SEC diag: internal relations round=3 active=238 structural=6 refuted=8 seconds=0.1
+SEC diag: internal relations round=4 partition=0..224 vars=9973 status=sat conflicts=432 decisions=11988 ticks=43388
+SEC diag: internal relations round=4 active=230 structural=6 refuted=8 seconds=0.1
+SEC diag: internal relations round=5 partition=0..216 vars=9615 status=sat conflicts=416 decisions=11942 ticks=38660
+SEC diag: internal relations round=5 active=222 structural=6 refuted=8 seconds=0.2
+SEC diag: internal relations round=6 partition=0..208 vars=9348 status=sat conflicts=400 decisions=12038 ticks=41292
+SEC diag: internal relations round=6 active=214 structural=6 refuted=8 seconds=0.4
+SEC diag: internal relations round=7 partition=0..200 vars=9247 status=sat conflicts=384 decisions=12086 ticks=39164
+SEC diag: internal relations round=7 active=206 structural=6 refuted=8 seconds=0.1
+SEC diag: internal relations round=8 partition=0..192 vars=9156 status=sat conflicts=368 decisions=12285 ticks=39372
+SEC diag: internal relations round=8 active=198 structural=6 refuted=8 seconds=0.1
+SEC diag: internal relations round=9 partition=0..184 vars=8913 status=sat conflicts=352 decisions=12233 ticks=34969
+SEC diag: internal relations round=9 active=190 structural=6 refuted=8 seconds=0.1
+SEC diag: internal relations round=10 partition=0..176 vars=8653 status=sat conflicts=336 decisions=12106 ticks=30672
+SEC diag: internal relations round=10 active=182 structural=6 refuted=8 seconds=0.1
+SEC diag: internal relations round=11 partition=0..168 vars=8488 status=sat conflicts=321 decisions=12123 ticks=31872
+SEC diag: internal relations round=11 active=174 structural=6 refuted=8 seconds=0.1
+SEC diag: internal relations round=12 partition=0..160 vars=8685 status=sat conflicts=304 decisions=12581 ticks=30230
+SEC diag: internal relations round=12 active=166 structural=6 refuted=8 seconds=0.1
+SEC diag: internal relations round=13 partition=0..152 vars=8064 status=sat conflicts=288 decisions=7976 ticks=28685
+SEC diag: internal relations round=13 active=158 structural=6 refuted=8 seconds=0.1
+SEC diag: internal relations round=14 partition=0..144 vars=8112 status=sat conflicts=272 decisions=8316 ticks=28413
+SEC diag: internal relations round=14 active=150 structural=6 refuted=8 seconds=0.2
+SEC diag: internal relations round=15 partition=0..136 vars=7974 status=sat conflicts=256 decisions=8358 ticks=23007
+SEC diag: internal relations round=15 active=142 structural=6 refuted=8 seconds=0.1
+SEC diag: internal relations round=16 partition=0..128 vars=7504 status=sat conflicts=240 decisions=7822 ticks=26723
+SEC diag: internal relations round=16 active=134 structural=6 refuted=8 seconds=0.1
+SEC diag: internal relations round=17 partition=0..120 vars=7487 status=sat conflicts=224 decisions=27335 ticks=56013
+SEC diag: internal relations round=17 active=126 structural=6 refuted=8 seconds=0.1
+SEC diag: internal relations round=18 partition=0..112 vars=7010 status=sat conflicts=208 decisions=7636 ticks=21507
+SEC diag: internal relations round=18 active=118 structural=6 refuted=8 seconds=0.4
+SEC diag: internal relations round=19 partition=0..104 vars=6898 status=sat conflicts=192 decisions=8129 ticks=22767
+SEC diag: internal relations round=19 active=110 structural=6 refuted=8 seconds=0.4
+SEC diag: internal relations round=20 partition=0..96 vars=6503 status=sat conflicts=170 decisions=7988 ticks=19201
+SEC diag: internal relations round=20 active=102 structural=6 refuted=8 seconds=0.2
+SEC diag: internal relations round=21 partition=0..88 vars=6338 status=sat conflicts=154 decisions=7809 ticks=18442
+SEC diag: internal relations round=21 active=94 structural=6 refuted=8 seconds=0.1
+SEC diag: internal relations round=22 partition=0..80 vars=6125 status=sat conflicts=138 decisions=8107 ticks=17709
+SEC diag: internal relations round=22 active=86 structural=6 refuted=8 seconds=0.1
+SEC diag: internal relations round=23 partition=0..72 vars=5758 status=sat conflicts=122 decisions=14038 ticks=25628
+SEC diag: internal relations round=23 active=78 structural=6 refuted=8 seconds=0.2
+SEC diag: internal relations round=24 partition=0..64 vars=5357 status=sat conflicts=106 decisions=8023 ticks=15597
+SEC diag: internal relations round=24 active=70 structural=6 refuted=8 seconds=0.4
+SEC diag: internal relations round=25 partition=0..56 vars=5243 status=sat conflicts=91 decisions=7905 ticks=16063
+SEC diag: internal relations round=25 active=62 structural=6 refuted=8 seconds=0.1
+SEC diag: internal relations round=26 partition=0..48 vars=4969 status=sat conflicts=74 decisions=8173 ticks=15041
+SEC diag: internal relations round=26 active=54 structural=6 refuted=8 seconds=0.1
+SEC diag: internal relations round=27 partition=0..40 vars=4583 status=sat conflicts=58 decisions=8329 ticks=13672
+SEC diag: internal relations round=27 active=46 structural=6 refuted=8 seconds=0.1
+SEC diag: internal relations round=28 partition=0..32 vars=4498 status=sat conflicts=42 decisions=8376 ticks=12271
+SEC diag: internal relations round=28 active=38 structural=6 refuted=8 seconds=0.1
+SEC diag: internal relations round=29 partition=0..24 vars=4195 status=sat conflicts=26 decisions=4125 ticks=6969
+SEC diag: internal relations round=29 active=30 structural=6 refuted=8 seconds=0.0
+SEC diag: internal relations round=30 partition=0..16 vars=3941 status=sat conflicts=10 decisions=3931 ticks=6119
+SEC diag: internal relations round=30 active=22 structural=6 refuted=8 seconds=0.0
+SEC diag: internal relations round=31 partition=0..8 vars=3645 status=sat conflicts=0 decisions=0 ticks=0
+SEC diag: internal relations round=31 active=14 structural=6 refuted=3 seconds=0.0
+SEC diag: internal relations round=32 partition=0..5 vars=2299 status=sat conflicts=0 decisions=0 ticks=0
+SEC diag: internal relation refuted: mem_mem/.__MEM_CELL[0][2] ~ mem_mem/.__MEM_CELL[0][2]
+SEC diag: internal relations round=32 active=11 structural=6 refuted=3 seconds=0.0
+SEC diag: internal relations round=33 partition=0..2 vars=1007 status=sat conflicts=0 decisions=0 ticks=0
+SEC diag: internal relation refuted: mem_mem/.__MEM_CELL[0][0] ~ mem_mem/.__MEM_CELL[0][0]
+SEC diag: internal relation refuted: mem_mem/.__MEM_CELL[0][1] ~ mem_mem/.__MEM_CELL[0][1]
+SEC diag: internal relations round=33 active=8 structural=6 refuted=2 seconds=0.0
+SEC diag: internal relations round=34 active=6 structural=6 refuted=0 seconds=0.0
+SEC summary: signal_correspondence scope=registers_and_outputs completed=1 signals=2153 classes=1054 rounds=1 solver_calls=34 proved_outputs=8/8 state_equalities=512 seconds=4.7
+SEC summary: internal_relation_candidates=262 proved_rail_equalities=12 allow_x_equality_in_internal_relations=1 name_candidates=256 net_name_candidates=6 driver_candidates=0 propagated_candidates=0 propagation_rounds=0
+SEC summary: binary_relation_round candidates=262 proved_rail_equalities=12 discharged_outputs=0/8
+SEC summary: structurally_proved_outputs=8 of 8 merged_equalities=524
+SEC diag: merged state symbols=524 identical_output_formulas=8/8
+SEC diag: entering pdr engine
+SEC diag: PDR steady-state check begin index=0 pending_batches=1 output_range=0..8
+SEC diag: PDR steady-state check end index=0 output_range=0..8 status=equivalent bound=1
+[2026-11-20 17:57:39.369] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2769] SEC checked-output coverage: 100.00% (8/8 covered/existing outputs).
+[2026-11-20 17:57:39.369] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2840] No binary-defined difference was found. SEC proved equivalence under the dual-rail steady-state abstraction at k = 1.
+       29,33 real        21,95 user         0,44 sys
+           150454272  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               19773  page reclaims
+                  63  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                  40  voluntary context switches
+               67577  involuntary context switches
+        127379703094  instructions retired
+         61599813496  cycles elapsed
+           150143576  peak memory footprint

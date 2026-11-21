@@ -1,0 +1,148 @@
+[2026-11-20 17:58:11.534] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2334] KEPLER FORMAL: Run.
+[2026-11-20 17:58:11.534] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2407] Input format: SYSTEMVERILOG
+[2026-11-20 17:58:11.534] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2414] SystemVerilog compilation units: one per file
+[2026-11-20 17:58:11.534] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2417] Run log: miter_log_1.txt
+[2026-11-20 17:58:11.534] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:740] Netlist 1: a_aw2_w4.v
+[2026-11-20 17:58:11.534] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:740] Netlist 2: b_aw2_w4.v
+[2026-11-20 17:58:11.534] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2694] Solver: KISSAT
+[2026-11-20 17:58:11.534] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2695] Verification: sec
+[2026-11-20 17:58:11.534] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2697] SEC max_k: 400
+[2026-11-20 17:58:11.534] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2698] SEC engine: pdr
+[2026-11-20 17:58:11.534] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2699] SEC encoding: dual_rail_steady
+[2026-11-20 17:58:11.534] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2705] SEC internal relations: learn=true allow_x_equality=true binary_relation_round=true signal_correspondence=true
+[2026-11-20 17:58:11.534] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2707] SEC reset bootstrap: 3 cycle(s)
+[2026-11-20 17:58:11.534] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2712] SEC reset bootstrap port: rst active=1
+[2026-11-20 17:58:11.534] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2716] Compact mode: disabled
+[2026-11-20 17:58:11.534] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2717] Skipped PO reports: enabled
+[2026-11-20 17:58:11.534] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2718] SEC latch abstraction: enabled
+[2026-11-20 17:58:11.534] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2719] SEC data-enabled latch model: enabled
+[2026-11-20 17:58:11.534] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:3401] Parsing systemverilog file(s) for design 1
+2026-11-20 17:58:11,536 [naja] [info] SystemVerilog diagnostics summary: status=success, no diagnostics; report='naja_sv_diagnostics.log'
+2026-11-20 17:58:11,537 [naja] [info] Found top design: top
+2026-11-20 17:58:11,537 [naja] [info] Parsing systemverilog file(s) for design 2
+2026-11-20 17:58:11,539 [naja] [info] SystemVerilog diagnostics summary: status=success, no diagnostics; report='naja_sv_diagnostics.log'
+2026-11-20 17:58:11,539 [naja] [info] Found top design: top
+SEC diag: start run
+SEC diag: extract(top) collect begin
+SEC diag: extract(top) collect end inputs=15 outputs=32
+SEC diag: extract(top) opaque_reached_outputs=0
+SEC diag: extract(top) initial_observed_outputs=4
+SEC diag: extract(top) build begin
+SEC diag: extract(top) build end
+SEC diag: extract(top) boundary normalized env=8 state=7 outputs=4 pending=3
+SEC diag: extract(top) mapped boundary vars=15
+SEC diag: extract(top) structured memory dependency build begin outputs=19
+SEC diag: extract(top) structured memory dependency build end outputs=19
+SEC diag: extract(top) mapped boundary vars=15
+SEC diag: extract(top) materialized output exprs observed=4 total=46
+SEC diag: top input rst[0] is not clock-only: sequential non-clock pin 65//D (naja_dff)
+SEC diag: top input push[0] is not clock-only: sequential non-clock pin 63//D (naja_dff__w2)
+SEC diag: top input pop[0] is not clock-only: combinational output not clock-only after 61//S (naja_mux2__w2)
+SEC diag: extract(top) immutable clock structure indexed terms=222 pure_terms=4
+SEC diag: extract(top) dependency build begin outputs=4
+SEC diag: extract(top) dependency build end outputs=4
+SEC diag: extract(top) mapped boundary vars=31
+SEC diag: extract(top) rebuilt next-state exprs=23 init=0 data_latches=0
+SEC diag: extract(top) filtered env=8 state=23
+SEC diag: extract(top) structured_memories=1 structured_memory_cells=16
+SEC diag: extract(top) kept_states=[63.Q[0]@v11, 63.Q[1]@v10, 65.Q[0]@v12, mem_mem/.__MEM_CELL[0][0]@v306, mem_mem/.__MEM_CELL[0][1]@v307, mem_mem/.__MEM_CELL[0][2]@v308, mem_mem/.__MEM_CELL[0][3]@v309, mem_mem/.__MEM_CELL[1][0]@v310, mem_mem/.__MEM_CELL[1][1]@v311, mem_mem/.__MEM_CELL[1][2]@v312, mem_mem/.__MEM_CELL[1][3]@v313, mem_mem/.__MEM_CELL[2][0]@v314, mem_mem/.__MEM_CELL[2][1]@v315, mem_mem/.__MEM_CELL[2][2]@v316, mem_mem/.__MEM_CELL[2][3]@v317, mem_mem/.__MEM_CELL[3][0]@v318, mem_mem/.__MEM_CELL[3][1]@v319, mem_mem/.__MEM_CELL[3][2]@v320, mem_mem/.__MEM_CELL[3][3]@v321]
+SEC diag: extract(top) observed_support pc[0] = [v10, v11, v12, v306, v310, v314, v318]
+SEC diag: extract(top) observed_support pc[1] = [v10, v11, v12, v307, v311, v315, v319]
+SEC diag: extract(top) observed_support pc[2] = [v10, v11, v12, v308, v312, v316, v320]
+SEC diag: extract(top) observed_support pc[3] = [v10, v11, v12, v309, v313, v317, v321]
+SEC diag: extract(top) end
+SEC diag: extracted design0
+SEC diag: extract(top) collect begin
+SEC diag: extract(top) collect end inputs=20 outputs=39
+SEC diag: extract(top) opaque_reached_outputs=0
+SEC diag: extract(top) initial_observed_outputs=4
+SEC diag: extract(top) build begin
+SEC diag: extract(top) build end
+SEC diag: extract(top) boundary normalized env=8 state=12 outputs=4 pending=8
+SEC diag: extract(top) mapped boundary vars=20
+SEC diag: extract(top) structured memory dependency build begin outputs=19
+SEC diag: extract(top) structured memory dependency build end outputs=19
+SEC diag: extract(top) mapped boundary vars=20
+SEC diag: extract(top) materialized output exprs observed=4 total=46
+SEC diag: top input rst[0] is not clock-only: sequential non-clock pin 77//D (naja_dff__w4)
+SEC diag: top input push[0] is not clock-only: combinational output not clock-only after 76//A (naja_mux2__w4)
+SEC diag: top input pop[0] is not clock-only: sequential non-clock pin 72//D (naja_dff)
+SEC diag: top input target[3] is not clock-only: sequential non-clock pin 77//D (naja_dff__w4)
+SEC diag: top input target[2] is not clock-only: sequential non-clock pin 77//D (naja_dff__w4)
+SEC diag: top input target[1] is not clock-only: sequential non-clock pin 77//D (naja_dff__w4)
+SEC diag: top input target[0] is not clock-only: combinational output not clock-only after 73//B (naja_mux2__w4)
+SEC diag: extract(top) immutable clock structure indexed terms=317 pure_terms=6
+SEC diag: extract(top) dependency build begin outputs=9
+SEC diag: extract(top) dependency build end outputs=9
+SEC diag: extract(top) mapped boundary vars=36
+SEC diag: extract(top) rebuilt next-state exprs=28 init=0 data_latches=0
+SEC diag: extract(top) filtered env=8 state=28
+SEC diag: extract(top) structured_memories=1 structured_memory_cells=16
+SEC diag: extract(top) kept_states=[64.Q[0]@v11, 64.Q[1]@v10, 66.Q[0]@v12, 72.Q[0]@v13, 77.Q[0]@v17, 77.Q[1]@v16, 77.Q[2]@v15, 77.Q[3]@v14, mem_mem/.__MEM_CELL[0][0]@v431, mem_mem/.__MEM_CELL[0][1]@v432, mem_mem/.__MEM_CELL[0][2]@v433, mem_mem/.__MEM_CELL[0][3]@v434, mem_mem/.__MEM_CELL[1][0]@v435, mem_mem/.__MEM_CELL[1][1]@v436, mem_mem/.__MEM_CELL[1][2]@v437, mem_mem/.__MEM_CELL[1][3]@v438, mem_mem/.__MEM_CELL[2][0]@v439, mem_mem/.__MEM_CELL[2][1]@v440, mem_mem/.__MEM_CELL[2][2]@v441, mem_mem/.__MEM_CELL[2][3]@v442, mem_mem/.__MEM_CELL[3][0]@v443, mem_mem/.__MEM_CELL[3][1]@v444, mem_mem/.__MEM_CELL[3][2]@v445, mem_mem/.__MEM_CELL[3][3]@v446]
+SEC diag: extract(top) observed_support pc[0] = [v10, v11, v12, v13, v17, v431, v435, v439, v443]
+SEC diag: extract(top) observed_support pc[1] = [v10, v11, v12, v13, v16, v432, v436, v440, v444]
+SEC diag: extract(top) observed_support pc[2] = [v10, v11, v12, v13, v15, v433, v437, v441, v445]
+SEC diag: extract(top) observed_support pc[3] = [v10, v11, v12, v13, v14, v434, v438, v442, v446]
+SEC diag: extract(top) end
+SEC diag: extracted design1
+SEC diag: start run from extracted models
+SEC diag: aligning inputs/outputs
+SEC diag: checked_outputs=4 total_outputs=4 skipped=0
+SEC diag: aligned_inputs=8 aligned_outputs=4 state_bits0=19 state_bits1=24
+SEC diag: reset bootstrap cycles=3 ports=1
+SEC diag: dual-rail mode keeps reset-unanchored outputs in the rail-encoded proof
+SEC diag: dual-rail output requires engine proof: pc[0]
+SEC diag: dual-rail output requires engine proof: pc[1]
+SEC diag: dual-rail output requires engine proof: pc[2]
+SEC diag: dual-rail output requires engine proof: pc[3]
+SEC summary: encoding=dual_rail_steady rail_state_bits=86 rail_outputs=4 dual_rail_state_relation_pairs=0
+SEC diag: internal relations round=0 partition=0..16 vars=1326 status=sat conflicts=0 decisions=0 ticks=0
+SEC diag: internal relations round=0 active=19 structural=3 refuted=16 seconds=0.0
+SEC diag: internal relations round=1 active=3 structural=3 refuted=0 seconds=0.0
+SEC diag: internal relations round=0 partition=0..16 vars=619 status=sat conflicts=18 decisions=4272 ticks=5470
+SEC diag: internal relations round=0 active=19 structural=3 refuted=4 seconds=0.0
+SEC diag: internal relations round=1 partition=0..12 vars=509 status=sat conflicts=11 decisions=4267 ticks=5196
+SEC diag: internal relations round=1 active=15 structural=3 refuted=4 seconds=0.0
+SEC diag: internal relations round=2 partition=0..8 vars=417 status=sat conflicts=0 decisions=0 ticks=6
+SEC diag: internal relation refuted: mem_mem/.__MEM_CELL[0][0] ~ mem_mem/.__MEM_CELL[0][0]
+SEC diag: internal relations round=2 active=11 structural=3 refuted=1 seconds=0.0
+SEC diag: internal relations round=3 partition=0..7 vars=383 status=sat conflicts=0 decisions=0 ticks=6
+SEC diag: internal relations round=3 active=10 structural=3 refuted=4 seconds=0.0
+SEC diag: internal relations round=4 partition=0..3 vars=279 status=sat conflicts=0 decisions=0 ticks=0
+SEC diag: internal relation refuted: mem_mem/.__MEM_CELL[0][1] ~ mem_mem/.__MEM_CELL[0][1]
+SEC diag: internal relations round=4 active=6 structural=3 refuted=1 seconds=0.0
+SEC diag: internal relations round=5 partition=0..2 vars=246 status=sat conflicts=0 decisions=0 ticks=0
+SEC diag: internal relation refuted: mem_mem/.__MEM_CELL[0][2] ~ mem_mem/.__MEM_CELL[0][2]
+SEC diag: internal relations round=5 active=5 structural=3 refuted=1 seconds=0.0
+SEC diag: internal relations round=6 partition=0..1 vars=216 status=sat conflicts=0 decisions=0 ticks=0
+SEC diag: internal relation refuted: mem_mem/.__MEM_CELL[0][3] ~ mem_mem/.__MEM_CELL[0][3]
+SEC diag: internal relations round=6 active=4 structural=3 refuted=1 seconds=0.0
+SEC diag: internal relations round=7 active=3 structural=3 refuted=0 seconds=0.0
+SEC summary: signal_correspondence scope=registers_and_outputs completed=1 signals=187 classes=80 rounds=1 solver_calls=4 proved_outputs=4/4 state_equalities=32 seconds=0.1
+SEC summary: internal_relation_candidates=19 proved_rail_equalities=6 allow_x_equality_in_internal_relations=1 name_candidates=16 net_name_candidates=3 driver_candidates=0 propagated_candidates=0 propagation_rounds=0
+SEC summary: binary_relation_round candidates=16 proved_rail_equalities=0 discharged_outputs=0/4
+SEC summary: structurally_proved_outputs=4 of 4 merged_equalities=38
+SEC diag: merged state symbols=38 identical_output_formulas=4/4
+SEC diag: entering pdr engine
+SEC diag: PDR steady-state check begin index=0 pending_batches=1 output_range=0..4
+SEC diag: PDR steady-state check end index=0 output_range=0..4 status=equivalent bound=1
+[2026-11-20 17:58:11.662] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2769] SEC checked-output coverage: 100.00% (4/4 covered/existing outputs).
+[2026-11-20 17:58:11.663] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2840] No binary-defined difference was found. SEC proved equivalence under the dual-rail steady-state abstraction at k = 1.
+        0,16 real         0,13 user         0,02 sys
+            29376512  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                2428  page reclaims
+                  33  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+                 424  involuntary context switches
+          1100451122  instructions retired
+           425627420  cycles elapsed
+            16237024  peak memory footprint

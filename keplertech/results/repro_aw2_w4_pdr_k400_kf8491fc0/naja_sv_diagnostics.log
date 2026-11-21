@@ -1,0 +1,22 @@
+=== Naja SystemVerilog Diagnostics ===
+format.version=1
+status=in_progress
+report.path="naja_sv_diagnostics.log"
+console.warning_policy=first_occurrence_per_code
+
+No SystemVerilog diagnostics.
+
+=== Summary ===
+summary.status=success
+count.slang.total=0
+count.slang.note=0
+count.slang.warning=0
+count.slang.error=0
+count.slang.fatal=0
+count.naja_elaboration.warning_occurrences=0
+count.naja_elaboration.warning_codes=0
+count.naja_unsupported_warning.occurrences=0
+count.naja_unsupported_warning.codes=0
+count.naja_unsupported_error.occurrences=0
+count.naja_unsupported_error.codes=0
+report.path="naja_sv_diagnostics.log"

@@ -1,0 +1,5 @@
+cmd (cwd = results/gate_02_k_induction_k20): kepler-formal -sv2v -v sec --sec-engine k_induction -k 20 --sec-reset-cycles 3 --sec-reset-port rst=1 --report-skipped-pos --design1 ../../cfg/rtlbb_02.v --design2 ../../../TR-1um_C4004_02/openroad/c4004_core_syn.v --set-as-boundary u_sram u_sram --liberty ../../../TR-1um_C4004_02/module/STDCELL/tr1um_typ_5v0_25c.lib ../../../TR-1um_C4004_02/module/SRAM128/SRAM128.lib
+kepler-formal: kepler-formal version: 1.0.0 kepler-formal git hash: fd24770df6c3297cf31cf0ae4908214501e22ac2 naja version: 0.7.33 naja git hash: cb142398 
+exit: 1  wall: 677 s  cpu: user 609.41 s, sys 11.04 s  peak RSS: 316 MB
+SEC partially proved equivalence at k = 20: 2/23 outputs proved; remaining outputs are inconclusive.
+SEC verification did not prove all observed outputs.

@@ -1,0 +1,99 @@
+# 1. stored simulation logs
+TR-1um_C4004_08/openroad/gate_sim.log sha1=30b0bbf3b2 prints: TR-1um_C4004_08/rtl/tb_c4004.v | PASS: All 45 Intel 4004 instructions verified with 0 errors!
+TR-1um_C4004_08/rtl/rtl_sim.log sha1=30b0bbf3b2 prints: TR-1um_C4004_08/rtl/tb_c4004.v | PASS: All 45 Intel 4004 instructions verified with 0 errors!
+TR-1um_C4004_09/openroad/gate_sim.log sha1=30b0bbf3b2 prints: TR-1um_C4004_08/rtl/tb_c4004.v | PASS: All 45 Intel 4004 instructions verified with 0 errors!
+TR-1um_C4004_09/rtl/rtl_sim.log sha1=30b0bbf3b2 prints: TR-1um_C4004_08/rtl/tb_c4004.v | PASS: All 45 Intel 4004 instructions verified with 0 errors!
+TR-1um_C4004_10/openroad/gate_sim.log sha1=30b0bbf3b2 prints: TR-1um_C4004_08/rtl/tb_c4004.v | PASS: All 45 Intel 4004 instructions verified with 0 errors!
+TR-1um_C4004_10/rtl/rtl_sim.log sha1=30b0bbf3b2 prints: TR-1um_C4004_08/rtl/tb_c4004.v | PASS: All 45 Intel 4004 instructions verified with 0 errors!
+
+# 2. compiled simulations: sources and fingerprints (count of instance names)
+TR-1um_C4004_01/rtl/sim_c4004 sha1=2df03c8e59
+   sources: "rtl/c4004_core.v" "rtl/c4004_top.v" "rtl/tb_c4004.v" 
+   fingerprints: _1005_=0 u_clk_buf_r9=0 u_clk_buf_r10=0 u_buf_dhiz=0 u_inv_sram_ce=0
+TR-1um_C4004_02/openroad/tb_gate.vvp sha1=a8962556e4
+   sources: "openroad/c4004_core_syn.v" "rtl/c4004_top.v" "rtl/stdcells_sim.v" "rtl/tb_c4004.v" 
+   fingerprints: _1005_=1 u_clk_buf_r9=1 u_clk_buf_r10=1 u_buf_dhiz=0 u_inv_sram_ce=0
+TR-1um_C4004_02/rtl/tb_c4004.vvp sha1=8dcaf23a5d
+   sources: "TR-1um_C4004_02/rtl/c4004_core.v" "TR-1um_C4004_02/rtl/c4004_top.v" "TR-1um_C4004_02/rtl/stdcells_sim.v" "TR-1um_C4004_02/rtl/tb_c4004.v" 
+   fingerprints: _1005_=0 u_clk_buf_r9=0 u_clk_buf_r10=0 u_buf_dhiz=0 u_inv_sram_ce=0
+TR-1um_C4004_03/rtl/tb_c4004.vvp sha1=a08270c510
+   sources: "TR-1um_C4004_03/rtl/c4004_core.v" "TR-1um_C4004_03/rtl/c4004_top.v" "TR-1um_C4004_03/rtl/tb_c4004.v" 
+   fingerprints: _1005_=0 u_clk_buf_r9=0 u_clk_buf_r10=0 u_buf_dhiz=0 u_inv_sram_ce=0
+TR-1um_C4004_04/rtl/tb_c4004.vvp sha1=28c86b137d
+   sources: "TR-1um_C4004_04/rtl/c4004_core.v" "TR-1um_C4004_04/rtl/c4004_top.v" "TR-1um_C4004_04/rtl/tb_c4004.v" 
+   fingerprints: _1005_=0 u_clk_buf_r9=0 u_clk_buf_r10=0 u_buf_dhiz=0 u_inv_sram_ce=0
+TR-1um_C4004_05/rtl/tb_c4004.vvp sha1=28c86b137d
+   sources: "TR-1um_C4004_04/rtl/c4004_core.v" "TR-1um_C4004_04/rtl/c4004_top.v" "TR-1um_C4004_04/rtl/tb_c4004.v" 
+   fingerprints: _1005_=0 u_clk_buf_r9=0 u_clk_buf_r10=0 u_buf_dhiz=0 u_inv_sram_ce=0
+TR-1um_C4004_06/rtl/sim_gate sha1=da660f95bd
+   sources: "openroad/c4004_core_syn.v" "rtl/c4004_top.v" "rtl/stdcells_sim.v" "rtl/tb_c4004.v" 
+   fingerprints: _1005_=1 u_clk_buf_r9=1 u_clk_buf_r10=1 u_buf_dhiz=0 u_inv_sram_ce=0
+TR-1um_C4004_06/rtl/sim_rtl sha1=cabdc8496c
+   sources: "rtl/c4004_core.v" "rtl/c4004_top.v" "rtl/stdcells_sim.v" "rtl/tb_c4004.v" 
+   fingerprints: _1005_=0 u_clk_buf_r9=0 u_clk_buf_r10=0 u_buf_dhiz=0 u_inv_sram_ce=0
+TR-1um_C4004_07/apr/tb_gate.vvp sha1=8e16d35c28
+   sources: "openroad/c4004_core_syn.v" "rtl/c4004_top.v" "rtl/stdcells_sim.v" "rtl/tb_c4004.v" 
+   fingerprints: _1005_=0 u_clk_buf_r9=1 u_clk_buf_r10=1 u_buf_dhiz=1 u_inv_sram_ce=1
+TR-1um_C4004_07/rtl/sim_gate sha1=da660f95bd
+   sources: "openroad/c4004_core_syn.v" "rtl/c4004_top.v" "rtl/stdcells_sim.v" "rtl/tb_c4004.v" 
+   fingerprints: _1005_=1 u_clk_buf_r9=1 u_clk_buf_r10=1 u_buf_dhiz=0 u_inv_sram_ce=0
+TR-1um_C4004_07/rtl/sim_rtl sha1=cabdc8496c
+   sources: "rtl/c4004_core.v" "rtl/c4004_top.v" "rtl/stdcells_sim.v" "rtl/tb_c4004.v" 
+   fingerprints: _1005_=0 u_clk_buf_r9=0 u_clk_buf_r10=0 u_buf_dhiz=0 u_inv_sram_ce=0
+TR-1um_C4004_07/rtl/tb_c4004.vvp sha1=acfd98085b
+   sources: "rtl/c4004_core.v" "rtl/c4004_top.v" "rtl/tb_c4004.v" 
+   fingerprints: _1005_=0 u_clk_buf_r9=0 u_clk_buf_r10=0 u_buf_dhiz=0 u_inv_sram_ce=0
+TR-1um_C4004_08/openroad/tb_c4004_gate.vvp sha1=7815487f63
+   sources: "TR-1um_C4004_08/openroad/c4004_core_syn.v" "TR-1um_C4004_08/rtl/c4004_top.v" "TR-1um_C4004_08/rtl/stdcells_sim.v" "TR-1um_C4004_08/rtl/tb_c4004.v" 
+   fingerprints: _1005_=0 u_clk_buf_r9=1 u_clk_buf_r10=0 u_buf_dhiz=1 u_inv_sram_ce=0
+TR-1um_C4004_08/rtl/sim_gate sha1=da660f95bd
+   sources: "openroad/c4004_core_syn.v" "rtl/c4004_top.v" "rtl/stdcells_sim.v" "rtl/tb_c4004.v" 
+   fingerprints: _1005_=1 u_clk_buf_r9=1 u_clk_buf_r10=1 u_buf_dhiz=0 u_inv_sram_ce=0
+TR-1um_C4004_08/rtl/sim_rtl sha1=cabdc8496c
+   sources: "rtl/c4004_core.v" "rtl/c4004_top.v" "rtl/stdcells_sim.v" "rtl/tb_c4004.v" 
+   fingerprints: _1005_=0 u_clk_buf_r9=0 u_clk_buf_r10=0 u_buf_dhiz=0 u_inv_sram_ce=0
+TR-1um_C4004_08/rtl/tb_c4004.vvp sha1=3765cb3109
+   sources: "TR-1um_C4004_08/rtl/c4004_core.v" "TR-1um_C4004_08/rtl/c4004_top.v" "TR-1um_C4004_08/rtl/tb_c4004.v" 
+   fingerprints: _1005_=0 u_clk_buf_r9=0 u_clk_buf_r10=0 u_buf_dhiz=0 u_inv_sram_ce=0
+TR-1um_C4004_09/openroad/tb_c4004_gate.vvp sha1=7815487f63
+   sources: "TR-1um_C4004_08/openroad/c4004_core_syn.v" "TR-1um_C4004_08/rtl/c4004_top.v" "TR-1um_C4004_08/rtl/stdcells_sim.v" "TR-1um_C4004_08/rtl/tb_c4004.v" 
+   fingerprints: _1005_=0 u_clk_buf_r9=1 u_clk_buf_r10=0 u_buf_dhiz=1 u_inv_sram_ce=0
+TR-1um_C4004_09/rtl/sim_gate sha1=da660f95bd
+   sources: "openroad/c4004_core_syn.v" "rtl/c4004_top.v" "rtl/stdcells_sim.v" "rtl/tb_c4004.v" 
+   fingerprints: _1005_=1 u_clk_buf_r9=1 u_clk_buf_r10=1 u_buf_dhiz=0 u_inv_sram_ce=0
+TR-1um_C4004_09/rtl/sim_rtl sha1=cabdc8496c
+   sources: "rtl/c4004_core.v" "rtl/c4004_top.v" "rtl/stdcells_sim.v" "rtl/tb_c4004.v" 
+   fingerprints: _1005_=0 u_clk_buf_r9=0 u_clk_buf_r10=0 u_buf_dhiz=0 u_inv_sram_ce=0
+TR-1um_C4004_09/rtl/tb_c4004_gate.vvp sha1=a60205a445
+   sources: "openroad/c4004_core_syn.v" "rtl/c4004_top.v" "rtl/stdcells_sim.v" "rtl/tb_c4004.v" 
+   fingerprints: _1005_=0 u_clk_buf_r9=0 u_clk_buf_r10=0 u_buf_dhiz=1 u_inv_sram_ce=0
+TR-1um_C4004_09/rtl/tb_c4004.vvp sha1=c3f40b5a60
+   sources: "rtl/c4004_core.v" "rtl/c4004_top.v" "rtl/tb_c4004.v" 
+   fingerprints: _1005_=0 u_clk_buf_r9=0 u_clk_buf_r10=0 u_buf_dhiz=0 u_inv_sram_ce=0
+TR-1um_C4004_10/openroad/tb_c4004_gate.vvp sha1=7815487f63
+   sources: "TR-1um_C4004_08/openroad/c4004_core_syn.v" "TR-1um_C4004_08/rtl/c4004_top.v" "TR-1um_C4004_08/rtl/stdcells_sim.v" "TR-1um_C4004_08/rtl/tb_c4004.v" 
+   fingerprints: _1005_=0 u_clk_buf_r9=1 u_clk_buf_r10=0 u_buf_dhiz=1 u_inv_sram_ce=0
+TR-1um_C4004_10/rtl/sim_gate sha1=da660f95bd
+   sources: "openroad/c4004_core_syn.v" "rtl/c4004_top.v" "rtl/stdcells_sim.v" "rtl/tb_c4004.v" 
+   fingerprints: _1005_=1 u_clk_buf_r9=1 u_clk_buf_r10=1 u_buf_dhiz=0 u_inv_sram_ce=0
+TR-1um_C4004_10/rtl/sim_rtl sha1=cabdc8496c
+   sources: "rtl/c4004_core.v" "rtl/c4004_top.v" "rtl/stdcells_sim.v" "rtl/tb_c4004.v" 
+   fingerprints: _1005_=0 u_clk_buf_r9=0 u_clk_buf_r10=0 u_buf_dhiz=0 u_inv_sram_ce=0
+TR-1um_C4004_10/rtl/tb_c4004_gate.vvp sha1=c89ac488fd
+   sources: "openroad/c4004_core_syn.v" "rtl/c4004_top.v" "rtl/stdcells_sim.v" "rtl/tb_c4004.v" 
+   fingerprints: _1005_=0 u_clk_buf_r9=0 u_clk_buf_r10=0 u_buf_dhiz=1 u_inv_sram_ce=0
+TR-1um_C4004_10/rtl/tb_c4004.vvp sha1=08c208a997
+   sources: "rtl/c4004_core.v" "rtl/c4004_top.v" "rtl/tb_c4004.v" 
+   fingerprints: _1005_=0 u_clk_buf_r9=0 u_clk_buf_r10=0 u_buf_dhiz=0 u_inv_sram_ce=0
+
+# 3. fingerprints in each trial's openroad/c4004_core_syn.v
+TR-1um_C4004_01/openroad/c4004_core_syn.v: _1005_=1 u_clk_buf_r9=1 u_clk_buf_r10=0 u_buf_dhiz=0 u_inv_sram_ce=0
+TR-1um_C4004_02/openroad/c4004_core_syn.v: _1005_=1 u_clk_buf_r9=1 u_clk_buf_r10=1 u_buf_dhiz=0 u_inv_sram_ce=0
+TR-1um_C4004_03/openroad/c4004_core_syn.v: _1005_=1 u_clk_buf_r9=1 u_clk_buf_r10=1 u_buf_dhiz=0 u_inv_sram_ce=0
+TR-1um_C4004_04/openroad/c4004_core_syn.v: _1005_=1 u_clk_buf_r9=1 u_clk_buf_r10=1 u_buf_dhiz=0 u_inv_sram_ce=0
+TR-1um_C4004_05/openroad/c4004_core_syn.v: _1005_=0 u_clk_buf_r9=1 u_clk_buf_r10=1 u_buf_dhiz=0 u_inv_sram_ce=0
+TR-1um_C4004_06/openroad/c4004_core_syn.v: _1005_=0 u_clk_buf_r9=1 u_clk_buf_r10=1 u_buf_dhiz=1 u_inv_sram_ce=0
+TR-1um_C4004_07/openroad/c4004_core_syn.v: _1005_=0 u_clk_buf_r9=1 u_clk_buf_r10=1 u_buf_dhiz=1 u_inv_sram_ce=1
+TR-1um_C4004_08/openroad/c4004_core_syn.v: _1005_=0 u_clk_buf_r9=1 u_clk_buf_r10=0 u_buf_dhiz=1 u_inv_sram_ce=0
+TR-1um_C4004_09/openroad/c4004_core_syn.v: _1005_=0 u_clk_buf_r9=0 u_clk_buf_r10=0 u_buf_dhiz=1 u_inv_sram_ce=0
+TR-1um_C4004_10/openroad/c4004_core_syn.v: _1005_=0 u_clk_buf_r9=0 u_clk_buf_r10=0 u_buf_dhiz=1 u_inv_sram_ce=0

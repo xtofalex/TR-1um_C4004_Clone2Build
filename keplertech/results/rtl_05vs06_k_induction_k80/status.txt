@@ -1,0 +1,7 @@
+cmd (cwd = results/rtl_05vs06_k_induction_k80): kepler-formal -sv -v sec --sec-engine k_induction -k 80 --sec-reset-cycles 3 --sec-reset-port rst=1 --report-skipped-pos --design1 ../../cfg/rtl_05.v --design2 ../../cfg/rtl_06.v 
+kepler-formal: kepler-formal version: 1.0.0 kepler-formal git hash: fd24770df6c3297cf31cf0ae4908214501e22ac2 naja version: 0.7.33 naja git hash: cb142398 
+KEPLER_SEC_DIAG=1
+wall-clock cap: 1200 s
+deepest base-case query started: k-induction base coi k=0 first_bad_frame=3
+exit: 0  wall: 2 s  cpu: user 2.00 s, sys 0.04 s  peak RSS: 39 MB
+No binary-defined difference was found. SEC proved equivalence under the dual-rail steady-state abstraction at k = 1.

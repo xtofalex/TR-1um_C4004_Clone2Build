@@ -1,0 +1,102 @@
+# Inventory of Gemini trial files (sha256, first 12 hex digits)
+
+## rtl/c4004_core.v
+  01  7b1add01ac70  459 lines
+  02  00422e401a50  490 lines
+  03  2a8d9ae53131  516 lines
+  04  d178eddd718f  534 lines
+  05  e0bb7cf5cfe0  530 lines
+  06  5d471f7806fb  529 lines
+  07  5d471f7806fb  529 lines
+  08  5d471f7806fb  529 lines
+  09  5d471f7806fb  529 lines
+  10  5d471f7806fb  529 lines
+  distinct versions: 01; 02; 03; 04; 05; 06 (= 07, 08, 09, 10)
+
+## rtl/c4004_top.v
+  01  45329b2e3c91  34 lines
+  02  45329b2e3c91  34 lines
+  03  45329b2e3c91  34 lines
+  04  45329b2e3c91  34 lines
+  05  45329b2e3c91  34 lines
+  06  45329b2e3c91  34 lines
+  07  45329b2e3c91  34 lines
+  08  45329b2e3c91  34 lines
+  09  45329b2e3c91  34 lines
+  10  45329b2e3c91  34 lines
+  distinct versions: 01 (= 02, 03, 04, 05, 06, 07, 08, 09, 10)
+
+## openroad/c4004_core_raw_syn.v
+  01  655b6fc71f81  3726 lines
+  02  e5b7b608d9c0  3729 lines
+  03  697b4f61487a  3947 lines
+  04  7c5be6605cad  4037 lines
+  05  7c5be6605cad  4037 lines
+  06  7c5be6605cad  4037 lines
+  07  7c5be6605cad  4037 lines
+  08  7c5be6605cad  4037 lines
+  09  7c5be6605cad  4037 lines
+  10  7c5be6605cad  4037 lines
+  distinct versions: 01; 02; 03; 04 (= 05, 06, 07, 08, 09, 10)
+
+## openroad/c4004_core_syn.v
+  01  d125972a79df  1245 lines
+  02  c0c2ccf98584  1205 lines
+  03  b8c2a3efd298  1261 lines
+  04  dbf31e4284fc  1283 lines
+  05  5c9a98cbd25b  1280 lines
+  06  bbf5173b9946  1283 lines
+  07  6105ce8d49cb  1285 lines
+  08  23e1af56a4d0  1279 lines
+  09  ad1f671b28c0  1275 lines
+  10  3776c2c7fb95  1275 lines
+  distinct versions: 01; 02; 03; 04; 05; 06; 07; 08; 09; 10
+
+## module/STDCELL/tr1um_typ_5v0_25c.lib
+  01  b21e9dbdd3de  4789 lines
+  02  b21e9dbdd3de  4789 lines
+  03  b21e9dbdd3de  4789 lines
+  04  b21e9dbdd3de  4789 lines
+  05  b21e9dbdd3de  4789 lines
+  06  b21e9dbdd3de  4789 lines
+  07  b21e9dbdd3de  4789 lines
+  08  b21e9dbdd3de  4789 lines
+  09  b21e9dbdd3de  4789 lines
+  10  b21e9dbdd3de  4789 lines
+  distinct versions: 01 (= 02, 03, 04, 05, 06, 07, 08, 09, 10)
+
+## module/SRAM128/SRAM128.lib
+  01  b65b58f2fdab  275 lines
+  02  b65b58f2fdab  275 lines
+  03  b65b58f2fdab  275 lines
+  04  b65b58f2fdab  275 lines
+  05  b65b58f2fdab  275 lines
+  06  b65b58f2fdab  275 lines
+  07  b65b58f2fdab  275 lines
+  08  b65b58f2fdab  275 lines
+  09  b65b58f2fdab  275 lines
+  10  b65b58f2fdab  275 lines
+  distinct versions: 01 (= 02, 03, 04, 05, 06, 07, 08, 09, 10)
+
+## c4004_core ports vs trial 01 (direction, name, width)
+  trial 01 rtl: input clk[1], input d_in[4], input rst[1], input test[1], output cm_ram[4], output cm_rom[1], output d_hiz[1], output d_oe[1], output d_out[4], output sync[1]
+  rtl/c4004_core.v 01: same as trial 01 rtl
+  rtl/c4004_core.v 02: same as trial 01 rtl
+  rtl/c4004_core.v 03: same as trial 01 rtl
+  rtl/c4004_core.v 04: same as trial 01 rtl
+  rtl/c4004_core.v 05: same as trial 01 rtl
+  rtl/c4004_core.v 06: same as trial 01 rtl
+  openroad/c4004_core_raw_syn.v 01: same as trial 01 rtl
+  openroad/c4004_core_raw_syn.v 02: same as trial 01 rtl
+  openroad/c4004_core_raw_syn.v 03: same as trial 01 rtl
+  openroad/c4004_core_raw_syn.v 04: same as trial 01 rtl
+  openroad/c4004_core_syn.v 01: same as trial 01 rtl
+  openroad/c4004_core_syn.v 02: same as trial 01 rtl
+  openroad/c4004_core_syn.v 03: same as trial 01 rtl
+  openroad/c4004_core_syn.v 04: same as trial 01 rtl
+  openroad/c4004_core_syn.v 05: same as trial 01 rtl
+  openroad/c4004_core_syn.v 06: same as trial 01 rtl
+  openroad/c4004_core_syn.v 07: same as trial 01 rtl
+  openroad/c4004_core_syn.v 08: same as trial 01 rtl
+  openroad/c4004_core_syn.v 09: same as trial 01 rtl
+  openroad/c4004_core_syn.v 10: same as trial 01 rtl

@@ -1,0 +1,10 @@
+cmd (cwd = results/rtl_01vs02_pdr_k400_budx50): kepler-formal -sv -v sec --sec-engine pdr -k 400 --sec-reset-cycles 3 --sec-reset-port rst=1 --report-skipped-pos --design1 ../../cfg/rtl_01.v --design2 ../../cfg/rtl_02.v 
+kepler-formal: kepler-formal version: 1.0.0 kepler-formal git hash: fd24770df6c3297cf31cf0ae4908214501e22ac2 naja version: 0.7.33 naja git hash: cb142398 
+KEPLER_SEC_DIAG=1
+KEPLER_SEC_PDR_DUAL_RAIL_SINGLETON_DECISION_BUDGET=2000000000
+KEPLER_SEC_PDR_DUAL_RAIL_SINGLETON_CONFLICT_BUDGET=50000000
+KEPLER_SEC_PDR_DUAL_RAIL_SINGLETON_TICK_BUDGET=25000000000
+wall-clock cap: 7200 s
+exit: 1  wall: 2764 s  cpu: user 2661.85 s, sys 32.67 s  peak RSS: 2247 MB
+SEC partially proved equivalence at k = 33: 7/12 outputs proved; remaining outputs are inconclusive.
+SEC verification did not prove all observed outputs.

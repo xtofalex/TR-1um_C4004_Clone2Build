@@ -1,0 +1,14 @@
+cmd: ./random_sim.sh rtl 04 1000000 1 2 3 4 5
+RESULT seed=1 edge=pos cycles=1000000 mismatch_cycles=0 first=-1
+RESULT seed=1 edge=neg cycles=1000000 mismatch_cycles=0 first=-1
+RESULT seed=2 edge=pos cycles=1000000 mismatch_cycles=0 first=-1
+RESULT seed=2 edge=neg cycles=1000000 mismatch_cycles=0 first=-1
+RESULT seed=3 edge=pos cycles=1000000 mismatch_cycles=0 first=-1
+RESULT seed=3 edge=neg cycles=1000000 mismatch_cycles=0 first=-1
+RESULT seed=4 edge=pos cycles=1000000 mismatch_cycles=0 first=-1
+RESULT seed=4 edge=neg cycles=1000000 mismatch_cycles=0 first=-1
+RESULT seed=5 edge=pos cycles=1000000 mismatch_cycles=0 first=-1
+RESULT seed=5 edge=neg cycles=1000000 mismatch_cycles=0 first=-1
+real 173,61
+user 172,33
+sys 0,32

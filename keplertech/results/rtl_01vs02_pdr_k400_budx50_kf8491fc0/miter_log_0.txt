@@ -1,0 +1,29 @@
+[2026-11-20 17:57:02.370] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2334] KEPLER FORMAL: Run.
+[2026-11-20 17:57:02.371] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2407] Input format: SYSTEMVERILOG
+[2026-11-20 17:57:02.371] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2414] SystemVerilog compilation units: one per file
+[2026-11-20 17:57:02.371] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2417] Run log: miter_log_0.txt
+[2026-11-20 17:57:02.371] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:740] Netlist 1: ../../cfg/rtl_01.v
+[2026-11-20 17:57:02.371] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:740] Netlist 2: ../../cfg/rtl_02.v
+[2026-11-20 17:57:02.371] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2694] Solver: KISSAT
+[2026-11-20 17:57:02.371] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2695] Verification: sec
+[2026-11-20 17:57:02.371] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2697] SEC max_k: 400
+[2026-11-20 17:57:02.371] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2698] SEC engine: pdr
+[2026-11-20 17:57:02.371] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2699] SEC encoding: dual_rail_steady
+[2026-11-20 17:57:02.372] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2705] SEC internal relations: learn=true allow_x_equality=true binary_relation_round=true signal_correspondence=true
+[2026-11-20 17:57:02.372] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2707] SEC reset bootstrap: 3 cycle(s)
+[2026-11-20 17:57:02.372] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2712] SEC reset bootstrap port: rst active=1
+[2026-11-20 17:57:02.372] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2716] Compact mode: disabled
+[2026-11-20 17:57:02.372] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2717] Skipped PO reports: enabled
+[2026-11-20 17:57:02.372] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2718] SEC latch abstraction: enabled
+[2026-11-20 17:57:02.372] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2719] SEC data-enabled latch model: enabled
+[2026-11-20 17:57:02.379] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:3401] Parsing systemverilog file(s) for design 1
+[2026-11-20 18:53:24.229] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2769] SEC checked-output coverage: 66.67% (8/12 covered/existing outputs).
+[2026-11-20 18:53:24.230] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2798] SEC skipped observed outputs due to extraction or coverage limitations:
+  - bus_d[0]: dual-rail PDR steady-state proof was inconclusive
+  - bus_d[1]: dual-rail PDR steady-state proof was inconclusive
+  - bus_d[2]: dual-rail PDR steady-state proof was inconclusive
+  - bus_d[3]: dual-rail PDR steady-state proof was inconclusive
+
+[2026-11-20 18:53:24.231] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2860] SEC partially proved equivalence at k = 32: 8/12 outputs proved; remaining outputs are inconclusive.
+[2026-11-20 18:53:24.231] [kepler_formal_main_logger] [warning] [KeplerFormal.cpp:2862] SEC verification did not prove all observed outputs.
+[2026-11-20 18:53:24.231] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2864] SEC partial-proof details: Exact dual-rail PDR proved 8 of 12 observed outputs; remaining outputs are inconclusive

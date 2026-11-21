@@ -1,0 +1,11 @@
+kepler-formal cmd (cwd = results/repro_aw2_w4_bug_pdr_k400_kf8491fc0): -sv -v sec --sec-engine pdr -k 400 --sec-reset-cycles 3 --sec-reset-port rst=1 --report-skipped-pos --design1 a_aw2_w4.v --design2 b_aw2_w4.v
+kepler-formal: kepler-formal version: 1.0.0 kepler-formal git hash: 8491fc08b2b755de5bf2b37071483cfa5320ae77 naja version: 0.7.33 naja git hash: cb142398 
+KEPLER_SEC_DIAG=1
+wall-clock cap: 300 s
+exit: 3  wall: 0,35 s  cpu: user 0,26 s, sys 0,04 s
+peak RSS: 39 MB
+[2026-11-20 17:58:11.311] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2876] Difference was found. SEC found a counterexample at k = 2.
+[2026-11-20 17:58:11.312] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2879] SEC counterexample details:
+SEC diag: PDR steady-state check end index=0 output_range=0..4 status=different bound=2
+SEC summary: signal_correspondence scope=registers_and_outputs completed=1 signals=187 classes=8 rounds=2 solver_calls=4 proved_outputs=0/4 state_equalities=0 seconds=0.0
+SEC summary: signal_correspondence scope=all_signals completed=1 signals=1263 classes=86 rounds=3 solver_calls=21 proved_outputs=0/4 state_equalities=0 seconds=0.1

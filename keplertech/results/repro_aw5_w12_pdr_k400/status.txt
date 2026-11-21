@@ -1,0 +1,40 @@
+kepler-formal cmd (cwd = results/repro_aw5_w12_pdr_k400): -sv -v sec --sec-engine pdr -k 400 --sec-reset-cycles 3 --sec-reset-port rst=1 --report-skipped-pos --design1 a_aw5_w12.v --design2 b_aw5_w12.v
+KEPLER_SEC_DIAG=1
+wall-clock cap: 300 s
+exit: 1  wall: 266,02 s  cpu: user 254,99 s, sys 3,68 s
+peak RSS: 958 MB
+  - pc[2]: dual-rail PDR steady-state proof was inconclusive
+  - pc[3]: dual-rail PDR steady-state proof was inconclusive
+  - pc[4]: dual-rail PDR steady-state proof was inconclusive
+  - pc[5]: dual-rail PDR steady-state proof was inconclusive
+  - pc[6]: dual-rail PDR steady-state proof was inconclusive
+  - pc[7]: dual-rail PDR steady-state proof was inconclusive
+  - pc[8]: dual-rail PDR steady-state proof was inconclusive
+  - pc[9]: dual-rail PDR steady-state proof was inconclusive
+  - pc[10]: dual-rail PDR steady-state proof was inconclusive
+  - pc[11]: dual-rail PDR steady-state proof was inconclusive
+[2026-11-19 11:43:14.630] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2849] SEC partially proved equivalence at k = 11: 2/12 outputs proved; remaining outputs are inconclusive.
+[2026-11-19 11:43:14.630] [kepler_formal_main_logger] [warning] [KeplerFormal.cpp:2851] SEC verification did not prove all observed outputs.
+SEC diag: PDR steady-state check end index=0 output_range=0..12 status=inconclusive bound=1
+SEC diag: PDR steady-state check end index=1 output_range=0..6 status=inconclusive bound=1
+SEC diag: PDR steady-state check end index=2 output_range=0..3 status=inconclusive bound=2
+SEC diag: PDR steady-state check end index=3 output_range=0..1 status=equivalent bound=11
+SEC diag: PDR steady-state check end index=4 output_range=1..3 status=inconclusive bound=1
+SEC diag: PDR steady-state check end index=5 output_range=1..2 status=equivalent bound=2
+SEC diag: PDR steady-state check end index=6 output_range=2..3 status=inconclusive bound=5
+SEC diag: PDR steady-state check end index=7 output_range=3..6 status=inconclusive bound=1
+SEC diag: PDR steady-state check end index=8 output_range=3..4 status=inconclusive bound=5
+SEC diag: PDR steady-state check end index=9 output_range=4..6 status=inconclusive bound=1
+SEC diag: PDR steady-state check end index=10 output_range=4..5 status=inconclusive bound=4
+SEC diag: PDR steady-state check end index=11 output_range=5..6 status=inconclusive bound=3
+SEC diag: PDR steady-state check end index=12 output_range=6..12 status=inconclusive bound=1
+SEC diag: PDR steady-state check end index=13 output_range=6..9 status=inconclusive bound=1
+SEC diag: PDR steady-state check end index=14 output_range=6..7 status=inconclusive bound=3
+SEC diag: PDR steady-state check end index=15 output_range=7..9 status=inconclusive bound=1
+SEC diag: PDR steady-state check end index=16 output_range=7..8 status=inconclusive bound=3
+SEC diag: PDR steady-state check end index=17 output_range=8..9 status=inconclusive bound=3
+SEC diag: PDR steady-state check end index=18 output_range=9..12 status=inconclusive bound=1
+SEC diag: PDR steady-state check end index=19 output_range=9..10 status=inconclusive bound=3
+SEC diag: PDR steady-state check end index=20 output_range=10..12 status=inconclusive bound=1
+SEC diag: PDR steady-state check end index=21 output_range=10..11 status=inconclusive bound=3
+SEC diag: PDR steady-state check end index=22 output_range=11..12 status=inconclusive bound=3

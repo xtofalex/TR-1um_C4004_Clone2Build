@@ -1,0 +1,275 @@
+# SEC boundary terms report
+# Categories:
+# - top_input / top_output: original top-level interface terms.
+
+- design: design0
+  signal: __kepler_boundary_p0_n4130_bp0[0]
+  roles: [top_output]
+
+- design: design0
+  signal: __kepler_boundary_p0_n4131_bp0[0]
+  roles: [top_output]
+
+- design: design0
+  signal: __kepler_boundary_p0_n4132_bp0[0]
+  roles: [top_output]
+
+- design: design0
+  signal: __kepler_boundary_p0_n4133_bp0[0]
+  roles: [top_output]
+
+- design: design0
+  signal: __kepler_boundary_p0_n4134_bp0[0]
+  roles: [top_output]
+
+- design: design0
+  signal: __kepler_boundary_p0_n4345_bp0[0]
+  roles: [top_output]
+
+- design: design0
+  signal: __kepler_boundary_p0_n44494e_bp0[0]
+  roles: [top_output]
+
+- design: design0
+  signal: __kepler_boundary_p0_n44494e_bp1[0]
+  roles: [top_output]
+
+- design: design0
+  signal: __kepler_boundary_p0_n44494e_bp2[0]
+  roles: [top_output]
+
+- design: design0
+  signal: __kepler_boundary_p0_n44494e_bp3[0]
+  roles: [top_output]
+
+- design: design0
+  signal: __kepler_boundary_p0_n444f_bp0[0]
+  roles: [top_input]
+
+- design: design0
+  signal: __kepler_boundary_p0_n444f_bp1[0]
+  roles: [top_input]
+
+- design: design0
+  signal: __kepler_boundary_p0_n444f_bp2[0]
+  roles: [top_input]
+
+- design: design0
+  signal: __kepler_boundary_p0_n444f_bp3[0]
+  roles: [top_input]
+
+- design: design0
+  signal: __kepler_boundary_p0_n5752_bp0[0]
+  roles: [top_output]
+
+- design: design0
+  signal: clk[0]
+  roles: [top_input]
+
+- design: design0
+  signal: cm_ram[0]
+  roles: [top_output]
+
+- design: design0
+  signal: cm_ram[1]
+  roles: [top_output]
+
+- design: design0
+  signal: cm_ram[2]
+  roles: [top_output]
+
+- design: design0
+  signal: cm_ram[3]
+  roles: [top_output]
+
+- design: design0
+  signal: cm_rom[0]
+  roles: [top_output]
+
+- design: design0
+  signal: d_hiz[0]
+  roles: [top_output]
+
+- design: design0
+  signal: d_in[0]
+  roles: [top_input]
+
+- design: design0
+  signal: d_in[1]
+  roles: [top_input]
+
+- design: design0
+  signal: d_in[2]
+  roles: [top_input]
+
+- design: design0
+  signal: d_in[3]
+  roles: [top_input]
+
+- design: design0
+  signal: d_oe[0]
+  roles: [top_output]
+
+- design: design0
+  signal: d_out[0]
+  roles: [top_output]
+
+- design: design0
+  signal: d_out[1]
+  roles: [top_output]
+
+- design: design0
+  signal: d_out[2]
+  roles: [top_output]
+
+- design: design0
+  signal: d_out[3]
+  roles: [top_output]
+
+- design: design0
+  signal: rst[0]
+  roles: [top_input]
+
+- design: design0
+  signal: sync[0]
+  roles: [top_output]
+
+- design: design0
+  signal: test[0]
+  roles: [top_input]
+
+- design: design1
+  signal: __kepler_boundary_p0_n4130_bp0[0]
+  roles: [top_output]
+
+- design: design1
+  signal: __kepler_boundary_p0_n4131_bp0[0]
+  roles: [top_output]
+
+- design: design1
+  signal: __kepler_boundary_p0_n4132_bp0[0]
+  roles: [top_output]
+
+- design: design1
+  signal: __kepler_boundary_p0_n4133_bp0[0]
+  roles: [top_output]
+
+- design: design1
+  signal: __kepler_boundary_p0_n4134_bp0[0]
+  roles: [top_output]
+
+- design: design1
+  signal: __kepler_boundary_p0_n4345_bp0[0]
+  roles: [top_output]
+
+- design: design1
+  signal: __kepler_boundary_p0_n44494e_bp0[0]
+  roles: [top_output]
+
+- design: design1
+  signal: __kepler_boundary_p0_n44494e_bp1[0]
+  roles: [top_output]
+
+- design: design1
+  signal: __kepler_boundary_p0_n44494e_bp2[0]
+  roles: [top_output]
+
+- design: design1
+  signal: __kepler_boundary_p0_n44494e_bp3[0]
+  roles: [top_output]
+
+- design: design1
+  signal: __kepler_boundary_p0_n444f_bp0[0]
+  roles: [top_input]
+
+- design: design1
+  signal: __kepler_boundary_p0_n444f_bp1[0]
+  roles: [top_input]
+
+- design: design1
+  signal: __kepler_boundary_p0_n444f_bp2[0]
+  roles: [top_input]
+
+- design: design1
+  signal: __kepler_boundary_p0_n444f_bp3[0]
+  roles: [top_input]
+
+- design: design1
+  signal: __kepler_boundary_p0_n5752_bp0[0]
+  roles: [top_output]
+
+- design: design1
+  signal: clk[0]
+  roles: [top_input]
+
+- design: design1
+  signal: cm_ram[0]
+  roles: [top_output]
+
+- design: design1
+  signal: cm_ram[1]
+  roles: [top_output]
+
+- design: design1
+  signal: cm_ram[2]
+  roles: [top_output]
+
+- design: design1
+  signal: cm_ram[3]
+  roles: [top_output]
+
+- design: design1
+  signal: cm_rom[0]
+  roles: [top_output]
+
+- design: design1
+  signal: d_hiz[0]
+  roles: [top_output]
+
+- design: design1
+  signal: d_in[0]
+  roles: [top_input]
+
+- design: design1
+  signal: d_in[1]
+  roles: [top_input]
+
+- design: design1
+  signal: d_in[2]
+  roles: [top_input]
+
+- design: design1
+  signal: d_in[3]
+  roles: [top_input]
+
+- design: design1
+  signal: d_oe[0]
+  roles: [top_output]
+
+- design: design1
+  signal: d_out[0]
+  roles: [top_output]
+
+- design: design1
+  signal: d_out[1]
+  roles: [top_output]
+
+- design: design1
+  signal: d_out[2]
+  roles: [top_output]
+
+- design: design1
+  signal: d_out[3]
+  roles: [top_output]
+
+- design: design1
+  signal: rst[0]
+  roles: [top_input]
+
+- design: design1
+  signal: sync[0]
+  roles: [top_output]
+
+- design: design1
+  signal: test[0]
+  roles: [top_input]

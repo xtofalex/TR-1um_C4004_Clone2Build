@@ -1,0 +1,7 @@
+cmd (cwd = results/edit_10_pdr_k400_probe): kepler-formal -verilog -v sec --sec-engine pdr -k 400 --sec-reset-cycles 3 --sec-reset-port rst=1 --report-skipped-pos --design1 ../../sec/raw_syn_top.v ../../../TR-1um_C4004_10/openroad/c4004_core_raw_syn.v --design2 ../../../TR-1um_C4004_10/openroad/c4004_core_syn.v --verilog_design1_top raw_syn_top --set-as-boundary u_raw/u_sram u_sram --liberty ../../../TR-1um_C4004_10/module/STDCELL/tr1um_typ_5v0_25c.lib ../../../TR-1um_C4004_10/module/SRAM128/SRAM128.lib
+kepler-formal: kepler-formal version: 1.0.0 kepler-formal git hash: fd24770df6c3297cf31cf0ae4908214501e22ac2 naja version: 0.7.33 naja git hash: cb142398 
+KEPLER_SEC_DIAG=1
+wall-clock cap: 600 s
+STOPPED by wall-clock cap (600 s): result is the depth reached, not a verdict
+exit: 142  wall: 600 s  cpu: user 508.90 s, sys 5.71 s  peak RSS: 922 MB
+

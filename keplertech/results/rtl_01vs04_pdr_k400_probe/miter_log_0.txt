@@ -1,0 +1,19 @@
+[2026-11-19 02:13:59.871] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2325] KEPLER FORMAL: Run.
+[2026-11-19 02:13:59.871] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2398] Input format: SYSTEMVERILOG
+[2026-11-19 02:13:59.871] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2405] SystemVerilog compilation units: one per file
+[2026-11-19 02:13:59.871] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2408] Run log: miter_log_0.txt
+[2026-11-19 02:13:59.871] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:739] Netlist 1: ../../cfg/rtl_01.v
+[2026-11-19 02:13:59.871] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:739] Netlist 2: ../../cfg/rtl_04.v
+[2026-11-19 02:13:59.871] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2685] Solver: KISSAT
+[2026-11-19 02:13:59.871] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2686] Verification: sec
+[2026-11-19 02:13:59.871] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2688] SEC max_k: 400
+[2026-11-19 02:13:59.871] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2689] SEC engine: pdr
+[2026-11-19 02:13:59.871] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2690] SEC encoding: dual_rail_steady
+[2026-11-19 02:13:59.871] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2694] SEC internal relations: learn=true allow_x_equality=true binary_relation_round=true
+[2026-11-19 02:13:59.871] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2696] SEC reset bootstrap: 3 cycle(s)
+[2026-11-19 02:13:59.871] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2701] SEC reset bootstrap port: rst active=1
+[2026-11-19 02:13:59.871] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2705] Compact mode: disabled
+[2026-11-19 02:13:59.871] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2706] Skipped PO reports: enabled
+[2026-11-19 02:13:59.871] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2707] SEC latch abstraction: enabled
+[2026-11-19 02:13:59.872] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2708] SEC data-enabled latch model: enabled
+[2026-11-19 02:13:59.874] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:3390] Parsing systemverilog file(s) for design 1

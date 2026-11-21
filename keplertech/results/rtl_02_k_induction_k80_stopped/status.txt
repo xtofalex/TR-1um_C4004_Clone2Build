@@ -1,0 +1,3 @@
+cmd (cwd = results/rtl_02_k_induction_k80): kepler-formal -sv -v sec --sec-engine k_induction -k 80 --sec-reset-cycles 3 --sec-reset-port rst=1 --report-skipped-pos --design1 ../../cfg/rtl_01.v --design2 ../../cfg/rtl_02.v 
+kepler-formal: kepler-formal version: 1.0.0 kepler-formal git hash: fd24770df6c3297cf31cf0ae4908214501e22ac2 naja version: 0.7.33 naja git hash: cb142398 
+stopped by hand after ~43 min CPU (over the 30 min limit agreed for unplanned runs); no diag, depth unknown; not used in the report

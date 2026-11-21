@@ -1,0 +1,81 @@
+# C4004 Clone2Build — formal check of the 10 trials (status: in progress)
+
+This folder holds an independent check of the ten C4004 trials
+(`TR-1um_C4004_01` … `_10`), done without modifying any trial file. It uses
+open-source tools from KeplerTech:
+
+* [**Kepler-Formal**](https://github.com/keplertech/kepler-formal): sequential
+  equivalence (SEC), output by output, cycle by cycle, for every input sequence.
+* Icarus Verilog: replay and lockstep random simulation.
+
+Two questions:
+
+1. Do the RTL versions of the trials behave the same as trial 01?
+2. Is each trial's netlist the same machine as its RTL?
+   - `openroad/c4004_core_syn.v` vs the RTL;
+   - `raw_syn` (Yosys) vs `syn` (after `scripts/insert_high_fo_buffers.py`).
+
+## Status
+
+| Check | Result | Log |
+|---|---|---|
+| Inventory | Same ports in all 10 trials. RTL 07–10 byte-identical to 06 | `results/inventory.txt` |
+| RTL 05 vs 04, 06 vs 05 | **proved equal**, 2 s each, so the distinct behaviours to check are 01–04 | `results/rtl_04vs05_*`, `rtl_05vs06_*` |
+| RTL 02 vs 01, PDR | **7 of 12 outputs proved**; `bus_d[0..3]`, `cm_ram[1]` not concluded. No counterexample | `results/rtl_01vs02_pdr_k400_budx50` |
+| … same, Kepler-Formal branch `issue-317-signal-correspondence` (8491fc0) | **8 of 12 proved**; `bus_d[0..3]` not concluded. No counterexample | `results/rtl_01vs02_pdr_k400_budx50_kf8491fc0` |
+| RTL 03, 04 vs 01, k-induction (20 min cap) | no counterexample; not concluded | `results/rtl_01vs0[34]_k_induction_k80` |
+| Netlist vs RTL, all 10 trials, k-induction k = 20 | no counterexample; 1–2 of 23 outputs proved | `results/gate_*_k_induction_k20` |
+| raw_syn vs syn, all 10 trials, k-induction k = 20 | no counterexample; 1–2 of 23 outputs proved | `results/edit_*_k_induction_k20` |
+| Netlist vs RTL, trial 10, PDR (10 min probe) | 17 of 23 outputs proved; `d_out[2,3]`, SRAM `DIN[0..3]` not concluded | `results/gate_10_pdr_k400_probe` |
+| Lockstep random simulation, RTL 02/03/04 vs 01 | **0 mismatches** in 10 × 10⁶ cycles each | `results/random_sim_rtl_*.log` |
+| Lockstep random simulation, netlist vs RTL, all 10 trials | **0 mismatches** in 10 × 10⁶ cycles each, pins and SRAM interface | `results/random_sim_gate_*.log` |
+
+**How to read the table:**
+- "Proved" means proved for every reachable state.
+- "Not concluded" means the solver stopped on its budget or on our wall-clock cap. It is not evidence of a difference.
+- Random simulation is evidence, not proof.
+- The trials do not clear the SRAM after reset. Words never written are unknown (X), and SEC compares only binary-defined outputs.
+
+## Why `bus_d` is not concluded for RTL 01 vs 02
+
+Trial 02 keeps a copy of PC+1 in `buf_l/m/h` and reads the PC from these
+registers instead of the SRAM while `pc_init_n` = 0. Trial 01 always reads it
+from the SRAM. The PC nibbles appear on `bus_d` in phases A1–A3.
+
+Two small designs, equivalent by construction and not derived from trial code (`repro/`), reproduce the inconclusive result:
+
+| Reproducer | Kepler-Formal fd24770 | Kepler-Formal 8491fc0 |
+|---|---|---|
+| `shadow.v`: register copy of one memory word, 32 words × 4–12 bits | 1–2 of 4–12 outputs proved | **all proved**, 8–31 s |
+| `shadow_nib.v`: 12-bit PC as three nibbles, read and written in separate phases | `bus[0..3]` not concluded | `bus[0..3]` not concluded |
+
+- **Sanity check:** in both reproducers a deliberately inserted bug (`-DBUG`) is found (cycle 2, and cycles 18–25).
+- **Upstream:** reported in [kepler-formal#317](https://github.com/keplertech/kepler-formal/issues/317).
+
+## Still to do
+
+- PDR runs:
+  - RTL 03 and 04 vs 01;
+  - netlist vs RTL for all trials;
+  - raw_syn vs syn for all trials.
+- Netlist of trial N vs RTL 01, only where the RTL is proved equal.
+- Part 2: how the trials were explored, edited and checked, and where the tools would have helped.
+- `DETAILS.md` with methods and exact commands.
+
+## Layout and reproduction
+
+| Path | Content |
+|---|---|
+| `inventory.py` | hashes, groups and port check of the 10 trials |
+| `gen_cfg.sh`, `cfg/` | preprocessed SEC inputs (common wrapper `sec/wrap_c4004.v`) |
+| `run_sec.sh <rtl\|gate\|edit\|cross> <NN> <engine> <k> [tag]` | one Kepler-Formal run; writes `results/<name>/run.log` and `status.txt` (command, tool version, exit code, wall and CPU time, peak memory) |
+| `replay.sh`, `sim/` | counterexample replay and lockstep simulation benches |
+| `random_sim.sh` | lockstep random simulation, 5 seeds × 10⁶ cycles × 2 stimulus edges |
+| `sim_provenance.sh` | which sources the stored simulation logs and binaries of each trial came from |
+| `repro/` | the two reproducers above (`run.sh`, `tb_nib.v`) |
+
+**Tools:**
+- Kepler-Formal `fd24770` (main) and `8491fc0` (branch `issue-317-signal-correspondence`), Release builds in `tools/`, which is not committed;
+- Icarus Verilog.
+
+**Compressed log:** `results/rtl_01vs02_pdr_k400_budx50_kf8491fc0/run.log` is stored as `run.log.xz` (266 MB uncompressed).

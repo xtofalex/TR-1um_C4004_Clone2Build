@@ -1,0 +1,12 @@
+kepler-formal cmd (cwd = results/repro_aw0_w0_bug_pdr_k400_nib_array_fd24770): -sv -v sec --sec-engine pdr -k 400 --sec-reset-cycles 3 --sec-reset-port rst=1 --report-skipped-pos --design1 a_aw0_w0.v --design2 b_aw0_w0.v
+source: repro/shadow_nib.v  defines:  -DBUG
+kepler-formal: kepler-formal version: 1.0.0 kepler-formal git hash: fd24770df6c3297cf31cf0ae4908214501e22ac2 naja version: 0.7.33 naja git hash: cb142398 
+KEPLER_SEC_DIAG=1
+wall-clock cap: 600 s
+exit: 3  wall: 7,92 s  cpu: user 7,53 s, sys 0,14 s
+peak RSS: 281 MB
+[2026-11-20 23:02:38.808] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2865] Difference was found. SEC found a counterexample at k = 25.
+[2026-11-20 23:02:38.808] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2868] SEC counterexample details:
+SEC diag: PDR steady-state check end index=0 output_range=0..7 status=inconclusive bound=6
+SEC diag: PDR steady-state check end index=1 output_range=0..3 status=inconclusive bound=6
+SEC diag: PDR steady-state check end index=2 output_range=0..1 status=different bound=25

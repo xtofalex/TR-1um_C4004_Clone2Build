@@ -1,0 +1,5 @@
+tools
+sim/build/
+results/**/*.tmp
+repro/build/
+results/rtl_01vs02_pdr_k400_budx50_kf8491fc0/run.log

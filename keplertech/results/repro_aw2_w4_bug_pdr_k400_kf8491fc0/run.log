@@ -1,0 +1,234 @@
+[2026-11-20 17:58:11.013] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2334] KEPLER FORMAL: Run.
+[2026-11-20 17:58:11.013] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2407] Input format: SYSTEMVERILOG
+[2026-11-20 17:58:11.013] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2414] SystemVerilog compilation units: one per file
+[2026-11-20 17:58:11.013] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2417] Run log: miter_log_1.txt
+[2026-11-20 17:58:11.013] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:740] Netlist 1: a_aw2_w4.v
+[2026-11-20 17:58:11.013] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:740] Netlist 2: b_aw2_w4.v
+[2026-11-20 17:58:11.013] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2694] Solver: KISSAT
+[2026-11-20 17:58:11.013] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2695] Verification: sec
+[2026-11-20 17:58:11.013] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2697] SEC max_k: 400
+[2026-11-20 17:58:11.013] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2698] SEC engine: pdr
+[2026-11-20 17:58:11.013] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2699] SEC encoding: dual_rail_steady
+[2026-11-20 17:58:11.013] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2705] SEC internal relations: learn=true allow_x_equality=true binary_relation_round=true signal_correspondence=true
+[2026-11-20 17:58:11.013] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2707] SEC reset bootstrap: 3 cycle(s)
+[2026-11-20 17:58:11.013] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2712] SEC reset bootstrap port: rst active=1
+[2026-11-20 17:58:11.013] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2716] Compact mode: disabled
+[2026-11-20 17:58:11.013] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2717] Skipped PO reports: enabled
+[2026-11-20 17:58:11.013] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2718] SEC latch abstraction: enabled
+[2026-11-20 17:58:11.013] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2719] SEC data-enabled latch model: enabled
+[2026-11-20 17:58:11.015] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:3401] Parsing systemverilog file(s) for design 1
+2026-11-20 17:58:11,036 [naja] [info] SystemVerilog diagnostics summary: status=success, no diagnostics; report='naja_sv_diagnostics.log'
+2026-11-20 17:58:11,038 [naja] [info] Found top design: top
+2026-11-20 17:58:11,038 [naja] [info] Parsing systemverilog file(s) for design 2
+2026-11-20 17:58:11,040 [naja] [info] SystemVerilog diagnostics summary: status=success, no diagnostics; report='naja_sv_diagnostics.log'
+2026-11-20 17:58:11,040 [naja] [info] Found top design: top
+SEC diag: start run
+SEC diag: extract(top) collect begin
+SEC diag: extract(top) collect end inputs=15 outputs=32
+SEC diag: extract(top) opaque_reached_outputs=0
+SEC diag: extract(top) initial_observed_outputs=4
+SEC diag: extract(top) build begin
+SEC diag: extract(top) build end
+SEC diag: extract(top) boundary normalized env=8 state=7 outputs=4 pending=3
+SEC diag: extract(top) mapped boundary vars=15
+SEC diag: extract(top) structured memory dependency build begin outputs=19
+SEC diag: extract(top) structured memory dependency build end outputs=19
+SEC diag: extract(top) mapped boundary vars=15
+SEC diag: extract(top) materialized output exprs observed=4 total=46
+SEC diag: top input rst[0] is not clock-only: sequential non-clock pin 65//D (naja_dff)
+SEC diag: top input push[0] is not clock-only: sequential non-clock pin 63//D (naja_dff__w2)
+SEC diag: top input pop[0] is not clock-only: combinational output not clock-only after 61//S (naja_mux2__w2)
+SEC diag: extract(top) immutable clock structure indexed terms=222 pure_terms=4
+SEC diag: extract(top) dependency build begin outputs=4
+SEC diag: extract(top) dependency build end outputs=4
+SEC diag: extract(top) mapped boundary vars=31
+SEC diag: extract(top) rebuilt next-state exprs=23 init=0 data_latches=0
+SEC diag: extract(top) filtered env=8 state=23
+SEC diag: extract(top) structured_memories=1 structured_memory_cells=16
+SEC diag: extract(top) kept_states=[63.Q[0]@v11, 63.Q[1]@v10, 65.Q[0]@v12, mem_mem/.__MEM_CELL[0][0]@v306, mem_mem/.__MEM_CELL[0][1]@v307, mem_mem/.__MEM_CELL[0][2]@v308, mem_mem/.__MEM_CELL[0][3]@v309, mem_mem/.__MEM_CELL[1][0]@v310, mem_mem/.__MEM_CELL[1][1]@v311, mem_mem/.__MEM_CELL[1][2]@v312, mem_mem/.__MEM_CELL[1][3]@v313, mem_mem/.__MEM_CELL[2][0]@v314, mem_mem/.__MEM_CELL[2][1]@v315, mem_mem/.__MEM_CELL[2][2]@v316, mem_mem/.__MEM_CELL[2][3]@v317, mem_mem/.__MEM_CELL[3][0]@v318, mem_mem/.__MEM_CELL[3][1]@v319, mem_mem/.__MEM_CELL[3][2]@v320, mem_mem/.__MEM_CELL[3][3]@v321]
+SEC diag: extract(top) observed_support pc[0] = [v10, v11, v12, v306, v310, v314, v318]
+SEC diag: extract(top) observed_support pc[1] = [v10, v11, v12, v307, v311, v315, v319]
+SEC diag: extract(top) observed_support pc[2] = [v10, v11, v12, v308, v312, v316, v320]
+SEC diag: extract(top) observed_support pc[3] = [v10, v11, v12, v309, v313, v317, v321]
+SEC diag: extract(top) end
+SEC diag: extracted design0
+SEC diag: extract(top) collect begin
+SEC diag: extract(top) collect end inputs=20 outputs=39
+SEC diag: extract(top) opaque_reached_outputs=0
+SEC diag: extract(top) initial_observed_outputs=4
+SEC diag: extract(top) build begin
+SEC diag: extract(top) build end
+SEC diag: extract(top) boundary normalized env=8 state=12 outputs=4 pending=8
+SEC diag: extract(top) mapped boundary vars=20
+SEC diag: extract(top) structured memory dependency build begin outputs=19
+SEC diag: extract(top) structured memory dependency build end outputs=19
+SEC diag: extract(top) mapped boundary vars=20
+SEC diag: extract(top) materialized output exprs observed=4 total=46
+SEC diag: top input rst[0] is not clock-only: sequential non-clock pin 76//D (naja_dff__w4)
+SEC diag: top input push[0] is not clock-only: combinational output not clock-only after 75//A (naja_mux2__w4)
+SEC diag: top input pop[0] is not clock-only: sequential non-clock pin 64//D (naja_dff__w2)
+SEC diag: top input target[3] is not clock-only: sequential non-clock pin 76//D (naja_dff__w4)
+SEC diag: top input target[2] is not clock-only: sequential non-clock pin 76//D (naja_dff__w4)
+SEC diag: top input target[1] is not clock-only: sequential non-clock pin 76//D (naja_dff__w4)
+SEC diag: top input target[0] is not clock-only: combinational output not clock-only after 72//B (naja_mux2__w4)
+SEC diag: extract(top) immutable clock structure indexed terms=313 pure_terms=6
+SEC diag: extract(top) dependency build begin outputs=9
+SEC diag: extract(top) dependency build end outputs=9
+SEC diag: extract(top) mapped boundary vars=36
+SEC diag: extract(top) rebuilt next-state exprs=28 init=0 data_latches=0
+SEC diag: extract(top) filtered env=8 state=28
+SEC diag: extract(top) structured_memories=1 structured_memory_cells=16
+SEC diag: extract(top) kept_states=[64.Q[0]@v11, 64.Q[1]@v10, 66.Q[0]@v12, 71.Q[0]@v13, 76.Q[0]@v17, 76.Q[1]@v16, 76.Q[2]@v15, 76.Q[3]@v14, mem_mem/.__MEM_CELL[0][0]@v426, mem_mem/.__MEM_CELL[0][1]@v427, mem_mem/.__MEM_CELL[0][2]@v428, mem_mem/.__MEM_CELL[0][3]@v429, mem_mem/.__MEM_CELL[1][0]@v430, mem_mem/.__MEM_CELL[1][1]@v431, mem_mem/.__MEM_CELL[1][2]@v432, mem_mem/.__MEM_CELL[1][3]@v433, mem_mem/.__MEM_CELL[2][0]@v434, mem_mem/.__MEM_CELL[2][1]@v435, mem_mem/.__MEM_CELL[2][2]@v436, mem_mem/.__MEM_CELL[2][3]@v437, mem_mem/.__MEM_CELL[3][0]@v438, mem_mem/.__MEM_CELL[3][1]@v439, mem_mem/.__MEM_CELL[3][2]@v440, mem_mem/.__MEM_CELL[3][3]@v441]
+SEC diag: extract(top) observed_support pc[0] = [v10, v11, v12, v13, v17, v426, v430, v434, v438]
+SEC diag: extract(top) observed_support pc[1] = [v10, v11, v12, v13, v16, v427, v431, v435, v439]
+SEC diag: extract(top) observed_support pc[2] = [v10, v11, v12, v13, v15, v428, v432, v436, v440]
+SEC diag: extract(top) observed_support pc[3] = [v10, v11, v12, v13, v14, v429, v433, v437, v441]
+SEC diag: extract(top) end
+SEC diag: extracted design1
+SEC diag: start run from extracted models
+SEC diag: aligning inputs/outputs
+SEC diag: checked_outputs=4 total_outputs=4 skipped=0
+SEC diag: aligned_inputs=8 aligned_outputs=4 state_bits0=19 state_bits1=24
+SEC diag: reset bootstrap cycles=3 ports=1
+SEC diag: dual-rail mode keeps reset-unanchored outputs in the rail-encoded proof
+SEC diag: dual-rail output requires engine proof: pc[0]
+SEC diag: dual-rail output requires engine proof: pc[1]
+SEC diag: dual-rail output requires engine proof: pc[2]
+SEC diag: dual-rail output requires engine proof: pc[3]
+SEC summary: encoding=dual_rail_steady rail_state_bits=86 rail_outputs=4 dual_rail_state_relation_pairs=0
+SEC diag: internal relations round=0 partition=0..16 vars=1326 status=sat conflicts=0 decisions=0 ticks=0
+SEC diag: internal relations round=0 active=19 structural=3 refuted=16 seconds=0.0
+SEC diag: internal relations round=1 active=3 structural=3 refuted=0 seconds=0.0
+SEC diag: internal relations round=0 partition=0..16 vars=619 status=sat conflicts=18 decisions=4272 ticks=5470
+SEC diag: internal relations round=0 active=19 structural=3 refuted=4 seconds=0.0
+SEC diag: internal relations round=1 partition=0..12 vars=509 status=sat conflicts=11 decisions=4267 ticks=5196
+SEC diag: internal relations round=1 active=15 structural=3 refuted=4 seconds=0.0
+SEC diag: internal relations round=2 partition=0..8 vars=417 status=sat conflicts=0 decisions=0 ticks=6
+SEC diag: internal relation refuted: mem_mem/.__MEM_CELL[0][0] ~ mem_mem/.__MEM_CELL[0][0]
+SEC diag: internal relations round=2 active=11 structural=3 refuted=1 seconds=0.0
+SEC diag: internal relations round=3 partition=0..7 vars=383 status=sat conflicts=0 decisions=0 ticks=6
+SEC diag: internal relations round=3 active=10 structural=3 refuted=4 seconds=0.0
+SEC diag: internal relations round=4 partition=0..3 vars=279 status=sat conflicts=0 decisions=0 ticks=0
+SEC diag: internal relation refuted: mem_mem/.__MEM_CELL[0][1] ~ mem_mem/.__MEM_CELL[0][1]
+SEC diag: internal relations round=4 active=6 structural=3 refuted=1 seconds=0.0
+SEC diag: internal relations round=5 partition=0..2 vars=246 status=sat conflicts=0 decisions=0 ticks=0
+SEC diag: internal relation refuted: mem_mem/.__MEM_CELL[0][2] ~ mem_mem/.__MEM_CELL[0][2]
+SEC diag: internal relations round=5 active=5 structural=3 refuted=1 seconds=0.0
+SEC diag: internal relations round=6 partition=0..1 vars=216 status=sat conflicts=0 decisions=0 ticks=0
+SEC diag: internal relation refuted: mem_mem/.__MEM_CELL[0][3] ~ mem_mem/.__MEM_CELL[0][3]
+SEC diag: internal relations round=6 active=4 structural=3 refuted=1 seconds=0.0
+SEC diag: internal relations round=7 active=3 structural=3 refuted=0 seconds=0.0
+SEC summary: signal_correspondence scope=registers_and_outputs completed=1 signals=187 classes=8 rounds=2 solver_calls=4 proved_outputs=0/4 state_equalities=0 seconds=0.0
+SEC summary: signal_correspondence scope=all_signals completed=1 signals=1263 classes=86 rounds=3 solver_calls=21 proved_outputs=0/4 state_equalities=0 seconds=0.1
+SEC summary: internal_relation_candidates=19 proved_rail_equalities=6 allow_x_equality_in_internal_relations=1 name_candidates=16 net_name_candidates=3 driver_candidates=0 propagated_candidates=0 propagation_rounds=0
+SEC summary: binary_relation_round candidates=16 proved_rail_equalities=0 discharged_outputs=0/4
+SEC summary: structurally_proved_outputs=0 of 4 merged_equalities=6
+SEC diag: merged state symbols=6 identical_output_formulas=0/4
+SEC diag: entering pdr engine
+SEC diag: PDR steady-state check begin index=0 pending_batches=1 output_range=0..4
+SEC diag: PDR bad cube uses exact ternary support: 26 state symbols at F1
+SEC diag: PDR bad cube uses exact ternary support: 26 state symbols at F1
+SEC diag: PDR bad cube uses exact ternary support: 26 state symbols at F1
+SEC diag: PDR bad cube uses exact ternary support: 26 state symbols at F1
+SEC diag: PDR bad cube uses exact ternary support: 26 state symbols at F1
+SEC diag: PDR bad cube uses exact ternary support: 26 state symbols at F1
+SEC diag: PDR bad cube uses exact ternary support: 26 state symbols at F1
+SEC diag: PDR bad cube uses exact ternary support: 26 state symbols at F1
+SEC diag: PDR bad cube uses exact ternary support: 26 state symbols at F1
+SEC diag: PDR bad cube uses exact ternary support: 26 state symbols at F1
+SEC diag: PDR bad cube uses exact ternary support: 26 state symbols at F1
+SEC diag: PDR bad cube uses exact ternary support: 26 state symbols at F1
+SEC diag: PDR bad cube uses exact ternary support: 26 state symbols at F1
+SEC diag: PDR bad cube uses exact ternary support: 26 state symbols at F1
+SEC diag: PDR bad cube uses exact ternary support: 26 state symbols at F1
+SEC diag: PDR bad cube uses exact ternary support: 26 state symbols at F1
+SEC diag: PDR bad cube uses exact ternary support: 26 state symbols at F1
+SEC diag: PDR bad cube uses exact ternary support: 26 state symbols at F1
+SEC diag: PDR bad cube uses exact ternary support: 26 state symbols at F1
+SEC diag: PDR bad cube uses exact ternary support: 26 state symbols at F1
+SEC diag: PDR bad cube uses exact ternary support: 26 state symbols at F1
+SEC diag: PDR bad cube uses exact ternary support: 26 state symbols at F1
+SEC diag: PDR bad cube uses exact ternary support: 26 state symbols at F1
+SEC diag: PDR bad cube uses exact ternary support: 26 state symbols at F1
+SEC diag: PDR bad cube uses exact ternary support: 26 state symbols at F1
+SEC diag: PDR bad cube uses exact ternary support: 26 state symbols at F1
+SEC diag: PDR bad cube uses exact ternary support: 26 state symbols at F1
+SEC diag: PDR bad cube uses exact ternary support: 26 state symbols at F1
+SEC diag: PDR bad cube uses exact ternary support: 26 state symbols at F1
+SEC diag: PDR bad cube uses exact ternary support: 26 state symbols at F1
+SEC diag: PDR bad cube uses exact ternary support: 26 state symbols at F1
+SEC diag: PDR bad cube uses exact ternary support: 26 state symbols at F1
+SEC diag: PDR bad cube uses exact ternary support: 26 state symbols at F1
+SEC diag: PDR bad cube uses exact ternary support: 26 state symbols at F1
+SEC diag: PDR bad cube uses exact ternary support: 26 state symbols at F1
+SEC diag: PDR bad cube uses exact ternary support: 26 state symbols at F1
+SEC diag: PDR bad cube uses exact ternary support: 26 state symbols at F2
+SEC diag: PDR bad cube uses exact ternary support: 26 state symbols at F2
+SEC diag: PDR bad cube uses exact ternary support: 26 state symbols at F2
+SEC diag: PDR bad cube uses exact ternary support: 26 state symbols at F2
+SEC diag: PDR bad cube uses exact ternary support: 26 state symbols at F2
+SEC diag: PDR bad cube uses exact ternary support: 26 state symbols at F2
+SEC diag: PDR bad cube uses exact ternary support: 26 state symbols at F2
+SEC diag: PDR bad cube uses exact ternary support: 26 state symbols at F2
+SEC diag: PDR bad cube uses exact ternary support: 26 state symbols at F2
+SEC diag: PDR bad cube uses exact ternary support: 26 state symbols at F2
+SEC diag: PDR bad cube uses exact ternary support: 26 state symbols at F2
+SEC diag: PDR bad cube uses exact ternary support: 26 state symbols at F2
+SEC diag: PDR bad cube uses exact ternary support: 26 state symbols at F2
+SEC diag: PDR bad cube uses exact ternary support: 26 state symbols at F2
+SEC diag: PDR bad cube uses exact ternary support: 26 state symbols at F2
+SEC diag: PDR bad cube uses exact ternary support: 26 state symbols at F2
+SEC diag: PDR steady-state check end index=0 output_range=0..4 status=different bound=2
+SEC diag: k-induction base coi k=10 first_bad_frame=3 frames=14 solver_symbols=93 transition_targets=1118 bad_support=80 initial_assignments=86 encoded_initial_assignments=86 structured_initial_assignments=1 safe_prefix_constraints=0
+SEC diag: k-induction base coi k=2 first_bad_frame=5 frames=6 solver_symbols=93 transition_targets=430 bad_support=80 initial_assignments=86 encoded_initial_assignments=86 structured_initial_assignments=1 safe_prefix_constraints=0
+[2026-11-20 17:58:11.311] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2769] SEC checked-output coverage: 100.00% (4/4 covered/existing outputs).
+[2026-11-20 17:58:11.311] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2876] Difference was found. SEC found a counterexample at k = 2.
+[2026-11-20 17:58:11.312] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2879] SEC counterexample details:
+Counterexample reaches the first bad frame at cycle 2.
+Input trace:
+  cycle 0: rst[0]=0, push[0]=0, pop[0]=1, target[0]=0, target[1]=0, target[2]=1, target[3]=0
+  cycle 1: rst[0]=0, push[0]=0, pop[0]=1, target[0]=0, target[1]=0, target[2]=0, target[3]=0
+  cycle 2: rst[0]=0, push[0]=0, pop[0]=0, target[0]=0, target[1]=0, target[2]=0, target[3]=0
+Observed output mismatches at cycle 2:
+  pc[3]: design0=0, design1=1
+Traceback for first differing point `pc[3]` at cycle 2:
+  design0 cone to environment inputs:
+    step 0: 52.Y[3]
+    step 1: 65.Q[0], Constant 0, mem_mem.RDATA[0], mem_mem.RDATA[1], mem_mem.RDATA[2], mem_mem.RDATA[3]
+    step 2: 10.[0], 11.[0], 12.[0], 13.[0], 14.[0], 15.[0], 2.[0], 21.[0], 22.[0], 23.Y[0], 23.Y[1], 23.Y[2], ... +13 more
+    step 3: 16.[0], 20.[0], 34.[0], 39.[0], 46.[0], 52.Y[0], 52.Y[1], 52.Y[2], 57.Y[0], 57.Y[1], 63.Q[0], 63.Q[1], ... +6 more
+    step 4: 1.[0], 18.[0], 19.[0], 33.[0], 38.[0], 45.[0], 62.Y[0], 62.Y[1], 9.[0]
+    step 5: 0.[0], 17.[0], 32.[0], 37.[0], 44.[0], 61.Y[0], 61.Y[1], pop[0], push[0]
+    step 6: 31.[0], 35.[0], 36.[0], 42.[0], 43.[0], 58.Y[0], 58.Y[1], 59.Y[0], 59.Y[1], 60.[0]
+    step 7: 29.[0], 30.[0]
+  design1 cone to environment inputs:
+    step 0: 53.Y[3]
+    step 1: 52.Y[0], 52.Y[1], 52.Y[2], 52.Y[3], 66.Q[0], Constant 0
+    step 2: 65.Y[0], 71.Q[0], 76.Q[0], 76.Q[1], 76.Q[2], 76.Q[3], clk[0], mem_mem.RDATA[0], mem_mem.RDATA[1], mem_mem.RDATA[2], mem_mem.RDATA[3]
+    step 3: 10.[0], 11.[0], 12.[0], 13.[0], 14.[0], 15.[0], 2.[0], 21.[0], 22.[0], 23.Y[0], 23.Y[1], 23.Y[2], ... +18 more
+    step 4: 16.[0], 20.[0], 34.[0], 39.[0], 46.[0], 53.Y[0], 53.Y[1], 53.Y[2], 58.Y[0], 58.Y[1], 64.Q[0], 64.Q[1], ... +9 more
+    step 5: 1.[0], 18.[0], 19.[0], 33.[0], 38.[0], 45.[0], 63.Y[0], 63.Y[1], 67.Y[0], 68.[0], 72.Y[0], 72.Y[1], ... +7 more
+    step 6: 0.[0], 17.[0], 32.[0], 37.[0], 44.[0], 62.Y[0], 62.Y[1], pop[0], push[0]
+    step 7: 31.[0], 35.[0], 36.[0], 42.[0], 43.[0], 59.Y[0], 59.Y[1], 60.Y[0], 60.Y[1], 61.[0]
+    step 8: 29.[0], 30.[0]
+  cone terms only in design0: 57.Y[0], 57.Y[1], 60.[0], 61.Y[0], 61.Y[1], 63.Q[0], 63.Q[1], 64.Y[0], 65.Q[0]
+  cone terms only in design1: 53.Y[0], 53.Y[1], 53.Y[2], 53.Y[3], 60.Y[0], 60.Y[1], 61.[0], 63.Y[0], 63.Y[1], 64.Q[0], 64.Q[1], 65.Y[0], 66.Q[0], 67.Y[0], 68.[0], 69.Y[0], 70.Y[0], 71.Q[0], 72.Y[0], 72.Y[1], ... +18 more
+
+        0,35 real         0,26 user         0,04 sys
+            40943616  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                2772  page reclaims
+                 395  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                  12  voluntary context switches
+                1132  involuntary context switches
+          2583869909  instructions retired
+           890345777  cycles elapsed
+            27525600  peak memory footprint

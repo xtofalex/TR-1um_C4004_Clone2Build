@@ -1,0 +1,58 @@
+[2026-11-20 17:58:18.700] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2334] KEPLER FORMAL: Run.
+[2026-11-20 17:58:18.700] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2407] Input format: SYSTEMVERILOG
+[2026-11-20 17:58:18.700] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2414] SystemVerilog compilation units: one per file
+[2026-11-20 17:58:18.700] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2417] Run log: miter_log_0.txt
+[2026-11-20 17:58:18.700] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:740] Netlist 1: a_aw5_w12.v
+[2026-11-20 17:58:18.700] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:740] Netlist 2: b_aw5_w12.v
+[2026-11-20 17:58:18.700] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2694] Solver: KISSAT
+[2026-11-20 17:58:18.700] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2695] Verification: sec
+[2026-11-20 17:58:18.700] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2697] SEC max_k: 400
+[2026-11-20 17:58:18.700] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2698] SEC engine: pdr
+[2026-11-20 17:58:18.700] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2699] SEC encoding: dual_rail_steady
+[2026-11-20 17:58:18.700] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2705] SEC internal relations: learn=true allow_x_equality=true binary_relation_round=true signal_correspondence=true
+[2026-11-20 17:58:18.700] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2707] SEC reset bootstrap: 3 cycle(s)
+[2026-11-20 17:58:18.700] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2712] SEC reset bootstrap port: rst active=1
+[2026-11-20 17:58:18.700] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2716] Compact mode: disabled
+[2026-11-20 17:58:18.700] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2717] Skipped PO reports: enabled
+[2026-11-20 17:58:18.700] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2718] SEC latch abstraction: enabled
+[2026-11-20 17:58:18.700] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2719] SEC data-enabled latch model: enabled
+[2026-11-20 17:58:18.701] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:3401] Parsing systemverilog file(s) for design 1
+[2026-11-20 17:59:17.250] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2769] SEC checked-output coverage: 100.00% (12/12 covered/existing outputs).
+[2026-11-20 17:59:17.251] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2876] Difference was found. SEC found a counterexample at k = 2.
+[2026-11-20 17:59:17.251] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2879] SEC counterexample details:
+Counterexample reaches the first bad frame at cycle 2.
+Input trace:
+  cycle 0: rst[0]=0, push[0]=1, pop[0]=0, target[0]=0
+  cycle 1: rst[0]=0, push[0]=0, pop[0]=1, target[0]=0
+  cycle 2: rst[0]=0, push[0]=0, pop[0]=0, target[0]=0
+Observed output mismatches at cycle 2:
+  pc[0]: design0=0, design1=1
+Traceback for first differing point `pc[0]` at cycle 2:
+  design0 cone to environment inputs:
+    step 0: 106.Y[0]
+    step 1: 127.Q[0], Constant 0, mem_mem.RDATA[0], mem_mem.RDATA[10], mem_mem.RDATA[11], mem_mem.RDATA[1], mem_mem.RDATA[2], mem_mem.RDATA[3], mem_mem.RDATA[4], mem_mem.RDATA[5], mem_mem.RDATA[6], mem_mem.RDATA[7], ... +2 more
+    step 2: 100.[0], 101.[0], 102.[0], 103.[0], 104.[0], 105.[0], 126.Y[0], 2.[0], 21.[0], 22.[0], 23.[0], 24.[0], ... +49 more
+    step 3: 106.Y[10], 106.Y[11], 106.Y[1], 106.Y[2], 106.Y[3], 106.Y[4], 106.Y[5], 106.Y[6], 106.Y[7], 106.Y[8], 106.Y[9], 119.Y[0], ... +28 more
+    step 4: 1.[0], 124.Y[0], 124.Y[1], 124.Y[2], 124.Y[3], 124.Y[4], 20.[0], 40.[0], 41.[0], 72.[0], 83.[0], 96.[0]
+    step 5: 0.[0], 123.Y[0], 123.Y[1], 123.Y[2], 123.Y[3], 123.Y[4], 39.[0], 71.[0], 82.[0], 95.[0], pop[0], push[0]
+    step 6: 120.Y[0], 120.Y[1], 120.Y[2], 120.Y[3], 120.Y[4], 121.Y[0], 121.Y[1], 121.Y[2], 121.Y[3], 121.Y[4], 122.[0], 70.[0], ... +4 more
+    step 7: 68.[0], 69.[0], 78.[0], 79.[0], 91.[0], 92.[0]
+    step 8: 66.[0], 67.[0], 76.[0], 77.[0], 89.[0], 90.[0]
+    step 9: 64.[0], 65.[0], 74.[0], 75.[0], 87.[0], 88.[0]
+    step 10: 62.[0], 63.[0]
+  design1 cone to environment inputs:
+    step 0: 107.Y[0]
+    step 1: 106.Y[0], 106.Y[10], 106.Y[11], 106.Y[1], 106.Y[2], 106.Y[3], 106.Y[4], 106.Y[5], 106.Y[6], 106.Y[7], 106.Y[8], 106.Y[9], ... +2 more
+    step 2: 127.Y[0], 133.Q[0], 138.Q[0], 138.Q[10], 138.Q[11], 138.Q[1], 138.Q[2], 138.Q[3], 138.Q[4], 138.Q[5], 138.Q[6], 138.Q[7], ... +15 more
+    step 3: 100.[0], 101.[0], 102.[0], 103.[0], 104.[0], 105.[0], 132.Y[0], 137.Y[0], 137.Y[10], 137.Y[11], 137.Y[1], 137.Y[2], ... +62 more
+    step 4: 107.Y[10], 107.Y[11], 107.Y[1], 107.Y[2], 107.Y[3], 107.Y[4], 107.Y[5], 107.Y[6], 107.Y[7], 107.Y[8], 107.Y[9], 120.Y[0], ... +39 more
+    step 5: 1.[0], 125.Y[0], 125.Y[1], 125.Y[2], 125.Y[3], 125.Y[4], 129.Y[0], 130.[0], 134.Y[0], 134.Y[10], 134.Y[11], 134.Y[1], ... +26 more
+    step 6: 0.[0], 124.Y[0], 124.Y[1], 124.Y[2], 124.Y[3], 124.Y[4], 39.[0], 71.[0], 82.[0], 95.[0], pop[0], push[0]
+    step 7: 121.Y[0], 121.Y[1], 121.Y[2], 121.Y[3], 121.Y[4], 122.Y[0], 122.Y[1], 122.Y[2], 122.Y[3], 122.Y[4], 123.[0], 70.[0], ... +4 more
+    step 8: 68.[0], 69.[0], 78.[0], 79.[0], 91.[0], 92.[0]
+    step 9: 66.[0], 67.[0], 76.[0], 77.[0], 89.[0], 90.[0]
+    step 10: 64.[0], 65.[0], 74.[0], 75.[0], 87.[0], 88.[0]
+    step 11: 62.[0], 63.[0]
+  cone terms only in design0: 119.Y[0], 119.Y[1], 119.Y[2], 119.Y[3], 119.Y[4], 122.[0], 123.Y[0], 123.Y[1], 123.Y[2], 123.Y[3], 123.Y[4], 125.Q[0], 125.Q[1], 125.Q[2], 125.Q[3], 125.Q[4], 126.Y[0], 127.Q[0]
+  cone terms only in design1: 107.Y[0], 107.Y[10], 107.Y[11], 107.Y[1], 107.Y[2], 107.Y[3], 107.Y[4], 107.Y[5], 107.Y[6], 107.Y[7], 107.Y[8], 107.Y[9], 122.Y[0], 122.Y[1], 122.Y[2], 122.Y[3], 122.Y[4], 123.[0], 125.Y[0], 125.Y[1], ... +75 more
+

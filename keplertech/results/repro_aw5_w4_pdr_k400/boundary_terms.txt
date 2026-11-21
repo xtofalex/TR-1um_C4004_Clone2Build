@@ -1,0 +1,99 @@
+# SEC boundary terms report
+# Categories:
+# - top_input / top_output: original top-level interface terms.
+
+- design: design0
+  signal: clk[0]
+  roles: [top_input]
+
+- design: design0
+  signal: pc[0]
+  roles: [top_output]
+
+- design: design0
+  signal: pc[1]
+  roles: [top_output]
+
+- design: design0
+  signal: pc[2]
+  roles: [top_output]
+
+- design: design0
+  signal: pc[3]
+  roles: [top_output]
+
+- design: design0
+  signal: pop[0]
+  roles: [top_input]
+
+- design: design0
+  signal: push[0]
+  roles: [top_input]
+
+- design: design0
+  signal: rst[0]
+  roles: [top_input]
+
+- design: design0
+  signal: target[0]
+  roles: [top_input]
+
+- design: design0
+  signal: target[1]
+  roles: [top_input]
+
+- design: design0
+  signal: target[2]
+  roles: [top_input]
+
+- design: design0
+  signal: target[3]
+  roles: [top_input]
+
+- design: design1
+  signal: clk[0]
+  roles: [top_input]
+
+- design: design1
+  signal: pc[0]
+  roles: [top_output]
+
+- design: design1
+  signal: pc[1]
+  roles: [top_output]
+
+- design: design1
+  signal: pc[2]
+  roles: [top_output]
+
+- design: design1
+  signal: pc[3]
+  roles: [top_output]
+
+- design: design1
+  signal: pop[0]
+  roles: [top_input]
+
+- design: design1
+  signal: push[0]
+  roles: [top_input]
+
+- design: design1
+  signal: rst[0]
+  roles: [top_input]
+
+- design: design1
+  signal: target[0]
+  roles: [top_input]
+
+- design: design1
+  signal: target[1]
+  roles: [top_input]
+
+- design: design1
+  signal: target[2]
+  roles: [top_input]
+
+- design: design1
+  signal: target[3]
+  roles: [top_input]

@@ -1,0 +1,8 @@
+kepler-formal cmd (cwd = results/repro_aw2_w4_bug_pdr_k400): -sv -v sec --sec-engine pdr -k 400 --sec-reset-cycles 3 --sec-reset-port rst=1 --report-skipped-pos --design1 a_aw2_w4.v --design2 b_aw2_w4.v
+KEPLER_SEC_DIAG=1
+wall-clock cap: 300 s
+exit: 3  wall: 0,18 s  cpu: user 0,13 s, sys 0,02 s
+peak RSS: 36 MB
+[2026-11-19 11:33:38.008] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2865] Difference was found. SEC found a counterexample at k = 2.
+[2026-11-19 11:33:38.008] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2868] SEC counterexample details:
+SEC diag: PDR steady-state check end index=0 output_range=0..4 status=different bound=2

@@ -1,0 +1,187 @@
+# SEC boundary terms report
+# Categories:
+# - top_input / top_output: original top-level interface terms.
+
+- design: design0
+  signal: bus[0]
+  roles: [top_output]
+
+- design: design0
+  signal: bus[1]
+  roles: [top_output]
+
+- design: design0
+  signal: bus[2]
+  roles: [top_output]
+
+- design: design0
+  signal: bus[3]
+  roles: [top_output]
+
+- design: design0
+  signal: clk[0]
+  roles: [top_input]
+
+- design: design0
+  signal: phase[0]
+  roles: [top_output]
+
+- design: design0
+  signal: phase[1]
+  roles: [top_output]
+
+- design: design0
+  signal: phase[2]
+  roles: [top_output]
+
+- design: design0
+  signal: pop[0]
+  roles: [top_input]
+
+- design: design0
+  signal: push[0]
+  roles: [top_input]
+
+- design: design0
+  signal: rst[0]
+  roles: [top_input]
+
+- design: design0
+  signal: target[0]
+  roles: [top_input]
+
+- design: design0
+  signal: target[10]
+  roles: [top_input]
+
+- design: design0
+  signal: target[11]
+  roles: [top_input]
+
+- design: design0
+  signal: target[1]
+  roles: [top_input]
+
+- design: design0
+  signal: target[2]
+  roles: [top_input]
+
+- design: design0
+  signal: target[3]
+  roles: [top_input]
+
+- design: design0
+  signal: target[4]
+  roles: [top_input]
+
+- design: design0
+  signal: target[5]
+  roles: [top_input]
+
+- design: design0
+  signal: target[6]
+  roles: [top_input]
+
+- design: design0
+  signal: target[7]
+  roles: [top_input]
+
+- design: design0
+  signal: target[8]
+  roles: [top_input]
+
+- design: design0
+  signal: target[9]
+  roles: [top_input]
+
+- design: design1
+  signal: bus[0]
+  roles: [top_output]
+
+- design: design1
+  signal: bus[1]
+  roles: [top_output]
+
+- design: design1
+  signal: bus[2]
+  roles: [top_output]
+
+- design: design1
+  signal: bus[3]
+  roles: [top_output]
+
+- design: design1
+  signal: clk[0]
+  roles: [top_input]
+
+- design: design1
+  signal: phase[0]
+  roles: [top_output]
+
+- design: design1
+  signal: phase[1]
+  roles: [top_output]
+
+- design: design1
+  signal: phase[2]
+  roles: [top_output]
+
+- design: design1
+  signal: pop[0]
+  roles: [top_input]
+
+- design: design1
+  signal: push[0]
+  roles: [top_input]
+
+- design: design1
+  signal: rst[0]
+  roles: [top_input]
+
+- design: design1
+  signal: target[0]
+  roles: [top_input]
+
+- design: design1
+  signal: target[10]
+  roles: [top_input]
+
+- design: design1
+  signal: target[11]
+  roles: [top_input]
+
+- design: design1
+  signal: target[1]
+  roles: [top_input]
+
+- design: design1
+  signal: target[2]
+  roles: [top_input]
+
+- design: design1
+  signal: target[3]
+  roles: [top_input]
+
+- design: design1
+  signal: target[4]
+  roles: [top_input]
+
+- design: design1
+  signal: target[5]
+  roles: [top_input]
+
+- design: design1
+  signal: target[6]
+  roles: [top_input]
+
+- design: design1
+  signal: target[7]
+  roles: [top_input]
+
+- design: design1
+  signal: target[8]
+  roles: [top_input]
+
+- design: design1
+  signal: target[9]
+  roles: [top_input]

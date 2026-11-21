@@ -1,0 +1,13 @@
+kepler-formal cmd (cwd = results/repro_aw4_w4_pdr_k400): -sv -v sec --sec-engine pdr -k 400 --sec-reset-cycles 3 --sec-reset-port rst=1 --report-skipped-pos --design1 a_aw4_w4.v --design2 b_aw4_w4.v
+KEPLER_SEC_DIAG=1
+wall-clock cap: 300 s
+exit: 0  wall: 39,73 s  cpu: user 38,52 s, sys 0,56 s
+peak RSS: 382 MB
+[2026-11-19 11:34:28.491] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2829] No binary-defined difference was found. SEC proved equivalence under the dual-rail steady-state abstraction at k = 15.
+SEC diag: PDR steady-state check end index=0 output_range=0..4 status=inconclusive bound=2
+SEC diag: PDR steady-state check end index=1 output_range=0..2 status=inconclusive bound=3
+SEC diag: PDR steady-state check end index=2 output_range=0..1 status=equivalent bound=7
+SEC diag: PDR steady-state check end index=3 output_range=1..2 status=equivalent bound=11
+SEC diag: PDR steady-state check end index=4 output_range=2..4 status=inconclusive bound=3
+SEC diag: PDR steady-state check end index=5 output_range=2..3 status=equivalent bound=11
+SEC diag: PDR steady-state check end index=6 output_range=3..4 status=equivalent bound=15
