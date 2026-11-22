@@ -1,0 +1,8 @@
+kepler-formal cmd (cwd = results/repro_aw0_w0_bug_pdr_k400_nib_sram_kfbefed14): -sv -v sec --sec-engine pdr -k 400 --sec-reset-cycles 3 --sec-reset-port rst=1 --report-skipped-pos --design1 a_aw0_w0.v --design2 b_aw0_w0.v
+source: repro/shadow_nib.v sec/sram128_sec.v defines: -DSRAM -DBUG
+kepler-formal: kepler-formal version: 1.0.0 kepler-formal git hash: befed144bdb6c08635f42ae5f4bb4564c2437559 naja version: 0.7.33 naja git hash: cb142398 
+wall-clock cap: 600 s
+exit: 3  wall: 5,50 s  cpu: user 4,86 s, sys 0,13 s
+peak RSS: 215 MB
+[2026-11-22 00:42:28.652] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2876] Difference was found. SEC found a counterexample at k = 18.
+[2026-11-22 00:42:28.652] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2879] SEC counterexample details:

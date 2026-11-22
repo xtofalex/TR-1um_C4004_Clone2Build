@@ -1,0 +1,7 @@
+kepler-formal cmd (cwd = results/repro_aw0_w0_pdr_k400_nib_sram_kfbefed14): -sv -v sec --sec-engine pdr -k 400 --sec-reset-cycles 3 --sec-reset-port rst=1 --report-skipped-pos --design1 a_aw0_w0.v --design2 b_aw0_w0.v
+source: repro/shadow_nib.v sec/sram128_sec.v defines: -DSRAM 
+kepler-formal: kepler-formal version: 1.0.0 kepler-formal git hash: befed144bdb6c08635f42ae5f4bb4564c2437559 naja version: 0.7.33 naja git hash: cb142398 
+wall-clock cap: 600 s
+exit: 0  wall: 52,56 s  cpu: user 49,84 s, sys 0,52 s
+peak RSS: 109 MB
+[2026-11-22 00:43:15.717] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2840] No binary-defined difference was found. SEC proved equivalence under the dual-rail steady-state abstraction at k = 1.

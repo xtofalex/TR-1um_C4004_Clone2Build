@@ -1,0 +1,50 @@
+[2026-11-22 00:42:23.242] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2334] KEPLER FORMAL: Run.
+[2026-11-22 00:42:23.243] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2407] Input format: SYSTEMVERILOG
+[2026-11-22 00:42:23.243] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2414] SystemVerilog compilation units: one per file
+[2026-11-22 00:42:23.243] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2417] Run log: miter_log_0.txt
+[2026-11-22 00:42:23.244] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:740] Netlist 1: a_aw0_w0.v
+[2026-11-22 00:42:23.244] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:740] Netlist 2: b_aw0_w0.v
+[2026-11-22 00:42:23.244] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2694] Solver: KISSAT
+[2026-11-22 00:42:23.244] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2695] Verification: sec
+[2026-11-22 00:42:23.244] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2697] SEC max_k: 400
+[2026-11-22 00:42:23.244] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2698] SEC engine: pdr
+[2026-11-22 00:42:23.244] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2699] SEC encoding: dual_rail_steady
+[2026-11-22 00:42:23.244] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2705] SEC internal relations: learn=true allow_x_equality=true binary_relation_round=true signal_correspondence=true
+[2026-11-22 00:42:23.244] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2707] SEC reset bootstrap: 3 cycle(s)
+[2026-11-22 00:42:23.244] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2712] SEC reset bootstrap port: rst active=1
+[2026-11-22 00:42:23.245] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2716] Compact mode: disabled
+[2026-11-22 00:42:23.245] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2717] Skipped PO reports: enabled
+[2026-11-22 00:42:23.245] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2718] SEC latch abstraction: enabled
+[2026-11-22 00:42:23.245] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2719] SEC data-enabled latch model: enabled
+[2026-11-22 00:42:23.245] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:3401] Parsing systemverilog file(s) for design 1
+2026-11-22 00:42:23,247 [naja] [warning] Slang emitted 2 diagnostic(s) (2 warning(s), 0 error(s)); see 'naja_sv_diagnostics.log'
+2026-11-22 00:42:23,251 [naja] [warning] Only the first occurrence of each SystemVerilog warning code is emitted on the console; all occurrences are written to 'naja_sv_diagnostics.log'
+2026-11-22 00:42:23,251 [naja] [warning] a_aw0_w0.v:85:24: Case comparison operator '===' lowered as 2-state comparison in SNL (X/Z distinction is not preserved)
+2026-11-22 00:42:23,251 [naja] [warning] SystemVerilog diagnostics summary: status=success, slang=2 (warnings=2, errors=0), elaboration_warnings=1 (codes=1), unsupported_warnings=0 (codes=0), unsupported_errors=0 (codes=0); report='naja_sv_diagnostics.log'
+2026-11-22 00:42:23,253 [naja] [info] Found top design: top
+2026-11-22 00:42:23,253 [naja] [info] Parsing systemverilog file(s) for design 2
+2026-11-22 00:42:23,255 [naja] [warning] Slang emitted 2 diagnostic(s) (2 warning(s), 0 error(s)); see 'naja_sv_diagnostics.log'
+2026-11-22 00:42:23,260 [naja] [warning] Only the first occurrence of each SystemVerilog warning code is emitted on the console; all occurrences are written to 'naja_sv_diagnostics.log'
+2026-11-22 00:42:23,260 [naja] [warning] b_aw0_w0.v:85:24: Case comparison operator '===' lowered as 2-state comparison in SNL (X/Z distinction is not preserved)
+2026-11-22 00:42:23,261 [naja] [warning] SystemVerilog diagnostics summary: status=success, slang=2 (warnings=2, errors=0), elaboration_warnings=1 (codes=1), unsupported_warnings=0 (codes=0), unsupported_errors=0 (codes=0); report='naja_sv_diagnostics.log'
+2026-11-22 00:42:23,266 [naja] [info] Found top design: top
+[2026-11-22 00:43:11.189] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2769] SEC checked-output coverage: 100.00% (7/7 covered/existing outputs).
+[2026-11-22 00:43:11.191] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2840] No binary-defined difference was found. SEC proved equivalence under the dual-rail steady-state abstraction at k = 1.
+       48,03 real        45,42 user         0,48 sys
+           101892096  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               17848  page reclaims
+                  50  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   4  voluntary context switches
+               60033  involuntary context switches
+        189993658967  instructions retired
+        130840965239  cycles elapsed
+            98140688  peak memory footprint
