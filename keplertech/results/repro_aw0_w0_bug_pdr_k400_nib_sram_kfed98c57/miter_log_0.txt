@@ -1,0 +1,79 @@
+[2026-11-23 18:36:38.655] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2334] KEPLER FORMAL: Run.
+[2026-11-23 18:36:38.656] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2407] Input format: SYSTEMVERILOG
+[2026-11-23 18:36:38.656] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2414] SystemVerilog compilation units: one per file
+[2026-11-23 18:36:38.656] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2417] Run log: miter_log_0.txt
+[2026-11-23 18:36:38.656] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:740] Netlist 1: a_aw0_w0.v
+[2026-11-23 18:36:38.656] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:740] Netlist 2: b_aw0_w0.v
+[2026-11-23 18:36:38.656] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2694] Solver: KISSAT
+[2026-11-23 18:36:38.656] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2695] Verification: sec
+[2026-11-23 18:36:38.656] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2697] SEC max_k: 400
+[2026-11-23 18:36:38.656] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2698] SEC engine: pdr
+[2026-11-23 18:36:38.656] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2699] SEC encoding: dual_rail_steady
+[2026-11-23 18:36:38.656] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2705] SEC internal relations: learn=true allow_x_equality=true binary_relation_round=true signal_correspondence=true
+[2026-11-23 18:36:38.656] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2707] SEC reset bootstrap: 3 cycle(s)
+[2026-11-23 18:36:38.656] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2712] SEC reset bootstrap port: rst active=1
+[2026-11-23 18:36:38.656] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2716] Compact mode: disabled
+[2026-11-23 18:36:38.656] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2717] Skipped PO reports: enabled
+[2026-11-23 18:36:38.656] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2718] SEC latch abstraction: enabled
+[2026-11-23 18:36:38.656] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2719] SEC data-enabled latch model: enabled
+[2026-11-23 18:36:38.657] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:3404] Parsing systemverilog file(s) for design 1
+[2026-11-23 18:36:43.982] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2769] SEC checked-output coverage: 100.00% (7/7 covered/existing outputs).
+[2026-11-23 18:36:43.982] [kepler_formal_main_logger] [warning] [KeplerFormal.cpp:2772] SEC reset is incomplete: after the reset window of 3 cycle(s), 132 of 165 state bits of design 1 and 132 of 178 state bits of design 2 can still be unknown (X). Design 1: u_sram.22.Q[0], u_sram.22.Q[1], u_sram.22.Q[2], u_sram.22.Q[3], u_sram/mem_mem/.__MEM_CELL[0][0], u_sram/mem_mem/.__MEM_CELL[0][1], u_sram/mem_mem/.__MEM_CELL[0][2], u_sram/mem_mem/.__MEM_CELL[0][3], and 124 more. Design 2: u_sram.22.Q[0], u_sram.22.Q[1], u_sram.22.Q[2], u_sram.22.Q[3], u_sram/mem_mem/.__MEM_CELL[0][0], u_sram/mem_mem/.__MEM_CELL[0][1], u_sram/mem_mem/.__MEM_CELL[0][2], u_sram/mem_mem/.__MEM_CELL[0][3], and 124 more.
+[2026-11-23 18:36:43.982] [kepler_formal_main_logger] [warning] [KeplerFormal.cpp:2772] SEC binary passes are on: they start matched unknown registers of the two designs from the same value. Set binary_relation_round to false (--binary-relation-round false) to switch them off.
+[2026-11-23 18:36:43.983] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2879] Difference was found. SEC found a counterexample at k = 18.
+[2026-11-23 18:36:43.983] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2882] SEC counterexample details:
+Counterexample reaches the first bad frame at cycle 18.
+Input trace:
+  cycle 0: rst[0]=0, push[0]=0, pop[0]=1, target[0]=0, target[1]=0, target[2]=0, target[3]=0, target[4]=0, target[5]=0, target[6]=0, target[7]=0, target[8]=0, target[9]=0, target[10]=0, target[11]=0
+  cycle 1: rst[0]=0, push[0]=0, pop[0]=1, target[0]=0, target[1]=0, target[2]=0, target[3]=1, target[4]=0, target[5]=0, target[6]=0, target[7]=0, target[8]=0, target[9]=0, target[10]=0, target[11]=0
+  cycle 2: rst[0]=0, push[0]=1, pop[0]=0, target[0]=1, target[1]=0, target[2]=0, target[3]=0, target[4]=0, target[5]=0, target[6]=0, target[7]=0, target[8]=0, target[9]=0, target[10]=0, target[11]=0
+  cycle 3: rst[0]=0, push[0]=0, pop[0]=1, target[0]=0, target[1]=0, target[2]=0, target[3]=1, target[4]=1, target[5]=0, target[6]=0, target[7]=0, target[8]=0, target[9]=0, target[10]=0, target[11]=0
+  cycle 4: rst[0]=0, push[0]=0, pop[0]=1, target[0]=0, target[1]=0, target[2]=1, target[3]=1, target[4]=1, target[5]=1, target[6]=1, target[7]=1, target[8]=1, target[9]=1, target[10]=1, target[11]=1
+  cycle 5: rst[0]=0, push[0]=0, pop[0]=1, target[0]=0, target[1]=1, target[2]=1, target[3]=0, target[4]=1, target[5]=1, target[6]=1, target[7]=1, target[8]=1, target[9]=1, target[10]=1, target[11]=1
+  cycle 6: rst[0]=0, push[0]=0, pop[0]=1, target[0]=0, target[1]=0, target[2]=0, target[3]=1, target[4]=0, target[5]=0, target[6]=0, target[7]=0, target[8]=0, target[9]=0, target[10]=0, target[11]=0
+  cycle 7: rst[0]=0, push[0]=0, pop[0]=1, target[0]=0, target[1]=0, target[2]=0, target[3]=0, target[4]=1, target[5]=0, target[6]=0, target[7]=0, target[8]=0, target[9]=0, target[10]=0, target[11]=0
+  cycle 8: rst[0]=0, push[0]=1, pop[0]=0, target[0]=1, target[1]=1, target[2]=1, target[3]=1, target[4]=1, target[5]=0, target[6]=0, target[7]=0, target[8]=0, target[9]=0, target[10]=0, target[11]=0
+  cycle 9: rst[0]=0, push[0]=0, pop[0]=1, target[0]=0, target[1]=0, target[2]=0, target[3]=0, target[4]=0, target[5]=0, target[6]=0, target[7]=0, target[8]=1, target[9]=0, target[10]=0, target[11]=0
+  cycle 10: rst[0]=0, push[0]=0, pop[0]=1, target[0]=0, target[1]=0, target[2]=0, target[3]=0, target[4]=0, target[5]=1, target[6]=1, target[7]=1, target[8]=0, target[9]=1, target[10]=1, target[11]=1
+  cycle 11: rst[0]=0, push[0]=0, pop[0]=0, target[0]=0, target[1]=0, target[2]=0, target[3]=0, target[4]=0, target[5]=1, target[6]=1, target[7]=1, target[8]=1, target[9]=1, target[10]=1, target[11]=1
+  cycle 12: rst[0]=0, push[0]=0, pop[0]=1, target[0]=0, target[1]=0, target[2]=0, target[3]=0, target[4]=0, target[5]=0, target[6]=0, target[7]=0, target[8]=0, target[9]=0, target[10]=0, target[11]=0
+  cycle 13: rst[0]=0, push[0]=0, pop[0]=1, target[0]=0, target[1]=0, target[2]=0, target[3]=0, target[4]=0, target[5]=0, target[6]=0, target[7]=0, target[8]=0, target[9]=0, target[10]=0, target[11]=0
+  cycle 14: rst[0]=0, push[0]=0, pop[0]=1, target[0]=0, target[1]=0, target[2]=0, target[3]=0, target[4]=0, target[5]=0, target[6]=0, target[7]=0, target[8]=0, target[9]=0, target[10]=0, target[11]=0
+  cycle 15: rst[0]=0, push[0]=0, pop[0]=0, target[0]=0, target[1]=0, target[2]=0, target[3]=1, target[4]=1, target[5]=0, target[6]=0, target[7]=0, target[8]=0, target[9]=0, target[10]=0, target[11]=0
+  cycle 16: rst[0]=0, push[0]=0, pop[0]=0, target[0]=0, target[1]=1, target[2]=1, target[3]=1, target[4]=1, target[5]=1, target[6]=1, target[7]=1, target[8]=1, target[9]=1, target[10]=1, target[11]=1
+  cycle 17: rst[0]=0, push[0]=1, pop[0]=0, target[0]=0, target[1]=0, target[2]=0, target[3]=0, target[4]=0, target[5]=0, target[6]=0, target[7]=0, target[8]=0, target[9]=0, target[10]=0, target[11]=0
+  cycle 18: rst[0]=0, push[0]=0, pop[0]=0, target[0]=0, target[1]=0, target[2]=0, target[3]=0, target[4]=0, target[5]=0, target[6]=0, target[7]=0, target[8]=0, target[9]=0, target[10]=0, target[11]=0
+Observed output mismatches at cycle 18:
+  bus[0]: design0=0, design1=1
+Traceback for first differing point `bus[0]` at cycle 18:
+  design0 cone to environment inputs:
+    step 0: 78.Y[0]
+    step 1: 73.Y[0], 73.Y[1], 73.Y[2], 73.Y[3], 9.[0], Constant 0
+    step 2: 105.Q[0], 5.[0], 8.[0], u_sram.22.Q[0], u_sram.22.Q[1], u_sram.22.Q[2], u_sram.22.Q[3]
+    step 3: 104.Y[0], 3.[0], 4.[0], 6.[0], 7.[0], 72.[0], clk[0], u_sram.21.Y[0], u_sram.21.Y[1], u_sram.21.Y[2], u_sram.21.Y[3]
+    step 4: 103.Y[0], 29.[0], 71.[0], 89.Q[0], 89.Q[1], 89.Q[2], Constant 1, rst[0], u_sram.mem_mem.RDATA[0], u_sram.mem_mem.RDATA[1], u_sram.mem_mem.RDATA[2], u_sram.mem_mem.RDATA[3]
+    step 5: 102.[0], 28.[0], 69.[0], 70.[0], 88.Y[0], 88.Y[1], 88.Y[2], Constant 0, u_sram.0.[0], u_sram.1.[0], u_sram.10.[0], u_sram.16.[0], ... +11 more
+    step 6: 21.[0], 27.[0], 55.Y[0], 55.Y[1], 55.Y[2], 55.Y[3], 62.[0], 84.[0], 87.Y[0], 87.Y[1], 87.Y[2], u_sram.11.[0], ... +5 more
+    step 7: 116.Q[0], 20.[0], 35.Y[0], 35.Y[1], 35.Y[2], 35.Y[3], 51.[0], 54.Y[0], 54.Y[1], 54.Y[2], 54.Y[3], 61.[0], ... +9 more
+    step 8: 101.Q[0], 101.Q[1], 101.Q[2], 110.Q[0], 115.Y[0], 12.[0], 120.Q[0], 120.Q[10], 120.Q[11], 120.Q[1], 120.Q[2], 120.Q[3], ... +35 more
+    step 9: 100.Y[0], 100.Y[1], 100.Y[2], 109.Y[0], 11.[0], 114.Y[0], 119.Y[0], 119.Y[10], 119.Y[11], 119.Y[1], 119.Y[2], 119.Y[3], ... +28 more
+    step 10: 108.Y[0], 112.[0], 113.[0], 118.Y[0], 118.Y[10], 118.Y[11], 118.Y[1], 118.Y[2], 118.Y[3], 118.Y[4], 118.Y[5], 118.Y[6], ... +20 more
+    step 11: 106.[0], 107.[0], 111.[0], 117.[0], 125.Y[0], 125.Y[10], 125.Y[11], 125.Y[1], 125.Y[2], 125.Y[3], 125.Y[4], 125.Y[5], ... +22 more
+    ... +3 more trace steps
+  design1 cone to environment inputs:
+    step 0: 84.Y[0]
+    step 1: 79.Y[0], 79.Y[1], 79.Y[2], 79.Y[3], 9.[0], Constant 0
+    step 2: 111.Q[0], 5.[0], 78.Y[0], 78.Y[1], 78.Y[2], 78.Y[3], 8.[0]
+    step 3: 110.Y[0], 138.Q[0], 3.[0], 4.[0], 6.[0], 7.[0], 77.Y[0], 77.Y[1], 77.Y[2], 77.Y[3], clk[0], u_sram.22.Q[0], ... +3 more
+    step 4: 109.Y[0], 137.Y[0], 143.Q[0], 143.Q[1], 143.Q[2], 143.Q[3], 73.[0], 74.[0], 76.Y[0], 76.Y[1], 76.Y[2], 76.Y[3], ... +9 more
+    step 5: 108.[0], 136.Y[0], 142.Y[0], 142.Y[10], 142.Y[11], 142.Y[1], 142.Y[2], 142.Y[3], 142.Y[4], 142.Y[5], 142.Y[6], 142.Y[7], ... +21 more
+    step 6: 134.Y[0], 135.[0], 141.Y[0], 141.Y[10], 141.Y[11], 141.Y[1], 141.Y[2], 141.Y[3], 141.Y[4], 141.Y[5], 141.Y[6], 141.Y[7], ... +28 more
+    step 7: 116.Q[0], 139.Y[0], 139.Y[10], 139.Y[11], 139.Y[1], 139.Y[2], 139.Y[3], 139.Y[4], 139.Y[5], 139.Y[6], 139.Y[7], 139.Y[8], ... +21 more
+    step 8: 115.Y[0], 122.Q[0], 126.Q[0], 126.Q[10], 126.Q[11], 126.Q[1], 126.Q[2], 126.Q[3], 126.Q[4], 126.Q[5], 126.Q[6], 126.Q[7], ... +32 more
+    step 9: 107.Q[0], 107.Q[1], 107.Q[2], 114.Y[0], 12.[0], 121.Y[0], 125.Y[0], 125.Y[10], 125.Y[11], 125.Y[1], 125.Y[2], 125.Y[3], ... +33 more
+    step 10: 106.Y[0], 106.Y[1], 106.Y[2], 11.[0], 113.[0], 120.Y[0], 124.Y[0], 124.Y[10], 124.Y[11], 124.Y[1], 124.Y[2], 124.Y[3], ... +24 more
+    step 11: 105.Y[0], 105.Y[1], 105.Y[2], 112.[0], 118.[0], 119.[0], 123.[0], 131.Y[0], 131.Y[10], 131.Y[11], 131.Y[1], 131.Y[2], ... +21 more
+    ... +4 more trace steps
+  cone terms only in design0: 100.Y[0], 100.Y[1], 100.Y[2], 101.Q[0], 101.Q[1], 101.Q[2], 102.[0], 104.Y[0], 105.Q[0], 106.[0], 107.[0], 108.Y[0], 110.Q[0], 111.[0], 118.Y[0], 118.Y[10], 118.Y[11], 118.Y[1], 118.Y[2], 118.Y[3], ... +111 more
+  cone terms only in design1: 100.CO[0], 100.S[0], 101.S[0], 102.Y[0], 102.Y[1], 102.Y[2], 103.Y[1], 103.Y[2], 104.[0], 105.Y[0], 105.Y[1], 105.Y[2], 106.Y[0], 106.Y[1], 106.Y[2], 107.Q[0], 107.Q[1], 107.Q[2], 108.[0], 110.Y[0], ... +180 more
+
