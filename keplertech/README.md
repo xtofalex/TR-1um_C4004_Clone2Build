@@ -26,9 +26,15 @@ Two questions:
 | … same, branch head befed14 (signal correspondence over 1, 2, 4 frames) | **8 of 12 proved**, unchanged; `bus_d[0..3]` not concluded. 1 and 2 frames prove no open output, 4 frames gives up. No counterexample | `results/rtl_01vs02_pdr_k400_budx50_kfbefed14` |
 | … same, branch head ed98c57 (signal correspondence on binary functions, up to 16 frames) | **all 12 outputs proved**, 115 s. 4 frames prove 4 of the 8 open outputs, 16 frames the last 4 | `results/rtl_01vs02_pdr_k400_budx50_kfed98c57` |
 | RTL 03, 04 vs 01, k-induction (20 min cap) | no counterexample; not concluded | `results/rtl_01vs0[34]_k_induction_k80` |
+| RTL 03 vs 01, PDR, ed98c57 (1 h cap) | 8 of 12 outputs proved; 4 not concluded at the cap. No counterexample | `results/rtl_01vs03_pdr_k400_budx50_kfed98c57` |
+| RTL 04 vs 01, PDR, ed98c57 | PDR reports a difference at k = 28 but Kepler-Formal finds no input trace for it. **Treated as a spurious PDR result:** the bounded check (k-induction base case) finds no difference up to depth 37 with both fd24770 and ed98c57, and lockstep random simulation shows none | `results/rtl_01vs04_pdr_k400_budx50_kfed98c57`, `rtl_01vs04_k_induction_k40_kfed98c57` |
 | Netlist vs RTL, all 10 trials, k-induction k = 20 | no counterexample; 1–2 of 23 outputs proved | `results/gate_*_k_induction_k20` |
 | raw_syn vs syn, all 10 trials, k-induction k = 20 | no counterexample; 1–2 of 23 outputs proved | `results/edit_*_k_induction_k20` |
+| **Netlist vs RTL, all 10 trials, PDR, ed98c57** | **all 23 outputs proved**, 2–9 s each | `results/gate_*_pdr_k400_budx50_kfed98c57` |
+| **raw_syn vs syn, all 10 trials, PDR, ed98c57** | **all 23 outputs proved**, 1–2 s each | `results/edit_*_pdr_k400_budx50_kfed98c57` |
+| Sanity check of the netlist proofs: trial 10 netlist with one NAND2 replaced by a NOR2 (3 different cells) | counterexample found in all 3, at k = 5, 18, 30 (ed98c57 and 3ac09e2) | `results/mutant_gate_10_nand2_*` |
 | Netlist vs RTL, trial 10, PDR (10 min probe) | 17 of 23 outputs proved; `d_out[2,3]`, SRAM `DIN[0..3]` not concluded | `results/gate_10_pdr_k400_probe` |
+| **Global re-run, branch head 3ac09e2** (includes the fix 716eba4: binary-round register pairs constrained on the rails instead of merged) | **same verdicts as ed98c57 everywhere**: RTL 02 vs 01, 05 vs 04, 06 vs 05, netlist vs RTL and raw_syn vs syn for all 10 trials proved (≤ 191 s); RTL 03 vs 01 8 of 12, `bus_d[0..3]` not concluded (finished on its own, 49 min); RTL 04 vs 01 same untraced PDR difference at k = 28; reproducer proved, `-DBUG` and the 3 netlist mutants still found. The binary round finds no pair here (`binary_pairs=0`), so the fix does not touch these proofs | `results/*_kf3ac09e2` |
 | Lockstep random simulation, RTL 02/03/04 vs 01 | **0 mismatches** in 10 × 10⁶ cycles each | `results/random_sim_rtl_*.log` |
 | Lockstep random simulation, netlist vs RTL, all 10 trials | **0 mismatches** in 10 × 10⁶ cycles each, pins and SRAM interface | `results/random_sim_gate_*.log` |
 
@@ -59,10 +65,8 @@ Two small designs, equivalent by construction and not derived from trial code (`
 
 ## Still to do
 
-- PDR runs:
-  - RTL 03 and 04 vs 01;
-  - netlist vs RTL for all trials;
-  - raw_syn vs syn for all trials.
+- RTL 03 vs 01: `bus_d[0..3]` stay open (3ac09e2 finishes on its own at 8 of 12).
+- RTL 04 vs 01: report the unconfirmed PDR difference upstream; prove or refute with another engine.
 - Netlist of trial N vs RTL 01, only where the RTL is proved equal.
 - Part 2: how the trials were explored, edited and checked, and where the tools would have helped.
 - `DETAILS.md` with methods and exact commands.
@@ -80,7 +84,7 @@ Two small designs, equivalent by construction and not derived from trial code (`
 | `repro/` | the two reproducers above (`run.sh`, `tb_nib.v`) |
 
 **Tools:**
-- Kepler-Formal `fd24770` (main), `8491fc0`, `befed14` and `ed98c57` (branch `issue-317-signal-correspondence`), Release builds in `tools/`, which is not committed;
+- Kepler-Formal `fd24770` (main), `8491fc0`, `befed14`, `ed98c57` and `3ac09e2` (branch `issue-317-signal-correspondence`), Release builds in `tools/`, which is not committed;
 - Icarus Verilog.
 
-**Compressed logs:** `run.log` of `results/rtl_01vs02_pdr_k400_budx50_kf8491fc0` and `_kfbefed14` are stored as `run.log.xz` (266 MB uncompressed each).
+**Compressed logs:** `run.log` of `results/rtl_01vs02_pdr_k400_budx50_kf8491fc0` and `_kfbefed14` are stored as `run.log.xz` (266 MB uncompressed each), and `results/rtl_01vs03_pdr_k400_budx50_kfed98c57` and `_kf3ac09e2` too (169 and 176 MB).

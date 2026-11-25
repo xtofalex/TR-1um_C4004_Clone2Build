@@ -1,0 +1,21 @@
+cmd (cwd = results/rtl_01vs03_pdr_k400_budx50_kf3ac09e2): kepler-formal -sv -v sec --sec-engine pdr -k 400 --sec-reset-cycles 3 --sec-reset-port rst=1 --report-skipped-pos --design1 ../../cfg/rtl_01.v --design2 ../../cfg/rtl_03.v 
+kepler-formal: kepler-formal version: 1.0.0 kepler-formal git hash: 3ac09e21136ce0e63e017c1f0c028dbbe5868357 naja version: 0.7.33 naja git hash: cb142398 
+KEPLER_SEC_DIAG=1
+KEPLER_SEC_PDR_STATS=1
+KEPLER_SEC_PDR_DUAL_RAIL_SINGLETON_DECISION_BUDGET=2000000000
+KEPLER_SEC_PDR_DUAL_RAIL_SINGLETON_CONFLICT_BUDGET=50000000
+KEPLER_SEC_PDR_DUAL_RAIL_SINGLETON_TICK_BUDGET=25000000000
+wall-clock cap: 3600 s
+exit: 1  wall: 2948 s  cpu: user 2734.28 s, sys 79.63 s  peak RSS: 1570 MB
+SEC partially proved equivalence at k = 28: 8/12 outputs proved; remaining outputs are inconclusive.
+SEC verification did not prove all observed outputs.
+SEC summary: signal_correspondence scope=registers_and_outputs frames=1 completed=1 signals=728 classes=52 rounds=6 solver_calls=198 proved_outputs=0/8 state_equalities=0 seconds=4.8 semantics=binary stopped_by=none
+SEC summary: signal_correspondence scope=registers_and_outputs frames=2 completed=1 signals=728 classes=52 rounds=8 solver_calls=226 proved_outputs=0/6 state_equalities=0 seconds=20.7 semantics=binary stopped_by=none
+SEC summary: signal_correspondence scope=registers_and_outputs frames=4 completed=1 signals=728 classes=202 rounds=3 solver_calls=87 proved_outputs=4/6 state_equalities=0 seconds=22.1 semantics=binary stopped_by=none
+SEC summary: signal_correspondence scope=registers_and_outputs frames=8 completed=1 signals=728 classes=202 rounds=3 solver_calls=100 proved_outputs=0/2 state_equalities=0 seconds=44.6 semantics=binary stopped_by=none
+SEC summary: signal_correspondence scope=registers_and_outputs frames=16 completed=1 signals=728 classes=202 rounds=5 solver_calls=150 proved_outputs=0/2 state_equalities=0 seconds=128.3 semantics=binary stopped_by=none
+SEC summary: signal_correspondence scope=registers_and_outputs frames=1 completed=1 signals=1439 classes=43 rounds=5 solver_calls=314 proved_outputs=0/4 state_equalities=74 seconds=15.8 semantics=rails stopped_by=none
+  - bus_d[0]: dual-rail PDR steady-state proof was inconclusive
+  - bus_d[1]: dual-rail PDR steady-state proof was inconclusive
+  - bus_d[2]: dual-rail PDR steady-state proof was inconclusive
+  - bus_d[3]: dual-rail PDR steady-state proof was inconclusive

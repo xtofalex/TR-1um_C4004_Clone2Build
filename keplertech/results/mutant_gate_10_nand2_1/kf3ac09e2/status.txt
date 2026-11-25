@@ -1,0 +1,1 @@
+Difference was found. SEC found a counterexample at k = 30.

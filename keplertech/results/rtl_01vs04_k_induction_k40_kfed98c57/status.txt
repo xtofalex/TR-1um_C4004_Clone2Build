@@ -1,0 +1,18 @@
+cmd (cwd = results/rtl_01vs04_k_induction_k40_kfed98c57): kepler-formal -sv -v sec --sec-engine k_induction -k 40 --sec-reset-cycles 3 --sec-reset-port rst=1 --report-skipped-pos --design1 ../../cfg/rtl_01.v --design2 ../../cfg/rtl_04.v 
+kepler-formal: kepler-formal version: 1.0.0 kepler-formal git hash: ed98c57e0f7e2d1ce92ce05334af1874d3a04081 naja version: 0.7.33 naja git hash: cb142398 
+KEPLER_SEC_DIAG=1
+wall-clock cap: 1500 s
+STOPPED by wall-clock cap (1500 s): result is the depth reached, not a verdict
+deepest base-case query started: k-induction base coi k=38 first_bad_frame=41
+exit: 142  wall: 1500 s  cpu: user 1431.75 s, sys 9.65 s  peak RSS: 626 MB
+
+SEC summary: signal_correspondence scope=registers_and_outputs frames=1 completed=1 signals=736 classes=52 rounds=4 solver_calls=33 proved_outputs=0/8 state_equalities=0 seconds=0.5 semantics=binary stopped_by=none
+SEC summary: signal_correspondence scope=registers_and_outputs frames=2 completed=1 signals=736 classes=52 rounds=4 solver_calls=30 proved_outputs=0/4 state_equalities=0 seconds=1.3 semantics=binary stopped_by=none
+SEC summary: signal_correspondence scope=registers_and_outputs frames=4 completed=1 signals=736 classes=52 rounds=4 solver_calls=39 proved_outputs=0/4 state_equalities=0 seconds=2.1 semantics=binary stopped_by=none
+SEC summary: signal_correspondence scope=registers_and_outputs frames=8 completed=1 signals=736 classes=52 rounds=4 solver_calls=46 proved_outputs=0/4 state_equalities=0 seconds=6.7 semantics=binary stopped_by=none
+SEC summary: signal_correspondence scope=registers_and_outputs frames=16 completed=1 signals=736 classes=52 rounds=3 solver_calls=61 proved_outputs=0/4 state_equalities=0 seconds=14.0 semantics=binary stopped_by=none
+SEC summary: signal_correspondence scope=registers_and_outputs frames=1 completed=1 signals=1471 classes=43 rounds=6 solver_calls=92 proved_outputs=0/8 state_equalities=74 seconds=4.0 semantics=rails stopped_by=none
+SEC summary: signal_correspondence scope=registers_and_outputs frames=2 completed=1 signals=1471 classes=43 rounds=6 solver_calls=92 proved_outputs=0/4 state_equalities=74 seconds=25.6 semantics=rails stopped_by=none
+SEC summary: signal_correspondence scope=registers_and_outputs frames=4 completed=1 signals=1471 classes=43 rounds=6 solver_calls=101 proved_outputs=0/4 state_equalities=74 seconds=21.4 semantics=rails stopped_by=none
+SEC summary: signal_correspondence scope=registers_and_outputs frames=8 completed=1 signals=1471 classes=43 rounds=6 solver_calls=100 proved_outputs=0/4 state_equalities=74 seconds=47.2 semantics=rails stopped_by=none
+SEC summary: signal_correspondence scope=all_signals frames=1 completed=0 signals=22227 classes=0 rounds=6 solver_calls=485 proved_outputs=0/4 state_equalities=0 seconds=46.2 semantics=rails stopped_by=ticks

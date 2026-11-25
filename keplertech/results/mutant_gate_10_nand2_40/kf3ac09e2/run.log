@@ -1,0 +1,448 @@
+[2026-11-25 12:11:16.638] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2334] KEPLER FORMAL: Run.
+[2026-11-25 12:11:16.638] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2407] Input format: SV2V
+[2026-11-25 12:11:16.639] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2414] SystemVerilog compilation units: one per file
+[2026-11-25 12:11:16.639] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2417] Run log: miter_log_0.txt
+[2026-11-25 12:11:16.639] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:740] Netlist 1: /Users/xtof/WORK/TR-1um_C4004_Clone2Build/keplertech/cfg/rtlbb_06.v
+[2026-11-25 12:11:16.639] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:740] Netlist 2: /private/tmp/claude-501/-Users-xtof-WORK-TR-1um-C4004-Clone2Build/3a25b0af-b325-40ef-b74d-412e4b9f36f9/scratchpad/mut/m40.v
+[2026-11-25 12:11:16.639] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2426] Boundary pair 0: design 1 `u_sram`; design 2 `u_sram`
+[2026-11-25 12:11:16.639] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2694] Solver: KISSAT
+[2026-11-25 12:11:16.639] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2695] Verification: sec
+[2026-11-25 12:11:16.639] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2697] SEC max_k: 400
+[2026-11-25 12:11:16.639] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2698] SEC engine: pdr
+[2026-11-25 12:11:16.639] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2699] SEC encoding: dual_rail_steady
+[2026-11-25 12:11:16.639] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2705] SEC internal relations: learn=true allow_x_equality=true binary_relation_round=true signal_correspondence=true
+[2026-11-25 12:11:16.639] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2707] SEC reset bootstrap: 3 cycle(s)
+[2026-11-25 12:11:16.639] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2712] SEC reset bootstrap port: rst active=1
+[2026-11-25 12:11:16.639] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2716] Compact mode: disabled
+[2026-11-25 12:11:16.639] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2717] Skipped PO reports: disabled
+[2026-11-25 12:11:16.639] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2718] SEC latch abstraction: enabled
+[2026-11-25 12:11:16.639] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2719] SEC data-enabled latch model: enabled
+[2026-11-25 12:11:16.639] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2721] Library: /Users/xtof/WORK/TR-1um_C4004_Clone2Build/TR-1um_C4004_10/module/STDCELL/tr1um_typ_5v0_25c.lib
+[2026-11-25 12:11:16.639] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2721] Library: /Users/xtof/WORK/TR-1um_C4004_Clone2Build/TR-1um_C4004_10/module/SRAM128/SRAM128.lib
+[2026-11-25 12:11:16.639] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2948] Loading library file: /Users/xtof/WORK/TR-1um_C4004_Clone2Build/TR-1um_C4004_10/module/STDCELL/tr1um_typ_5v0_25c.lib
+2026-11-25 12:11:16,643 [naja] [warning] In SNLLibertyConstructor, cell OSS_ESD_5V_DIO defines a `function` for 0 of 1 non-input terms; leaving all truth tables uninitialized.
+2026-11-25 12:11:16,643 [naja] [warning] In SNLLibertyConstructor, cell REG8x16 defines a `function` for 0 of 8 non-input terms; leaving all truth tables uninitialized.
+2026-11-25 12:11:16,643 [naja] [info] Loading library file: /Users/xtof/WORK/TR-1um_C4004_Clone2Build/TR-1um_C4004_10/module/SRAM128/SRAM128.lib
+2026-11-25 12:11:16,644 [naja] [warning] In SNLLibertyConstructor, cell SRAM128 defines a `function` for 0 of 4 non-input terms; leaving all truth tables uninitialized.
+2026-11-25 12:11:16,644 [naja] [info] Parsing systemverilog file(s) for design 1
+2026-11-25 12:11:16,647 [naja] [warning] Slang emitted 2 diagnostic(s) (2 warning(s), 0 error(s)); see 'naja_sv_diagnostics.log'
+2026-11-25 12:11:16,650 [naja] [warning] Only the first occurrence of each SystemVerilog warning code is emitted on the console; all occurrences are written to 'naja_sv_diagnostics.log'
+2026-11-25 12:11:16,650 [naja] [warning] ../../../../../../../../Users/xtof/WORK/TR-1um_C4004_Clone2Build/keplertech/cfg/rtlbb_06.v:85:9: Case comparison operator '===' lowered as 2-state comparison in SNL (X/Z distinction is not preserved)
+2026-11-25 12:11:16,668 [naja] [warning] SystemVerilog diagnostics summary: status=success, slang=2 (warnings=2, errors=0), elaboration_warnings=8 (codes=1), unsupported_warnings=0 (codes=0), unsupported_errors=0 (codes=0); report='naja_sv_diagnostics.log'
+2026-11-25 12:11:16,669 [naja] [info] Found top design: c4004_core
+2026-11-25 12:11:16,669 [naja] [info] Loading library file: /Users/xtof/WORK/TR-1um_C4004_Clone2Build/TR-1um_C4004_10/module/STDCELL/tr1um_typ_5v0_25c.lib
+2026-11-25 12:11:16,671 [naja] [warning] In SNLLibertyConstructor, cell OSS_ESD_5V_DIO defines a `function` for 0 of 1 non-input terms; leaving all truth tables uninitialized.
+2026-11-25 12:11:16,671 [naja] [warning] In SNLLibertyConstructor, cell REG8x16 defines a `function` for 0 of 8 non-input terms; leaving all truth tables uninitialized.
+2026-11-25 12:11:16,672 [naja] [info] Loading library file: /Users/xtof/WORK/TR-1um_C4004_Clone2Build/TR-1um_C4004_10/module/SRAM128/SRAM128.lib
+2026-11-25 12:11:16,672 [naja] [warning] In SNLLibertyConstructor, cell SRAM128 defines a `function` for 0 of 4 non-input terms; leaving all truth tables uninitialized.
+2026-11-25 12:11:16,672 [naja] [info] Parsing verilog file(s) for design 2
+2026-11-25 12:11:16,679 [naja] [info] Found top design: c4004_core
+SEC diag: start run
+SEC diag: extract(c4004_core) collect begin
+SEC diag: extract(c4004_core) collect end inputs=53 outputs=97
+SEC diag: extract(c4004_core) initial_observed_outputs=23
+SEC diag: extract(c4004_core) build begin
+SEC diag: extract(c4004_core) build end
+SEC diag: extract(c4004_core) boundary normalized env=11 state=42 outputs=23 pending=42
+SEC diag: extract(c4004_core) mapped boundary vars=53
+SEC diag: extract(c4004_core) materialized output exprs observed=23 total=23
+SEC diag: top input clk[0] is not clock-only: reader inside boundary
+SEC diag: top input rst[0] is not clock-only: sequential non-clock pin 1118//RN (naja_dffrn)
+SEC diag: top input test[0] is not clock-only: sequential non-clock pin 932//D (naja_dffrn__w4)
+SEC diag: top input d_in[3] is not clock-only: sequential non-clock pin 1000//D (naja_dffrn__w4)
+SEC diag: top input d_in[2] is not clock-only: sequential non-clock pin 1000//D (naja_dffrn__w4)
+SEC diag: top input d_in[1] is not clock-only: sequential non-clock pin 1000//D (naja_dffrn__w4)
+SEC diag: top input d_in[0] is not clock-only: sequential non-clock pin 1000//D (naja_dffrn__w4)
+SEC diag: extract(c4004_core) immutable clock structure indexed terms=5075 pure_terms=18
+SEC diag: extract(c4004_core) dependency build begin outputs=44
+SEC diag: extract(c4004_core) dependency build end outputs=44
+SEC diag: extract(c4004_core) mapped boundary vars=53
+SEC diag: extract(c4004_core) rebuilt next-state exprs=42 init=0 data_latches=0
+SEC diag: extract(c4004_core) filtered env=11 state=42
+SEC diag: extract(c4004_core) structured_memories=0 structured_memory_cells=0
+SEC diag: extract(c4004_core) kept_states=[462.Q[0]@v15, 462.Q[1]@v14, 462.Q[2]@v13, 572.Q[0]@v19, 572.Q[1]@v18, 572.Q[2]@v17, 572.Q[3]@v16, 653.Q[0]@v20, 667.Q[0]@v24, 667.Q[1]@v23, 667.Q[2]@v22, 667.Q[3]@v21, 682.Q[0]@v28, 682.Q[1]@v27, 682.Q[2]@v26, 682.Q[3]@v25, 732.Q[0]@v30, 732.Q[1]@v29, 765.Q[0]@v31, 820.Q[0]@v32, 853.Q[0]@v33, 867.Q[0]@v34, 898.Q[0]@v38, 898.Q[1]@v37, 898.Q[2]@v36, 898.Q[3]@v35, 932.Q[0]@v42, 932.Q[1]@v41, 932.Q[2]@v40, 932.Q[3]@v39, 958.Q[0]@v46, 958.Q[1]@v45, 958.Q[2]@v44, 958.Q[3]@v43, 1000.Q[0]@v50, 1000.Q[1]@v49, 1000.Q[2]@v48, 1000.Q[3]@v47, 1065.Q[0]@v53, 1065.Q[1]@v52, 1065.Q[2]@v51, 1118.Q[0]@v54]
+SEC diag: extract(c4004_core) observed_support d_out[0] = [v12, v13, v14, v15, v19, v21, v22, v23, v24, v25, v28, v31, v32, v38, v42, v46, v50]
+SEC diag: extract(c4004_core) observed_support d_out[1] = [v11, v13, v14, v15, v18, v21, v22, v23, v24, v25, v28, v31, v32, v37, v41, v45, v49]
+SEC diag: extract(c4004_core) observed_support d_out[2] = [v10, v13, v14, v15, v17, v21, v22, v23, v24, v25, v28, v31, v32, v36, v40, v44, v48]
+SEC diag: extract(c4004_core) observed_support d_out[3] = [v9, v13, v14, v15, v16, v21, v22, v23, v24, v25, v28, v31, v32, v35, v39, v43, v47]
+SEC diag: extract(c4004_core) observed_support d_oe[0] = [v13, v14, v15, v21, v22, v23, v24, v25, v28, v31]
+SEC diag: extract(c4004_core) observed_support d_hiz[0] = [v13, v14, v15, v21, v22, v23, v24, v25, v28, v31]
+SEC diag: extract(c4004_core) observed_support sync[0] = [v13, v14, v15]
+SEC diag: extract(c4004_core) observed_support cm_rom[0] = [v13, v14, v15, v21, v22, v23, v24, v25, v26, v27, v28, v31]
+SEC diag: extract(c4004_core) observed_support cm_ram[0] = [v13, v14, v15, v21, v22, v23, v24, v25, v26, v27, v28, v31, v51, v52, v53]
+SEC diag: extract(c4004_core) observed_support cm_ram[1] = [v13, v14, v15, v21, v22, v23, v24, v25, v26, v27, v28, v31, v53]
+SEC diag: extract(c4004_core) observed_support cm_ram[2] = [v13, v14, v15, v21, v22, v23, v24, v25, v26, v27, v28, v31, v52]
+SEC diag: extract(c4004_core) observed_support cm_ram[3] = [v13, v14, v15, v21, v22, v23, v24, v25, v26, v27, v28, v31, v51]
+SEC diag: extract(c4004_core) observed_support __kepler_boundary_p0_n4131_bp0[0] = [v13, v14, v15, v21, v22, v23, v24, v27, v28, v31]
+SEC diag: extract(c4004_core) observed_support __kepler_boundary_p0_n4132_bp0[0] = [v13, v14, v15, v21, v22, v23, v24, v26, v28, v30, v31]
+SEC diag: extract(c4004_core) observed_support __kepler_boundary_p0_n4345_bp0[0] = [v2, v3, v13, v14, v15, v21, v22, v23, v24, v28, v31, v32]
+SEC diag: extract(c4004_core) observed_support __kepler_boundary_p0_n4130_bp0[0] = [v13, v14, v15, v21, v22, v23, v24, v28, v31]
+SEC diag: extract(c4004_core) observed_support __kepler_boundary_p0_n4133_bp0[0] = [v13, v14, v15, v21, v22, v23, v24, v25, v28, v29, v31]
+SEC diag: extract(c4004_core) observed_support __kepler_boundary_p0_n4134_bp0[0] = [v13, v14, v15, v21, v22, v23, v24, v28, v31]
+SEC diag: extract(c4004_core) observed_support __kepler_boundary_p0_n5752_bp0[0] = [v13, v14, v15, v21, v22, v23, v24, v28, v31]
+SEC diag: extract(c4004_core) observed_support __kepler_boundary_p0_n44494e_bp0[0] = [v13, v14, v15, v21, v22, v23, v24, v28, v31, v38, v42, v46, v50]
+SEC diag: extract(c4004_core) observed_support __kepler_boundary_p0_n44494e_bp1[0] = [v13, v14, v15, v21, v22, v23, v24, v28, v31, v37, v41, v45, v49]
+SEC diag: extract(c4004_core) observed_support __kepler_boundary_p0_n44494e_bp2[0] = [v13, v14, v15, v21, v22, v23, v24, v28, v31, v36, v40, v44, v48]
+SEC diag: extract(c4004_core) observed_support __kepler_boundary_p0_n44494e_bp3[0] = [v13, v14, v15, v21, v22, v23, v24, v28, v31, v35, v39, v43, v47]
+SEC diag: extract(c4004_core) end
+SEC diag: extracted design0
+SEC diag: extract(c4004_core) collect begin
+SEC diag: extract(c4004_core) collect end inputs=93 outputs=198
+SEC diag: extract(c4004_core) initial_observed_outputs=23
+SEC diag: extract(c4004_core) build begin
+SEC diag: extract(c4004_core) build end
+SEC diag: extract(c4004_core) boundary normalized env=11 state=82 outputs=23 pending=41
+SEC diag: extract(c4004_core) mapped boundary vars=93
+SEC diag: extract(c4004_core) materialized output exprs observed=23 total=23
+SEC diag: top input clk[0] is not clock-only: reader inside boundary
+SEC diag: top input rst[0] is not clock-only: combinational output not clock-only after _1102_//A (NOR3)
+SEC diag: top input test[0] is not clock-only: sequential non-clock pin _1138_//D (DFFRB)
+SEC diag: top input d_in[3] is not clock-only: sequential non-clock pin _1148_//D (DFFRB)
+SEC diag: top input d_in[2] is not clock-only: sequential non-clock pin _1141_//D (DFFRB)
+SEC diag: top input d_in[1] is not clock-only: sequential non-clock pin _1142_//D (DFFRB)
+SEC diag: top input d_in[0] is not clock-only: sequential non-clock pin _1131_//A (MUXDFFRB)
+SEC diag: extract(c4004_core) immutable clock structure indexed terms=2266 pure_terms=12
+SEC diag: extract(c4004_core) dependency build begin outputs=88
+SEC diag: extract(c4004_core) dependency build end outputs=88
+SEC diag: extract(c4004_core) mapped boundary vars=93
+SEC diag: extract(c4004_core) rebuilt next-state exprs=82 init=0 data_latches=0
+SEC diag: extract(c4004_core) filtered env=11 state=82
+SEC diag: extract(c4004_core) structured_memories=0 structured_memory_cells=0
+SEC diag: extract(c4004_core) kept_states=[_1111_.Q[0]@v9, _1111_.QB[0]@v10, _1112_.Q[0]@v11, _1112_.QB[0]@v12, _1113_.Q[0]@v13, _1113_.QB[0]@v14, _1114_.Q[0]@v15, _1114_.QB[0]@v16, _1115_.Q[0]@v17, _1115_.QB[0]@v18, _1116_.Q[0]@v19, _1116_.QB[0]@v20, _1117_.Q[0]@v21, _1117_.QB[0]@v22, _1118_.Q[0]@v23, _1118_.QB[0]@v24, _1119_.Q[0]@v25, _1119_.QB[0]@v26, _1120_.Q[0]@v27, _1120_.QB[0]@v28, _1121_.Q[0]@v29, _1121_.QB[0]@v30, _1122_.Q[0]@v31, _1122_.QB[0]@v32, _1123_.Q[0]@v33, _1123_.QB[0]@v34, _1124_.Q[0]@v35, _1124_.QB[0]@v36, _1125_.Q[0]@v37, _1125_.QB[0]@v38, _1126_.Q[0]@v39, _1126_.QB[0]@v40, _1127_.Q[0]@v41, _1127_.QB[0]@v42, _1128_.Q[0]@v43, _1128_.QB[0]@v44, _1129_.Q[0]@v45, _1129_.QB[0]@v46, _1130_.Q[0]@v47, _1130_.QB[0]@v48, _1131_.Q[0]@v49, _1131_.QB[0]@v50, _1132_.Q[0]@v51, _1132_.QB[0]@v52, _1133_.Q[0]@v53, _1133_.QB[0]@v54, _1134_.Q[0]@v55, _1134_.QB[0]@v56, _1135_.Q[0]@v57, _1135_.QB[0]@v58, _1136_.Q[0]@v59, _1136_.QB[0]@v60, _1137_.Q[0]@v61, _1137_.QB[0]@v62, _1138_.Q[0]@v63, _1138_.QB[0]@v64, _1139_.Q[0]@v65, _1139_.QB[0]@v66, _1140_.Q[0]@v67, _1140_.QB[0]@v68, _1141_.Q[0]@v69, _1141_.QB[0]@v70, _1142_.Q[0]@v71, _1142_.QB[0]@v72, _1143_.Q[0]@v73, _1143_.QB[0]@v74, _1144_.Q[0]@v75, _1144_.QB[0]@v76, _1145_.Q[0]@v77, _1145_.QB[0]@v78, _1146_.Q[0]@v79, _1146_.QB[0]@v80, _1147_.Q[0]@v81, _1147_.QB[0]@v82, _1148_.Q[0]@v83, _1148_.QB[0]@v84, _1149_.Q[0]@v85, _1149_.QB[0]@v86, _1150_.Q[0]@v87, _1150_.QB[0]@v88, _1151_.Q[0]@v89, _1151_.QB[0]@v90]
+SEC diag: extract(c4004_core) observed_support d_out[0] = [v17, v25, v26, v27, v28, v30, v31, v32, v33, v34, v35, v49, v56, v57, v65, v73, v81, v82, v85, v86, v87, v88, v89, v90, v94]
+SEC diag: extract(c4004_core) observed_support d_out[1] = [v19, v25, v26, v27, v28, v30, v31, v32, v33, v34, v37, v49, v56, v59, v67, v75, v81, v82, v85, v86, v87, v88, v89, v90, v93]
+SEC diag: extract(c4004_core) observed_support d_out[2] = [v21, v25, v26, v27, v28, v30, v31, v32, v33, v34, v39, v49, v56, v61, v69, v77, v81, v82, v85, v86, v87, v88, v89, v90, v92]
+SEC diag: extract(c4004_core) observed_support d_out[3] = [v23, v25, v26, v27, v28, v30, v31, v32, v33, v34, v41, v49, v56, v63, v71, v79, v81, v82, v85, v86, v87, v88, v89, v90, v91]
+SEC diag: extract(c4004_core) observed_support d_oe[0] = [v27, v30, v31, v32, v33, v34, v49, v56, v82, v85, v86, v87, v88, v89, v90]
+SEC diag: extract(c4004_core) observed_support d_hiz[0] = [v27, v30, v31, v32, v33, v34, v49, v56, v82, v85, v86, v87, v88, v89, v90]
+SEC diag: extract(c4004_core) observed_support sync[0] = [v86, v88, v90]
+SEC diag: extract(c4004_core) observed_support cm_rom[0] = [v27, v30, v32, v34, v49, v50, v52, v53, v55, v56, v82, v85, v88, v89, v90]
+SEC diag: extract(c4004_core) observed_support cm_ram[0] = [v27, v28, v30, v31, v32, v33, v34, v43, v45, v47, v49, v50, v51, v54, v56, v82, v85, v88, v89, v90]
+SEC diag: extract(c4004_core) observed_support cm_ram[1] = [v27, v28, v30, v31, v32, v33, v34, v44, v49, v50, v51, v54, v56, v82, v85, v88, v89, v90]
+SEC diag: extract(c4004_core) observed_support cm_ram[2] = [v27, v28, v30, v31, v32, v33, v34, v46, v49, v50, v51, v54, v56, v82, v85, v88, v89, v90]
+SEC diag: extract(c4004_core) observed_support cm_ram[3] = [v27, v28, v30, v31, v32, v33, v34, v48, v49, v50, v51, v54, v56, v82, v85, v88, v89, v90]
+SEC diag: extract(c4004_core) observed_support __kepler_boundary_p0_n4131_bp0[0] = [v27, v28, v29, v30, v31, v32, v33, v49, v50, v51, v81, v82, v85, v86, v87, v88, v89, v90]
+SEC diag: extract(c4004_core) observed_support __kepler_boundary_p0_n4132_bp0[0] = [v11, v27, v28, v29, v30, v31, v32, v33, v49, v50, v53, v81, v82, v85, v86, v87, v88, v89, v90]
+SEC diag: extract(c4004_core) observed_support __kepler_boundary_p0_n4345_bp0[0] = [v2, v3, v25, v27, v28, v29, v30, v31, v32, v33, v34, v49, v50, v81, v82, v85, v86, v87, v88, v89, v90]
+SEC diag: extract(c4004_core) observed_support __kepler_boundary_p0_n4130_bp0[0] = [v27, v28, v29, v30, v31, v32, v33, v49, v50, v81, v82, v85, v86, v87, v88, v89, v90]
+SEC diag: extract(c4004_core) observed_support __kepler_boundary_p0_n4133_bp0[0] = [v13, v27, v28, v29, v30, v31, v32, v33, v49, v50, v55, v81, v82, v85, v86, v87, v88, v89, v90]
+SEC diag: extract(c4004_core) observed_support __kepler_boundary_p0_n4134_bp0[0] = [v27, v28, v29, v30, v31, v32, v33, v49, v50, v81, v82, v85, v86, v87, v88, v89, v90]
+SEC diag: extract(c4004_core) observed_support __kepler_boundary_p0_n5752_bp0[0] = [v27, v28, v29, v30, v31, v32, v33, v34, v49, v50, v81, v82, v85, v86, v87, v88, v89, v90]
+SEC diag: extract(c4004_core) observed_support __kepler_boundary_p0_n44494e_bp0[0] = [v17, v27, v28, v29, v30, v31, v32, v33, v34, v35, v49, v50, v57, v73, v81, v82, v85, v86, v87, v88, v90]
+SEC diag: extract(c4004_core) observed_support __kepler_boundary_p0_n44494e_bp1[0] = [v19, v27, v28, v29, v30, v31, v32, v33, v34, v37, v49, v50, v59, v75, v81, v82, v85, v86, v87, v88, v90]
+SEC diag: extract(c4004_core) observed_support __kepler_boundary_p0_n44494e_bp2[0] = [v21, v27, v28, v29, v30, v31, v32, v33, v34, v39, v49, v50, v61, v77, v81, v82, v85, v86, v87, v88, v90]
+SEC diag: extract(c4004_core) observed_support __kepler_boundary_p0_n44494e_bp3[0] = [v23, v27, v28, v29, v30, v31, v32, v33, v34, v41, v49, v50, v63, v79, v81, v82, v85, v86, v87, v88, v90]
+SEC diag: extract(c4004_core) end
+SEC diag: extracted design1
+SEC diag: start run from extracted models
+SEC diag: aligning inputs/outputs
+SEC diag: checked_outputs=23 total_outputs=23 skipped=0
+SEC diag: aligned_inputs=11 aligned_outputs=23 state_bits0=42 state_bits1=82
+SEC diag: reset bootstrap cycles=3 ports=1
+SEC diag: dual-rail mode keeps reset-unanchored outputs in the rail-encoded proof
+SEC summary: reset_unknown_state reset_cycles=3 design0=0/42 design1=0/82
+SEC diag: dual-rail output requires engine proof: d_out[0]
+SEC diag: dual-rail output requires engine proof: d_out[1]
+SEC diag: dual-rail output requires engine proof: d_out[2]
+SEC diag: dual-rail output requires engine proof: d_out[3]
+SEC diag: dual-rail output requires engine proof: d_oe[0]
+SEC diag: dual-rail output requires engine proof: d_hiz[0]
+SEC diag: dual-rail output requires engine proof: sync[0]
+SEC diag: dual-rail output requires engine proof: cm_rom[0]
+SEC diag: dual-rail output requires engine proof: cm_ram[0]
+SEC diag: dual-rail output requires engine proof: cm_ram[1]
+SEC diag: dual-rail output requires engine proof: cm_ram[2]
+SEC diag: dual-rail output requires engine proof: cm_ram[3]
+SEC diag: dual-rail output requires engine proof: __kepler_boundary_p0_n4131_bp0[0]
+SEC diag: dual-rail output requires engine proof: __kepler_boundary_p0_n4132_bp0[0]
+SEC diag: dual-rail output requires engine proof: __kepler_boundary_p0_n4345_bp0[0]
+SEC diag: dual-rail output requires engine proof: __kepler_boundary_p0_n4130_bp0[0]
+SEC diag: dual-rail output requires engine proof: __kepler_boundary_p0_n4133_bp0[0]
+SEC diag: dual-rail output requires engine proof: __kepler_boundary_p0_n4134_bp0[0]
+SEC diag: dual-rail output requires engine proof: __kepler_boundary_p0_n5752_bp0[0]
+SEC diag: dual-rail output requires engine proof: __kepler_boundary_p0_n44494e_bp0[0]
+SEC diag: dual-rail output requires engine proof: __kepler_boundary_p0_n44494e_bp1[0]
+SEC diag: dual-rail output requires engine proof: __kepler_boundary_p0_n44494e_bp2[0]
+SEC diag: dual-rail output requires engine proof: __kepler_boundary_p0_n44494e_bp3[0]
+SEC summary: encoding=dual_rail_steady rail_state_bits=248 rail_outputs=23 dual_rail_state_relation_pairs=82
+SEC diag: internal relations round=0 partition=0..5 vars=3066 status=sat conflicts=0 decisions=0 ticks=0
+SEC diag: internal relation refuted: 820.Q[0] ~ _1119_.Q[0]
+SEC diag: internal relations round=0 active=5 structural=0 refuted=4 seconds=0.0
+SEC diag: internal relations round=1 partition=0..1 vars=266 status=sat conflicts=0 decisions=0 ticks=0
+SEC diag: internal relation refuted: 853.Q[0] ~ _1114_.Q[0]
+SEC diag: internal relations round=1 active=1 structural=0 refuted=1 seconds=0.0
+SEC diag: internal relations round=0 partition=0..5 vars=3043 status=sat conflicts=0 decisions=0 ticks=0
+SEC diag: internal relation refuted: 853.Q[0] ~ _1114_.Q[0]
+SEC diag: internal relations round=0 active=46 structural=41 refuted=5 seconds=0.0
+SEC diag: internal relations round=1 active=41 structural=41 refuted=0 seconds=0.0
+SEC diag: internal relations round=0 partition=0..5 vars=1439 status=sat conflicts=0 decisions=0 ticks=0
+SEC diag: internal relations round=0 active=5 structural=0 refuted=1 seconds=0.0
+SEC diag: internal relations round=1 partition=0..4 vars=1369 status=sat conflicts=0 decisions=0 ticks=0
+SEC diag: internal relations round=1 active=4 structural=0 refuted=1 seconds=0.0
+SEC diag: internal relations round=2 partition=0..3 vars=1091 status=sat conflicts=0 decisions=0 ticks=0
+SEC diag: internal relation refuted: 867.Q[0] ~ _1111_.Q[0]
+SEC diag: internal relation refuted: 853.Q[0] ~ _1114_.Q[0]
+SEC diag: internal relation refuted: 820.Q[0] ~ _1119_.Q[0]
+SEC diag: internal relations round=2 active=3 structural=0 refuted=3 seconds=0.0
+SEC summary: signal_correspondence scope=registers_and_outputs frames=1 completed=1 signals=295 classes=98 rounds=1 solver_calls=4 proved_outputs=18/23 state_equalities=0 seconds=0.3 semantics=binary stopped_by=none
+SEC summary: signal_correspondence scope=registers_and_outputs frames=1 completed=1 signals=435 classes=93 rounds=1 solver_calls=4 proved_outputs=0/5 state_equalities=164 seconds=1.9 semantics=rails stopped_by=none
+SEC summary: internal_relation_candidates=46 proved_rail_equalities=82 allow_x_equality_in_internal_relations=1 name_candidates=0 net_name_candidates=5 driver_candidates=0 propagated_candidates=41 propagation_rounds=1
+SEC summary: binary_relation_round candidates=5 binary_pairs=0 covering_clauses=0 compatible_clauses=0 discharged_outputs=0/23
+SEC summary: structurally_proved_outputs=18 of 23 merged_equalities=164
+SEC diag: merged state symbols=164 identical_output_formulas=18/23
+SEC diag: entering pdr engine
+SEC diag: PDR steady-state check begin index=0 pending_batches=1 output_range=0..23
+SEC PDR stats: shared exact F[0] cache built
+SEC PDR stats: frame invariant shared_strengthening unavailable
+SEC PDR stats: immutable model metadata built use=1
+SEC PDR stats: shared exact F[0] query surface symbols=1033
+SEC PDR stats: formula closed support cached symbols=156
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=1033
+SEC PDR stats: predecessor cached solver created level=0 symbols=1033 frame_clauses=0 shared_batches=0
+SEC PDR stats: shared exact F[0] solver used for bad cube
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=1033
+SEC PDR stats: shared exact F[0] predecessor solver reused without symbol surface comparison
+SEC PDR stats: shared exact F[0] solver used for bad cube
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=1033
+SEC PDR stats: shared exact F[0] predecessor solver reused without symbol surface comparison
+SEC PDR stats: shared exact F[0] solver used for bad cube
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=1033
+SEC PDR stats: shared exact F[0] predecessor solver reused without symbol surface comparison
+SEC PDR stats: shared exact F[0] solver used for bad cube
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=1033
+SEC PDR stats: shared exact F[0] predecessor solver reused without symbol surface comparison
+SEC PDR stats: shared exact F[0] solver used for bad cube
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=1033
+SEC PDR stats: shared exact F[0] predecessor solver reused without symbol surface comparison
+SEC PDR stats: shared exact F[0] solver used for bad cube
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=1033
+SEC PDR stats: shared exact F[0] predecessor solver reused without symbol surface comparison
+SEC PDR stats: shared exact F[0] solver used for bad cube
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=1033
+SEC PDR stats: shared exact F[0] predecessor solver reused without symbol surface comparison
+SEC PDR stats: shared exact F[0] solver used for bad cube
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=1033
+SEC PDR stats: shared exact F[0] predecessor solver reused without symbol surface comparison
+SEC PDR stats: shared exact F[0] solver used for bad cube
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=1033
+SEC PDR stats: shared exact F[0] predecessor solver reused without symbol surface comparison
+SEC PDR stats: shared exact F[0] solver used for bad cube
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=1033
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=1033
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=1033
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=1033
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=1033
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=1033
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=1033
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=1033
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=1033
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=1033
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=1033
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=1033
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=1033
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198548
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198548
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198548
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198548
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198548
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198548
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198548
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198548
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198548
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198548
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198548
+SEC diag: PDR bad cube uses exact ternary support: 20 state symbols at F1
+SEC PDR stats: bad cube level=1 source=ternary_simulation state_symbols=20 model_cube=20 cube=12 hash=13012180301257461367
+SEC PDR stats: predecessor #1 level=0 target_cube=12 target_hash=13012180301257461367 encoded_targets=12 transition_support=24 predecessor_symbols=19 solver_symbols=1033 cached_solver_symbols=1033 conflict_limit=10000 decision_limit=150000 frame_clauses=0 exclude_target=1 purpose=block
+SEC PDR stats: predecessor transition encoder cached symbols=1033 estimated_nodes=504
+SEC PDR stats: predecessor #1 cached_query_us=279 cached_assumptions=1
+SEC PDR stats: predecessor #1 result=unsat cached_assumptions=1
+SEC PDR stats: predecessor core kept outside init core=1->3 target=12
+SEC PDR stats: predecessor #2 level=0 target_cube=2 target_hash=18111443614409764465 encoded_targets=2 transition_support=5 predecessor_symbols=4 solver_symbols=1033 cached_solver_symbols=1033 conflict_limit=10000 decision_limit=150000 frame_clauses=0 exclude_target=1 purpose=generalize
+SEC PDR stats: predecessor #2 cached_query_us=4 cached_assumptions=1
+SEC PDR stats: predecessor #2 result=unsat cached_assumptions=1
+SEC PDR stats: exact F[0] init intersection cache reused cube=2
+SEC PDR stats: predecessor core kept outside init core=1->2 target=2
+SEC PDR stats: predecessor #3 level=0 target_cube=1 target_hash=14813675350809533799 encoded_targets=1 transition_support=5 predecessor_symbols=4 solver_symbols=1033 cached_solver_symbols=1033 conflict_limit=10000 decision_limit=150000 frame_clauses=0 exclude_target=1 purpose=generalize
+SEC PDR stats: predecessor #3 cached_query_us=2 cached_assumptions=1
+SEC PDR stats: predecessor #3 result=unsat cached_assumptions=1
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=8051561606478958436
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=8051561606478958436
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=8051561606478958436
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=8051561606478958436
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=8051561606478958436
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=8051561606478958436
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=8051561606478958436
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=8051561606478958436
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=8051561606478958436
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=8051561606478958436
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=8051561606478958436
+SEC diag: PDR bad cube uses exact ternary support: 20 state symbols at F1
+SEC PDR stats: bad cube level=1 source=ternary_simulation state_symbols=20 model_cube=20 cube=12 hash=10997099956224912182
+SEC PDR stats: predecessor #4 level=0 target_cube=12 target_hash=10997099956224912182 encoded_targets=12 transition_support=18 predecessor_symbols=14 solver_symbols=1033 cached_solver_symbols=1033 conflict_limit=10000 decision_limit=150000 frame_clauses=0 exclude_target=1 purpose=block
+SEC PDR stats: predecessor #4 cached_query_us=64 cached_assumptions=1
+SEC PDR stats: predecessor #4 result=unsat cached_assumptions=1
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=2953048330149750188
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=2953048330149750188
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=2953048330149750188
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=2953048330149750188
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=2953048330149750188
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=2953048330149750188
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=2953048330149750188
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=2953048330149750188
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=2953048330149750188
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=2953048330149750188
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=2953048330149750188
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=2953048330149750188
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=2953048330149750188
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=2953048330149750188
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=2953048330149750188
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=2953048330149750188
+SEC PDR stats: predecessor #5 level=1 target_cube=1 target_hash=14813675350809533799 encoded_targets=1 transition_support=5 predecessor_symbols=4 solver_symbols=157 cached_solver_symbols=157 conflict_limit=10000 decision_limit=150000 frame_clauses=2 exclude_target=0 purpose=propagate
+SEC PDR stats: shared predecessor solver pool selected level=1 run=1 entry=0 cache_hit=0 evicted=0 family_symbols=156 initial_symbols=157 closest_entry=0 closest_overlap=0 path_local=0 restarted=0 retired_contexts=0
+SEC PDR stats: shared predecessor context activated run=1 level=1 retained_contexts=1
+SEC PDR stats: predecessor cached solver created level=1 symbols=157 frame_clauses=2 shared_batches=1
+SEC PDR stats: predecessor transition encoder cached symbols=157 estimated_nodes=9
+SEC PDR stats: predecessor #5 cached_query_us=1788 cached_assumptions=1
+SEC PDR stats: predecessor #5 result=sat cached_assumptions=1 model_extracted=0 purpose=propagate
+SEC PDR stats: predecessor #6 level=1 target_cube=1 target_hash=14813675350809533792 encoded_targets=1 transition_support=7 predecessor_symbols=6 solver_symbols=157 cached_solver_symbols=157 conflict_limit=10000 decision_limit=150000 frame_clauses=2 exclude_target=0 purpose=propagate
+SEC PDR stats: predecessor #6 cached_query_us=182 cached_assumptions=1
+SEC PDR stats: predecessor #6 result=sat cached_assumptions=1 model_extracted=0 purpose=propagate
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198615
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198615
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198615
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198615
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198615
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198615
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198615
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198615
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198615
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198615
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198615
+SEC diag: PDR bad cube uses exact ternary support: 20 state symbols at F2
+SEC PDR stats: bad cube level=2 source=ternary_simulation state_symbols=20 model_cube=20 cube=12 hash=13012180301257461367
+SEC PDR stats: exact F[0] init intersection cache reused cube=12
+SEC PDR stats: predecessor #7 level=1 target_cube=12 target_hash=13012180301257461367 encoded_targets=12 transition_support=24 predecessor_symbols=19 solver_symbols=161 cached_solver_symbols=161 conflict_limit=10000 decision_limit=150000 frame_clauses=2 exclude_target=1 purpose=block
+SEC PDR stats: predecessor #7 cached_query_us=262 cached_assumptions=1
+SEC PDR stats: predecessor #7 result=unsat cached_assumptions=1
+SEC PDR stats: predecessor #8 level=1 target_cube=2 target_hash=18111443614409765678 encoded_targets=2 transition_support=7 predecessor_symbols=6 solver_symbols=157 cached_solver_symbols=161 conflict_limit=10000 decision_limit=150000 frame_clauses=2 exclude_target=1 purpose=generalize
+SEC PDR stats: predecessor #8 cached_query_us=17 cached_assumptions=1
+SEC PDR stats: predecessor #8 result=unsat cached_assumptions=1
+SEC PDR stats: exact F[0] init intersection cache reused cube=1
+SEC PDR stats: predecessor #9 level=1 target_cube=1 target_hash=14813675350809533792 encoded_targets=1 transition_support=7 predecessor_symbols=6 solver_symbols=157 cached_solver_symbols=161 conflict_limit=10000 decision_limit=150000 frame_clauses=2 exclude_target=1 purpose=generalize
+SEC PDR stats: predecessor #9 cached_query_us=196 cached_assumptions=1
+SEC PDR stats: predecessor #9 result=sat cached_assumptions=1 model_extracted=0 purpose=generalize
+SEC PDR stats: exact F[0] init intersection cache reused cube=1
+SEC PDR stats: predecessor #10 level=1 target_cube=1 target_hash=14813675350809533799 encoded_targets=1 transition_support=5 predecessor_symbols=4 solver_symbols=157 cached_solver_symbols=161 conflict_limit=10000 decision_limit=150000 frame_clauses=2 exclude_target=1 purpose=generalize
+SEC PDR stats: predecessor #10 cached_query_us=163 cached_assumptions=1
+SEC PDR stats: predecessor #10 result=sat cached_assumptions=1 model_extracted=0 purpose=generalize
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=15450705053488284487
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=15450705053488284487
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=15450705053488284487
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=15450705053488284487
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=15450705053488284487
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=15450705053488284487
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=15450705053488284487
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=15450705053488284487
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=15450705053488284487
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=15450705053488284487
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=15450705053488284487
+SEC diag: PDR bad cube uses exact ternary support: 20 state symbols at F2
+SEC PDR stats: bad cube level=2 source=ternary_simulation state_symbols=20 model_cube=20 cube=18 hash=9898171262475751155
+SEC PDR stats: predecessor #11 level=1 target_cube=18 target_hash=9898171262475751155 encoded_targets=18 transition_support=25 predecessor_symbols=20 solver_symbols=161 cached_solver_symbols=161 conflict_limit=10000 decision_limit=150000 frame_clauses=2 exclude_target=1 purpose=block
+SEC PDR stats: predecessor #11 cached_query_us=292 cached_assumptions=1
+SEC PDR stats: predecessor #11 result=unsat cached_assumptions=1
+SEC PDR stats: exact F[0] init intersection cache reused cube=1
+SEC PDR stats: predecessor #12 level=1 target_cube=1 target_hash=14813675350809533819 encoded_targets=1 transition_support=2 predecessor_symbols=1 solver_symbols=157 cached_solver_symbols=161 conflict_limit=10000 decision_limit=150000 frame_clauses=2 exclude_target=1 purpose=generalize
+SEC PDR stats: predecessor #12 cached_query_us=248 cached_assumptions=1
+SEC PDR stats: predecessor #12 result=sat cached_assumptions=1 model_extracted=0 purpose=generalize
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=13109188127937059840
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=13109188127937059840
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=13109188127937059840
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=13109188127937059840
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=13109188127937059840
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=13109188127937059840
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=13109188127937059840
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=13109188127937059840
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=13109188127937059840
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=13109188127937059840
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=13109188127937059840
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=13109188127937059840
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=13109188127937059840
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=13109188127937059840
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=13109188127937059840
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=13109188127937059840
+SEC PDR stats: predecessor #13 level=2 target_cube=2 target_hash=18111443614409764405 encoded_targets=2 transition_support=7 predecessor_symbols=6 solver_symbols=157 cached_solver_symbols=157 conflict_limit=10000 decision_limit=150000 frame_clauses=2 exclude_target=0 purpose=propagate
+SEC PDR stats: shared predecessor solver pool selected level=2 run=1 entry=0 cache_hit=0 evicted=0 family_symbols=156 initial_symbols=157 closest_entry=0 closest_overlap=0 path_local=0 restarted=0 retired_contexts=0
+SEC PDR stats: shared predecessor context activated run=1 level=2 retained_contexts=1
+SEC PDR stats: predecessor cached solver created level=2 symbols=157 frame_clauses=2 shared_batches=1
+SEC PDR stats: predecessor transition encoder cached symbols=157 estimated_nodes=17
+SEC PDR stats: predecessor #13 cached_query_us=1966 cached_assumptions=1
+SEC PDR stats: predecessor #13 result=sat cached_assumptions=1 model_extracted=0 purpose=propagate
+SEC PDR stats: predecessor #14 level=2 target_cube=2 target_hash=18111443614409765678 encoded_targets=2 transition_support=7 predecessor_symbols=6 solver_symbols=157 cached_solver_symbols=157 conflict_limit=10000 decision_limit=150000 frame_clauses=2 exclude_target=0 purpose=propagate
+SEC PDR stats: predecessor #14 cached_query_us=74 cached_assumptions=1
+SEC PDR stats: predecessor #14 result=unsat cached_assumptions=1
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=15450705053488344310
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=15450705053488344310
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=15450705053488344310
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=15450705053488344310
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=15450705053488344310
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=15450705053488344310
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=15450705053488344310
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=15450705053488344310
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=15450705053488344310
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=15450705053488344310
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=15450705053488344310
+SEC diag: PDR bad cube uses exact ternary support: 20 state symbols at F3
+SEC PDR stats: bad cube level=3 source=ternary_simulation state_symbols=20 model_cube=20 cube=18 hash=9898171262475751155
+SEC PDR stats: exact F[0] init intersection cache reused cube=18
+SEC PDR stats: predecessor #15 level=2 target_cube=18 target_hash=9898171262475751155 encoded_targets=18 transition_support=25 predecessor_symbols=20 solver_symbols=161 cached_solver_symbols=161 conflict_limit=10000 decision_limit=150000 frame_clauses=2 exclude_target=1 purpose=block
+SEC PDR stats: predecessor #15 cached_query_us=585 cached_assumptions=1
+SEC PDR stats: predecessor #15 result=sat cached_assumptions=1 model_extracted=1 purpose=block
+SEC PDR stats: predecessor #15 predecessor_cube=14 predecessor_hash=14627578465884580035
+SEC PDR stats: ternary mapped support cache reused=4 entries=19
+SEC PDR stats: predecessor #16 level=1 target_cube=14 target_hash=14627578465884580035 encoded_targets=14 transition_support=22 predecessor_symbols=18 solver_symbols=160 cached_solver_symbols=161 conflict_limit=10000 decision_limit=150000 frame_clauses=2 exclude_target=1 purpose=block
+SEC PDR stats: predecessor #16 cached_query_us=88 cached_assumptions=1
+SEC PDR stats: predecessor #16 result=unsat cached_assumptions=1
+SEC PDR stats: predecessor core kept outside init core=2->5 target=14
+SEC PDR stats: predecessor #17 level=1 target_cube=4 target_hash=9379597081383699863 encoded_targets=4 transition_support=7 predecessor_symbols=6 solver_symbols=157 cached_solver_symbols=161 conflict_limit=10000 decision_limit=150000 frame_clauses=2 exclude_target=1 purpose=generalize
+SEC PDR stats: predecessor #17 cached_query_us=145 cached_assumptions=1
+SEC PDR stats: predecessor #17 result=unsat cached_assumptions=1
+SEC PDR stats: exact F[0] init intersection cache reused cube=4
+SEC PDR stats: predecessor core kept outside init core=2->4 target=4
+SEC PDR stats: predecessor #18 level=1 target_cube=3 target_hash=5217400152005394810 encoded_targets=3 transition_support=7 predecessor_symbols=6 solver_symbols=157 cached_solver_symbols=161 conflict_limit=10000 decision_limit=150000 frame_clauses=2 exclude_target=1 purpose=generalize
+SEC PDR stats: predecessor #18 cached_query_us=47 cached_assumptions=1
+SEC PDR stats: predecessor #18 result=unsat cached_assumptions=1
+SEC PDR stats: exact F[0] init intersection cache reused cube=1
+SEC PDR stats: exact F[0] init intersection cache reused cube=14
+SEC PDR stats: predecessor #19 level=2 target_cube=14 target_hash=14627578465884580035 encoded_targets=14 transition_support=22 predecessor_symbols=18 solver_symbols=160 cached_solver_symbols=161 conflict_limit=10000 decision_limit=150000 frame_clauses=3 exclude_target=1 purpose=block
+SEC PDR stats: predecessor #19 cached_query_us=284 cached_assumptions=1
+SEC PDR stats: predecessor #19 result=sat cached_assumptions=1 model_extracted=1 purpose=block
+SEC PDR stats: predecessor #19 predecessor_cube=8 predecessor_hash=574249678433253201
+SEC PDR stats: ternary mapped support cache reused=18 entries=19
+SEC PDR stats: predecessor #20 level=1 target_cube=8 target_hash=574249678433253201 encoded_targets=8 transition_support=19 predecessor_symbols=18 solver_symbols=157 cached_solver_symbols=161 conflict_limit=10000 decision_limit=150000 frame_clauses=2 exclude_target=1 purpose=block
+SEC PDR stats: predecessor #20 cached_query_us=70 cached_assumptions=1
+SEC PDR stats: predecessor #20 result=unsat cached_assumptions=1
+SEC PDR stats: exact F[0] init intersection cache reused cube=1
+SEC PDR stats: exact F[0] init intersection cache reused cube=8
+SEC PDR stats: counterexample candidate reached init bad_frame=5 cube=8
+SEC PDR stats: reusable invariant candidates stored count=6 total=6 literal_budget_used=10
+SEC diag: PDR steady-state check end index=0 output_range=0..23 status=different bound=5
+SEC diag: k-induction base coi k=13 first_bad_frame=3 frames=17 solver_symbols=226 transition_targets=3396 bad_support=52 initial_assignments=248 encoded_initial_assignments=216 structured_initial_assignments=1 safe_prefix_constraints=0
+SEC diag: k-induction base coi k=5 first_bad_frame=8 frames=9 solver_symbols=226 transition_targets=1668 bad_support=52 initial_assignments=248 encoded_initial_assignments=216 structured_initial_assignments=1 safe_prefix_constraints=0
+[2026-11-25 12:11:19.455] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2769] SEC checked-output coverage: 100.00% (23/23 covered/existing outputs).
+[2026-11-25 12:11:19.455] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2879] Difference was found. SEC found a counterexample at k = 5.
+[2026-11-25 12:11:19.455] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2882] SEC counterexample details:
+Counterexample reaches the first bad frame at cycle 5.
+Input trace:
+  cycle 0: rst[0]=0, test[0]=0, d_in[0]=0, d_in[1]=0, d_in[2]=0, d_in[3]=0, __kepler_boundary_p0_n444f_bp0[0]=1, __kepler_boundary_p0_n444f_bp1[0]=1, __kepler_boundary_p0_n444f_bp2[0]=1, __kepler_boundary_p0_n444f_bp3[0]=1
+  cycle 1: rst[0]=0, test[0]=0, d_in[0]=0, d_in[1]=0, d_in[2]=0, d_in[3]=0, __kepler_boundary_p0_n444f_bp0[0]=0, __kepler_boundary_p0_n444f_bp1[0]=0, __kepler_boundary_p0_n444f_bp2[0]=1, __kepler_boundary_p0_n444f_bp3[0]=0
+  cycle 2: rst[0]=0, test[0]=0, d_in[0]=0, d_in[1]=0, d_in[2]=0, d_in[3]=0, __kepler_boundary_p0_n444f_bp0[0]=0, __kepler_boundary_p0_n444f_bp1[0]=0, __kepler_boundary_p0_n444f_bp2[0]=0, __kepler_boundary_p0_n444f_bp3[0]=0
+  cycle 3: rst[0]=0, test[0]=0, d_in[0]=1, d_in[1]=1, d_in[2]=1, d_in[3]=1, __kepler_boundary_p0_n444f_bp0[0]=0, __kepler_boundary_p0_n444f_bp1[0]=0, __kepler_boundary_p0_n444f_bp2[0]=0, __kepler_boundary_p0_n444f_bp3[0]=0
+  cycle 4: rst[0]=0, test[0]=0, d_in[0]=0, d_in[1]=0, d_in[2]=0, d_in[3]=0, __kepler_boundary_p0_n444f_bp0[0]=1, __kepler_boundary_p0_n444f_bp1[0]=1, __kepler_boundary_p0_n444f_bp2[0]=1, __kepler_boundary_p0_n444f_bp3[0]=1
+  cycle 5: rst[0]=0, test[0]=0, d_in[0]=0, d_in[1]=0, d_in[2]=0, d_in[3]=0, __kepler_boundary_p0_n444f_bp0[0]=0, __kepler_boundary_p0_n444f_bp1[0]=0, __kepler_boundary_p0_n444f_bp2[0]=0, __kepler_boundary_p0_n444f_bp3[0]=0
+Observed output mismatches at cycle 5:
+  __kepler_boundary_p0_n4131_bp0[0]: design0=0, design1=1
+Traceback for first differing point `__kepler_boundary_p0_n4131_bp0[0]` at cycle 5:
+  Cone traceback unavailable: design0 could not resolve the differing SEC signal back into the DNL; design1 could not resolve the differing SEC signal back into the DNL
+
