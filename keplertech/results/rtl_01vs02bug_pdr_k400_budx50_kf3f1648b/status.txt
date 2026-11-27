@@ -1,0 +1,12 @@
+cmd: kepler-formal -sv -v sec --sec-engine pdr -k 400 --sec-reset-cycles 3 --sec-reset-port rst=1 --report-skipped-pos --design1 cfg/rtl_01.v --design2 tools/kepler-formal/regress/c4004_rtl/rtl_02_bug.v (upstream 3f1648b)
+kepler-formal git hash: 3f1648b8981367ab5656c1d3a287421596e8c606
+naja git hash: cb142398
+KEPLER_SEC_DIAG=1
+KEPLER_SEC_PDR_STATS=1
+KEPLER_SEC_PDR_DUAL_RAIL_SINGLETON_DECISION_BUDGET=2000000000
+KEPLER_SEC_PDR_DUAL_RAIL_SINGLETON_CONFLICT_BUDGET=50000000
+KEPLER_SEC_PDR_DUAL_RAIL_SINGLETON_TICK_BUDGET=25000000000
+exit: 3 wall: 124 s
+SEC PDR stats: counterexample candidate reached init bad_frame=33 cube=53
+[2026-11-27 00:30:03.589] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2940] Difference was found. SEC found a counterexample at k = 33.
+[2026-11-27 00:30:03.589] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2943] SEC counterexample details:

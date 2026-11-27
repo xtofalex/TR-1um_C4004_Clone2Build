@@ -1,0 +1,21 @@
+cmd (cwd = results/rtl_01vs04_pdr_k400_budx50_kf3f1648b): kepler-formal -sv -v sec --sec-engine pdr -k 400 --sec-reset-cycles 3 --sec-reset-port rst=1 --report-skipped-pos --design1 ../../cfg/rtl_01.v --design2 ../../cfg/rtl_04.v 
+kepler-formal: kepler-formal version: 1.0.0 kepler-formal git hash: 3f1648b8981367ab5656c1d3a287421596e8c606 naja version: 0.7.33 naja git hash: cb142398 
+KEPLER_SEC_DIAG=1
+KEPLER_SEC_PDR_STATS=1
+KEPLER_SEC_PDR_DUAL_RAIL_SINGLETON_DECISION_BUDGET=2000000000
+KEPLER_SEC_PDR_DUAL_RAIL_SINGLETON_CONFLICT_BUDGET=50000000
+KEPLER_SEC_PDR_DUAL_RAIL_SINGLETON_TICK_BUDGET=25000000000
+wall-clock cap: 3600 s
+STOPPED by wall-clock cap (3600 s): result is the depth reached, not a verdict
+exit: 142  wall: 3600 s  cpu: user 3495.57 s, sys 31.43 s  peak RSS: 2408 MB
+
+SEC summary: signal_correspondence scope=registers_and_outputs frames=1 completed=1 signals=736 classes=52 rounds=6 solver_calls=94 proved_outputs=0/8 state_equalities=0 seconds=5.3 semantics=binary stopped_by=none step_cycles=1
+SEC summary: signal_correspondence scope=registers_and_outputs frames=2 completed=1 signals=736 classes=52 rounds=6 solver_calls=96 proved_outputs=0/8 state_equalities=0 seconds=10.8 semantics=binary stopped_by=none step_cycles=1
+SEC summary: signal_correspondence scope=registers_and_outputs frames=4 completed=1 signals=736 classes=52 rounds=6 solver_calls=98 proved_outputs=0/8 state_equalities=0 seconds=21.5 semantics=binary stopped_by=none step_cycles=1
+SEC summary: signal_correspondence scope=registers_and_outputs frames=8 completed=1 signals=736 classes=52 rounds=6 solver_calls=105 proved_outputs=0/8 state_equalities=0 seconds=28.9 semantics=binary stopped_by=none step_cycles=1
+SEC summary: signal_correspondence scope=registers_and_outputs frames=16 completed=1 signals=736 classes=52 rounds=6 solver_calls=129 proved_outputs=0/8 state_equalities=0 seconds=155.0 semantics=binary stopped_by=none step_cycles=1
+SEC summary: signal_correspondence scope=registers_and_outputs frames=1 completed=1 signals=1471 classes=43 rounds=6 solver_calls=65 proved_outputs=0/8 state_equalities=74 seconds=4.5 semantics=rails stopped_by=none step_cycles=1
+SEC summary: signal_correspondence scope=registers_and_outputs frames=2 completed=1 signals=1471 classes=43 rounds=6 solver_calls=79 proved_outputs=0/4 state_equalities=74 seconds=11.4 semantics=rails stopped_by=none step_cycles=1
+SEC summary: signal_correspondence scope=registers_and_outputs frames=4 completed=1 signals=1471 classes=43 rounds=6 solver_calls=76 proved_outputs=0/4 state_equalities=74 seconds=22.5 semantics=rails stopped_by=none step_cycles=1
+SEC summary: signal_correspondence scope=registers_and_outputs frames=8 completed=1 signals=1471 classes=43 rounds=6 solver_calls=91 proved_outputs=0/4 state_equalities=74 seconds=37.4 semantics=rails stopped_by=none step_cycles=1
+SEC summary: signal_correspondence scope=all_signals frames=1 completed=0 signals=24001 classes=0 rounds=8 solver_calls=439 proved_outputs=0/4 state_equalities=0 seconds=64.4 semantics=rails stopped_by=ticks step_cycles=1

@@ -1,0 +1,371 @@
+[2026-11-27 00:30:03.841] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2394] KEPLER FORMAL: Run.
+[2026-11-27 00:30:03.841] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2467] Input format: SYSTEMVERILOG
+[2026-11-27 00:30:03.841] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2474] SystemVerilog compilation units: one per file
+[2026-11-27 00:30:03.841] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2477] Run log: miter_log_0.txt
+[2026-11-27 00:30:03.841] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:756] Netlist 1: ../../cfg/rtl_01.v
+[2026-11-27 00:30:03.841] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:756] Netlist 2: ../../cfg/rtl_02.v
+[2026-11-27 00:30:03.841] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2754] Solver: KISSAT
+[2026-11-27 00:30:03.841] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2755] Verification: sec
+[2026-11-27 00:30:03.841] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2757] SEC max_k: 400
+[2026-11-27 00:30:03.841] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2758] SEC engine: pdr
+[2026-11-27 00:30:03.841] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2759] SEC encoding: dual_rail_steady
+[2026-11-27 00:30:03.841] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2766] SEC internal relations: learn=true allow_x_equality=true binary_relation_round=true signal_correspondence=true signal_correspondence_step=1
+[2026-11-27 00:30:03.841] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2768] SEC reset bootstrap: 3 cycle(s)
+[2026-11-27 00:30:03.841] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2773] SEC reset bootstrap port: rst active=1
+[2026-11-27 00:30:03.841] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2777] Compact mode: disabled
+[2026-11-27 00:30:03.841] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2778] Skipped PO reports: enabled
+[2026-11-27 00:30:03.841] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2779] SEC latch abstraction: enabled
+[2026-11-27 00:30:03.841] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2780] SEC data-enabled latch model: enabled
+[2026-11-27 00:30:03.842] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:3476] Parsing systemverilog file(s) for design 1
+2026-11-27 00:30:03,844 [naja] [warning] Slang emitted 2 diagnostic(s) (2 warning(s), 0 error(s)); see 'naja_sv_diagnostics.log'
+2026-11-27 00:30:03,847 [naja] [warning] Only the first occurrence of each SystemVerilog warning code is emitted on the console; all occurrences are written to 'naja_sv_diagnostics.log'
+2026-11-27 00:30:03,847 [naja] [warning] ../../cfg/rtl_01.v:271:9: Case comparison operator '===' lowered as 2-state comparison in SNL (X/Z distinction is not preserved)
+2026-11-27 00:30:03,867 [naja] [warning] SystemVerilog diagnostics summary: status=success, slang=2 (warnings=2, errors=0), elaboration_warnings=8 (codes=1), unsupported_warnings=0 (codes=0), unsupported_errors=0 (codes=0); report='naja_sv_diagnostics.log'
+2026-11-27 00:30:03,867 [naja] [info] Found top design: cpu_top
+2026-11-27 00:30:03,867 [naja] [info] Parsing systemverilog file(s) for design 2
+2026-11-27 00:30:03,869 [naja] [warning] Slang emitted 2 diagnostic(s) (2 warning(s), 0 error(s)); see 'naja_sv_diagnostics.log'
+2026-11-27 00:30:03,872 [naja] [warning] Only the first occurrence of each SystemVerilog warning code is emitted on the console; all occurrences are written to 'naja_sv_diagnostics.log'
+2026-11-27 00:30:03,872 [naja] [warning] ../../cfg/rtl_02.v:273:9: Case comparison operator '===' lowered as 2-state comparison in SNL (X/Z distinction is not preserved)
+2026-11-27 00:30:03,885 [naja] [warning] SystemVerilog diagnostics summary: status=success, slang=2 (warnings=2, errors=0), elaboration_warnings=8 (codes=1), unsupported_warnings=0 (codes=0), unsupported_errors=0 (codes=0); report='naja_sv_diagnostics.log'
+2026-11-27 00:30:03,885 [naja] [info] Found top design: cpu_top
+SEC diag: start run
+SEC diag: extract(cpu_top) collect begin
+SEC diag: extract(cpu_top) collect end inputs=62 outputs=110
+SEC diag: extract(cpu_top) opaque_reached_outputs=0
+SEC diag: extract(cpu_top) initial_observed_outputs=12
+SEC diag: extract(cpu_top) build begin
+SEC diag: extract(cpu_top) build end
+SEC diag: extract(cpu_top) boundary normalized env=7 state=55 outputs=12 pending=51
+SEC diag: extract(cpu_top) mapped boundary vars=62
+SEC diag: extract(cpu_top) structured memory dependency build begin outputs=11
+SEC diag: extract(cpu_top) structured memory dependency build end outputs=11
+SEC diag: extract(cpu_top) mapped boundary vars=62
+SEC diag: extract(cpu_top) materialized output exprs observed=12 total=39
+SEC diag: top input rst[0] is not clock-only: sequential non-clock pin u_env/17//D (naja_dff)
+SEC diag: top input test[0] is not clock-only: sequential non-clock pin u_env/8//D (naja_dff)
+SEC diag: top input d_in[3] is not clock-only: sequential non-clock pin u_env/6//D (naja_dff__w4)
+SEC diag: top input d_in[2] is not clock-only: sequential non-clock pin u_env/6//D (naja_dff__w4)
+SEC diag: top input d_in[1] is not clock-only: sequential non-clock pin u_env/6//D (naja_dff__w4)
+SEC diag: top input d_in[0] is not clock-only: sequential non-clock pin u_env/6//D (naja_dff__w4)
+SEC diag: extract(cpu_top) immutable clock structure indexed terms=4834 pure_terms=23
+SEC diag: extract(cpu_top) dependency build begin outputs=54
+SEC diag: extract(cpu_top) dependency build end outputs=54
+SEC diag: extract(cpu_top) mapped boundary vars=190
+SEC diag: extract(cpu_top) rebuilt next-state exprs=183 init=0 data_latches=0
+SEC diag: extract(cpu_top) filtered env=7 state=183
+SEC diag: extract(cpu_top) structured_memories=1 structured_memory_cells=128
+SEC diag: extract(cpu_top) kept_states=[u_env.6.Q[0]@v58, u_env.6.Q[1]@v57, u_env.6.Q[2]@v56, u_env.6.Q[3]@v55, u_env.8.Q[0]@v59, u_env.14.Q[0]@v62, u_env.14.Q[1]@v61, u_env.14.Q[2]@v60, u_env.17.Q[0]@v63, u_core.u_sram.22.Q[0]@v50, u_core.u_sram.22.Q[1]@v49, u_core.u_sram.22.Q[2]@v48, u_core.u_sram.22.Q[3]@v47, u_core.381.Q[0]@v11, u_core.381.Q[1]@v10, u_core.381.Q[2]@v9, u_core.493.Q[0]@v15, u_core.493.Q[1]@v14, u_core.493.Q[2]@v13, u_core.493.Q[3]@v12, u_core.576.Q[0]@v16, u_core.590.Q[0]@v20, u_core.590.Q[1]@v19, u_core.590.Q[2]@v18, u_core.590.Q[3]@v17, u_core.605.Q[0]@v24, u_core.605.Q[1]@v23, u_core.605.Q[2]@v22, u_core.605.Q[3]@v21, u_core.657.Q[0]@v26, u_core.657.Q[1]@v25, u_core.690.Q[0]@v27, u_core.722.Q[0]@v28, u_core.757.Q[0]@v29, u_core.771.Q[0]@v30, u_core.824.Q[0]@v34, u_core.824.Q[1]@v33, u_core.824.Q[2]@v32, u_core.824.Q[3]@v31, u_core.870.Q[0]@v38, u_core.870.Q[1]@v37, u_core.870.Q[2]@v36, u_core.870.Q[3]@v35, u_core.896.Q[0]@v42, u_core.896.Q[1]@v41, u_core.896.Q[2]@v40, u_core.896.Q[3]@v39, u_core.963.Q[0]@v45, u_core.963.Q[1]@v44, u_core.963.Q[2]@v43, u_core.1018.Q[0]@v46, u_core/u_sram/mem_mem/.__MEM_CELL[0][0]@v6465, u_core/u_sram/mem_mem/.__MEM_CELL[0][1]@v6466, u_core/u_sram/mem_mem/.__MEM_CELL[0][2]@v6467, u_core/u_sram/mem_mem/.__MEM_CELL[0][3]@v6468, u_core/u_sram/mem_mem/.__MEM_CELL[1][0]@v6469, u_core/u_sram/mem_mem/.__MEM_CELL[1][1]@v6470, u_core/u_sram/mem_mem/.__MEM_CELL[1][2]@v6471, u_core/u_sram/mem_mem/.__MEM_CELL[1][3]@v6472, u_core/u_sram/mem_mem/.__MEM_CELL[2][0]@v6473, u_core/u_sram/mem_mem/.__MEM_CELL[2][1]@v6474, u_core/u_sram/mem_mem/.__MEM_CELL[2][2]@v6475, u_core/u_sram/mem_mem/.__MEM_CELL[2][3]@v6476, u_core/u_sram/mem_mem/.__MEM_CELL[3][0]@v6477, u_core/u_sram/mem_mem/.__MEM_CELL[3][1]@v6478, u_core/u_sram/mem_mem/.__MEM_CELL[3][2]@v6479, u_core/u_sram/mem_mem/.__MEM_CELL[3][3]@v6480, u_core/u_sram/mem_mem/.__MEM_CELL[4][0]@v6481, u_core/u_sram/mem_mem/.__MEM_CELL[4][1]@v6482, u_core/u_sram/mem_mem/.__MEM_CELL[4][2]@v6483, u_core/u_sram/mem_mem/.__MEM_CELL[4][3]@v6484, u_core/u_sram/mem_mem/.__MEM_CELL[5][0]@v6485, u_core/u_sram/mem_mem/.__MEM_CELL[5][1]@v6486, u_core/u_sram/mem_mem/.__MEM_CELL[5][2]@v6487, u_core/u_sram/mem_mem/.__MEM_CELL[5][3]@v6488, u_core/u_sram/mem_mem/.__MEM_CELL[6][0]@v6489, u_core/u_sram/mem_mem/.__MEM_CELL[6][1]@v6490, u_core/u_sram/mem_mem/.__MEM_CELL[6][2]@v6491, u_core/u_sram/mem_mem/.__MEM_CELL[6][3]@v6492, u_core/u_sram/mem_mem/.__MEM_CELL[7][0]@v6493, u_core/u_sram/mem_mem/.__MEM_CELL[7][1]@v6494, u_core/u_sram/mem_mem/.__MEM_CELL[7][2]@v6495, u_core/u_sram/mem_mem/.__MEM_CELL[7][3]@v6496, u_core/u_sram/mem_mem/.__MEM_CELL[8][0]@v6497, u_core/u_sram/mem_mem/.__MEM_CELL[8][1]@v6498, u_core/u_sram/mem_mem/.__MEM_CELL[8][2]@v6499, u_core/u_sram/mem_mem/.__MEM_CELL[8][3]@v6500, u_core/u_sram/mem_mem/.__MEM_CELL[9][0]@v6501, u_core/u_sram/mem_mem/.__MEM_CELL[9][1]@v6502, u_core/u_sram/mem_mem/.__MEM_CELL[9][2]@v6503, u_core/u_sram/mem_mem/.__MEM_CELL[9][3]@v6504, u_core/u_sram/mem_mem/.__MEM_CELL[10][0]@v6505, u_core/u_sram/mem_mem/.__MEM_CELL[10][1]@v6506, u_core/u_sram/mem_mem/.__MEM_CELL[10][2]@v6507, u_core/u_sram/mem_mem/.__MEM_CELL[10][3]@v6508, u_core/u_sram/mem_mem/.__MEM_CELL[11][0]@v6509, u_core/u_sram/mem_mem/.__MEM_CELL[11][1]@v6510, u_core/u_sram/mem_mem/.__MEM_CELL[11][2]@v6511, u_core/u_sram/mem_mem/.__MEM_CELL[11][3]@v6512, u_core/u_sram/mem_mem/.__MEM_CELL[12][0]@v6513, u_core/u_sram/mem_mem/.__MEM_CELL[12][1]@v6514, u_core/u_sram/mem_mem/.__MEM_CELL[12][2]@v6515, u_core/u_sram/mem_mem/.__MEM_CELL[12][3]@v6516, u_core/u_sram/mem_mem/.__MEM_CELL[13][0]@v6517, u_core/u_sram/mem_mem/.__MEM_CELL[13][1]@v6518, u_core/u_sram/mem_mem/.__MEM_CELL[13][2]@v6519, u_core/u_sram/mem_mem/.__MEM_CELL[13][3]@v6520, u_core/u_sram/mem_mem/.__MEM_CELL[14][0]@v6521, u_core/u_sram/mem_mem/.__MEM_CELL[14][1]@v6522, u_core/u_sram/mem_mem/.__MEM_CELL[14][2]@v6523, u_core/u_sram/mem_mem/.__MEM_CELL[14][3]@v6524, u_core/u_sram/mem_mem/.__MEM_CELL[15][0]@v6525, u_core/u_sram/mem_mem/.__MEM_CELL[15][1]@v6526, u_core/u_sram/mem_mem/.__MEM_CELL[15][2]@v6527, u_core/u_sram/mem_mem/.__MEM_CELL[15][3]@v6528, u_core/u_sram/mem_mem/.__MEM_CELL[16][0]@v6529, u_core/u_sram/mem_mem/.__MEM_CELL[16][1]@v6530, u_core/u_sram/mem_mem/.__MEM_CELL[16][2]@v6531, u_core/u_sram/mem_mem/.__MEM_CELL[16][3]@v6532, u_core/u_sram/mem_mem/.__MEM_CELL[17][0]@v6533, u_core/u_sram/mem_mem/.__MEM_CELL[17][1]@v6534, u_core/u_sram/mem_mem/.__MEM_CELL[17][2]@v6535, u_core/u_sram/mem_mem/.__MEM_CELL[17][3]@v6536, u_core/u_sram/mem_mem/.__MEM_CELL[18][0]@v6537, u_core/u_sram/mem_mem/.__MEM_CELL[18][1]@v6538, u_core/u_sram/mem_mem/.__MEM_CELL[18][2]@v6539, u_core/u_sram/mem_mem/.__MEM_CELL[18][3]@v6540, u_core/u_sram/mem_mem/.__MEM_CELL[19][0]@v6541, u_core/u_sram/mem_mem/.__MEM_CELL[19][1]@v6542, u_core/u_sram/mem_mem/.__MEM_CELL[19][2]@v6543, u_core/u_sram/mem_mem/.__MEM_CELL[19][3]@v6544, u_core/u_sram/mem_mem/.__MEM_CELL[20][0]@v6545, u_core/u_sram/mem_mem/.__MEM_CELL[20][1]@v6546, u_core/u_sram/mem_mem/.__MEM_CELL[20][2]@v6547, u_core/u_sram/mem_mem/.__MEM_CELL[20][3]@v6548, u_core/u_sram/mem_mem/.__MEM_CELL[21][0]@v6549, u_core/u_sram/mem_mem/.__MEM_CELL[21][1]@v6550, u_core/u_sram/mem_mem/.__MEM_CELL[21][2]@v6551, u_core/u_sram/mem_mem/.__MEM_CELL[21][3]@v6552, u_core/u_sram/mem_mem/.__MEM_CELL[22][0]@v6553, u_core/u_sram/mem_mem/.__MEM_CELL[22][1]@v6554, u_core/u_sram/mem_mem/.__MEM_CELL[22][2]@v6555, u_core/u_sram/mem_mem/.__MEM_CELL[22][3]@v6556, u_core/u_sram/mem_mem/.__MEM_CELL[23][0]@v6557, u_core/u_sram/mem_mem/.__MEM_CELL[23][1]@v6558, u_core/u_sram/mem_mem/.__MEM_CELL[23][2]@v6559, u_core/u_sram/mem_mem/.__MEM_CELL[23][3]@v6560, u_core/u_sram/mem_mem/.__MEM_CELL[24][0]@v6561, u_core/u_sram/mem_mem/.__MEM_CELL[24][1]@v6562, u_core/u_sram/mem_mem/.__MEM_CELL[24][2]@v6563, u_core/u_sram/mem_mem/.__MEM_CELL[24][3]@v6564, u_core/u_sram/mem_mem/.__MEM_CELL[25][0]@v6565, u_core/u_sram/mem_mem/.__MEM_CELL[25][1]@v6566, u_core/u_sram/mem_mem/.__MEM_CELL[25][2]@v6567, u_core/u_sram/mem_mem/.__MEM_CELL[25][3]@v6568, u_core/u_sram/mem_mem/.__MEM_CELL[26][0]@v6569, u_core/u_sram/mem_mem/.__MEM_CELL[26][1]@v6570, u_core/u_sram/mem_mem/.__MEM_CELL[26][2]@v6571, u_core/u_sram/mem_mem/.__MEM_CELL[26][3]@v6572, u_core/u_sram/mem_mem/.__MEM_CELL[27][0]@v6573, u_core/u_sram/mem_mem/.__MEM_CELL[27][1]@v6574, u_core/u_sram/mem_mem/.__MEM_CELL[27][2]@v6575, u_core/u_sram/mem_mem/.__MEM_CELL[27][3]@v6576, u_core/u_sram/mem_mem/.__MEM_CELL[28][0]@v6577, u_core/u_sram/mem_mem/.__MEM_CELL[28][1]@v6578, u_core/u_sram/mem_mem/.__MEM_CELL[28][2]@v6579, u_core/u_sram/mem_mem/.__MEM_CELL[28][3]@v6580, u_core/u_sram/mem_mem/.__MEM_CELL[29][0]@v6581, u_core/u_sram/mem_mem/.__MEM_CELL[29][1]@v6582, u_core/u_sram/mem_mem/.__MEM_CELL[29][2]@v6583, u_core/u_sram/mem_mem/.__MEM_CELL[29][3]@v6584, u_core/u_sram/mem_mem/.__MEM_CELL[30][0]@v6585, u_core/u_sram/mem_mem/.__MEM_CELL[30][1]@v6586, u_core/u_sram/mem_mem/.__MEM_CELL[30][2]@v6587, u_core/u_sram/mem_mem/.__MEM_CELL[30][3]@v6588, u_core/u_sram/mem_mem/.__MEM_CELL[31][0]@v6589, u_core/u_sram/mem_mem/.__MEM_CELL[31][1]@v6590, u_core/u_sram/mem_mem/.__MEM_CELL[31][2]@v6591, u_core/u_sram/mem_mem/.__MEM_CELL[31][3]@v6592]
+SEC diag: extract(cpu_top) observed_support bus_oe[0] = [v9, v10, v11, v17, v18, v19, v20, v21, v24, v27]
+SEC diag: extract(cpu_top) observed_support bus_hiz[0] = [v9, v10, v11, v17, v18, v19, v20, v21, v24, v27]
+SEC diag: extract(cpu_top) observed_support bus_d[0] = [v9, v10, v11, v15, v17, v18, v19, v20, v21, v24, v27, v28, v34, v38, v42, v50]
+SEC diag: extract(cpu_top) observed_support bus_d[1] = [v9, v10, v11, v14, v17, v18, v19, v20, v21, v24, v27, v28, v33, v37, v41, v49]
+SEC diag: extract(cpu_top) observed_support bus_d[2] = [v9, v10, v11, v13, v17, v18, v19, v20, v21, v24, v27, v28, v32, v36, v40, v48]
+SEC diag: extract(cpu_top) observed_support bus_d[3] = [v9, v10, v11, v12, v17, v18, v19, v20, v21, v24, v27, v28, v31, v35, v39, v47]
+SEC diag: extract(cpu_top) observed_support sync[0] = [v9, v10, v11]
+SEC diag: extract(cpu_top) observed_support cm_rom[0] = [v9, v10, v11, v17, v18, v19, v20, v21, v22, v23, v24, v27]
+SEC diag: extract(cpu_top) observed_support cm_ram[0] = [v9, v10, v11, v17, v18, v19, v20, v21, v22, v23, v24, v27, v43, v44, v45]
+SEC diag: extract(cpu_top) observed_support cm_ram[1] = [v9, v10, v11, v17, v18, v19, v20, v21, v22, v23, v24, v27, v45]
+SEC diag: extract(cpu_top) observed_support cm_ram[2] = [v9, v10, v11, v17, v18, v19, v20, v21, v22, v23, v24, v27, v44]
+SEC diag: extract(cpu_top) observed_support cm_ram[3] = [v9, v10, v11, v17, v18, v19, v20, v21, v22, v23, v24, v27, v43]
+SEC diag: extract(cpu_top) end
+SEC diag: extracted design0
+SEC diag: extract(cpu_top) collect begin
+SEC diag: extract(cpu_top) collect end inputs=62 outputs=110
+SEC diag: extract(cpu_top) opaque_reached_outputs=0
+SEC diag: extract(cpu_top) initial_observed_outputs=12
+SEC diag: extract(cpu_top) build begin
+SEC diag: extract(cpu_top) build end
+SEC diag: extract(cpu_top) boundary normalized env=7 state=55 outputs=12 pending=51
+SEC diag: extract(cpu_top) mapped boundary vars=62
+SEC diag: extract(cpu_top) structured memory dependency build begin outputs=11
+SEC diag: extract(cpu_top) structured memory dependency build end outputs=11
+SEC diag: extract(cpu_top) mapped boundary vars=62
+SEC diag: extract(cpu_top) materialized output exprs observed=12 total=39
+SEC diag: top input rst[0] is not clock-only: sequential non-clock pin u_env/17//D (naja_dff)
+SEC diag: top input test[0] is not clock-only: sequential non-clock pin u_env/8//D (naja_dff)
+SEC diag: top input d_in[3] is not clock-only: sequential non-clock pin u_env/6//D (naja_dff__w4)
+SEC diag: top input d_in[2] is not clock-only: sequential non-clock pin u_env/6//D (naja_dff__w4)
+SEC diag: top input d_in[1] is not clock-only: sequential non-clock pin u_env/6//D (naja_dff__w4)
+SEC diag: top input d_in[0] is not clock-only: sequential non-clock pin u_env/6//D (naja_dff__w4)
+SEC diag: extract(cpu_top) immutable clock structure indexed terms=4946 pure_terms=23
+SEC diag: extract(cpu_top) dependency build begin outputs=54
+SEC diag: extract(cpu_top) dependency build end outputs=54
+SEC diag: extract(cpu_top) mapped boundary vars=190
+SEC diag: extract(cpu_top) rebuilt next-state exprs=183 init=0 data_latches=0
+SEC diag: extract(cpu_top) filtered env=7 state=183
+SEC diag: extract(cpu_top) structured_memories=1 structured_memory_cells=128
+SEC diag: extract(cpu_top) kept_states=[u_env.6.Q[0]@v58, u_env.6.Q[1]@v57, u_env.6.Q[2]@v56, u_env.6.Q[3]@v55, u_env.8.Q[0]@v59, u_env.14.Q[0]@v62, u_env.14.Q[1]@v61, u_env.14.Q[2]@v60, u_env.17.Q[0]@v63, u_core.u_sram.22.Q[0]@v50, u_core.u_sram.22.Q[1]@v49, u_core.u_sram.22.Q[2]@v48, u_core.u_sram.22.Q[3]@v47, u_core.605.Q[0]@v16, u_core.410.Q[0]@v11, u_core.410.Q[1]@v10, u_core.410.Q[2]@v9, u_core.522.Q[0]@v15, u_core.522.Q[1]@v14, u_core.522.Q[2]@v13, u_core.522.Q[3]@v12, u_core.619.Q[0]@v20, u_core.619.Q[1]@v19, u_core.619.Q[2]@v18, u_core.619.Q[3]@v17, u_core.634.Q[0]@v24, u_core.634.Q[1]@v23, u_core.634.Q[2]@v22, u_core.634.Q[3]@v21, u_core.686.Q[0]@v26, u_core.686.Q[1]@v25, u_core.719.Q[0]@v27, u_core.774.Q[0]@v28, u_core.809.Q[0]@v29, u_core.823.Q[0]@v30, u_core.876.Q[0]@v34, u_core.876.Q[1]@v33, u_core.876.Q[2]@v32, u_core.876.Q[3]@v31, u_core.922.Q[0]@v38, u_core.922.Q[1]@v37, u_core.922.Q[2]@v36, u_core.922.Q[3]@v35, u_core.948.Q[0]@v42, u_core.948.Q[1]@v41, u_core.948.Q[2]@v40, u_core.948.Q[3]@v39, u_core.1015.Q[0]@v45, u_core.1015.Q[1]@v44, u_core.1015.Q[2]@v43, u_core.1070.Q[0]@v46, u_core/u_sram/mem_mem/.__MEM_CELL[0][0]@v6617, u_core/u_sram/mem_mem/.__MEM_CELL[0][1]@v6618, u_core/u_sram/mem_mem/.__MEM_CELL[0][2]@v6619, u_core/u_sram/mem_mem/.__MEM_CELL[0][3]@v6620, u_core/u_sram/mem_mem/.__MEM_CELL[1][0]@v6621, u_core/u_sram/mem_mem/.__MEM_CELL[1][1]@v6622, u_core/u_sram/mem_mem/.__MEM_CELL[1][2]@v6623, u_core/u_sram/mem_mem/.__MEM_CELL[1][3]@v6624, u_core/u_sram/mem_mem/.__MEM_CELL[2][0]@v6625, u_core/u_sram/mem_mem/.__MEM_CELL[2][1]@v6626, u_core/u_sram/mem_mem/.__MEM_CELL[2][2]@v6627, u_core/u_sram/mem_mem/.__MEM_CELL[2][3]@v6628, u_core/u_sram/mem_mem/.__MEM_CELL[3][0]@v6629, u_core/u_sram/mem_mem/.__MEM_CELL[3][1]@v6630, u_core/u_sram/mem_mem/.__MEM_CELL[3][2]@v6631, u_core/u_sram/mem_mem/.__MEM_CELL[3][3]@v6632, u_core/u_sram/mem_mem/.__MEM_CELL[4][0]@v6633, u_core/u_sram/mem_mem/.__MEM_CELL[4][1]@v6634, u_core/u_sram/mem_mem/.__MEM_CELL[4][2]@v6635, u_core/u_sram/mem_mem/.__MEM_CELL[4][3]@v6636, u_core/u_sram/mem_mem/.__MEM_CELL[5][0]@v6637, u_core/u_sram/mem_mem/.__MEM_CELL[5][1]@v6638, u_core/u_sram/mem_mem/.__MEM_CELL[5][2]@v6639, u_core/u_sram/mem_mem/.__MEM_CELL[5][3]@v6640, u_core/u_sram/mem_mem/.__MEM_CELL[6][0]@v6641, u_core/u_sram/mem_mem/.__MEM_CELL[6][1]@v6642, u_core/u_sram/mem_mem/.__MEM_CELL[6][2]@v6643, u_core/u_sram/mem_mem/.__MEM_CELL[6][3]@v6644, u_core/u_sram/mem_mem/.__MEM_CELL[7][0]@v6645, u_core/u_sram/mem_mem/.__MEM_CELL[7][1]@v6646, u_core/u_sram/mem_mem/.__MEM_CELL[7][2]@v6647, u_core/u_sram/mem_mem/.__MEM_CELL[7][3]@v6648, u_core/u_sram/mem_mem/.__MEM_CELL[8][0]@v6649, u_core/u_sram/mem_mem/.__MEM_CELL[8][1]@v6650, u_core/u_sram/mem_mem/.__MEM_CELL[8][2]@v6651, u_core/u_sram/mem_mem/.__MEM_CELL[8][3]@v6652, u_core/u_sram/mem_mem/.__MEM_CELL[9][0]@v6653, u_core/u_sram/mem_mem/.__MEM_CELL[9][1]@v6654, u_core/u_sram/mem_mem/.__MEM_CELL[9][2]@v6655, u_core/u_sram/mem_mem/.__MEM_CELL[9][3]@v6656, u_core/u_sram/mem_mem/.__MEM_CELL[10][0]@v6657, u_core/u_sram/mem_mem/.__MEM_CELL[10][1]@v6658, u_core/u_sram/mem_mem/.__MEM_CELL[10][2]@v6659, u_core/u_sram/mem_mem/.__MEM_CELL[10][3]@v6660, u_core/u_sram/mem_mem/.__MEM_CELL[11][0]@v6661, u_core/u_sram/mem_mem/.__MEM_CELL[11][1]@v6662, u_core/u_sram/mem_mem/.__MEM_CELL[11][2]@v6663, u_core/u_sram/mem_mem/.__MEM_CELL[11][3]@v6664, u_core/u_sram/mem_mem/.__MEM_CELL[12][0]@v6665, u_core/u_sram/mem_mem/.__MEM_CELL[12][1]@v6666, u_core/u_sram/mem_mem/.__MEM_CELL[12][2]@v6667, u_core/u_sram/mem_mem/.__MEM_CELL[12][3]@v6668, u_core/u_sram/mem_mem/.__MEM_CELL[13][0]@v6669, u_core/u_sram/mem_mem/.__MEM_CELL[13][1]@v6670, u_core/u_sram/mem_mem/.__MEM_CELL[13][2]@v6671, u_core/u_sram/mem_mem/.__MEM_CELL[13][3]@v6672, u_core/u_sram/mem_mem/.__MEM_CELL[14][0]@v6673, u_core/u_sram/mem_mem/.__MEM_CELL[14][1]@v6674, u_core/u_sram/mem_mem/.__MEM_CELL[14][2]@v6675, u_core/u_sram/mem_mem/.__MEM_CELL[14][3]@v6676, u_core/u_sram/mem_mem/.__MEM_CELL[15][0]@v6677, u_core/u_sram/mem_mem/.__MEM_CELL[15][1]@v6678, u_core/u_sram/mem_mem/.__MEM_CELL[15][2]@v6679, u_core/u_sram/mem_mem/.__MEM_CELL[15][3]@v6680, u_core/u_sram/mem_mem/.__MEM_CELL[16][0]@v6681, u_core/u_sram/mem_mem/.__MEM_CELL[16][1]@v6682, u_core/u_sram/mem_mem/.__MEM_CELL[16][2]@v6683, u_core/u_sram/mem_mem/.__MEM_CELL[16][3]@v6684, u_core/u_sram/mem_mem/.__MEM_CELL[17][0]@v6685, u_core/u_sram/mem_mem/.__MEM_CELL[17][1]@v6686, u_core/u_sram/mem_mem/.__MEM_CELL[17][2]@v6687, u_core/u_sram/mem_mem/.__MEM_CELL[17][3]@v6688, u_core/u_sram/mem_mem/.__MEM_CELL[18][0]@v6689, u_core/u_sram/mem_mem/.__MEM_CELL[18][1]@v6690, u_core/u_sram/mem_mem/.__MEM_CELL[18][2]@v6691, u_core/u_sram/mem_mem/.__MEM_CELL[18][3]@v6692, u_core/u_sram/mem_mem/.__MEM_CELL[19][0]@v6693, u_core/u_sram/mem_mem/.__MEM_CELL[19][1]@v6694, u_core/u_sram/mem_mem/.__MEM_CELL[19][2]@v6695, u_core/u_sram/mem_mem/.__MEM_CELL[19][3]@v6696, u_core/u_sram/mem_mem/.__MEM_CELL[20][0]@v6697, u_core/u_sram/mem_mem/.__MEM_CELL[20][1]@v6698, u_core/u_sram/mem_mem/.__MEM_CELL[20][2]@v6699, u_core/u_sram/mem_mem/.__MEM_CELL[20][3]@v6700, u_core/u_sram/mem_mem/.__MEM_CELL[21][0]@v6701, u_core/u_sram/mem_mem/.__MEM_CELL[21][1]@v6702, u_core/u_sram/mem_mem/.__MEM_CELL[21][2]@v6703, u_core/u_sram/mem_mem/.__MEM_CELL[21][3]@v6704, u_core/u_sram/mem_mem/.__MEM_CELL[22][0]@v6705, u_core/u_sram/mem_mem/.__MEM_CELL[22][1]@v6706, u_core/u_sram/mem_mem/.__MEM_CELL[22][2]@v6707, u_core/u_sram/mem_mem/.__MEM_CELL[22][3]@v6708, u_core/u_sram/mem_mem/.__MEM_CELL[23][0]@v6709, u_core/u_sram/mem_mem/.__MEM_CELL[23][1]@v6710, u_core/u_sram/mem_mem/.__MEM_CELL[23][2]@v6711, u_core/u_sram/mem_mem/.__MEM_CELL[23][3]@v6712, u_core/u_sram/mem_mem/.__MEM_CELL[24][0]@v6713, u_core/u_sram/mem_mem/.__MEM_CELL[24][1]@v6714, u_core/u_sram/mem_mem/.__MEM_CELL[24][2]@v6715, u_core/u_sram/mem_mem/.__MEM_CELL[24][3]@v6716, u_core/u_sram/mem_mem/.__MEM_CELL[25][0]@v6717, u_core/u_sram/mem_mem/.__MEM_CELL[25][1]@v6718, u_core/u_sram/mem_mem/.__MEM_CELL[25][2]@v6719, u_core/u_sram/mem_mem/.__MEM_CELL[25][3]@v6720, u_core/u_sram/mem_mem/.__MEM_CELL[26][0]@v6721, u_core/u_sram/mem_mem/.__MEM_CELL[26][1]@v6722, u_core/u_sram/mem_mem/.__MEM_CELL[26][2]@v6723, u_core/u_sram/mem_mem/.__MEM_CELL[26][3]@v6724, u_core/u_sram/mem_mem/.__MEM_CELL[27][0]@v6725, u_core/u_sram/mem_mem/.__MEM_CELL[27][1]@v6726, u_core/u_sram/mem_mem/.__MEM_CELL[27][2]@v6727, u_core/u_sram/mem_mem/.__MEM_CELL[27][3]@v6728, u_core/u_sram/mem_mem/.__MEM_CELL[28][0]@v6729, u_core/u_sram/mem_mem/.__MEM_CELL[28][1]@v6730, u_core/u_sram/mem_mem/.__MEM_CELL[28][2]@v6731, u_core/u_sram/mem_mem/.__MEM_CELL[28][3]@v6732, u_core/u_sram/mem_mem/.__MEM_CELL[29][0]@v6733, u_core/u_sram/mem_mem/.__MEM_CELL[29][1]@v6734, u_core/u_sram/mem_mem/.__MEM_CELL[29][2]@v6735, u_core/u_sram/mem_mem/.__MEM_CELL[29][3]@v6736, u_core/u_sram/mem_mem/.__MEM_CELL[30][0]@v6737, u_core/u_sram/mem_mem/.__MEM_CELL[30][1]@v6738, u_core/u_sram/mem_mem/.__MEM_CELL[30][2]@v6739, u_core/u_sram/mem_mem/.__MEM_CELL[30][3]@v6740, u_core/u_sram/mem_mem/.__MEM_CELL[31][0]@v6741, u_core/u_sram/mem_mem/.__MEM_CELL[31][1]@v6742, u_core/u_sram/mem_mem/.__MEM_CELL[31][2]@v6743, u_core/u_sram/mem_mem/.__MEM_CELL[31][3]@v6744]
+SEC diag: extract(cpu_top) observed_support bus_oe[0] = [v9, v10, v11, v17, v18, v19, v20, v21, v24, v27]
+SEC diag: extract(cpu_top) observed_support bus_hiz[0] = [v9, v10, v11, v17, v18, v19, v20, v21, v24, v27]
+SEC diag: extract(cpu_top) observed_support bus_d[0] = [v9, v10, v11, v15, v17, v18, v19, v20, v21, v24, v27, v28, v34, v38, v42, v50]
+SEC diag: extract(cpu_top) observed_support bus_d[1] = [v9, v10, v11, v14, v17, v18, v19, v20, v21, v24, v27, v28, v33, v37, v41, v49]
+SEC diag: extract(cpu_top) observed_support bus_d[2] = [v9, v10, v11, v13, v17, v18, v19, v20, v21, v24, v27, v28, v32, v36, v40, v48]
+SEC diag: extract(cpu_top) observed_support bus_d[3] = [v9, v10, v11, v12, v17, v18, v19, v20, v21, v24, v27, v28, v31, v35, v39, v47]
+SEC diag: extract(cpu_top) observed_support sync[0] = [v9, v10, v11]
+SEC diag: extract(cpu_top) observed_support cm_rom[0] = [v9, v10, v11, v17, v18, v19, v20, v21, v22, v23, v24, v27]
+SEC diag: extract(cpu_top) observed_support cm_ram[0] = [v9, v10, v11, v17, v18, v19, v20, v21, v22, v23, v24, v27, v43, v44, v45]
+SEC diag: extract(cpu_top) observed_support cm_ram[1] = [v9, v10, v11, v17, v18, v19, v20, v21, v22, v23, v24, v27, v45]
+SEC diag: extract(cpu_top) observed_support cm_ram[2] = [v9, v10, v11, v17, v18, v19, v20, v21, v22, v23, v24, v27, v44]
+SEC diag: extract(cpu_top) observed_support cm_ram[3] = [v9, v10, v11, v17, v18, v19, v20, v21, v22, v23, v24, v27, v43]
+SEC diag: extract(cpu_top) end
+SEC diag: extracted design1
+SEC diag: start run from extracted models
+SEC diag: aligning inputs/outputs
+SEC diag: checked_outputs=12 total_outputs=12 skipped=0
+SEC diag: aligned_inputs=7 aligned_outputs=12 state_bits0=179 state_bits1=179
+SEC diag: reset bootstrap cycles=3 ports=1
+SEC diag: dual-rail mode keeps reset-unanchored outputs in the rail-encoded proof
+SEC summary: reset_unknown_state reset_cycles=3 design0=132/179 design1=132/179
+SEC diag: dual-rail output requires engine proof: bus_oe[0]
+SEC diag: dual-rail output requires engine proof: bus_hiz[0]
+SEC diag: dual-rail output requires engine proof: bus_d[0]
+SEC diag: dual-rail output requires engine proof: bus_d[1]
+SEC diag: dual-rail output requires engine proof: bus_d[2]
+SEC diag: dual-rail output requires engine proof: bus_d[3]
+SEC diag: dual-rail output requires engine proof: sync[0]
+SEC diag: dual-rail output requires engine proof: cm_rom[0]
+SEC diag: dual-rail output requires engine proof: cm_ram[0]
+SEC diag: dual-rail output requires engine proof: cm_ram[1]
+SEC diag: dual-rail output requires engine proof: cm_ram[2]
+SEC diag: dual-rail output requires engine proof: cm_ram[3]
+SEC summary: encoding=dual_rail_steady rail_state_bits=716 rail_outputs=12 dual_rail_state_relation_pairs=0
+SEC diag: internal relations round=0 partition=0..20 vars=11955 status=sat conflicts=0 decisions=0 ticks=0
+SEC diag: internal relations round=0 active=180 structural=160 refuted=2 seconds=0.1
+SEC diag: internal relations round=1 partition=0..150 vars=20297 status=sat conflicts=0 decisions=0 ticks=0
+SEC diag: internal relations round=1 active=178 structural=28 refuted=140 seconds=0.1
+SEC diag: internal relations round=2 partition=0..11 vars=6934 status=sat conflicts=0 decisions=0 ticks=0
+SEC diag: internal relations round=2 active=38 structural=27 refuted=3 seconds=0.0
+SEC diag: internal relations round=3 partition=0..8 vars=6552 status=sat conflicts=0 decisions=0 ticks=0
+SEC diag: internal relations round=3 active=35 structural=27 refuted=2 seconds=0.0
+SEC diag: internal relations round=4 partition=0..6 vars=5981 status=sat conflicts=0 decisions=0 ticks=0
+SEC diag: internal relations round=4 active=33 structural=27 refuted=5 seconds=0.0
+SEC diag: internal relations round=5 partition=0..3 vars=3194 status=sat conflicts=0 decisions=0 ticks=0
+SEC diag: internal relation refuted: u_core.963.Q[2] ~ u_core.1015.Q[2]
+SEC diag: internal relations round=5 active=28 structural=25 refuted=1 seconds=0.0
+SEC diag: internal relations round=6 partition=0..2 vars=2516 status=sat conflicts=0 decisions=0 ticks=0
+SEC diag: internal relation refuted: u_core.963.Q[0] ~ u_core.1015.Q[0]
+SEC diag: internal relations round=6 active=27 structural=25 refuted=1 seconds=0.0
+SEC diag: internal relations round=7 partition=0..1 vars=1829 status=sat conflicts=6 decisions=4355 ticks=7719
+SEC diag: internal relation refuted: u_core.493.Q[1] ~ u_core.522.Q[1]
+SEC diag: internal relations round=7 active=26 structural=25 refuted=1 seconds=0.0
+SEC diag: internal relations round=8 partition=0..1 vars=846 status=sat conflicts=0 decisions=0 ticks=0
+SEC diag: internal relation refuted: u_core.963.Q[1] ~ u_core.1015.Q[1]
+SEC diag: internal relations round=8 active=25 structural=24 refuted=1 seconds=0.0
+SEC diag: internal relations round=9 active=24 structural=24 refuted=0 seconds=0.0
+SEC diag: internal relations round=0 partition=0..20 vars=5341 status=sat conflicts=129 decisions=28796 ticks=107754
+SEC diag: internal relations round=0 active=180 structural=160 refuted=1 seconds=0.1
+SEC diag: internal relations round=1 partition=0..19 vars=5337 status=sat conflicts=421 decisions=40137 ticks=284446
+SEC diag: internal relations round=1 active=179 structural=160 refuted=1 seconds=0.1
+SEC diag: internal relations round=2 partition=0..150 vars=9140 status=sat conflicts=968 decisions=84340 ticks=1534707
+SEC diag: internal relation refuted: u_core.u_sram.22.Q[2] ~ u_core.u_sram.22.Q[2]
+SEC diag: internal relations round=2 active=178 structural=28 refuted=1 seconds=0.1
+SEC diag: internal relations round=3 partition=0..150 vars=9118 status=sat conflicts=308 decisions=32511 ticks=79931
+SEC diag: internal relations round=3 active=177 structural=27 refuted=1 seconds=0.1
+SEC diag: internal relations round=4 partition=0..149 vars=9224 status=sat conflicts=309 decisions=24566 ticks=69276
+SEC diag: internal relations round=4 active=176 structural=27 refuted=2 seconds=0.1
+SEC diag: internal relations round=5 partition=0..147 vars=9447 status=sat conflicts=272 decisions=22863 ticks=61367
+SEC diag: internal relation refuted: u_core.u_sram.22.Q[1] ~ u_core.u_sram.22.Q[1]
+SEC diag: internal relation refuted: u_core.u_sram.22.Q[3] ~ u_core.u_sram.22.Q[3]
+SEC diag: internal relations round=5 active=174 structural=27 refuted=2 seconds=0.1
+SEC diag: internal relations round=6 partition=0..145 vars=9085 status=sat conflicts=301 decisions=79906 ticks=177445
+SEC diag: internal relations round=6 active=172 structural=27 refuted=1 seconds=0.1
+SEC diag: internal relations round=7 partition=0..144 vars=9065 status=sat conflicts=294 decisions=62756 ticks=138949
+SEC diag: internal relations round=7 active=171 structural=27 refuted=1 seconds=0.1
+SEC diag: internal relations round=8 partition=0..143 vars=9043 status=sat conflicts=294 decisions=63003 ticks=146345
+SEC diag: internal relations round=8 active=170 structural=27 refuted=1 seconds=0.1
+SEC diag: internal relations round=9 partition=0..142 vars=9020 status=sat conflicts=322 decisions=63549 ticks=169112
+SEC diag: internal relations round=9 active=169 structural=27 refuted=1 seconds=0.1
+SEC diag: internal relations round=10 partition=0..141 vars=8982 status=sat conflicts=458 decisions=77566 ticks=502206
+SEC diag: internal relations round=10 active=168 structural=27 refuted=1 seconds=0.1
+SEC diag: internal relations round=11 partition=0..140 vars=9021 status=sat conflicts=292 decisions=76976 ticks=167926
+SEC diag: internal relations round=11 active=167 structural=27 refuted=1 seconds=0.1
+SEC diag: internal relations round=12 partition=0..139 vars=9012 status=sat conflicts=583 decisions=99965 ticks=564885
+SEC diag: internal relations round=12 active=166 structural=27 refuted=1 seconds=0.1
+SEC diag: internal relations round=13 partition=0..138 vars=8799 status=sat conflicts=596 decisions=89982 ticks=656680
+SEC diag: internal relations round=13 active=165 structural=27 refuted=1 seconds=0.1
+SEC diag: internal relations round=14 partition=0..137 vars=8732 status=sat conflicts=666 decisions=84928 ticks=790315
+SEC diag: internal relations round=14 active=164 structural=27 refuted=1 seconds=0.1
+SEC diag: internal relations round=15 partition=0..136 vars=8708 status=sat conflicts=790 decisions=90843 ticks=1001746
+SEC diag: internal relations round=15 active=163 structural=27 refuted=1 seconds=0.1
+SEC diag: internal relations round=16 partition=0..135 vars=8547 status=sat conflicts=396 decisions=60241 ticks=253588
+SEC diag: internal relations round=16 active=162 structural=27 refuted=1 seconds=0.1
+SEC diag: internal relations round=17 partition=0..134 vars=8543 status=sat conflicts=284 decisions=59279 ticks=131491
+SEC diag: internal relations round=17 active=161 structural=27 refuted=1 seconds=0.1
+SEC diag: internal relations round=18 partition=0..133 vars=8520 status=sat conflicts=289 decisions=50335 ticks=132752
+SEC diag: internal relations round=18 active=160 structural=27 refuted=1 seconds=0.1
+SEC diag: internal relations round=19 partition=0..132 vars=8353 status=sat conflicts=288 decisions=44254 ticks=142738
+SEC diag: internal relations round=19 active=159 structural=27 refuted=1 seconds=0.1
+SEC diag: internal relations round=20 partition=0..131 vars=8186 status=sat conflicts=634 decisions=68084 ticks=642708
+SEC diag: internal relation refuted: u_core.u_sram.22.Q[0] ~ u_core.u_sram.22.Q[0]
+SEC diag: internal relations round=20 active=158 structural=27 refuted=1 seconds=0.1
+SEC diag: internal relations round=21 partition=0..130 vars=6711 status=sat conflicts=553 decisions=82722 ticks=529658
+SEC diag: internal relations round=21 active=157 structural=27 refuted=1 seconds=0.1
+SEC diag: internal relations round=22 partition=0..129 vars=6689 status=sat conflicts=558 decisions=87572 ticks=540010
+SEC diag: internal relations round=22 active=156 structural=27 refuted=1 seconds=0.1
+SEC diag: internal relations round=23 partition=0..128 vars=6667 status=sat conflicts=546 decisions=82900 ticks=528228
+SEC diag: internal relations round=23 active=155 structural=27 refuted=1 seconds=0.1
+SEC diag: internal relations round=24 partition=0..127 vars=6645 status=sat conflicts=547 decisions=87356 ticks=528025
+SEC diag: internal relations round=24 active=154 structural=27 refuted=1 seconds=0.1
+SEC diag: internal relations round=25 partition=0..126 vars=6624 status=sat conflicts=787 decisions=98576 ticks=800828
+SEC diag: internal relations round=25 active=153 structural=27 refuted=1 seconds=0.1
+SEC diag: internal relations round=26 partition=0..125 vars=6602 status=sat conflicts=536 decisions=87191 ticks=518368
+SEC diag: internal relations round=26 active=152 structural=27 refuted=1 seconds=0.1
+SEC diag: internal relations round=27 partition=0..124 vars=6578 status=sat conflicts=1153 decisions=196794 ticks=1306082
+SEC diag: internal relations round=27 active=151 structural=27 refuted=1 seconds=0.1
+SEC diag: internal relations round=28 partition=0..123 vars=6555 status=sat conflicts=549 decisions=86049 ticks=523864
+SEC diag: internal relations round=28 active=150 structural=27 refuted=1 seconds=0.1
+SEC diag: internal relations round=29 partition=0..122 vars=6532 status=sat conflicts=1165 decisions=207249 ticks=1325633
+SEC diag: internal relations round=29 active=149 structural=27 refuted=1 seconds=0.1
+SEC diag: internal relations round=30 partition=0..121 vars=6509 status=sat conflicts=541 decisions=80970 ticks=503162
+SEC diag: internal relations round=30 active=148 structural=27 refuted=1 seconds=0.1
+SEC diag: internal relations round=31 partition=0..120 vars=6484 status=sat conflicts=992 decisions=103586 ticks=1035020
+SEC diag: internal relations round=31 active=147 structural=27 refuted=1 seconds=0.1
+SEC diag: internal relations round=32 partition=0..119 vars=6333 status=sat conflicts=865 decisions=75037 ticks=618872
+SEC diag: internal relations round=32 active=146 structural=27 refuted=1 seconds=0.1
+SEC diag: internal relations round=33 partition=0..118 vars=6308 status=sat conflicts=1146 decisions=165427 ticks=861169
+SEC diag: internal relations round=33 active=145 structural=27 refuted=1 seconds=0.1
+SEC diag: internal relations round=34 partition=0..117 vars=6287 status=sat conflicts=1150 decisions=172546 ticks=872210
+SEC diag: internal relations round=34 active=144 structural=27 refuted=1 seconds=0.1
+SEC diag: internal relations round=35 partition=0..116 vars=6263 status=sat conflicts=1145 decisions=168490 ticks=859413
+SEC diag: internal relations round=35 active=143 structural=27 refuted=1 seconds=0.1
+SEC diag: internal relations round=36 partition=0..115 vars=6239 status=sat conflicts=1137 decisions=171280 ticks=861551
+SEC diag: internal relations round=36 active=142 structural=27 refuted=1 seconds=0.1
+SEC diag: internal relations round=37 partition=0..114 vars=6212 status=sat conflicts=1162 decisions=178275 ticks=866927
+SEC diag: internal relations round=37 active=141 structural=27 refuted=1 seconds=0.1
+SEC diag: internal relations round=38 partition=0..113 vars=6188 status=sat conflicts=1144 decisions=173853 ticks=870420
+SEC diag: internal relations round=38 active=140 structural=27 refuted=1 seconds=0.1
+SEC diag: internal relations round=39 partition=0..112 vars=6167 status=sat conflicts=1146 decisions=172842 ticks=838351
+SEC diag: internal relations round=39 active=139 structural=27 refuted=1 seconds=0.1
+SEC diag: internal relations round=40 partition=0..111 vars=6143 status=sat conflicts=1149 decisions=176262 ticks=869483
+SEC diag: internal relations round=40 active=138 structural=27 refuted=1 seconds=0.1
+SEC diag: internal relations round=41 partition=0..110 vars=6117 status=sat conflicts=1148 decisions=167949 ticks=835007
+SEC diag: internal relations round=41 active=137 structural=27 refuted=1 seconds=0.1
+SEC diag: internal relations round=42 partition=0..109 vars=6094 status=sat conflicts=1131 decisions=168926 ticks=869908
+SEC diag: internal relations round=42 active=136 structural=27 refuted=1 seconds=0.1
+SEC diag: internal relations round=43 partition=0..108 vars=6070 status=sat conflicts=1143 decisions=162711 ticks=817132
+SEC diag: internal relations round=43 active=135 structural=27 refuted=1 seconds=0.1
+SEC diag: internal relations round=44 partition=0..107 vars=6043 status=sat conflicts=482 decisions=61541 ticks=338548
+SEC diag: internal relations round=44 active=134 structural=27 refuted=1 seconds=0.1
+SEC diag: internal relations round=45 partition=0..106 vars=6019 status=sat conflicts=430 decisions=71301 ticks=373630
+SEC diag: internal relations round=45 active=133 structural=27 refuted=1 seconds=0.1
+SEC diag: internal relations round=46 partition=0..105 vars=5917 status=sat conflicts=1303 decisions=96687 ticks=955241
+SEC diag: internal relations round=46 active=132 structural=27 refuted=1 seconds=0.1
+SEC diag: internal relations round=47 partition=0..104 vars=5896 status=sat conflicts=1292 decisions=92491 ticks=834550
+SEC diag: internal relations round=47 active=131 structural=27 refuted=1 seconds=0.1
+SEC diag: internal relations round=48 partition=0..103 vars=5870 status=sat conflicts=1183 decisions=96165 ticks=846850
+SEC diag: internal relations round=48 active=130 structural=27 refuted=1 seconds=0.1
+SEC diag: internal relations round=49 partition=0..102 vars=5848 status=sat conflicts=822 decisions=75927 ticks=558518
+SEC diag: internal relations round=49 active=129 structural=27 refuted=1 seconds=0.1
+SEC diag: internal relations round=50 partition=0..101 vars=5827 status=sat conflicts=1102 decisions=166501 ticks=796650
+SEC diag: internal relations round=50 active=128 structural=27 refuted=1 seconds=0.1
+SEC diag: internal relations round=51 partition=0..100 vars=5803 status=sat conflicts=1108 decisions=155498 ticks=812695
+SEC diag: internal relations round=51 active=127 structural=27 refuted=1 seconds=0.1
+SEC diag: internal relations round=52 partition=0..99 vars=5779 status=sat conflicts=1141 decisions=180411 ticks=797453
+SEC diag: internal relations round=52 active=126 structural=27 refuted=1 seconds=0.1
+SEC diag: internal relations round=53 partition=0..98 vars=5757 status=sat conflicts=1016 decisions=96140 ticks=863056
+SEC diag: internal relations round=53 active=125 structural=27 refuted=1 seconds=0.1
+SEC diag: internal relations round=54 partition=0..97 vars=5733 status=sat conflicts=631 decisions=71399 ticks=472064
+SEC diag: internal relations round=54 active=124 structural=27 refuted=1 seconds=0.1
+SEC diag: internal relations round=55 partition=0..96 vars=5711 status=sat conflicts=653 decisions=61329 ticks=513253
+SEC diag: internal relations round=55 active=123 structural=27 refuted=1 seconds=0.1
+SEC diag: internal relations round=56 partition=0..95 vars=5444 status=sat conflicts=622 decisions=72801 ticks=519699
+SEC diag: internal relations round=56 active=122 structural=27 refuted=1 seconds=0.1
+SEC diag: internal relations round=57 partition=0..94 vars=5416 status=sat conflicts=1014 decisions=89015 ticks=739984
+SEC diag: internal relations round=57 active=121 structural=27 refuted=1 seconds=0.1
+SEC diag: internal relations round=58 partition=0..93 vars=5389 status=sat conflicts=630 decisions=79513 ticks=531658
+SEC diag: internal relations round=58 active=120 structural=27 refuted=1 seconds=0.1
+SEC diag: internal relations round=59 partition=0..92 vars=5365 status=sat conflicts=757 decisions=72692 ticks=566457
+SEC diag: internal relations round=59 active=119 structural=27 refuted=1 seconds=0.1
+SEC diag: internal relations round=60 partition=0..91 vars=5342 status=sat conflicts=615 decisions=71324 ticks=486072
+SEC diag: internal relation refuted: u_core.576.Q[0] ~ u_core.605.Q[0]
+SEC diag: internal relations round=60 active=118 structural=27 refuted=1 seconds=0.1
+SEC diag: internal relations round=61 partition=0..90 vars=4950 status=sat conflicts=643 decisions=73975 ticks=467196
+SEC diag: internal relation refuted: u_core.493.Q[0] ~ u_core.522.Q[0]
+SEC diag: internal relations round=61 active=117 structural=27 refuted=1 seconds=0.1
+SEC diag: internal relations round=62 partition=0..90 vars=4926 status=sat conflicts=1004 decisions=87760 ticks=688087
+SEC diag: internal relations round=62 active=116 structural=26 refuted=1 seconds=0.1
+SEC diag: internal relations round=63 partition=0..89 vars=4903 status=sat conflicts=647 decisions=80069 ticks=457622
+SEC diag: internal relation refuted: u_core.757.Q[0] ~ u_core.809.Q[0]
+SEC diag: internal relations round=63 active=115 structural=26 refuted=1 seconds=0.1
+SEC summary: signal_correspondence scope=registers_and_outputs frames=1 completed=1 signals=728 classes=52 rounds=9 solver_calls=255 proved_outputs=0/8 state_equalities=0 seconds=7.1 semantics=binary stopped_by=none step_cycles=1
+SEC summary: signal_correspondence scope=registers_and_outputs frames=2 completed=1 signals=728 classes=52 rounds=10 solver_calls=265 proved_outputs=0/8 state_equalities=0 seconds=13.6 semantics=binary stopped_by=none step_cycles=1
+SEC summary: signal_correspondence scope=registers_and_outputs frames=4 completed=1 signals=728 classes=202 rounds=5 solver_calls=137 proved_outputs=4/8 state_equalities=0 seconds=24.1 semantics=binary stopped_by=none step_cycles=1
+SEC summary: signal_correspondence scope=registers_and_outputs frames=8 completed=1 signals=728 classes=202 rounds=5 solver_calls=157 proved_outputs=0/4 state_equalities=0 seconds=52.0 semantics=binary stopped_by=none step_cycles=1
+SEC summary: signal_correspondence scope=registers_and_outputs frames=16 completed=1 signals=728 classes=328 rounds=1 solver_calls=110 proved_outputs=4/4 state_equalities=0 seconds=43.3 semantics=binary stopped_by=none step_cycles=1
+SEC summary: internal_relation_candidates=180 proved_rail_equalities=48 allow_x_equality_in_internal_relations=1 name_candidates=142 net_name_candidates=38 driver_candidates=0 propagated_candidates=0 propagation_rounds=0
+SEC summary: binary_relation_round candidates=156 binary_pairs=0 covering_clauses=0 compatible_clauses=0 discharged_outputs=4/12
+SEC summary: structurally_proved_outputs=12 of 12 merged_equalities=48
+SEC diag: merged state symbols=48 identical_output_formulas=12/12
+SEC diag: entering pdr engine
+SEC diag: PDR steady-state check begin index=0 pending_batches=1 output_range=0..12
+SEC PDR stats: shared exact F[0] cache built
+SEC PDR stats: frame invariant shared_strengthening unavailable
+SEC PDR stats: immutable model metadata built use=1
+SEC PDR stats: shared exact F[0] query surface symbols=2889
+SEC PDR stats: formula closed support cached symbols=0
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=2889
+SEC PDR stats: predecessor cached solver created level=0 symbols=2889 frame_clauses=0 shared_batches=0
+SEC PDR stats: shared exact F[0] solver used for bad cube
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=2889
+SEC PDR stats: shared exact F[0] predecessor solver reused without symbol surface comparison
+SEC PDR stats: shared exact F[0] solver used for bad cube
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=2889
+SEC PDR stats: shared exact F[0] predecessor solver reused without symbol surface comparison
+SEC PDR stats: shared exact F[0] solver used for bad cube
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=2889
+SEC PDR stats: shared exact F[0] predecessor solver reused without symbol surface comparison
+SEC PDR stats: shared exact F[0] solver used for bad cube
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=2889
+SEC PDR stats: shared exact F[0] predecessor solver reused without symbol surface comparison
+SEC PDR stats: shared exact F[0] solver used for bad cube
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=2889
+SEC PDR stats: shared exact F[0] predecessor solver reused without symbol surface comparison
+SEC PDR stats: shared exact F[0] solver used for bad cube
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=2889
+SEC PDR stats: shared exact F[0] predecessor solver reused without symbol surface comparison
+SEC PDR stats: shared exact F[0] solver used for bad cube
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=2889
+SEC PDR stats: shared exact F[0] predecessor solver reused without symbol surface comparison
+SEC PDR stats: shared exact F[0] solver used for bad cube
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=2889
+SEC PDR stats: shared exact F[0] predecessor solver reused without symbol surface comparison
+SEC PDR stats: shared exact F[0] solver used for bad cube
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=2889
+SEC PDR stats: shared exact F[0] predecessor solver reused without symbol surface comparison
+SEC PDR stats: shared exact F[0] solver used for bad cube
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=2889
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=2889
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198548
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198548
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198548
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198548
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198548
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198548
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198548
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198548
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198548
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198548
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198548
+SEC diag: PDR steady-state check end index=0 output_range=0..12 status=equivalent bound=1
+[2026-11-27 00:32:30.293] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2830] SEC checked-output coverage: 100.00% (12/12 covered/existing outputs).
+[2026-11-27 00:32:30.293] [kepler_formal_main_logger] [warning] [KeplerFormal.cpp:2833] SEC reset is incomplete: after the reset window of 3 cycle(s), 132 of 179 state bits of design 1 and 132 of 179 state bits of design 2 can still be unknown (X). Design 1: u_core.u_sram.22.Q[0], u_core.u_sram.22.Q[1], u_core.u_sram.22.Q[2], u_core.u_sram.22.Q[3], u_core/u_sram/mem_mem/.__MEM_CELL[0][0], u_core/u_sram/mem_mem/.__MEM_CELL[0][1], u_core/u_sram/mem_mem/.__MEM_CELL[0][2], u_core/u_sram/mem_mem/.__MEM_CELL[0][3], and 124 more. Design 2: u_core.u_sram.22.Q[0], u_core.u_sram.22.Q[1], u_core.u_sram.22.Q[2], u_core.u_sram.22.Q[3], u_core/u_sram/mem_mem/.__MEM_CELL[0][0], u_core/u_sram/mem_mem/.__MEM_CELL[0][1], u_core/u_sram/mem_mem/.__MEM_CELL[0][2], u_core/u_sram/mem_mem/.__MEM_CELL[0][3], and 124 more.
+[2026-11-27 00:32:30.293] [kepler_formal_main_logger] [warning] [KeplerFormal.cpp:2833] SEC binary passes are on: they start matched unknown registers of the two designs from the same value. Set binary_relation_round to false (--binary-relation-round false) to switch them off.
+[2026-11-27 00:32:30.293] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2904] No binary-defined difference was found. SEC proved equivalence under the dual-rail steady-state abstraction at k = 1.
+      146,48 real       146,09 user         0,27 sys
+           379568128  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               40268  page reclaims
+                  43  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   2  voluntary context switches
+                7705  involuntary context switches
+        718793587532  instructions retired
+        437179961090  cycles elapsed
+           373310280  peak memory footprint

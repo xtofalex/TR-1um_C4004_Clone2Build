@@ -1,0 +1,5 @@
+exit: 3
+kepler-formal git hash: 3f1648b8981367ab5656c1d3a287421596e8c606
+naja git hash: cb142398
+[2026-11-27 00:32:51.340] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2940] Difference was found. SEC found a counterexample at k = 5.
+[2026-11-27 00:32:51.340] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2943] SEC counterexample details:

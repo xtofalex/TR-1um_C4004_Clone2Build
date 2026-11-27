@@ -1,0 +1,69 @@
+[2026-11-27 00:25:02.596] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2394] KEPLER FORMAL: Run.
+[2026-11-27 00:25:02.597] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2467] Input format: SYSTEMVERILOG
+[2026-11-27 00:25:02.597] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2474] SystemVerilog compilation units: one per file
+[2026-11-27 00:25:02.597] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2477] Run log: miter_log_0.txt
+[2026-11-27 00:25:02.597] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:756] Netlist 1: ../../cfg/rtl_01.v
+[2026-11-27 00:25:02.597] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:756] Netlist 2: ../../tools/kepler-formal/regress/c4004_rtl/rtl_03_bug.v
+[2026-11-27 00:25:02.597] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2754] Solver: KISSAT
+[2026-11-27 00:25:02.597] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2755] Verification: sec
+[2026-11-27 00:25:02.597] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2757] SEC max_k: 400
+[2026-11-27 00:25:02.597] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2758] SEC engine: pdr
+[2026-11-27 00:25:02.597] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2759] SEC encoding: dual_rail_steady
+[2026-11-27 00:25:02.597] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2766] SEC internal relations: learn=true allow_x_equality=true binary_relation_round=true signal_correspondence=true signal_correspondence_step=8
+[2026-11-27 00:25:02.597] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2768] SEC reset bootstrap: 3 cycle(s)
+[2026-11-27 00:25:02.597] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2773] SEC reset bootstrap port: rst active=1
+[2026-11-27 00:25:02.597] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2777] Compact mode: disabled
+[2026-11-27 00:25:02.597] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2778] Skipped PO reports: enabled
+[2026-11-27 00:25:02.597] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2779] SEC latch abstraction: enabled
+[2026-11-27 00:25:02.597] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2780] SEC data-enabled latch model: enabled
+[2026-11-27 00:25:02.597] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:3476] Parsing systemverilog file(s) for design 1
+[2026-11-27 00:26:02.789] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2830] SEC checked-output coverage: 100.00% (12/12 covered/existing outputs).
+[2026-11-27 00:26:02.789] [kepler_formal_main_logger] [warning] [KeplerFormal.cpp:2833] SEC reset is incomplete: after the reset window of 3 cycle(s), 132 of 179 state bits of design 1 and 132 of 179 state bits of design 2 can still be unknown (X). Design 1: u_core.u_sram.22.Q[0], u_core.u_sram.22.Q[1], u_core.u_sram.22.Q[2], u_core.u_sram.22.Q[3], u_core/u_sram/mem_mem/.__MEM_CELL[0][0], u_core/u_sram/mem_mem/.__MEM_CELL[0][1], u_core/u_sram/mem_mem/.__MEM_CELL[0][2], u_core/u_sram/mem_mem/.__MEM_CELL[0][3], and 124 more. Design 2: u_core.u_sram.22.Q[0], u_core.u_sram.22.Q[1], u_core.u_sram.22.Q[2], u_core.u_sram.22.Q[3], u_core/u_sram/mem_mem/.__MEM_CELL[0][0], u_core/u_sram/mem_mem/.__MEM_CELL[0][1], u_core/u_sram/mem_mem/.__MEM_CELL[0][2], u_core/u_sram/mem_mem/.__MEM_CELL[0][3], and 124 more.
+[2026-11-27 00:26:02.789] [kepler_formal_main_logger] [warning] [KeplerFormal.cpp:2833] SEC binary passes are on: they start matched unknown registers of the two designs from the same value. Set binary_relation_round to false (--binary-relation-round false) to switch them off.
+[2026-11-27 00:26:02.790] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2940] Difference was found. SEC found a counterexample at k = 8.
+[2026-11-27 00:26:02.790] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2943] SEC counterexample details:
+Counterexample reaches the first bad frame at cycle 8.
+Input trace:
+  cycle 0: rst[0]=0, test[0]=0, d_in[0]=0, d_in[1]=1, d_in[2]=0, d_in[3]=0
+  cycle 1: rst[0]=0, test[0]=0, d_in[0]=0, d_in[1]=1, d_in[2]=0, d_in[3]=0
+  cycle 2: rst[0]=0, test[0]=0, d_in[0]=1, d_in[1]=1, d_in[2]=0, d_in[3]=1
+  cycle 3: rst[0]=0, test[0]=0, d_in[0]=0, d_in[1]=1, d_in[2]=0, d_in[3]=1
+  cycle 4: rst[0]=0, test[0]=0, d_in[0]=0, d_in[1]=0, d_in[2]=0, d_in[3]=0
+  cycle 5: rst[0]=0, test[0]=0, d_in[0]=0, d_in[1]=0, d_in[2]=0, d_in[3]=0
+  cycle 6: rst[0]=0, test[0]=0, d_in[0]=0, d_in[1]=0, d_in[2]=0, d_in[3]=0
+  cycle 7: rst[0]=0, test[0]=0, d_in[0]=0, d_in[1]=0, d_in[2]=0, d_in[3]=0
+  cycle 8: rst[0]=0, test[0]=0, d_in[0]=0, d_in[1]=0, d_in[2]=0, d_in[3]=0
+Observed output mismatches at cycle 8:
+  bus_d[0]: design0=0, design1=1
+Traceback for first differing point `bus_d[0]` at cycle 8:
+  design0 cone to environment inputs:
+    step 0: 13.Y[0]
+    step 1: 10.[0], 2.[0], 3.[0], 4.[0], 5.[0], Constant 0
+    step 2: 9.[0], u_core.373.Y[0], u_core.373.Y[1], u_core.373.Y[2], u_core.373.Y[3]
+    step 3: 0.[0], 8.[0], u_core.371.Y[0], u_core.371.Y[1], u_core.371.Y[2], u_core.371.Y[3], u_core.372.[0], u_core.53.Y[0], u_core.53.Y[1], u_core.53.Y[2], u_core.53.Y[3]
+    step 4: 7.[0], u_core.167.[0], u_core.359.Y[0], u_core.369.Y[0], u_core.369.Y[1], u_core.369.Y[2], u_core.369.Y[3], u_core.370.[0], u_core.52.[0], u_core.58.Y[0], u_core.58.Y[1], u_core.58.Y[2], ... +9 more
+    step 5: Constant 1, clk[0], u_core.1.[0], u_core.152.[0], u_core.164.[0], u_core.357.Y[0], u_core.358.[0], u_core.367.Y[0], u_core.367.Y[1], u_core.367.Y[2], u_core.367.Y[3], u_core.368.[0], ... +21 more
+    step 6: u_core.0.[0], u_core.228.Y[0], u_core.355.Y[0], u_core.356.[0], u_core.363.Y[0], u_core.363.Y[1], u_core.363.Y[2], u_core.363.Y[3], u_core.365.Y[0], u_core.365.Y[1], u_core.365.Y[2], u_core.365.Y[3], ... +29 more
+    step 7: Constant 0, rst[0], u_core.19.[0], u_core.226.Y[0], u_core.227.[0], u_core.282.Y[0], u_core.353.Y[0], u_core.354.[0], u_core.361.Y[0], u_core.361.Y[1], u_core.361.Y[2], u_core.361.Y[3], ... +47 more
+    step 8: u_core.18.[0], u_core.196.Y[0], u_core.196.Y[1], u_core.196.Y[2], u_core.196.Y[3], u_core.224.Y[0], u_core.225.[0], u_core.278.[0], u_core.280.Y[0], u_core.281.[0], u_core.33.[0], u_core.345.Y[0], ... +44 more
+    step 9: u_core.14.[0], u_core.169.Y[0], u_core.169.Y[1], u_core.169.Y[2], u_core.169.Y[3], u_core.169.Y[4], u_core.17.[0], u_core.194.Y[0], u_core.194.Y[1], u_core.194.Y[2], u_core.194.Y[3], u_core.195.[0], ... +52 more
+    step 10: u_core.159.[0], u_core.16.[0], u_core.166.Y[0], u_core.166.Y[1], u_core.166.Y[2], u_core.166.Y[3], u_core.166.Y[4], u_core.168.[0], u_core.192.Y[0], u_core.192.Y[1], u_core.192.Y[2], u_core.192.Y[3], ... +69 more
+    step 11: u_core.15.[0], u_core.156.[0], u_core.163.Y[0], u_core.163.Y[1], u_core.163.Y[2], u_core.163.Y[3], u_core.163.Y[4], u_core.165.[0], u_core.190.Y[0], u_core.190.Y[1], u_core.190.Y[2], u_core.190.Y[3], ... +72 more
+    ... +33 more trace steps
+  design1 cone to environment inputs:
+    step 0: 13.Y[0]
+    step 1: 10.[0], 2.[0], 3.[0], 4.[0], 5.[0], Constant 0
+    step 2: 9.[0], u_core.427.Y[0], u_core.427.Y[1], u_core.427.Y[2], u_core.427.Y[3]
+    step 3: 0.[0], 8.[0], u_core.425.Y[0], u_core.425.Y[1], u_core.425.Y[2], u_core.425.Y[3], u_core.426.[0], u_core.79.Y[0], u_core.79.Y[1], u_core.79.Y[2], u_core.79.Y[3]
+    step 4: 7.[0], u_core.224.[0], u_core.413.Y[0], u_core.423.Y[0], u_core.423.Y[1], u_core.423.Y[2], u_core.423.Y[3], u_core.424.[0], u_core.78.[0], u_core.84.Y[0], u_core.84.Y[1], u_core.84.Y[2], ... +9 more
+    step 5: Constant 1, clk[0], u_core.1.[0], u_core.136.[0], u_core.137.[0], u_core.209.[0], u_core.221.[0], u_core.411.Y[0], u_core.412.[0], u_core.421.Y[0], u_core.421.Y[1], u_core.421.Y[2], ... +21 more
+    step 6: u_core.0.[0], u_core.138.[0], u_core.300.Y[0], u_core.409.Y[0], u_core.410.[0], u_core.417.Y[0], u_core.417.Y[1], u_core.417.Y[2], u_core.417.Y[3], u_core.419.Y[0], u_core.419.Y[1], u_core.419.Y[2], ... +29 more
+    step 7: Constant 0, rst[0], u_core.125.[0], u_core.126.[0], u_core.127.[0], u_core.128.[0], u_core.140.[0], u_core.19.[0], u_core.298.Y[0], u_core.299.[0], u_core.336.Y[0], u_core.407.Y[0], ... +47 more
+    step 8: u_core.103.[0], u_core.104.[0], u_core.105.[0], u_core.106.[0], u_core.113.[0], u_core.118.[0], u_core.121.[0], u_core.134.[0], u_core.18.[0], u_core.261.Y[0], u_core.261.Y[1], u_core.261.Y[2], ... +46 more
+    step 9: u_core.112.[0], u_core.117.[0], u_core.120.[0], u_core.14.[0], u_core.17.[0], u_core.226.Y[0], u_core.226.Y[1], u_core.226.Y[2], u_core.226.Y[3], u_core.226.Y[4], u_core.259.Y[0], u_core.259.Y[1], ... +55 more
+    step 10: u_core.107.[0], u_core.108.[0], u_core.109.[0], u_core.111.[0], u_core.114.[0], u_core.116.[0], u_core.119.[0], u_core.16.[0], u_core.216.[0], u_core.223.Y[0], u_core.223.Y[1], u_core.223.Y[2], ... +76 more
+    step 11: u_core.115.[0], u_core.15.[0], u_core.213.[0], u_core.220.Y[0], u_core.220.Y[1], u_core.220.Y[2], u_core.220.Y[3], u_core.220.Y[4], u_core.222.[0], u_core.255.Y[0], u_core.255.Y[1], u_core.255.Y[2], ... +78 more
+    ... +32 more trace steps
+  cone terms only in design0: u_core.139.[0], u_core.143.Y[0], u_core.144.Y[0], u_core.144.Y[1], u_core.144.Y[2], u_core.144.Y[3], u_core.145.Y[0], u_core.145.Y[1], u_core.145.Y[2], u_core.145.Y[3], u_core.147.Y[0], u_core.148.Y[0], u_core.148.Y[1], u_core.148.Y[2], u_core.148.Y[3], u_core.149.Y[0], u_core.149.Y[1], u_core.149.Y[2], u_core.149.Y[3], u_core.150.[0], ... +888 more
+  cone terms only in design1: u_core.101.[0], u_core.102.[0], u_core.103.[0], u_core.105.[0], u_core.108.[0], u_core.109.[0], u_core.110.[0], u_core.111.[0], u_core.112.[0], u_core.113.[0], u_core.114.[0], u_core.115.[0], u_core.116.[0], u_core.117.[0], u_core.118.[0], u_core.119.[0], u_core.120.[0], u_core.121.[0], u_core.122.[0], u_core.123.[0], ... +953 more
+

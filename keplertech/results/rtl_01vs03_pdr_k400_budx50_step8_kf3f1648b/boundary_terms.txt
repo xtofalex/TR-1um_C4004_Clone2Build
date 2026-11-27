@@ -1,0 +1,155 @@
+# SEC boundary terms report
+# Categories:
+# - top_input / top_output: original top-level interface terms.
+
+- design: design0
+  signal: bus_d[0]
+  roles: [top_output]
+
+- design: design0
+  signal: bus_d[1]
+  roles: [top_output]
+
+- design: design0
+  signal: bus_d[2]
+  roles: [top_output]
+
+- design: design0
+  signal: bus_d[3]
+  roles: [top_output]
+
+- design: design0
+  signal: bus_hiz[0]
+  roles: [top_output]
+
+- design: design0
+  signal: bus_oe[0]
+  roles: [top_output]
+
+- design: design0
+  signal: clk[0]
+  roles: [top_input]
+
+- design: design0
+  signal: cm_ram[0]
+  roles: [top_output]
+
+- design: design0
+  signal: cm_ram[1]
+  roles: [top_output]
+
+- design: design0
+  signal: cm_ram[2]
+  roles: [top_output]
+
+- design: design0
+  signal: cm_ram[3]
+  roles: [top_output]
+
+- design: design0
+  signal: cm_rom[0]
+  roles: [top_output]
+
+- design: design0
+  signal: d_in[0]
+  roles: [top_input]
+
+- design: design0
+  signal: d_in[1]
+  roles: [top_input]
+
+- design: design0
+  signal: d_in[2]
+  roles: [top_input]
+
+- design: design0
+  signal: d_in[3]
+  roles: [top_input]
+
+- design: design0
+  signal: rst[0]
+  roles: [top_input]
+
+- design: design0
+  signal: sync[0]
+  roles: [top_output]
+
+- design: design0
+  signal: test[0]
+  roles: [top_input]
+
+- design: design1
+  signal: bus_d[0]
+  roles: [top_output]
+
+- design: design1
+  signal: bus_d[1]
+  roles: [top_output]
+
+- design: design1
+  signal: bus_d[2]
+  roles: [top_output]
+
+- design: design1
+  signal: bus_d[3]
+  roles: [top_output]
+
+- design: design1
+  signal: bus_hiz[0]
+  roles: [top_output]
+
+- design: design1
+  signal: bus_oe[0]
+  roles: [top_output]
+
+- design: design1
+  signal: clk[0]
+  roles: [top_input]
+
+- design: design1
+  signal: cm_ram[0]
+  roles: [top_output]
+
+- design: design1
+  signal: cm_ram[1]
+  roles: [top_output]
+
+- design: design1
+  signal: cm_ram[2]
+  roles: [top_output]
+
+- design: design1
+  signal: cm_ram[3]
+  roles: [top_output]
+
+- design: design1
+  signal: cm_rom[0]
+  roles: [top_output]
+
+- design: design1
+  signal: d_in[0]
+  roles: [top_input]
+
+- design: design1
+  signal: d_in[1]
+  roles: [top_input]
+
+- design: design1
+  signal: d_in[2]
+  roles: [top_input]
+
+- design: design1
+  signal: d_in[3]
+  roles: [top_input]
+
+- design: design1
+  signal: rst[0]
+  roles: [top_input]
+
+- design: design1
+  signal: sync[0]
+  roles: [top_output]
+
+- design: design1
+  signal: test[0]
+  roles: [top_input]

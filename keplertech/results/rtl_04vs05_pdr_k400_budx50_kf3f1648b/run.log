@@ -1,0 +1,210 @@
+[2026-11-27 00:32:30.408] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2394] KEPLER FORMAL: Run.
+[2026-11-27 00:32:30.409] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2467] Input format: SYSTEMVERILOG
+[2026-11-27 00:32:30.409] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2474] SystemVerilog compilation units: one per file
+[2026-11-27 00:32:30.409] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2477] Run log: miter_log_0.txt
+[2026-11-27 00:32:30.409] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:756] Netlist 1: ../../cfg/rtl_04.v
+[2026-11-27 00:32:30.409] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:756] Netlist 2: ../../cfg/rtl_05.v
+[2026-11-27 00:32:30.409] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2754] Solver: KISSAT
+[2026-11-27 00:32:30.409] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2755] Verification: sec
+[2026-11-27 00:32:30.409] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2757] SEC max_k: 400
+[2026-11-27 00:32:30.409] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2758] SEC engine: pdr
+[2026-11-27 00:32:30.409] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2759] SEC encoding: dual_rail_steady
+[2026-11-27 00:32:30.409] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2766] SEC internal relations: learn=true allow_x_equality=true binary_relation_round=true signal_correspondence=true signal_correspondence_step=1
+[2026-11-27 00:32:30.409] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2768] SEC reset bootstrap: 3 cycle(s)
+[2026-11-27 00:32:30.409] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2773] SEC reset bootstrap port: rst active=1
+[2026-11-27 00:32:30.409] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2777] Compact mode: disabled
+[2026-11-27 00:32:30.409] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2778] Skipped PO reports: enabled
+[2026-11-27 00:32:30.409] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2779] SEC latch abstraction: enabled
+[2026-11-27 00:32:30.409] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2780] SEC data-enabled latch model: enabled
+[2026-11-27 00:32:30.409] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:3476] Parsing systemverilog file(s) for design 1
+2026-11-27 00:32:30,411 [naja] [warning] Slang emitted 2 diagnostic(s) (2 warning(s), 0 error(s)); see 'naja_sv_diagnostics.log'
+2026-11-27 00:32:30,416 [naja] [warning] Only the first occurrence of each SystemVerilog warning code is emitted on the console; all occurrences are written to 'naja_sv_diagnostics.log'
+2026-11-27 00:32:30,416 [naja] [warning] ../../cfg/rtl_04.v:287:9: Case comparison operator '===' lowered as 2-state comparison in SNL (X/Z distinction is not preserved)
+2026-11-27 00:32:30,430 [naja] [warning] SystemVerilog diagnostics summary: status=success, slang=2 (warnings=2, errors=0), elaboration_warnings=8 (codes=1), unsupported_warnings=0 (codes=0), unsupported_errors=0 (codes=0); report='naja_sv_diagnostics.log'
+2026-11-27 00:32:30,431 [naja] [info] Found top design: cpu_top
+2026-11-27 00:32:30,431 [naja] [info] Parsing systemverilog file(s) for design 2
+2026-11-27 00:32:30,433 [naja] [warning] Slang emitted 2 diagnostic(s) (2 warning(s), 0 error(s)); see 'naja_sv_diagnostics.log'
+2026-11-27 00:32:30,436 [naja] [warning] Only the first occurrence of each SystemVerilog warning code is emitted on the console; all occurrences are written to 'naja_sv_diagnostics.log'
+2026-11-27 00:32:30,436 [naja] [warning] ../../cfg/rtl_05.v:289:9: Case comparison operator '===' lowered as 2-state comparison in SNL (X/Z distinction is not preserved)
+2026-11-27 00:32:30,450 [naja] [warning] SystemVerilog diagnostics summary: status=success, slang=2 (warnings=2, errors=0), elaboration_warnings=8 (codes=1), unsupported_warnings=0 (codes=0), unsupported_errors=0 (codes=0); report='naja_sv_diagnostics.log'
+2026-11-27 00:32:30,451 [naja] [info] Found top design: cpu_top
+SEC diag: start run
+SEC diag: extract(cpu_top) collect begin
+SEC diag: extract(cpu_top) collect end inputs=66 outputs=116
+SEC diag: extract(cpu_top) opaque_reached_outputs=0
+SEC diag: extract(cpu_top) initial_observed_outputs=12
+SEC diag: extract(cpu_top) build begin
+SEC diag: extract(cpu_top) build end
+SEC diag: extract(cpu_top) boundary normalized env=7 state=59 outputs=12 pending=55
+SEC diag: extract(cpu_top) mapped boundary vars=66
+SEC diag: extract(cpu_top) structured memory dependency build begin outputs=11
+SEC diag: extract(cpu_top) structured memory dependency build end outputs=11
+SEC diag: extract(cpu_top) mapped boundary vars=66
+SEC diag: extract(cpu_top) materialized output exprs observed=12 total=39
+SEC diag: top input rst[0] is not clock-only: sequential non-clock pin u_env/17//D (naja_dff)
+SEC diag: top input test[0] is not clock-only: sequential non-clock pin u_env/8//D (naja_dff)
+SEC diag: top input d_in[3] is not clock-only: sequential non-clock pin u_env/6//D (naja_dff__w4)
+SEC diag: top input d_in[2] is not clock-only: sequential non-clock pin u_env/6//D (naja_dff__w4)
+SEC diag: top input d_in[1] is not clock-only: sequential non-clock pin u_env/6//D (naja_dff__w4)
+SEC diag: top input d_in[0] is not clock-only: sequential non-clock pin u_env/6//D (naja_dff__w4)
+SEC diag: extract(cpu_top) immutable clock structure indexed terms=5329 pure_terms=24
+SEC diag: extract(cpu_top) dependency build begin outputs=58
+SEC diag: extract(cpu_top) dependency build end outputs=58
+SEC diag: extract(cpu_top) mapped boundary vars=194
+SEC diag: extract(cpu_top) rebuilt next-state exprs=187 init=0 data_latches=0
+SEC diag: extract(cpu_top) filtered env=7 state=187
+SEC diag: extract(cpu_top) structured_memories=1 structured_memory_cells=128
+SEC diag: extract(cpu_top) kept_states=[u_env.6.Q[0]@v62, u_env.6.Q[1]@v61, u_env.6.Q[2]@v60, u_env.6.Q[3]@v59, u_env.8.Q[0]@v63, u_env.14.Q[0]@v66, u_env.14.Q[1]@v65, u_env.14.Q[2]@v64, u_env.17.Q[0]@v67, u_core.u_sram.22.Q[0]@v54, u_core.u_sram.22.Q[1]@v53, u_core.u_sram.22.Q[2]@v52, u_core.u_sram.22.Q[3]@v51, u_core.462.Q[0]@v11, u_core.462.Q[1]@v10, u_core.462.Q[2]@v9, u_core.572.Q[0]@v15, u_core.572.Q[1]@v14, u_core.572.Q[2]@v13, u_core.572.Q[3]@v12, u_core.653.Q[0]@v16, u_core.667.Q[0]@v20, u_core.667.Q[1]@v19, u_core.667.Q[2]@v18, u_core.667.Q[3]@v17, u_core.682.Q[0]@v24, u_core.682.Q[1]@v23, u_core.682.Q[2]@v22, u_core.682.Q[3]@v21, u_core.732.Q[0]@v26, u_core.732.Q[1]@v25, u_core.765.Q[0]@v27, u_core.820.Q[0]@v28, u_core.853.Q[0]@v29, u_core.867.Q[0]@v30, u_core.898.Q[0]@v34, u_core.898.Q[1]@v33, u_core.898.Q[2]@v32, u_core.898.Q[3]@v31, u_core.932.Q[0]@v38, u_core.932.Q[1]@v37, u_core.932.Q[2]@v36, u_core.932.Q[3]@v35, u_core.958.Q[0]@v42, u_core.958.Q[1]@v41, u_core.958.Q[2]@v40, u_core.958.Q[3]@v39, u_core.1000.Q[0]@v46, u_core.1000.Q[1]@v45, u_core.1000.Q[2]@v44, u_core.1000.Q[3]@v43, u_core.1065.Q[0]@v49, u_core.1065.Q[1]@v48, u_core.1065.Q[2]@v47, u_core.1118.Q[0]@v50, u_core/u_sram/mem_mem/.__MEM_CELL[0][0]@v7119, u_core/u_sram/mem_mem/.__MEM_CELL[0][1]@v7120, u_core/u_sram/mem_mem/.__MEM_CELL[0][2]@v7121, u_core/u_sram/mem_mem/.__MEM_CELL[0][3]@v7122, u_core/u_sram/mem_mem/.__MEM_CELL[1][0]@v7123, u_core/u_sram/mem_mem/.__MEM_CELL[1][1]@v7124, u_core/u_sram/mem_mem/.__MEM_CELL[1][2]@v7125, u_core/u_sram/mem_mem/.__MEM_CELL[1][3]@v7126, u_core/u_sram/mem_mem/.__MEM_CELL[2][0]@v7127, u_core/u_sram/mem_mem/.__MEM_CELL[2][1]@v7128, u_core/u_sram/mem_mem/.__MEM_CELL[2][2]@v7129, u_core/u_sram/mem_mem/.__MEM_CELL[2][3]@v7130, u_core/u_sram/mem_mem/.__MEM_CELL[3][0]@v7131, u_core/u_sram/mem_mem/.__MEM_CELL[3][1]@v7132, u_core/u_sram/mem_mem/.__MEM_CELL[3][2]@v7133, u_core/u_sram/mem_mem/.__MEM_CELL[3][3]@v7134, u_core/u_sram/mem_mem/.__MEM_CELL[4][0]@v7135, u_core/u_sram/mem_mem/.__MEM_CELL[4][1]@v7136, u_core/u_sram/mem_mem/.__MEM_CELL[4][2]@v7137, u_core/u_sram/mem_mem/.__MEM_CELL[4][3]@v7138, u_core/u_sram/mem_mem/.__MEM_CELL[5][0]@v7139, u_core/u_sram/mem_mem/.__MEM_CELL[5][1]@v7140, u_core/u_sram/mem_mem/.__MEM_CELL[5][2]@v7141, u_core/u_sram/mem_mem/.__MEM_CELL[5][3]@v7142, u_core/u_sram/mem_mem/.__MEM_CELL[6][0]@v7143, u_core/u_sram/mem_mem/.__MEM_CELL[6][1]@v7144, u_core/u_sram/mem_mem/.__MEM_CELL[6][2]@v7145, u_core/u_sram/mem_mem/.__MEM_CELL[6][3]@v7146, u_core/u_sram/mem_mem/.__MEM_CELL[7][0]@v7147, u_core/u_sram/mem_mem/.__MEM_CELL[7][1]@v7148, u_core/u_sram/mem_mem/.__MEM_CELL[7][2]@v7149, u_core/u_sram/mem_mem/.__MEM_CELL[7][3]@v7150, u_core/u_sram/mem_mem/.__MEM_CELL[8][0]@v7151, u_core/u_sram/mem_mem/.__MEM_CELL[8][1]@v7152, u_core/u_sram/mem_mem/.__MEM_CELL[8][2]@v7153, u_core/u_sram/mem_mem/.__MEM_CELL[8][3]@v7154, u_core/u_sram/mem_mem/.__MEM_CELL[9][0]@v7155, u_core/u_sram/mem_mem/.__MEM_CELL[9][1]@v7156, u_core/u_sram/mem_mem/.__MEM_CELL[9][2]@v7157, u_core/u_sram/mem_mem/.__MEM_CELL[9][3]@v7158, u_core/u_sram/mem_mem/.__MEM_CELL[10][0]@v7159, u_core/u_sram/mem_mem/.__MEM_CELL[10][1]@v7160, u_core/u_sram/mem_mem/.__MEM_CELL[10][2]@v7161, u_core/u_sram/mem_mem/.__MEM_CELL[10][3]@v7162, u_core/u_sram/mem_mem/.__MEM_CELL[11][0]@v7163, u_core/u_sram/mem_mem/.__MEM_CELL[11][1]@v7164, u_core/u_sram/mem_mem/.__MEM_CELL[11][2]@v7165, u_core/u_sram/mem_mem/.__MEM_CELL[11][3]@v7166, u_core/u_sram/mem_mem/.__MEM_CELL[12][0]@v7167, u_core/u_sram/mem_mem/.__MEM_CELL[12][1]@v7168, u_core/u_sram/mem_mem/.__MEM_CELL[12][2]@v7169, u_core/u_sram/mem_mem/.__MEM_CELL[12][3]@v7170, u_core/u_sram/mem_mem/.__MEM_CELL[13][0]@v7171, u_core/u_sram/mem_mem/.__MEM_CELL[13][1]@v7172, u_core/u_sram/mem_mem/.__MEM_CELL[13][2]@v7173, u_core/u_sram/mem_mem/.__MEM_CELL[13][3]@v7174, u_core/u_sram/mem_mem/.__MEM_CELL[14][0]@v7175, u_core/u_sram/mem_mem/.__MEM_CELL[14][1]@v7176, u_core/u_sram/mem_mem/.__MEM_CELL[14][2]@v7177, u_core/u_sram/mem_mem/.__MEM_CELL[14][3]@v7178, u_core/u_sram/mem_mem/.__MEM_CELL[15][0]@v7179, u_core/u_sram/mem_mem/.__MEM_CELL[15][1]@v7180, u_core/u_sram/mem_mem/.__MEM_CELL[15][2]@v7181, u_core/u_sram/mem_mem/.__MEM_CELL[15][3]@v7182, u_core/u_sram/mem_mem/.__MEM_CELL[16][0]@v7183, u_core/u_sram/mem_mem/.__MEM_CELL[16][1]@v7184, u_core/u_sram/mem_mem/.__MEM_CELL[16][2]@v7185, u_core/u_sram/mem_mem/.__MEM_CELL[16][3]@v7186, u_core/u_sram/mem_mem/.__MEM_CELL[17][0]@v7187, u_core/u_sram/mem_mem/.__MEM_CELL[17][1]@v7188, u_core/u_sram/mem_mem/.__MEM_CELL[17][2]@v7189, u_core/u_sram/mem_mem/.__MEM_CELL[17][3]@v7190, u_core/u_sram/mem_mem/.__MEM_CELL[18][0]@v7191, u_core/u_sram/mem_mem/.__MEM_CELL[18][1]@v7192, u_core/u_sram/mem_mem/.__MEM_CELL[18][2]@v7193, u_core/u_sram/mem_mem/.__MEM_CELL[18][3]@v7194, u_core/u_sram/mem_mem/.__MEM_CELL[19][0]@v7195, u_core/u_sram/mem_mem/.__MEM_CELL[19][1]@v7196, u_core/u_sram/mem_mem/.__MEM_CELL[19][2]@v7197, u_core/u_sram/mem_mem/.__MEM_CELL[19][3]@v7198, u_core/u_sram/mem_mem/.__MEM_CELL[20][0]@v7199, u_core/u_sram/mem_mem/.__MEM_CELL[20][1]@v7200, u_core/u_sram/mem_mem/.__MEM_CELL[20][2]@v7201, u_core/u_sram/mem_mem/.__MEM_CELL[20][3]@v7202, u_core/u_sram/mem_mem/.__MEM_CELL[21][0]@v7203, u_core/u_sram/mem_mem/.__MEM_CELL[21][1]@v7204, u_core/u_sram/mem_mem/.__MEM_CELL[21][2]@v7205, u_core/u_sram/mem_mem/.__MEM_CELL[21][3]@v7206, u_core/u_sram/mem_mem/.__MEM_CELL[22][0]@v7207, u_core/u_sram/mem_mem/.__MEM_CELL[22][1]@v7208, u_core/u_sram/mem_mem/.__MEM_CELL[22][2]@v7209, u_core/u_sram/mem_mem/.__MEM_CELL[22][3]@v7210, u_core/u_sram/mem_mem/.__MEM_CELL[23][0]@v7211, u_core/u_sram/mem_mem/.__MEM_CELL[23][1]@v7212, u_core/u_sram/mem_mem/.__MEM_CELL[23][2]@v7213, u_core/u_sram/mem_mem/.__MEM_CELL[23][3]@v7214, u_core/u_sram/mem_mem/.__MEM_CELL[24][0]@v7215, u_core/u_sram/mem_mem/.__MEM_CELL[24][1]@v7216, u_core/u_sram/mem_mem/.__MEM_CELL[24][2]@v7217, u_core/u_sram/mem_mem/.__MEM_CELL[24][3]@v7218, u_core/u_sram/mem_mem/.__MEM_CELL[25][0]@v7219, u_core/u_sram/mem_mem/.__MEM_CELL[25][1]@v7220, u_core/u_sram/mem_mem/.__MEM_CELL[25][2]@v7221, u_core/u_sram/mem_mem/.__MEM_CELL[25][3]@v7222, u_core/u_sram/mem_mem/.__MEM_CELL[26][0]@v7223, u_core/u_sram/mem_mem/.__MEM_CELL[26][1]@v7224, u_core/u_sram/mem_mem/.__MEM_CELL[26][2]@v7225, u_core/u_sram/mem_mem/.__MEM_CELL[26][3]@v7226, u_core/u_sram/mem_mem/.__MEM_CELL[27][0]@v7227, u_core/u_sram/mem_mem/.__MEM_CELL[27][1]@v7228, u_core/u_sram/mem_mem/.__MEM_CELL[27][2]@v7229, u_core/u_sram/mem_mem/.__MEM_CELL[27][3]@v7230, u_core/u_sram/mem_mem/.__MEM_CELL[28][0]@v7231, u_core/u_sram/mem_mem/.__MEM_CELL[28][1]@v7232, u_core/u_sram/mem_mem/.__MEM_CELL[28][2]@v7233, u_core/u_sram/mem_mem/.__MEM_CELL[28][3]@v7234, u_core/u_sram/mem_mem/.__MEM_CELL[29][0]@v7235, u_core/u_sram/mem_mem/.__MEM_CELL[29][1]@v7236, u_core/u_sram/mem_mem/.__MEM_CELL[29][2]@v7237, u_core/u_sram/mem_mem/.__MEM_CELL[29][3]@v7238, u_core/u_sram/mem_mem/.__MEM_CELL[30][0]@v7239, u_core/u_sram/mem_mem/.__MEM_CELL[30][1]@v7240, u_core/u_sram/mem_mem/.__MEM_CELL[30][2]@v7241, u_core/u_sram/mem_mem/.__MEM_CELL[30][3]@v7242, u_core/u_sram/mem_mem/.__MEM_CELL[31][0]@v7243, u_core/u_sram/mem_mem/.__MEM_CELL[31][1]@v7244, u_core/u_sram/mem_mem/.__MEM_CELL[31][2]@v7245, u_core/u_sram/mem_mem/.__MEM_CELL[31][3]@v7246]
+SEC diag: extract(cpu_top) observed_support bus_oe[0] = [v9, v10, v11, v17, v18, v19, v20, v21, v24, v27]
+SEC diag: extract(cpu_top) observed_support bus_hiz[0] = [v9, v10, v11, v17, v18, v19, v20, v21, v24, v27]
+SEC diag: extract(cpu_top) observed_support bus_d[0] = [v9, v10, v11, v15, v17, v18, v19, v20, v21, v24, v27, v28, v34, v38, v42, v46, v54]
+SEC diag: extract(cpu_top) observed_support bus_d[1] = [v9, v10, v11, v14, v17, v18, v19, v20, v21, v24, v27, v28, v33, v37, v41, v45, v53]
+SEC diag: extract(cpu_top) observed_support bus_d[2] = [v9, v10, v11, v13, v17, v18, v19, v20, v21, v24, v27, v28, v32, v36, v40, v44, v52]
+SEC diag: extract(cpu_top) observed_support bus_d[3] = [v9, v10, v11, v12, v17, v18, v19, v20, v21, v24, v27, v28, v31, v35, v39, v43, v51]
+SEC diag: extract(cpu_top) observed_support sync[0] = [v9, v10, v11]
+SEC diag: extract(cpu_top) observed_support cm_rom[0] = [v9, v10, v11, v17, v18, v19, v20, v21, v22, v23, v24, v27]
+SEC diag: extract(cpu_top) observed_support cm_ram[0] = [v9, v10, v11, v17, v18, v19, v20, v21, v22, v23, v24, v27, v47, v48, v49]
+SEC diag: extract(cpu_top) observed_support cm_ram[1] = [v9, v10, v11, v17, v18, v19, v20, v21, v22, v23, v24, v27, v49]
+SEC diag: extract(cpu_top) observed_support cm_ram[2] = [v9, v10, v11, v17, v18, v19, v20, v21, v22, v23, v24, v27, v48]
+SEC diag: extract(cpu_top) observed_support cm_ram[3] = [v9, v10, v11, v17, v18, v19, v20, v21, v22, v23, v24, v27, v47]
+SEC diag: extract(cpu_top) end
+SEC diag: extracted design0
+SEC diag: extract(cpu_top) collect begin
+SEC diag: extract(cpu_top) collect end inputs=66 outputs=116
+SEC diag: extract(cpu_top) opaque_reached_outputs=0
+SEC diag: extract(cpu_top) initial_observed_outputs=12
+SEC diag: extract(cpu_top) build begin
+SEC diag: extract(cpu_top) build end
+SEC diag: extract(cpu_top) boundary normalized env=7 state=59 outputs=12 pending=55
+SEC diag: extract(cpu_top) mapped boundary vars=66
+SEC diag: extract(cpu_top) structured memory dependency build begin outputs=11
+SEC diag: extract(cpu_top) structured memory dependency build end outputs=11
+SEC diag: extract(cpu_top) mapped boundary vars=66
+SEC diag: extract(cpu_top) materialized output exprs observed=12 total=39
+SEC diag: top input rst[0] is not clock-only: sequential non-clock pin u_env/17//D (naja_dff)
+SEC diag: top input test[0] is not clock-only: sequential non-clock pin u_env/8//D (naja_dff)
+SEC diag: top input d_in[3] is not clock-only: sequential non-clock pin u_env/6//D (naja_dff__w4)
+SEC diag: top input d_in[2] is not clock-only: sequential non-clock pin u_env/6//D (naja_dff__w4)
+SEC diag: top input d_in[1] is not clock-only: sequential non-clock pin u_env/6//D (naja_dff__w4)
+SEC diag: top input d_in[0] is not clock-only: sequential non-clock pin u_env/6//D (naja_dff__w4)
+SEC diag: extract(cpu_top) immutable clock structure indexed terms=5329 pure_terms=24
+SEC diag: extract(cpu_top) dependency build begin outputs=58
+SEC diag: extract(cpu_top) dependency build end outputs=58
+SEC diag: extract(cpu_top) mapped boundary vars=194
+SEC diag: extract(cpu_top) rebuilt next-state exprs=187 init=0 data_latches=0
+SEC diag: extract(cpu_top) filtered env=7 state=187
+SEC diag: extract(cpu_top) structured_memories=1 structured_memory_cells=128
+SEC diag: extract(cpu_top) kept_states=[u_env.6.Q[0]@v62, u_env.6.Q[1]@v61, u_env.6.Q[2]@v60, u_env.6.Q[3]@v59, u_env.8.Q[0]@v63, u_env.14.Q[0]@v66, u_env.14.Q[1]@v65, u_env.14.Q[2]@v64, u_env.17.Q[0]@v67, u_core.u_sram.22.Q[0]@v54, u_core.u_sram.22.Q[1]@v53, u_core.u_sram.22.Q[2]@v52, u_core.u_sram.22.Q[3]@v51, u_core.462.Q[0]@v11, u_core.462.Q[1]@v10, u_core.462.Q[2]@v9, u_core.572.Q[0]@v15, u_core.572.Q[1]@v14, u_core.572.Q[2]@v13, u_core.572.Q[3]@v12, u_core.653.Q[0]@v16, u_core.667.Q[0]@v20, u_core.667.Q[1]@v19, u_core.667.Q[2]@v18, u_core.667.Q[3]@v17, u_core.682.Q[0]@v24, u_core.682.Q[1]@v23, u_core.682.Q[2]@v22, u_core.682.Q[3]@v21, u_core.732.Q[0]@v26, u_core.732.Q[1]@v25, u_core.765.Q[0]@v27, u_core.820.Q[0]@v28, u_core.853.Q[0]@v29, u_core.867.Q[0]@v30, u_core.898.Q[0]@v34, u_core.898.Q[1]@v33, u_core.898.Q[2]@v32, u_core.898.Q[3]@v31, u_core.932.Q[0]@v38, u_core.932.Q[1]@v37, u_core.932.Q[2]@v36, u_core.932.Q[3]@v35, u_core.958.Q[0]@v42, u_core.958.Q[1]@v41, u_core.958.Q[2]@v40, u_core.958.Q[3]@v39, u_core.1000.Q[0]@v46, u_core.1000.Q[1]@v45, u_core.1000.Q[2]@v44, u_core.1000.Q[3]@v43, u_core.1065.Q[0]@v49, u_core.1065.Q[1]@v48, u_core.1065.Q[2]@v47, u_core.1118.Q[0]@v50, u_core/u_sram/mem_mem/.__MEM_CELL[0][0]@v7119, u_core/u_sram/mem_mem/.__MEM_CELL[0][1]@v7120, u_core/u_sram/mem_mem/.__MEM_CELL[0][2]@v7121, u_core/u_sram/mem_mem/.__MEM_CELL[0][3]@v7122, u_core/u_sram/mem_mem/.__MEM_CELL[1][0]@v7123, u_core/u_sram/mem_mem/.__MEM_CELL[1][1]@v7124, u_core/u_sram/mem_mem/.__MEM_CELL[1][2]@v7125, u_core/u_sram/mem_mem/.__MEM_CELL[1][3]@v7126, u_core/u_sram/mem_mem/.__MEM_CELL[2][0]@v7127, u_core/u_sram/mem_mem/.__MEM_CELL[2][1]@v7128, u_core/u_sram/mem_mem/.__MEM_CELL[2][2]@v7129, u_core/u_sram/mem_mem/.__MEM_CELL[2][3]@v7130, u_core/u_sram/mem_mem/.__MEM_CELL[3][0]@v7131, u_core/u_sram/mem_mem/.__MEM_CELL[3][1]@v7132, u_core/u_sram/mem_mem/.__MEM_CELL[3][2]@v7133, u_core/u_sram/mem_mem/.__MEM_CELL[3][3]@v7134, u_core/u_sram/mem_mem/.__MEM_CELL[4][0]@v7135, u_core/u_sram/mem_mem/.__MEM_CELL[4][1]@v7136, u_core/u_sram/mem_mem/.__MEM_CELL[4][2]@v7137, u_core/u_sram/mem_mem/.__MEM_CELL[4][3]@v7138, u_core/u_sram/mem_mem/.__MEM_CELL[5][0]@v7139, u_core/u_sram/mem_mem/.__MEM_CELL[5][1]@v7140, u_core/u_sram/mem_mem/.__MEM_CELL[5][2]@v7141, u_core/u_sram/mem_mem/.__MEM_CELL[5][3]@v7142, u_core/u_sram/mem_mem/.__MEM_CELL[6][0]@v7143, u_core/u_sram/mem_mem/.__MEM_CELL[6][1]@v7144, u_core/u_sram/mem_mem/.__MEM_CELL[6][2]@v7145, u_core/u_sram/mem_mem/.__MEM_CELL[6][3]@v7146, u_core/u_sram/mem_mem/.__MEM_CELL[7][0]@v7147, u_core/u_sram/mem_mem/.__MEM_CELL[7][1]@v7148, u_core/u_sram/mem_mem/.__MEM_CELL[7][2]@v7149, u_core/u_sram/mem_mem/.__MEM_CELL[7][3]@v7150, u_core/u_sram/mem_mem/.__MEM_CELL[8][0]@v7151, u_core/u_sram/mem_mem/.__MEM_CELL[8][1]@v7152, u_core/u_sram/mem_mem/.__MEM_CELL[8][2]@v7153, u_core/u_sram/mem_mem/.__MEM_CELL[8][3]@v7154, u_core/u_sram/mem_mem/.__MEM_CELL[9][0]@v7155, u_core/u_sram/mem_mem/.__MEM_CELL[9][1]@v7156, u_core/u_sram/mem_mem/.__MEM_CELL[9][2]@v7157, u_core/u_sram/mem_mem/.__MEM_CELL[9][3]@v7158, u_core/u_sram/mem_mem/.__MEM_CELL[10][0]@v7159, u_core/u_sram/mem_mem/.__MEM_CELL[10][1]@v7160, u_core/u_sram/mem_mem/.__MEM_CELL[10][2]@v7161, u_core/u_sram/mem_mem/.__MEM_CELL[10][3]@v7162, u_core/u_sram/mem_mem/.__MEM_CELL[11][0]@v7163, u_core/u_sram/mem_mem/.__MEM_CELL[11][1]@v7164, u_core/u_sram/mem_mem/.__MEM_CELL[11][2]@v7165, u_core/u_sram/mem_mem/.__MEM_CELL[11][3]@v7166, u_core/u_sram/mem_mem/.__MEM_CELL[12][0]@v7167, u_core/u_sram/mem_mem/.__MEM_CELL[12][1]@v7168, u_core/u_sram/mem_mem/.__MEM_CELL[12][2]@v7169, u_core/u_sram/mem_mem/.__MEM_CELL[12][3]@v7170, u_core/u_sram/mem_mem/.__MEM_CELL[13][0]@v7171, u_core/u_sram/mem_mem/.__MEM_CELL[13][1]@v7172, u_core/u_sram/mem_mem/.__MEM_CELL[13][2]@v7173, u_core/u_sram/mem_mem/.__MEM_CELL[13][3]@v7174, u_core/u_sram/mem_mem/.__MEM_CELL[14][0]@v7175, u_core/u_sram/mem_mem/.__MEM_CELL[14][1]@v7176, u_core/u_sram/mem_mem/.__MEM_CELL[14][2]@v7177, u_core/u_sram/mem_mem/.__MEM_CELL[14][3]@v7178, u_core/u_sram/mem_mem/.__MEM_CELL[15][0]@v7179, u_core/u_sram/mem_mem/.__MEM_CELL[15][1]@v7180, u_core/u_sram/mem_mem/.__MEM_CELL[15][2]@v7181, u_core/u_sram/mem_mem/.__MEM_CELL[15][3]@v7182, u_core/u_sram/mem_mem/.__MEM_CELL[16][0]@v7183, u_core/u_sram/mem_mem/.__MEM_CELL[16][1]@v7184, u_core/u_sram/mem_mem/.__MEM_CELL[16][2]@v7185, u_core/u_sram/mem_mem/.__MEM_CELL[16][3]@v7186, u_core/u_sram/mem_mem/.__MEM_CELL[17][0]@v7187, u_core/u_sram/mem_mem/.__MEM_CELL[17][1]@v7188, u_core/u_sram/mem_mem/.__MEM_CELL[17][2]@v7189, u_core/u_sram/mem_mem/.__MEM_CELL[17][3]@v7190, u_core/u_sram/mem_mem/.__MEM_CELL[18][0]@v7191, u_core/u_sram/mem_mem/.__MEM_CELL[18][1]@v7192, u_core/u_sram/mem_mem/.__MEM_CELL[18][2]@v7193, u_core/u_sram/mem_mem/.__MEM_CELL[18][3]@v7194, u_core/u_sram/mem_mem/.__MEM_CELL[19][0]@v7195, u_core/u_sram/mem_mem/.__MEM_CELL[19][1]@v7196, u_core/u_sram/mem_mem/.__MEM_CELL[19][2]@v7197, u_core/u_sram/mem_mem/.__MEM_CELL[19][3]@v7198, u_core/u_sram/mem_mem/.__MEM_CELL[20][0]@v7199, u_core/u_sram/mem_mem/.__MEM_CELL[20][1]@v7200, u_core/u_sram/mem_mem/.__MEM_CELL[20][2]@v7201, u_core/u_sram/mem_mem/.__MEM_CELL[20][3]@v7202, u_core/u_sram/mem_mem/.__MEM_CELL[21][0]@v7203, u_core/u_sram/mem_mem/.__MEM_CELL[21][1]@v7204, u_core/u_sram/mem_mem/.__MEM_CELL[21][2]@v7205, u_core/u_sram/mem_mem/.__MEM_CELL[21][3]@v7206, u_core/u_sram/mem_mem/.__MEM_CELL[22][0]@v7207, u_core/u_sram/mem_mem/.__MEM_CELL[22][1]@v7208, u_core/u_sram/mem_mem/.__MEM_CELL[22][2]@v7209, u_core/u_sram/mem_mem/.__MEM_CELL[22][3]@v7210, u_core/u_sram/mem_mem/.__MEM_CELL[23][0]@v7211, u_core/u_sram/mem_mem/.__MEM_CELL[23][1]@v7212, u_core/u_sram/mem_mem/.__MEM_CELL[23][2]@v7213, u_core/u_sram/mem_mem/.__MEM_CELL[23][3]@v7214, u_core/u_sram/mem_mem/.__MEM_CELL[24][0]@v7215, u_core/u_sram/mem_mem/.__MEM_CELL[24][1]@v7216, u_core/u_sram/mem_mem/.__MEM_CELL[24][2]@v7217, u_core/u_sram/mem_mem/.__MEM_CELL[24][3]@v7218, u_core/u_sram/mem_mem/.__MEM_CELL[25][0]@v7219, u_core/u_sram/mem_mem/.__MEM_CELL[25][1]@v7220, u_core/u_sram/mem_mem/.__MEM_CELL[25][2]@v7221, u_core/u_sram/mem_mem/.__MEM_CELL[25][3]@v7222, u_core/u_sram/mem_mem/.__MEM_CELL[26][0]@v7223, u_core/u_sram/mem_mem/.__MEM_CELL[26][1]@v7224, u_core/u_sram/mem_mem/.__MEM_CELL[26][2]@v7225, u_core/u_sram/mem_mem/.__MEM_CELL[26][3]@v7226, u_core/u_sram/mem_mem/.__MEM_CELL[27][0]@v7227, u_core/u_sram/mem_mem/.__MEM_CELL[27][1]@v7228, u_core/u_sram/mem_mem/.__MEM_CELL[27][2]@v7229, u_core/u_sram/mem_mem/.__MEM_CELL[27][3]@v7230, u_core/u_sram/mem_mem/.__MEM_CELL[28][0]@v7231, u_core/u_sram/mem_mem/.__MEM_CELL[28][1]@v7232, u_core/u_sram/mem_mem/.__MEM_CELL[28][2]@v7233, u_core/u_sram/mem_mem/.__MEM_CELL[28][3]@v7234, u_core/u_sram/mem_mem/.__MEM_CELL[29][0]@v7235, u_core/u_sram/mem_mem/.__MEM_CELL[29][1]@v7236, u_core/u_sram/mem_mem/.__MEM_CELL[29][2]@v7237, u_core/u_sram/mem_mem/.__MEM_CELL[29][3]@v7238, u_core/u_sram/mem_mem/.__MEM_CELL[30][0]@v7239, u_core/u_sram/mem_mem/.__MEM_CELL[30][1]@v7240, u_core/u_sram/mem_mem/.__MEM_CELL[30][2]@v7241, u_core/u_sram/mem_mem/.__MEM_CELL[30][3]@v7242, u_core/u_sram/mem_mem/.__MEM_CELL[31][0]@v7243, u_core/u_sram/mem_mem/.__MEM_CELL[31][1]@v7244, u_core/u_sram/mem_mem/.__MEM_CELL[31][2]@v7245, u_core/u_sram/mem_mem/.__MEM_CELL[31][3]@v7246]
+SEC diag: extract(cpu_top) observed_support bus_oe[0] = [v9, v10, v11, v17, v18, v19, v20, v21, v24, v27]
+SEC diag: extract(cpu_top) observed_support bus_hiz[0] = [v9, v10, v11, v17, v18, v19, v20, v21, v24, v27]
+SEC diag: extract(cpu_top) observed_support bus_d[0] = [v9, v10, v11, v15, v17, v18, v19, v20, v21, v24, v27, v28, v34, v38, v42, v46, v54]
+SEC diag: extract(cpu_top) observed_support bus_d[1] = [v9, v10, v11, v14, v17, v18, v19, v20, v21, v24, v27, v28, v33, v37, v41, v45, v53]
+SEC diag: extract(cpu_top) observed_support bus_d[2] = [v9, v10, v11, v13, v17, v18, v19, v20, v21, v24, v27, v28, v32, v36, v40, v44, v52]
+SEC diag: extract(cpu_top) observed_support bus_d[3] = [v9, v10, v11, v12, v17, v18, v19, v20, v21, v24, v27, v28, v31, v35, v39, v43, v51]
+SEC diag: extract(cpu_top) observed_support sync[0] = [v9, v10, v11]
+SEC diag: extract(cpu_top) observed_support cm_rom[0] = [v9, v10, v11, v17, v18, v19, v20, v21, v22, v23, v24, v27]
+SEC diag: extract(cpu_top) observed_support cm_ram[0] = [v9, v10, v11, v17, v18, v19, v20, v21, v22, v23, v24, v27, v47, v48, v49]
+SEC diag: extract(cpu_top) observed_support cm_ram[1] = [v9, v10, v11, v17, v18, v19, v20, v21, v22, v23, v24, v27, v49]
+SEC diag: extract(cpu_top) observed_support cm_ram[2] = [v9, v10, v11, v17, v18, v19, v20, v21, v22, v23, v24, v27, v48]
+SEC diag: extract(cpu_top) observed_support cm_ram[3] = [v9, v10, v11, v17, v18, v19, v20, v21, v22, v23, v24, v27, v47]
+SEC diag: extract(cpu_top) end
+SEC diag: extracted design1
+SEC diag: start run from extracted models
+SEC diag: aligning inputs/outputs
+SEC diag: checked_outputs=12 total_outputs=12 skipped=0
+SEC diag: aligned_inputs=7 aligned_outputs=12 state_bits0=183 state_bits1=183
+SEC diag: reset bootstrap cycles=3 ports=1
+SEC diag: dual-rail mode keeps reset-unanchored outputs in the rail-encoded proof
+SEC summary: reset_unknown_state reset_cycles=3 design0=132/183 design1=132/183
+SEC diag: dual-rail output requires engine proof: bus_oe[0]
+SEC diag: dual-rail output requires engine proof: bus_hiz[0]
+SEC diag: dual-rail output requires engine proof: bus_d[0]
+SEC diag: dual-rail output requires engine proof: bus_d[1]
+SEC diag: dual-rail output requires engine proof: bus_d[2]
+SEC diag: dual-rail output requires engine proof: bus_d[3]
+SEC diag: dual-rail output requires engine proof: sync[0]
+SEC diag: dual-rail output requires engine proof: cm_rom[0]
+SEC diag: dual-rail output requires engine proof: cm_ram[0]
+SEC diag: dual-rail output requires engine proof: cm_ram[1]
+SEC diag: dual-rail output requires engine proof: cm_ram[2]
+SEC diag: dual-rail output requires engine proof: cm_ram[3]
+SEC summary: encoding=dual_rail_steady rail_state_bits=732 rail_outputs=12 dual_rail_state_relation_pairs=0
+SEC diag: internal relations round=0 active=183 structural=183 refuted=0 seconds=0.0
+SEC diag: internal relations round=0 active=183 structural=183 refuted=0 seconds=0.0
+SEC summary: internal_relation_candidates=183 proved_rail_equalities=366 allow_x_equality_in_internal_relations=1 name_candidates=183 net_name_candidates=0 driver_candidates=0 propagated_candidates=0 propagation_rounds=0
+SEC summary: binary_relation_round candidates=0 binary_pairs=0 covering_clauses=0 compatible_clauses=0 discharged_outputs=12/12
+SEC summary: structurally_proved_outputs=12 of 12 merged_equalities=366
+SEC diag: merged state symbols=366 identical_output_formulas=12/12
+SEC diag: entering pdr engine
+SEC diag: PDR steady-state check begin index=0 pending_batches=1 output_range=0..12
+SEC PDR stats: shared exact F[0] cache built
+SEC PDR stats: frame invariant shared_strengthening unavailable
+SEC PDR stats: immutable model metadata built use=1
+SEC PDR stats: shared exact F[0] query surface symbols=2953
+SEC PDR stats: formula closed support cached symbols=0
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=2953
+SEC PDR stats: predecessor cached solver created level=0 symbols=2953 frame_clauses=0 shared_batches=0
+SEC PDR stats: shared exact F[0] solver used for bad cube
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=2953
+SEC PDR stats: shared exact F[0] predecessor solver reused without symbol surface comparison
+SEC PDR stats: shared exact F[0] solver used for bad cube
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=2953
+SEC PDR stats: shared exact F[0] predecessor solver reused without symbol surface comparison
+SEC PDR stats: shared exact F[0] solver used for bad cube
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=2953
+SEC PDR stats: shared exact F[0] predecessor solver reused without symbol surface comparison
+SEC PDR stats: shared exact F[0] solver used for bad cube
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=2953
+SEC PDR stats: shared exact F[0] predecessor solver reused without symbol surface comparison
+SEC PDR stats: shared exact F[0] solver used for bad cube
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=2953
+SEC PDR stats: shared exact F[0] predecessor solver reused without symbol surface comparison
+SEC PDR stats: shared exact F[0] solver used for bad cube
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=2953
+SEC PDR stats: shared exact F[0] predecessor solver reused without symbol surface comparison
+SEC PDR stats: shared exact F[0] solver used for bad cube
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=2953
+SEC PDR stats: shared exact F[0] predecessor solver reused without symbol surface comparison
+SEC PDR stats: shared exact F[0] solver used for bad cube
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=2953
+SEC PDR stats: shared exact F[0] predecessor solver reused without symbol surface comparison
+SEC PDR stats: shared exact F[0] solver used for bad cube
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=2953
+SEC PDR stats: shared exact F[0] predecessor solver reused without symbol surface comparison
+SEC PDR stats: shared exact F[0] solver used for bad cube
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=2953
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=2953
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198548
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198548
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198548
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198548
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198548
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198548
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198548
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198548
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198548
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198548
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198548
+SEC diag: PDR steady-state check end index=0 output_range=0..12 status=equivalent bound=1
+[2026-11-27 00:32:30.904] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2830] SEC checked-output coverage: 100.00% (12/12 covered/existing outputs).
+[2026-11-27 00:32:30.904] [kepler_formal_main_logger] [warning] [KeplerFormal.cpp:2833] SEC reset is incomplete: after the reset window of 3 cycle(s), 132 of 183 state bits of design 1 and 132 of 183 state bits of design 2 can still be unknown (X). Design 1: u_core.u_sram.22.Q[0], u_core.u_sram.22.Q[1], u_core.u_sram.22.Q[2], u_core.u_sram.22.Q[3], u_core/u_sram/mem_mem/.__MEM_CELL[0][0], u_core/u_sram/mem_mem/.__MEM_CELL[0][1], u_core/u_sram/mem_mem/.__MEM_CELL[0][2], u_core/u_sram/mem_mem/.__MEM_CELL[0][3], and 124 more. Design 2: u_core.u_sram.22.Q[0], u_core.u_sram.22.Q[1], u_core.u_sram.22.Q[2], u_core.u_sram.22.Q[3], u_core/u_sram/mem_mem/.__MEM_CELL[0][0], u_core/u_sram/mem_mem/.__MEM_CELL[0][1], u_core/u_sram/mem_mem/.__MEM_CELL[0][2], u_core/u_sram/mem_mem/.__MEM_CELL[0][3], and 124 more.
+[2026-11-27 00:32:30.905] [kepler_formal_main_logger] [warning] [KeplerFormal.cpp:2833] SEC binary passes are on: they start matched unknown registers of the two designs from the same value. Set binary_relation_round to false (--binary-relation-round false) to switch them off.
+[2026-11-27 00:32:30.905] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2904] No binary-defined difference was found. SEC proved equivalence under the dual-rail steady-state abstraction at k = 1.
+        0,52 real         0,49 user         0,03 sys
+           120045568  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                7975  page reclaims
+                  38  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   4  voluntary context switches
+                1076  involuntary context switches
+          3056521926  instructions retired
+          1554835160  cycles elapsed
+           107086400  peak memory footprint

@@ -1,0 +1,261 @@
+[2026-11-27 00:32:38.720] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2394] KEPLER FORMAL: Run.
+[2026-11-27 00:32:38.721] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2467] Input format: VERILOG
+[2026-11-27 00:32:38.721] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2477] Run log: miter_log_0.txt
+[2026-11-27 00:32:38.721] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:768] Netlist 1: ../../sec/raw_syn_top.v, ../../../TR-1um_C4004_02/openroad/c4004_core_raw_syn.v
+[2026-11-27 00:32:38.721] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:756] Netlist 2: ../../../TR-1um_C4004_02/openroad/c4004_core_syn.v
+[2026-11-27 00:32:38.721] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2486] Boundary pair 0: design 1 `u_raw/u_sram`; design 2 `u_sram`
+[2026-11-27 00:32:38.721] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2754] Solver: KISSAT
+[2026-11-27 00:32:38.721] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2755] Verification: sec
+[2026-11-27 00:32:38.721] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2757] SEC max_k: 400
+[2026-11-27 00:32:38.721] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2758] SEC engine: pdr
+[2026-11-27 00:32:38.721] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2759] SEC encoding: dual_rail_steady
+[2026-11-27 00:32:38.721] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2766] SEC internal relations: learn=true allow_x_equality=true binary_relation_round=true signal_correspondence=true signal_correspondence_step=1
+[2026-11-27 00:32:38.721] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2768] SEC reset bootstrap: 3 cycle(s)
+[2026-11-27 00:32:38.721] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2773] SEC reset bootstrap port: rst active=1
+[2026-11-27 00:32:38.721] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2777] Compact mode: disabled
+[2026-11-27 00:32:38.721] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2778] Skipped PO reports: enabled
+[2026-11-27 00:32:38.721] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2779] SEC latch abstraction: enabled
+[2026-11-27 00:32:38.721] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2780] SEC data-enabled latch model: enabled
+[2026-11-27 00:32:38.721] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2782] Library: ../../../TR-1um_C4004_02/module/STDCELL/tr1um_typ_5v0_25c.lib
+[2026-11-27 00:32:38.721] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2782] Library: ../../../TR-1um_C4004_02/module/SRAM128/SRAM128.lib
+[2026-11-27 00:32:38.721] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:3009] Loading library file: ../../../TR-1um_C4004_02/module/STDCELL/tr1um_typ_5v0_25c.lib
+2026-11-27 00:32:38,724 [naja] [warning] In SNLLibertyConstructor, cell OSS_ESD_5V_DIO defines a `function` for 0 of 1 non-input terms; leaving all truth tables uninitialized.
+2026-11-27 00:32:38,724 [naja] [warning] In SNLLibertyConstructor, cell REG8x16 defines a `function` for 0 of 8 non-input terms; leaving all truth tables uninitialized.
+2026-11-27 00:32:38,724 [naja] [info] Loading library file: ../../../TR-1um_C4004_02/module/SRAM128/SRAM128.lib
+2026-11-27 00:32:38,724 [naja] [warning] In SNLLibertyConstructor, cell SRAM128 defines a `function` for 0 of 4 non-input terms; leaving all truth tables uninitialized.
+2026-11-27 00:32:38,724 [naja] [info] Parsing verilog file(s) for design 1
+2026-11-27 00:32:38,731 [naja] [info] Found top design: raw_syn_top
+2026-11-27 00:32:38,731 [naja] [info] Loading library file: ../../../TR-1um_C4004_02/module/STDCELL/tr1um_typ_5v0_25c.lib
+2026-11-27 00:32:38,733 [naja] [warning] In SNLLibertyConstructor, cell OSS_ESD_5V_DIO defines a `function` for 0 of 1 non-input terms; leaving all truth tables uninitialized.
+2026-11-27 00:32:38,733 [naja] [warning] In SNLLibertyConstructor, cell REG8x16 defines a `function` for 0 of 8 non-input terms; leaving all truth tables uninitialized.
+2026-11-27 00:32:38,733 [naja] [info] Loading library file: ../../../TR-1um_C4004_02/module/SRAM128/SRAM128.lib
+2026-11-27 00:32:38,733 [naja] [warning] In SNLLibertyConstructor, cell SRAM128 defines a `function` for 0 of 4 non-input terms; leaving all truth tables uninitialized.
+2026-11-27 00:32:38,734 [naja] [info] Parsing verilog file(s) for design 2
+2026-11-27 00:32:38,739 [naja] [info] Found top design: c4004_core
+SEC diag: start run
+SEC diag: extract(raw_syn_top) collect begin
+SEC diag: extract(raw_syn_top) collect end inputs=85 outputs=134
+SEC diag: extract(raw_syn_top) initial_observed_outputs=23
+SEC diag: extract(raw_syn_top) build begin
+SEC diag: extract(raw_syn_top) build end
+SEC diag: extract(raw_syn_top) boundary normalized env=11 state=74 outputs=23 pending=37
+SEC diag: extract(raw_syn_top) mapped boundary vars=85
+SEC diag: extract(raw_syn_top) materialized output exprs observed=23 total=23
+SEC diag: top input clk[0] is not clock-only: reader inside boundary
+SEC diag: top input rst[0] is not clock-only: combinational output not clock-only after u_raw/_0996_//A (NOR3)
+SEC diag: top input test[0] is not clock-only: sequential non-clock pin u_raw/_1042_//D (DFFRB)
+SEC diag: top input d_in[3] is not clock-only: sequential non-clock pin u_raw/_1025_//D (DFFRB)
+SEC diag: top input d_in[2] is not clock-only: sequential non-clock pin u_raw/_1040_//D (DFFRB)
+SEC diag: top input d_in[1] is not clock-only: sequential non-clock pin u_raw/_1027_//D (DFFRB)
+SEC diag: top input d_in[0] is not clock-only: sequential non-clock pin u_raw/_1026_//D (DFFRB)
+SEC diag: extract(raw_syn_top) immutable clock structure indexed terms=2089 pure_terms=40
+SEC diag: extract(raw_syn_top) dependency build begin outputs=39
+SEC diag: extract(raw_syn_top) dependency build end outputs=39
+SEC diag: extract(raw_syn_top) mapped boundary vars=85
+SEC diag: extract(raw_syn_top) rebuilt next-state exprs=74 init=0 data_latches=0
+SEC diag: extract(raw_syn_top) filtered env=11 state=74
+SEC diag: extract(raw_syn_top) structured_memories=0 structured_memory_cells=0
+SEC diag: extract(raw_syn_top) kept_states=[u_raw._1013_.Q[0]@v9, u_raw._1013_.QB[0]@v10, u_raw._1014_.Q[0]@v11, u_raw._1014_.QB[0]@v12, u_raw._1015_.Q[0]@v13, u_raw._1015_.QB[0]@v14, u_raw._1016_.Q[0]@v15, u_raw._1016_.QB[0]@v16, u_raw._1017_.Q[0]@v17, u_raw._1017_.QB[0]@v18, u_raw._1018_.Q[0]@v19, u_raw._1018_.QB[0]@v20, u_raw._1019_.Q[0]@v21, u_raw._1019_.QB[0]@v22, u_raw._1020_.Q[0]@v23, u_raw._1020_.QB[0]@v24, u_raw._1021_.Q[0]@v25, u_raw._1021_.QB[0]@v26, u_raw._1022_.Q[0]@v27, u_raw._1022_.QB[0]@v28, u_raw._1023_.Q[0]@v29, u_raw._1023_.QB[0]@v30, u_raw._1024_.Q[0]@v31, u_raw._1024_.QB[0]@v32, u_raw._1025_.Q[0]@v33, u_raw._1025_.QB[0]@v34, u_raw._1026_.Q[0]@v35, u_raw._1026_.QB[0]@v36, u_raw._1027_.Q[0]@v37, u_raw._1027_.QB[0]@v38, u_raw._1028_.Q[0]@v39, u_raw._1028_.QB[0]@v40, u_raw._1029_.Q[0]@v41, u_raw._1029_.QB[0]@v42, u_raw._1030_.Q[0]@v43, u_raw._1030_.QB[0]@v44, u_raw._1031_.Q[0]@v45, u_raw._1031_.QB[0]@v46, u_raw._1032_.Q[0]@v47, u_raw._1032_.QB[0]@v48, u_raw._1033_.Q[0]@v49, u_raw._1033_.QB[0]@v50, u_raw._1034_.Q[0]@v51, u_raw._1034_.QB[0]@v52, u_raw._1035_.Q[0]@v53, u_raw._1035_.QB[0]@v54, u_raw._1036_.Q[0]@v55, u_raw._1036_.QB[0]@v56, u_raw._1037_.Q[0]@v57, u_raw._1037_.QB[0]@v58, u_raw._1038_.Q[0]@v59, u_raw._1038_.QB[0]@v60, u_raw._1039_.Q[0]@v61, u_raw._1039_.QB[0]@v62, u_raw._1040_.Q[0]@v63, u_raw._1040_.QB[0]@v64, u_raw._1041_.Q[0]@v65, u_raw._1041_.QB[0]@v66, u_raw._1042_.Q[0]@v67, u_raw._1042_.QB[0]@v68, u_raw._1043_.Q[0]@v69, u_raw._1043_.QB[0]@v70, u_raw._1044_.Q[0]@v71, u_raw._1044_.QB[0]@v72, u_raw._1045_.Q[0]@v73, u_raw._1045_.QB[0]@v74, u_raw._1046_.Q[0]@v75, u_raw._1046_.QB[0]@v76, u_raw._1047_.Q[0]@v77, u_raw._1047_.QB[0]@v78, u_raw._1048_.Q[0]@v79, u_raw._1048_.QB[0]@v80, u_raw._1049_.Q[0]@v81, u_raw._1049_.QB[0]@v82]
+SEC diag: extract(raw_syn_top) observed_support d_out[0] = [v11, v23, v31, v32, v35, v49, v50, v52, v53, v54, v55, v56, v59, v67, v68, v69, v76, v77, v78, v79, v80, v81, v82, v86]
+SEC diag: extract(raw_syn_top) observed_support d_out[1] = [v13, v25, v31, v32, v37, v49, v50, v52, v53, v54, v55, v56, v61, v67, v68, v69, v76, v77, v78, v79, v80, v81, v82, v85]
+SEC diag: extract(raw_syn_top) observed_support d_out[2] = [v15, v27, v31, v32, v39, v49, v50, v52, v53, v54, v55, v56, v63, v67, v68, v69, v76, v77, v78, v79, v80, v81, v82, v84]
+SEC diag: extract(raw_syn_top) observed_support d_out[3] = [v17, v29, v31, v32, v41, v49, v50, v52, v53, v54, v55, v56, v65, v67, v68, v69, v76, v77, v78, v79, v80, v81, v82, v83]
+SEC diag: extract(raw_syn_top) observed_support d_oe[0] = [v32, v49, v52, v53, v54, v55, v56, v69, v76, v77, v78, v79, v80, v81, v82]
+SEC diag: extract(raw_syn_top) observed_support d_hiz[0] = [v32, v49, v52, v53, v54, v55, v56, v69, v76, v77, v78, v79, v80, v81, v82]
+SEC diag: extract(raw_syn_top) observed_support sync[0] = [v78, v80, v82]
+SEC diag: extract(raw_syn_top) observed_support cm_rom[0] = [v32, v49, v52, v54, v56, v69, v70, v72, v73, v75, v76, v77, v80, v81, v82]
+SEC diag: extract(raw_syn_top) observed_support cm_ram[0] = [v32, v43, v45, v47, v49, v50, v52, v53, v54, v55, v56, v69, v70, v71, v74, v76, v77, v80, v81, v82]
+SEC diag: extract(raw_syn_top) observed_support cm_ram[1] = [v32, v44, v49, v50, v52, v53, v54, v55, v56, v69, v70, v71, v74, v76, v77, v80, v81, v82]
+SEC diag: extract(raw_syn_top) observed_support cm_ram[2] = [v32, v46, v49, v50, v52, v53, v54, v55, v56, v69, v70, v71, v74, v76, v77, v80, v81, v82]
+SEC diag: extract(raw_syn_top) observed_support cm_ram[3] = [v32, v48, v49, v50, v52, v53, v54, v55, v56, v69, v70, v71, v74, v76, v77, v80, v81, v82]
+SEC diag: extract(raw_syn_top) observed_support __kepler_boundary_p0_n4131_bp0[0] = [v31, v32, v50, v52, v53, v55, v70, v71, v77, v78, v79, v80, v81, v82]
+SEC diag: extract(raw_syn_top) observed_support __kepler_boundary_p0_n4132_bp0[0] = [v19, v31, v32, v50, v52, v53, v55, v70, v73, v77, v78, v79, v80, v81, v82]
+SEC diag: extract(raw_syn_top) observed_support __kepler_boundary_p0_n4345_bp0[0] = [v2, v3, v31, v32, v49, v50, v51, v52, v53, v54, v55, v56, v67, v69, v70, v77, v78, v79, v80, v81, v82]
+SEC diag: extract(raw_syn_top) observed_support __kepler_boundary_p0_n4130_bp0[0] = [v31, v32, v49, v50, v52, v53, v55, v69, v70, v77, v78, v79, v80, v81, v82]
+SEC diag: extract(raw_syn_top) observed_support __kepler_boundary_p0_n4133_bp0[0] = [v21, v31, v32, v50, v52, v53, v55, v70, v75, v77, v78, v79, v80, v81, v82]
+SEC diag: extract(raw_syn_top) observed_support __kepler_boundary_p0_n4134_bp0[0] = [v77, v78, v79, v80, v81, v82]
+SEC diag: extract(raw_syn_top) observed_support __kepler_boundary_p0_n5752_bp0[0] = [v31, v32, v49, v50, v52, v53, v54, v55, v56, v69, v70, v77, v78, v79, v80, v81, v82]
+SEC diag: extract(raw_syn_top) observed_support __kepler_boundary_p0_n44494e_bp0[0] = [v11, v31, v35, v52, v53, v55, v59, v77, v78, v79, v80, v82]
+SEC diag: extract(raw_syn_top) observed_support __kepler_boundary_p0_n44494e_bp1[0] = [v13, v31, v37, v52, v53, v55, v61, v77, v78, v79, v80, v82]
+SEC diag: extract(raw_syn_top) observed_support __kepler_boundary_p0_n44494e_bp2[0] = [v15, v31, v39, v52, v53, v55, v63, v77, v78, v79, v80, v82]
+SEC diag: extract(raw_syn_top) observed_support __kepler_boundary_p0_n44494e_bp3[0] = [v17, v31, v41, v52, v53, v55, v65, v77, v78, v79, v80, v82]
+SEC diag: extract(raw_syn_top) end
+SEC diag: extracted design0
+SEC diag: extract(c4004_core) collect begin
+SEC diag: extract(c4004_core) collect end inputs=85 outputs=178
+SEC diag: extract(c4004_core) initial_observed_outputs=23
+SEC diag: extract(c4004_core) build begin
+SEC diag: extract(c4004_core) build end
+SEC diag: extract(c4004_core) boundary normalized env=11 state=74 outputs=23 pending=37
+SEC diag: extract(c4004_core) mapped boundary vars=85
+SEC diag: extract(c4004_core) materialized output exprs observed=23 total=23
+SEC diag: top input clk[0] is not clock-only: reader inside boundary
+SEC diag: top input rst[0] is not clock-only: combinational output not clock-only after _0996_//A (NOR3)
+SEC diag: top input test[0] is not clock-only: sequential non-clock pin _1042_//S (MUXDFFRB)
+SEC diag: top input d_in[3] is not clock-only: sequential non-clock pin _1025_//D (DFFRB)
+SEC diag: top input d_in[2] is not clock-only: sequential non-clock pin _1040_//B (MUXDFFRB)
+SEC diag: top input d_in[1] is not clock-only: sequential non-clock pin _1027_//B (MUXDFFRB)
+SEC diag: top input d_in[0] is not clock-only: sequential non-clock pin _1026_//B (MUXDFFRB)
+SEC diag: extract(c4004_core) immutable clock structure indexed terms=2152 pure_terms=13
+SEC diag: extract(c4004_core) dependency build begin outputs=85
+SEC diag: extract(c4004_core) dependency build end outputs=85
+SEC diag: extract(c4004_core) mapped boundary vars=85
+SEC diag: extract(c4004_core) rebuilt next-state exprs=74 init=0 data_latches=0
+SEC diag: extract(c4004_core) filtered env=11 state=74
+SEC diag: extract(c4004_core) structured_memories=0 structured_memory_cells=0
+SEC diag: extract(c4004_core) kept_states=[_1013_.Q[0]@v9, _1013_.QB[0]@v10, _1014_.Q[0]@v11, _1014_.QB[0]@v12, _1015_.Q[0]@v13, _1015_.QB[0]@v14, _1016_.Q[0]@v15, _1016_.QB[0]@v16, _1017_.Q[0]@v17, _1017_.QB[0]@v18, _1018_.Q[0]@v19, _1018_.QB[0]@v20, _1019_.Q[0]@v21, _1019_.QB[0]@v22, _1020_.Q[0]@v23, _1020_.QB[0]@v24, _1021_.Q[0]@v25, _1021_.QB[0]@v26, _1022_.Q[0]@v27, _1022_.QB[0]@v28, _1023_.Q[0]@v29, _1023_.QB[0]@v30, _1024_.Q[0]@v31, _1024_.QB[0]@v32, _1025_.Q[0]@v33, _1025_.QB[0]@v34, _1026_.Q[0]@v35, _1026_.QB[0]@v36, _1027_.Q[0]@v37, _1027_.QB[0]@v38, _1028_.Q[0]@v39, _1028_.QB[0]@v40, _1029_.Q[0]@v41, _1029_.QB[0]@v42, _1030_.Q[0]@v43, _1030_.QB[0]@v44, _1031_.Q[0]@v45, _1031_.QB[0]@v46, _1032_.Q[0]@v47, _1032_.QB[0]@v48, _1033_.Q[0]@v49, _1033_.QB[0]@v50, _1034_.Q[0]@v51, _1034_.QB[0]@v52, _1035_.Q[0]@v53, _1035_.QB[0]@v54, _1036_.Q[0]@v55, _1036_.QB[0]@v56, _1037_.Q[0]@v57, _1037_.QB[0]@v58, _1038_.Q[0]@v59, _1038_.QB[0]@v60, _1039_.Q[0]@v61, _1039_.QB[0]@v62, _1040_.Q[0]@v63, _1040_.QB[0]@v64, _1041_.Q[0]@v65, _1041_.QB[0]@v66, _1042_.Q[0]@v67, _1042_.QB[0]@v68, _1043_.Q[0]@v69, _1043_.QB[0]@v70, _1044_.Q[0]@v71, _1044_.QB[0]@v72, _1045_.Q[0]@v73, _1045_.QB[0]@v74, _1046_.Q[0]@v75, _1046_.QB[0]@v76, _1047_.Q[0]@v77, _1047_.QB[0]@v78, _1048_.Q[0]@v79, _1048_.QB[0]@v80, _1049_.Q[0]@v81, _1049_.QB[0]@v82]
+SEC diag: extract(c4004_core) observed_support d_out[0] = [v11, v23, v31, v32, v35, v49, v50, v52, v53, v54, v55, v56, v59, v67, v68, v69, v76, v77, v78, v79, v80, v81, v82, v86]
+SEC diag: extract(c4004_core) observed_support d_out[1] = [v13, v25, v31, v32, v37, v49, v50, v52, v53, v54, v55, v56, v61, v67, v68, v69, v76, v77, v78, v79, v80, v81, v82, v85]
+SEC diag: extract(c4004_core) observed_support d_out[2] = [v15, v27, v31, v32, v39, v49, v50, v52, v53, v54, v55, v56, v63, v67, v68, v69, v76, v77, v78, v79, v80, v81, v82, v84]
+SEC diag: extract(c4004_core) observed_support d_out[3] = [v17, v29, v31, v32, v41, v49, v50, v52, v53, v54, v55, v56, v65, v67, v68, v69, v76, v77, v78, v79, v80, v81, v82, v83]
+SEC diag: extract(c4004_core) observed_support d_oe[0] = [v32, v49, v52, v53, v54, v55, v56, v69, v76, v77, v78, v79, v80, v81, v82]
+SEC diag: extract(c4004_core) observed_support d_hiz[0] = [v32, v49, v52, v53, v54, v55, v56, v69, v76, v77, v78, v79, v80, v81, v82]
+SEC diag: extract(c4004_core) observed_support sync[0] = [v78, v80, v82]
+SEC diag: extract(c4004_core) observed_support cm_rom[0] = [v32, v49, v52, v54, v56, v69, v70, v72, v73, v75, v76, v77, v80, v81, v82]
+SEC diag: extract(c4004_core) observed_support cm_ram[0] = [v32, v43, v45, v47, v49, v50, v52, v53, v54, v55, v56, v69, v70, v71, v74, v76, v77, v80, v81, v82]
+SEC diag: extract(c4004_core) observed_support cm_ram[1] = [v32, v44, v49, v50, v52, v53, v54, v55, v56, v69, v70, v71, v74, v76, v77, v80, v81, v82]
+SEC diag: extract(c4004_core) observed_support cm_ram[2] = [v32, v46, v49, v50, v52, v53, v54, v55, v56, v69, v70, v71, v74, v76, v77, v80, v81, v82]
+SEC diag: extract(c4004_core) observed_support cm_ram[3] = [v32, v48, v49, v50, v52, v53, v54, v55, v56, v69, v70, v71, v74, v76, v77, v80, v81, v82]
+SEC diag: extract(c4004_core) observed_support __kepler_boundary_p0_n4131_bp0[0] = [v31, v32, v50, v52, v53, v55, v70, v71, v77, v78, v79, v80, v81, v82]
+SEC diag: extract(c4004_core) observed_support __kepler_boundary_p0_n4132_bp0[0] = [v19, v31, v32, v50, v52, v53, v55, v70, v73, v77, v78, v79, v80, v81, v82]
+SEC diag: extract(c4004_core) observed_support __kepler_boundary_p0_n4345_bp0[0] = [v2, v3, v31, v32, v49, v50, v51, v52, v53, v54, v55, v56, v67, v69, v70, v77, v78, v79, v80, v81, v82]
+SEC diag: extract(c4004_core) observed_support __kepler_boundary_p0_n4130_bp0[0] = [v31, v32, v49, v50, v52, v53, v55, v69, v70, v77, v78, v79, v80, v81, v82]
+SEC diag: extract(c4004_core) observed_support __kepler_boundary_p0_n4133_bp0[0] = [v21, v31, v32, v50, v52, v53, v55, v70, v75, v77, v78, v79, v80, v81, v82]
+SEC diag: extract(c4004_core) observed_support __kepler_boundary_p0_n4134_bp0[0] = [v77, v78, v79, v80, v81, v82]
+SEC diag: extract(c4004_core) observed_support __kepler_boundary_p0_n5752_bp0[0] = [v31, v32, v49, v50, v52, v53, v54, v55, v56, v69, v70, v77, v78, v79, v80, v81, v82]
+SEC diag: extract(c4004_core) observed_support __kepler_boundary_p0_n44494e_bp0[0] = [v11, v31, v35, v52, v53, v55, v59, v77, v78, v79, v80, v82]
+SEC diag: extract(c4004_core) observed_support __kepler_boundary_p0_n44494e_bp1[0] = [v13, v31, v37, v52, v53, v55, v61, v77, v78, v79, v80, v82]
+SEC diag: extract(c4004_core) observed_support __kepler_boundary_p0_n44494e_bp2[0] = [v15, v31, v39, v52, v53, v55, v63, v77, v78, v79, v80, v82]
+SEC diag: extract(c4004_core) observed_support __kepler_boundary_p0_n44494e_bp3[0] = [v17, v31, v41, v52, v53, v55, v65, v77, v78, v79, v80, v82]
+SEC diag: extract(c4004_core) end
+SEC diag: extracted design1
+SEC diag: start run from extracted models
+SEC diag: aligning inputs/outputs
+SEC diag: checked_outputs=23 total_outputs=23 skipped=0
+SEC diag: aligned_inputs=11 aligned_outputs=23 state_bits0=74 state_bits1=74
+SEC diag: reset bootstrap cycles=3 ports=1
+SEC diag: dual-rail mode keeps reset-unanchored outputs in the rail-encoded proof
+SEC summary: reset_unknown_state reset_cycles=3 design0=0/74 design1=0/74
+SEC diag: dual-rail output requires engine proof: d_out[0]
+SEC diag: dual-rail output requires engine proof: d_out[1]
+SEC diag: dual-rail output requires engine proof: d_out[2]
+SEC diag: dual-rail output requires engine proof: d_out[3]
+SEC diag: dual-rail output requires engine proof: d_oe[0]
+SEC diag: dual-rail output requires engine proof: d_hiz[0]
+SEC diag: dual-rail output requires engine proof: sync[0]
+SEC diag: dual-rail output requires engine proof: cm_rom[0]
+SEC diag: dual-rail output requires engine proof: cm_ram[0]
+SEC diag: dual-rail output requires engine proof: cm_ram[1]
+SEC diag: dual-rail output requires engine proof: cm_ram[2]
+SEC diag: dual-rail output requires engine proof: cm_ram[3]
+SEC diag: dual-rail output requires engine proof: __kepler_boundary_p0_n4131_bp0[0]
+SEC diag: dual-rail output requires engine proof: __kepler_boundary_p0_n4132_bp0[0]
+SEC diag: dual-rail output requires engine proof: __kepler_boundary_p0_n4345_bp0[0]
+SEC diag: dual-rail output requires engine proof: __kepler_boundary_p0_n4130_bp0[0]
+SEC diag: dual-rail output requires engine proof: __kepler_boundary_p0_n4133_bp0[0]
+SEC diag: dual-rail output requires engine proof: __kepler_boundary_p0_n4134_bp0[0]
+SEC diag: dual-rail output requires engine proof: __kepler_boundary_p0_n5752_bp0[0]
+SEC diag: dual-rail output requires engine proof: __kepler_boundary_p0_n44494e_bp0[0]
+SEC diag: dual-rail output requires engine proof: __kepler_boundary_p0_n44494e_bp1[0]
+SEC diag: dual-rail output requires engine proof: __kepler_boundary_p0_n44494e_bp2[0]
+SEC diag: dual-rail output requires engine proof: __kepler_boundary_p0_n44494e_bp3[0]
+SEC summary: encoding=dual_rail_steady rail_state_bits=296 rail_outputs=23 dual_rail_state_relation_pairs=148
+SEC diag: internal relations round=0 active=74 structural=74 refuted=0 seconds=0.0
+SEC summary: signal_correspondence scope=registers_and_outputs frames=1 completed=1 signals=343 classes=95 rounds=1 solver_calls=4 proved_outputs=23/23 state_equalities=0 seconds=0.1 semantics=binary stopped_by=none step_cycles=1
+SEC summary: internal_relation_candidates=74 proved_rail_equalities=148 allow_x_equality_in_internal_relations=1 name_candidates=0 net_name_candidates=0 driver_candidates=0 propagated_candidates=74 propagation_rounds=1
+SEC summary: binary_relation_round candidates=0 binary_pairs=0 covering_clauses=0 compatible_clauses=0 discharged_outputs=0/23
+SEC summary: structurally_proved_outputs=23 of 23 merged_equalities=148
+SEC diag: merged state symbols=148 identical_output_formulas=23/23
+SEC diag: entering pdr engine
+SEC diag: PDR steady-state check begin index=0 pending_batches=1 output_range=0..23
+SEC PDR stats: shared exact F[0] cache built
+SEC PDR stats: frame invariant shared_strengthening unavailable
+SEC PDR stats: immutable model metadata built use=1
+SEC PDR stats: shared exact F[0] query surface symbols=1225
+SEC PDR stats: formula closed support cached symbols=0
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=1225
+SEC PDR stats: predecessor cached solver created level=0 symbols=1225 frame_clauses=0 shared_batches=0
+SEC PDR stats: shared exact F[0] solver used for bad cube
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=1225
+SEC PDR stats: shared exact F[0] predecessor solver reused without symbol surface comparison
+SEC PDR stats: shared exact F[0] solver used for bad cube
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=1225
+SEC PDR stats: shared exact F[0] predecessor solver reused without symbol surface comparison
+SEC PDR stats: shared exact F[0] solver used for bad cube
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=1225
+SEC PDR stats: shared exact F[0] predecessor solver reused without symbol surface comparison
+SEC PDR stats: shared exact F[0] solver used for bad cube
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=1225
+SEC PDR stats: shared exact F[0] predecessor solver reused without symbol surface comparison
+SEC PDR stats: shared exact F[0] solver used for bad cube
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=1225
+SEC PDR stats: shared exact F[0] predecessor solver reused without symbol surface comparison
+SEC PDR stats: shared exact F[0] solver used for bad cube
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=1225
+SEC PDR stats: shared exact F[0] predecessor solver reused without symbol surface comparison
+SEC PDR stats: shared exact F[0] solver used for bad cube
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=1225
+SEC PDR stats: shared exact F[0] predecessor solver reused without symbol surface comparison
+SEC PDR stats: shared exact F[0] solver used for bad cube
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=1225
+SEC PDR stats: shared exact F[0] predecessor solver reused without symbol surface comparison
+SEC PDR stats: shared exact F[0] solver used for bad cube
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=1225
+SEC PDR stats: shared exact F[0] predecessor solver reused without symbol surface comparison
+SEC PDR stats: shared exact F[0] solver used for bad cube
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=1225
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=1225
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=1225
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=1225
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=1225
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=1225
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=1225
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=1225
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=1225
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=1225
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=1225
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=1225
+SEC PDR stats: shared exact F[0] symbols reused for bad cube count=1225
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198548
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198548
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198548
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198548
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198548
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198548
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198548
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198548
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198548
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198548
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198548
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198548
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198548
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198548
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198548
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198548
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198548
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198548
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198548
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198548
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198548
+SEC PDR stats: bad cube cached frame clauses unchanged frame=0 fingerprint=11400714819323198548
+SEC diag: PDR steady-state check end index=0 output_range=0..23 status=equivalent bound=1
+[2026-11-27 00:32:38.955] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2830] SEC checked-output coverage: 100.00% (23/23 covered/existing outputs).
+[2026-11-27 00:32:38.955] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2904] No binary-defined difference was found. SEC proved equivalence under the dual-rail steady-state abstraction at k = 1.
+        0,25 real         0,23 user         0,01 sys
+            44367872  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                3306  page reclaims
+                  34  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   2  voluntary context switches
+                  68  involuntary context switches
+          2245442888  instructions retired
+           758695719  cycles elapsed
+            33456608  peak memory footprint

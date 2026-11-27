@@ -1,0 +1,11 @@
+cmd (cwd = results/gate_04_pdr_k400_budx50_kf3f1648b): kepler-formal -sv2v -v sec --sec-engine pdr -k 400 --sec-reset-cycles 3 --sec-reset-port rst=1 --report-skipped-pos --design1 ../../cfg/rtlbb_04.v --design2 ../../../TR-1um_C4004_04/openroad/c4004_core_syn.v --set-as-boundary u_sram u_sram --liberty ../../../TR-1um_C4004_04/module/STDCELL/tr1um_typ_5v0_25c.lib ../../../TR-1um_C4004_04/module/SRAM128/SRAM128.lib
+kepler-formal: kepler-formal version: 1.0.0 kepler-formal git hash: 3f1648b8981367ab5656c1d3a287421596e8c606 naja version: 0.7.33 naja git hash: cb142398 
+KEPLER_SEC_DIAG=1
+KEPLER_SEC_PDR_STATS=1
+KEPLER_SEC_PDR_DUAL_RAIL_SINGLETON_DECISION_BUDGET=2000000000
+KEPLER_SEC_PDR_DUAL_RAIL_SINGLETON_CONFLICT_BUDGET=50000000
+KEPLER_SEC_PDR_DUAL_RAIL_SINGLETON_TICK_BUDGET=25000000000
+wall-clock cap: 1800 s
+exit: 0  wall: 1 s  cpu: user 0.60 s, sys 0.03 s  peak RSS: 69 MB
+No binary-defined difference was found. SEC proved equivalence under the dual-rail steady-state abstraction at k = 1.
+SEC summary: signal_correspondence scope=registers_and_outputs frames=1 completed=1 signals=295 classes=103 rounds=1 solver_calls=4 proved_outputs=23/23 state_equalities=0 seconds=0.4 semantics=binary stopped_by=none step_cycles=1

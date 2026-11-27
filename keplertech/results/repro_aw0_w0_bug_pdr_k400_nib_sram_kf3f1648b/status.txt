@@ -1,0 +1,19 @@
+kepler-formal cmd (cwd = results/repro_aw0_w0_bug_pdr_k400_nib_sram_kf3f1648b): -sv -v sec --sec-engine pdr -k 400 --sec-reset-cycles 3 --sec-reset-port rst=1 --report-skipped-pos --design1 a_aw0_w0.v --design2 b_aw0_w0.v
+source: repro/shadow_nib.v sec/sram128_sec.v defines: -DSRAM -DBUG
+kepler-formal: kepler-formal version: 1.0.0 kepler-formal git hash: 3f1648b8981367ab5656c1d3a287421596e8c606 naja version: 0.7.33 naja git hash: cb142398 
+KEPLER_SEC_DIAG=1
+KEPLER_SEC_PDR_STATS=1
+KEPLER_SEC_PDR_DUAL_RAIL_SINGLETON_DECISION_BUDGET=2000000000
+KEPLER_SEC_PDR_DUAL_RAIL_SINGLETON_CONFLICT_BUDGET=50000000
+KEPLER_SEC_PDR_DUAL_RAIL_SINGLETON_TICK_BUDGET=25000000000
+wall-clock cap: 600 s
+exit: 3  wall: 4,00 s  cpu: user 3,94 s, sys 0,06 s
+peak RSS: 228 MB
+SEC PDR stats: counterexample candidate reached init bad_frame=18 cube=14
+[2026-11-27 00:33:22.202] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2940] Difference was found. SEC found a counterexample at k = 18.
+[2026-11-27 00:33:22.202] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2943] SEC counterexample details:
+SEC diag: PDR steady-state check end index=0 output_range=0..7 status=inconclusive bound=6
+SEC diag: PDR steady-state check end index=1 output_range=0..3 status=inconclusive bound=7
+SEC diag: PDR steady-state check end index=2 output_range=0..1 status=different bound=18
+SEC summary: signal_correspondence scope=registers_and_outputs frames=1 completed=1 signals=695 classes=77 rounds=2 solver_calls=10 proved_outputs=0/4 state_equalities=0 seconds=0.1 semantics=binary stopped_by=none step_cycles=1
+SEC summary: signal_correspondence scope=registers_and_outputs frames=1 completed=1 signals=1389 classes=94 rounds=2 solver_calls=8 proved_outputs=0/4 state_equalities=136 seconds=0.2 semantics=rails stopped_by=none step_cycles=1

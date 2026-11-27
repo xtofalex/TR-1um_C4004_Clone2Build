@@ -35,6 +35,8 @@ Two questions:
 | Sanity check of the netlist proofs: trial 10 netlist with one NAND2 replaced by a NOR2 (3 different cells) | counterexample found in all 3, at k = 5, 18, 30 (ed98c57 and 3ac09e2) | `results/mutant_gate_10_nand2_*` |
 | Netlist vs RTL, trial 10, PDR (10 min probe) | 17 of 23 outputs proved; `d_out[2,3]`, SRAM `DIN[0..3]` not concluded | `results/gate_10_pdr_k400_probe` |
 | **Global re-run, branch head 3ac09e2** (includes the fix 716eba4: binary-round register pairs constrained on the rails instead of merged) | **same verdicts as ed98c57 everywhere**: RTL 02 vs 01, 05 vs 04, 06 vs 05, netlist vs RTL and raw_syn vs syn for all 10 trials proved (≤ 191 s); RTL 03 vs 01 8 of 12, `bus_d[0..3]` not concluded (finished on its own, 49 min); RTL 04 vs 01 same untraced PDR difference at k = 28; reproducer proved, `-DBUG` and the 3 netlist mutants still found. The binary round finds no pair here (`binary_pairs=0`), so the fix does not touch these proofs | `results/*_kf3ac09e2` |
+| **Global re-run, Kepler-Formal main 3f1648b** (issue-317 branch merged, new option `signal_correspondence_step`) | **RTL 01–06 all proved equal.** With `--signal-correspondence-step 8` (one instruction = 8 clock cycles): RTL 03 vs 01 and 04 vs 01 proved, all 12 outputs, 155 s and 157 s; 02 vs 01 proved, 157 s. With the default step 1: 02 vs 01 proved (147 s); 03 vs 01 8 of 12, `bus_d[0..3]` not concluded (51 min); 04 vs 01 not concluded at the 1 h cap, and the untraced difference at k = 28 is no longer reported. 05 vs 04, 06 vs 05, netlist vs RTL and raw_syn vs syn for all 10 trials proved (≤ 1 s) | `results/*_kf3f1648b`, `results/*_step8_kf3f1648b` |
+| Sanity checks, 3f1648b | all found: upstream `rtl_02_bug.v` (k = 33, step 1 and 8), `rtl_03_bug.v` (k = 8, step 8), the 3 netlist mutants (k = 30, 5, 18), `shadow_nib -DBUG` (k = 18). `shadow_nib` proved, 10 s (array) and 13 s (SRAM) | `results/rtl_01vs0[23]bug_*`, `results/mutant_gate_10_nand2_*/kf3f1648b`, `results/repro_*_kf3f1648b` |
 | Lockstep random simulation, RTL 02/03/04 vs 01 | **0 mismatches** in 10 × 10⁶ cycles each | `results/random_sim_rtl_*.log` |
 | Lockstep random simulation, netlist vs RTL, all 10 trials | **0 mismatches** in 10 × 10⁶ cycles each, pins and SRAM interface | `results/random_sim_gate_*.log` |
 
@@ -65,8 +67,6 @@ Two small designs, equivalent by construction and not derived from trial code (`
 
 ## Still to do
 
-- RTL 03 vs 01: `bus_d[0..3]` stay open (3ac09e2 finishes on its own at 8 of 12).
-- RTL 04 vs 01: report the unconfirmed PDR difference upstream; prove or refute with another engine.
 - Netlist of trial N vs RTL 01, only where the RTL is proved equal.
 - Part 2: how the trials were explored, edited and checked, and where the tools would have helped.
 - `DETAILS.md` with methods and exact commands.
@@ -77,14 +77,14 @@ Two small designs, equivalent by construction and not derived from trial code (`
 |---|---|
 | `inventory.py` | hashes, groups and port check of the 10 trials |
 | `gen_cfg.sh`, `cfg/` | preprocessed SEC inputs (common wrapper `sec/wrap_c4004.v`) |
-| `run_sec.sh <rtl\|gate\|edit\|cross> <NN> <engine> <k> [tag]` | one Kepler-Formal run; writes `results/<name>/run.log` and `status.txt` (command, tool version, exit code, wall and CPU time, peak memory) |
+| `run_sec.sh <rtl\|gate\|edit\|cross> <NN> <engine> <k> [tag]` | one Kepler-Formal run (`SC_STEP=<n>` adds `--signal-correspondence-step <n>`); writes `results/<name>/run.log` and `status.txt` (command, tool version, exit code, wall and CPU time, peak memory) |
 | `replay.sh`, `sim/` | counterexample replay and lockstep simulation benches |
 | `random_sim.sh` | lockstep random simulation, 5 seeds × 10⁶ cycles × 2 stimulus edges |
 | `sim_provenance.sh` | which sources the stored simulation logs and binaries of each trial came from |
 | `repro/` | the two reproducers above (`run.sh`, `tb_nib.v`) |
 
 **Tools:**
-- Kepler-Formal `fd24770` (main), `8491fc0`, `befed14`, `ed98c57` and `3ac09e2` (branch `issue-317-signal-correspondence`), Release builds in `tools/`, which is not committed;
+- Kepler-Formal `fd24770` and `3f1648b` (main), `8491fc0`, `befed14`, `ed98c57` and `3ac09e2` (branch `issue-317-signal-correspondence`), Release builds in `tools/`, which is not committed;
 - Icarus Verilog.
 
-**Compressed logs:** `run.log` of `results/rtl_01vs02_pdr_k400_budx50_kf8491fc0` and `_kfbefed14` are stored as `run.log.xz` (266 MB uncompressed each), and `results/rtl_01vs03_pdr_k400_budx50_kfed98c57` and `_kf3ac09e2` too (169 and 176 MB).
+**Compressed logs:** `run.log` of `results/rtl_01vs02_pdr_k400_budx50_kf8491fc0` and `_kfbefed14` are stored as `run.log.xz` (266 MB uncompressed each), and `results/rtl_01vs03_pdr_k400_budx50_kfed98c57` and `_kf3ac09e2` too (169 and 176 MB), and `results/rtl_01vs03_pdr_k400_budx50_kf3f1648b` and `rtl_01vs04_pdr_k400_budx50_kf3f1648b` (192 and 256 MB).

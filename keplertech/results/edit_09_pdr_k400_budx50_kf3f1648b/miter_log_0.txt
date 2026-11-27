@@ -1,0 +1,23 @@
+[2026-11-27 00:32:41.284] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2394] KEPLER FORMAL: Run.
+[2026-11-27 00:32:41.284] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2467] Input format: VERILOG
+[2026-11-27 00:32:41.284] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2477] Run log: miter_log_0.txt
+[2026-11-27 00:32:41.284] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:768] Netlist 1: ../../sec/raw_syn_top.v, ../../../TR-1um_C4004_09/openroad/c4004_core_raw_syn.v
+[2026-11-27 00:32:41.284] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:756] Netlist 2: ../../../TR-1um_C4004_09/openroad/c4004_core_syn.v
+[2026-11-27 00:32:41.284] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2486] Boundary pair 0: design 1 `u_raw/u_sram`; design 2 `u_sram`
+[2026-11-27 00:32:41.284] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2754] Solver: KISSAT
+[2026-11-27 00:32:41.284] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2755] Verification: sec
+[2026-11-27 00:32:41.284] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2757] SEC max_k: 400
+[2026-11-27 00:32:41.284] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2758] SEC engine: pdr
+[2026-11-27 00:32:41.284] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2759] SEC encoding: dual_rail_steady
+[2026-11-27 00:32:41.284] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2766] SEC internal relations: learn=true allow_x_equality=true binary_relation_round=true signal_correspondence=true signal_correspondence_step=1
+[2026-11-27 00:32:41.284] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2768] SEC reset bootstrap: 3 cycle(s)
+[2026-11-27 00:32:41.284] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2773] SEC reset bootstrap port: rst active=1
+[2026-11-27 00:32:41.284] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2777] Compact mode: disabled
+[2026-11-27 00:32:41.284] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2778] Skipped PO reports: enabled
+[2026-11-27 00:32:41.284] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2779] SEC latch abstraction: enabled
+[2026-11-27 00:32:41.284] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2780] SEC data-enabled latch model: enabled
+[2026-11-27 00:32:41.284] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2782] Library: ../../../TR-1um_C4004_09/module/STDCELL/tr1um_typ_5v0_25c.lib
+[2026-11-27 00:32:41.284] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2782] Library: ../../../TR-1um_C4004_09/module/SRAM128/SRAM128.lib
+[2026-11-27 00:32:41.285] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:3009] Loading library file: ../../../TR-1um_C4004_09/module/STDCELL/tr1um_typ_5v0_25c.lib
+[2026-11-27 00:32:41.572] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2830] SEC checked-output coverage: 100.00% (23/23 covered/existing outputs).
+[2026-11-27 00:32:41.573] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2904] No binary-defined difference was found. SEC proved equivalence under the dual-rail steady-state abstraction at k = 1.

@@ -1,0 +1,38 @@
+[2026-11-27 00:32:49.439] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2394] KEPLER FORMAL: Run.
+[2026-11-27 00:32:49.440] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2467] Input format: SV2V
+[2026-11-27 00:32:49.440] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2474] SystemVerilog compilation units: one per file
+[2026-11-27 00:32:49.440] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2477] Run log: miter_log_0.txt
+[2026-11-27 00:32:49.440] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:756] Netlist 1: ../../../cfg/rtlbb_06.v
+[2026-11-27 00:32:49.440] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:756] Netlist 2: m40.v
+[2026-11-27 00:32:49.440] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2486] Boundary pair 0: design 1 `u_sram`; design 2 `u_sram`
+[2026-11-27 00:32:49.440] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2754] Solver: KISSAT
+[2026-11-27 00:32:49.440] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2755] Verification: sec
+[2026-11-27 00:32:49.440] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2757] SEC max_k: 400
+[2026-11-27 00:32:49.440] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2758] SEC engine: pdr
+[2026-11-27 00:32:49.440] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2759] SEC encoding: dual_rail_steady
+[2026-11-27 00:32:49.440] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2766] SEC internal relations: learn=true allow_x_equality=true binary_relation_round=true signal_correspondence=true signal_correspondence_step=1
+[2026-11-27 00:32:49.440] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2768] SEC reset bootstrap: 3 cycle(s)
+[2026-11-27 00:32:49.440] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2773] SEC reset bootstrap port: rst active=1
+[2026-11-27 00:32:49.440] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2777] Compact mode: disabled
+[2026-11-27 00:32:49.440] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2778] Skipped PO reports: disabled
+[2026-11-27 00:32:49.440] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2779] SEC latch abstraction: enabled
+[2026-11-27 00:32:49.440] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2780] SEC data-enabled latch model: enabled
+[2026-11-27 00:32:49.440] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2782] Library: ../../../../TR-1um_C4004_10/module/STDCELL/tr1um_typ_5v0_25c.lib
+[2026-11-27 00:32:49.440] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2782] Library: ../../../../TR-1um_C4004_10/module/SRAM128/SRAM128.lib
+[2026-11-27 00:32:49.440] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:3009] Loading library file: ../../../../TR-1um_C4004_10/module/STDCELL/tr1um_typ_5v0_25c.lib
+[2026-11-27 00:32:51.340] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2830] SEC checked-output coverage: 100.00% (23/23 covered/existing outputs).
+[2026-11-27 00:32:51.340] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2940] Difference was found. SEC found a counterexample at k = 5.
+[2026-11-27 00:32:51.340] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2943] SEC counterexample details:
+Counterexample reaches the first bad frame at cycle 5.
+Input trace:
+  cycle 0: rst[0]=0, test[0]=0, d_in[0]=0, d_in[1]=0, d_in[2]=0, d_in[3]=0, __kepler_boundary_p0_n444f_bp0[0]=1, __kepler_boundary_p0_n444f_bp1[0]=1, __kepler_boundary_p0_n444f_bp2[0]=1, __kepler_boundary_p0_n444f_bp3[0]=1
+  cycle 1: rst[0]=0, test[0]=0, d_in[0]=0, d_in[1]=0, d_in[2]=0, d_in[3]=0, __kepler_boundary_p0_n444f_bp0[0]=0, __kepler_boundary_p0_n444f_bp1[0]=0, __kepler_boundary_p0_n444f_bp2[0]=1, __kepler_boundary_p0_n444f_bp3[0]=0
+  cycle 2: rst[0]=0, test[0]=0, d_in[0]=0, d_in[1]=0, d_in[2]=0, d_in[3]=0, __kepler_boundary_p0_n444f_bp0[0]=0, __kepler_boundary_p0_n444f_bp1[0]=0, __kepler_boundary_p0_n444f_bp2[0]=0, __kepler_boundary_p0_n444f_bp3[0]=0
+  cycle 3: rst[0]=0, test[0]=0, d_in[0]=1, d_in[1]=1, d_in[2]=1, d_in[3]=1, __kepler_boundary_p0_n444f_bp0[0]=0, __kepler_boundary_p0_n444f_bp1[0]=0, __kepler_boundary_p0_n444f_bp2[0]=0, __kepler_boundary_p0_n444f_bp3[0]=0
+  cycle 4: rst[0]=0, test[0]=0, d_in[0]=0, d_in[1]=0, d_in[2]=0, d_in[3]=0, __kepler_boundary_p0_n444f_bp0[0]=1, __kepler_boundary_p0_n444f_bp1[0]=1, __kepler_boundary_p0_n444f_bp2[0]=1, __kepler_boundary_p0_n444f_bp3[0]=1
+  cycle 5: rst[0]=0, test[0]=0, d_in[0]=0, d_in[1]=0, d_in[2]=0, d_in[3]=0, __kepler_boundary_p0_n444f_bp0[0]=0, __kepler_boundary_p0_n444f_bp1[0]=0, __kepler_boundary_p0_n444f_bp2[0]=0, __kepler_boundary_p0_n444f_bp3[0]=0
+Observed output mismatches at cycle 5:
+  __kepler_boundary_p0_n4131_bp0[0]: design0=0, design1=1
+Traceback for first differing point `__kepler_boundary_p0_n4131_bp0[0]` at cycle 5:
+  Cone traceback unavailable: design0 could not resolve the differing SEC signal back into the DNL; design1 could not resolve the differing SEC signal back into the DNL
+

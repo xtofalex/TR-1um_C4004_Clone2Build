@@ -9,7 +9,9 @@
 #   All checks: reset bootstrap of 3 cycles with rst=1, then rst=0.
 # Environment: CAP=<seconds> stops kepler-formal after that wall time (SIGALRM,
 #   recorded in status.txt); REF=<NN> sets the reference RTL of `rtl` (default 01);
-#   KEPLER_* variables (e.g. KEPLER_SEC_DIAG=1) are passed through and recorded.
+#   KEPLER_* variables (e.g. KEPLER_SEC_DIAG=1) are passed through and recorded;
+#   SC_STEP=<n> adds --signal-correspondence-step <n> (clock cycles per induction
+#   step of signal correspondence; 8 = one C4004 instruction).
 # Output: results/<check>_<NN>_<engine>_k<k>[_tag]/ with run.log (kepler-formal
 # stdout+stderr followed by /usr/bin/time -l) and status.txt (command, KEPLER_*
 # environment, exit code, wall time, user/sys CPU, peak RSS). Kepler writes its
@@ -38,7 +40,7 @@ name=${check}_${REF:+${REF}vs}${n}_${engine}_k${k}${tag:+_$tag}
 out=$here/results/$name
 mkdir -p "$out"
 # Paths are relative to keplertech/; kepler-formal runs in results/<name>/.
-args="$fmt -v sec --sec-engine $engine -k $k --sec-reset-cycles 3 --sec-reset-port rst=1 --report-skipped-pos"
+args="$fmt -v sec --sec-engine $engine -k $k --sec-reset-cycles 3 --sec-reset-port rst=1 --report-skipped-pos${SC_STEP:+ --signal-correspondence-step $SC_STEP}"
 cmd="$KF $args --design1 ../../$d1 --design2 ../../$d2 $extra"
 cd "$out"
 {

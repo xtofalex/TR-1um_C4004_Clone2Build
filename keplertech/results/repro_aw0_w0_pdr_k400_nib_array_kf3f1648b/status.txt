@@ -1,0 +1,17 @@
+kepler-formal cmd (cwd = results/repro_aw0_w0_pdr_k400_nib_array_kf3f1648b): -sv -v sec --sec-engine pdr -k 400 --sec-reset-cycles 3 --sec-reset-port rst=1 --report-skipped-pos --design1 a_aw0_w0.v --design2 b_aw0_w0.v
+source: repro/shadow_nib.v  defines:  
+kepler-formal: kepler-formal version: 1.0.0 kepler-formal git hash: 3f1648b8981367ab5656c1d3a287421596e8c606 naja version: 0.7.33 naja git hash: cb142398 
+KEPLER_SEC_DIAG=1
+KEPLER_SEC_PDR_STATS=1
+KEPLER_SEC_PDR_DUAL_RAIL_SINGLETON_DECISION_BUDGET=2000000000
+KEPLER_SEC_PDR_DUAL_RAIL_SINGLETON_CONFLICT_BUDGET=50000000
+KEPLER_SEC_PDR_DUAL_RAIL_SINGLETON_TICK_BUDGET=25000000000
+wall-clock cap: 600 s
+exit: 0  wall: 10,29 s  cpu: user 10,25 s, sys 0,03 s
+peak RSS: 108 MB
+[2026-11-27 00:33:05.421] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2904] No binary-defined difference was found. SEC proved equivalence under the dual-rail steady-state abstraction at k = 1.
+SEC diag: PDR steady-state check end index=0 output_range=0..7 status=equivalent bound=1
+SEC summary: signal_correspondence scope=registers_and_outputs frames=1 completed=1 signals=679 classes=73 rounds=5 solver_calls=205 proved_outputs=0/4 state_equalities=0 seconds=1.3 semantics=binary stopped_by=none step_cycles=1
+SEC summary: signal_correspondence scope=registers_and_outputs frames=2 completed=1 signals=679 classes=73 rounds=5 solver_calls=201 proved_outputs=0/4 state_equalities=0 seconds=1.9 semantics=binary stopped_by=none step_cycles=1
+SEC summary: signal_correspondence scope=registers_and_outputs frames=4 completed=1 signals=679 classes=145 rounds=5 solver_calls=147 proved_outputs=0/4 state_equalities=0 seconds=3.3 semantics=binary stopped_by=none step_cycles=1
+SEC summary: signal_correspondence scope=registers_and_outputs frames=8 completed=1 signals=679 classes=293 rounds=1 solver_calls=45 proved_outputs=4/4 state_equalities=0 seconds=1.3 semantics=binary stopped_by=none step_cycles=1

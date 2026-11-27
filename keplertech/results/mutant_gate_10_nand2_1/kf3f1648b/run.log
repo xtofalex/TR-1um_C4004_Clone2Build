@@ -1,0 +1,109 @@
+[2026-11-27 00:32:42.056] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2394] KEPLER FORMAL: Run.
+[2026-11-27 00:32:42.057] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2467] Input format: SV2V
+[2026-11-27 00:32:42.057] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2474] SystemVerilog compilation units: one per file
+[2026-11-27 00:32:42.057] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2477] Run log: miter_log_0.txt
+[2026-11-27 00:32:42.057] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:756] Netlist 1: ../../../cfg/rtlbb_06.v
+[2026-11-27 00:32:42.057] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:756] Netlist 2: m1.v
+[2026-11-27 00:32:42.057] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2486] Boundary pair 0: design 1 `u_sram`; design 2 `u_sram`
+[2026-11-27 00:32:42.057] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2754] Solver: KISSAT
+[2026-11-27 00:32:42.057] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2755] Verification: sec
+[2026-11-27 00:32:42.057] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2757] SEC max_k: 400
+[2026-11-27 00:32:42.057] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2758] SEC engine: pdr
+[2026-11-27 00:32:42.057] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2759] SEC encoding: dual_rail_steady
+[2026-11-27 00:32:42.057] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2766] SEC internal relations: learn=true allow_x_equality=true binary_relation_round=true signal_correspondence=true signal_correspondence_step=1
+[2026-11-27 00:32:42.057] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2768] SEC reset bootstrap: 3 cycle(s)
+[2026-11-27 00:32:42.057] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2773] SEC reset bootstrap port: rst active=1
+[2026-11-27 00:32:42.057] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2777] Compact mode: disabled
+[2026-11-27 00:32:42.057] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2778] Skipped PO reports: disabled
+[2026-11-27 00:32:42.057] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2779] SEC latch abstraction: enabled
+[2026-11-27 00:32:42.057] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2780] SEC data-enabled latch model: enabled
+[2026-11-27 00:32:42.057] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2782] Library: ../../../../TR-1um_C4004_10/module/STDCELL/tr1um_typ_5v0_25c.lib
+[2026-11-27 00:32:42.057] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2782] Library: ../../../../TR-1um_C4004_10/module/SRAM128/SRAM128.lib
+[2026-11-27 00:32:42.057] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:3009] Loading library file: ../../../../TR-1um_C4004_10/module/STDCELL/tr1um_typ_5v0_25c.lib
+2026-11-27 00:32:42,060 [naja] [warning] In SNLLibertyConstructor, cell OSS_ESD_5V_DIO defines a `function` for 0 of 1 non-input terms; leaving all truth tables uninitialized.
+2026-11-27 00:32:42,060 [naja] [warning] In SNLLibertyConstructor, cell REG8x16 defines a `function` for 0 of 8 non-input terms; leaving all truth tables uninitialized.
+2026-11-27 00:32:42,060 [naja] [info] Loading library file: ../../../../TR-1um_C4004_10/module/SRAM128/SRAM128.lib
+2026-11-27 00:32:42,060 [naja] [warning] In SNLLibertyConstructor, cell SRAM128 defines a `function` for 0 of 4 non-input terms; leaving all truth tables uninitialized.
+2026-11-27 00:32:42,060 [naja] [info] Parsing systemverilog file(s) for design 1
+2026-11-27 00:32:42,062 [naja] [warning] Slang emitted 2 diagnostic(s) (2 warning(s), 0 error(s)); see 'naja_sv_diagnostics.log'
+2026-11-27 00:32:42,066 [naja] [warning] Only the first occurrence of each SystemVerilog warning code is emitted on the console; all occurrences are written to 'naja_sv_diagnostics.log'
+2026-11-27 00:32:42,066 [naja] [warning] ../../../cfg/rtlbb_06.v:85:9: Case comparison operator '===' lowered as 2-state comparison in SNL (X/Z distinction is not preserved)
+2026-11-27 00:32:42,082 [naja] [warning] SystemVerilog diagnostics summary: status=success, slang=2 (warnings=2, errors=0), elaboration_warnings=8 (codes=1), unsupported_warnings=0 (codes=0), unsupported_errors=0 (codes=0); report='naja_sv_diagnostics.log'
+2026-11-27 00:32:42,083 [naja] [info] Found top design: c4004_core
+2026-11-27 00:32:42,083 [naja] [info] Loading library file: ../../../../TR-1um_C4004_10/module/STDCELL/tr1um_typ_5v0_25c.lib
+2026-11-27 00:32:42,086 [naja] [warning] In SNLLibertyConstructor, cell OSS_ESD_5V_DIO defines a `function` for 0 of 1 non-input terms; leaving all truth tables uninitialized.
+2026-11-27 00:32:42,086 [naja] [warning] In SNLLibertyConstructor, cell REG8x16 defines a `function` for 0 of 8 non-input terms; leaving all truth tables uninitialized.
+2026-11-27 00:32:42,086 [naja] [info] Loading library file: ../../../../TR-1um_C4004_10/module/SRAM128/SRAM128.lib
+2026-11-27 00:32:42,086 [naja] [warning] In SNLLibertyConstructor, cell SRAM128 defines a `function` for 0 of 4 non-input terms; leaving all truth tables uninitialized.
+2026-11-27 00:32:42,086 [naja] [info] Parsing verilog file(s) for design 2
+2026-11-27 00:32:42,092 [naja] [info] Found top design: c4004_core
+[2026-11-27 00:32:49.363] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2830] SEC checked-output coverage: 100.00% (23/23 covered/existing outputs).
+[2026-11-27 00:32:49.363] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2940] Difference was found. SEC found a counterexample at k = 30.
+[2026-11-27 00:32:49.363] [kepler_formal_main_logger] [info] [KeplerFormal.cpp:2943] SEC counterexample details:
+Counterexample reaches the first bad frame at cycle 30.
+Input trace:
+  cycle 0: rst[0]=0, test[0]=0, d_in[0]=0, d_in[1]=0, d_in[2]=0, d_in[3]=0, __kepler_boundary_p0_n444f_bp0[0]=1, __kepler_boundary_p0_n444f_bp1[0]=1, __kepler_boundary_p0_n444f_bp2[0]=1, __kepler_boundary_p0_n444f_bp3[0]=1
+  cycle 1: rst[0]=0, test[0]=0, d_in[0]=0, d_in[1]=0, d_in[2]=0, d_in[3]=0, __kepler_boundary_p0_n444f_bp0[0]=0, __kepler_boundary_p0_n444f_bp1[0]=0, __kepler_boundary_p0_n444f_bp2[0]=1, __kepler_boundary_p0_n444f_bp3[0]=0
+  cycle 2: rst[0]=0, test[0]=0, d_in[0]=0, d_in[1]=0, d_in[2]=0, d_in[3]=0, __kepler_boundary_p0_n444f_bp0[0]=0, __kepler_boundary_p0_n444f_bp1[0]=0, __kepler_boundary_p0_n444f_bp2[0]=0, __kepler_boundary_p0_n444f_bp3[0]=0
+  cycle 3: rst[0]=0, test[0]=0, d_in[0]=0, d_in[1]=0, d_in[2]=1, d_in[3]=1, __kepler_boundary_p0_n444f_bp0[0]=0, __kepler_boundary_p0_n444f_bp1[0]=0, __kepler_boundary_p0_n444f_bp2[0]=0, __kepler_boundary_p0_n444f_bp3[0]=0
+  cycle 4: rst[0]=0, test[0]=0, d_in[0]=1, d_in[1]=0, d_in[2]=0, d_in[3]=1, __kepler_boundary_p0_n444f_bp0[0]=1, __kepler_boundary_p0_n444f_bp1[0]=1, __kepler_boundary_p0_n444f_bp2[0]=1, __kepler_boundary_p0_n444f_bp3[0]=1
+  cycle 5: rst[0]=0, test[0]=1, d_in[0]=0, d_in[1]=0, d_in[2]=0, d_in[3]=0, __kepler_boundary_p0_n444f_bp0[0]=0, __kepler_boundary_p0_n444f_bp1[0]=0, __kepler_boundary_p0_n444f_bp2[0]=0, __kepler_boundary_p0_n444f_bp3[0]=0
+  cycle 6: rst[0]=0, test[0]=1, d_in[0]=0, d_in[1]=1, d_in[2]=0, d_in[3]=0, __kepler_boundary_p0_n444f_bp0[0]=0, __kepler_boundary_p0_n444f_bp1[0]=0, __kepler_boundary_p0_n444f_bp2[0]=0, __kepler_boundary_p0_n444f_bp3[0]=0
+  cycle 7: rst[0]=0, test[0]=1, d_in[0]=0, d_in[1]=0, d_in[2]=0, d_in[3]=0, __kepler_boundary_p0_n444f_bp0[0]=0, __kepler_boundary_p0_n444f_bp1[0]=1, __kepler_boundary_p0_n444f_bp2[0]=0, __kepler_boundary_p0_n444f_bp3[0]=0
+  cycle 8: rst[0]=0, test[0]=1, d_in[0]=0, d_in[1]=0, d_in[2]=0, d_in[3]=0, __kepler_boundary_p0_n444f_bp0[0]=1, __kepler_boundary_p0_n444f_bp1[0]=1, __kepler_boundary_p0_n444f_bp2[0]=0, __kepler_boundary_p0_n444f_bp3[0]=1
+  cycle 9: rst[0]=0, test[0]=1, d_in[0]=0, d_in[1]=0, d_in[2]=0, d_in[3]=0, __kepler_boundary_p0_n444f_bp0[0]=0, __kepler_boundary_p0_n444f_bp1[0]=0, __kepler_boundary_p0_n444f_bp2[0]=0, __kepler_boundary_p0_n444f_bp3[0]=1
+  cycle 10: rst[0]=0, test[0]=1, d_in[0]=0, d_in[1]=0, d_in[2]=0, d_in[3]=0, __kepler_boundary_p0_n444f_bp0[0]=0, __kepler_boundary_p0_n444f_bp1[0]=0, __kepler_boundary_p0_n444f_bp2[0]=0, __kepler_boundary_p0_n444f_bp3[0]=0
+  cycle 11: rst[0]=0, test[0]=1, d_in[0]=0, d_in[1]=0, d_in[2]=0, d_in[3]=1, __kepler_boundary_p0_n444f_bp0[0]=0, __kepler_boundary_p0_n444f_bp1[0]=0, __kepler_boundary_p0_n444f_bp2[0]=0, __kepler_boundary_p0_n444f_bp3[0]=0
+  cycle 12: rst[0]=0, test[0]=1, d_in[0]=1, d_in[1]=0, d_in[2]=0, d_in[3]=0, __kepler_boundary_p0_n444f_bp0[0]=1, __kepler_boundary_p0_n444f_bp1[0]=1, __kepler_boundary_p0_n444f_bp2[0]=1, __kepler_boundary_p0_n444f_bp3[0]=1
+  cycle 13: rst[0]=0, test[0]=1, d_in[0]=0, d_in[1]=0, d_in[2]=0, d_in[3]=0, __kepler_boundary_p0_n444f_bp0[0]=0, __kepler_boundary_p0_n444f_bp1[0]=0, __kepler_boundary_p0_n444f_bp2[0]=0, __kepler_boundary_p0_n444f_bp3[0]=1
+  cycle 14: rst[0]=0, test[0]=1, d_in[0]=0, d_in[1]=1, d_in[2]=0, d_in[3]=0, __kepler_boundary_p0_n444f_bp0[0]=0, __kepler_boundary_p0_n444f_bp1[0]=0, __kepler_boundary_p0_n444f_bp2[0]=0, __kepler_boundary_p0_n444f_bp3[0]=0
+  cycle 15: rst[0]=0, test[0]=1, d_in[0]=0, d_in[1]=0, d_in[2]=0, d_in[3]=0, __kepler_boundary_p0_n444f_bp0[0]=0, __kepler_boundary_p0_n444f_bp1[0]=0, __kepler_boundary_p0_n444f_bp2[0]=0, __kepler_boundary_p0_n444f_bp3[0]=0
+  cycle 16: rst[0]=0, test[0]=1, d_in[0]=0, d_in[1]=0, d_in[2]=0, d_in[3]=0, __kepler_boundary_p0_n444f_bp0[0]=0, __kepler_boundary_p0_n444f_bp1[0]=1, __kepler_boundary_p0_n444f_bp2[0]=0, __kepler_boundary_p0_n444f_bp3[0]=0
+  cycle 17: rst[0]=0, test[0]=1, d_in[0]=0, d_in[1]=0, d_in[2]=0, d_in[3]=0, __kepler_boundary_p0_n444f_bp0[0]=0, __kepler_boundary_p0_n444f_bp1[0]=0, __kepler_boundary_p0_n444f_bp2[0]=1, __kepler_boundary_p0_n444f_bp3[0]=0
+  cycle 18: rst[0]=0, test[0]=1, d_in[0]=0, d_in[1]=0, d_in[2]=0, d_in[3]=0, __kepler_boundary_p0_n444f_bp0[0]=0, __kepler_boundary_p0_n444f_bp1[0]=0, __kepler_boundary_p0_n444f_bp2[0]=0, __kepler_boundary_p0_n444f_bp3[0]=0
+  cycle 19: rst[0]=0, test[0]=1, d_in[0]=0, d_in[1]=1, d_in[2]=1, d_in[3]=1, __kepler_boundary_p0_n444f_bp0[0]=0, __kepler_boundary_p0_n444f_bp1[0]=0, __kepler_boundary_p0_n444f_bp2[0]=0, __kepler_boundary_p0_n444f_bp3[0]=0
+  cycle 20: rst[0]=0, test[0]=1, d_in[0]=0, d_in[1]=1, d_in[2]=0, d_in[3]=1, __kepler_boundary_p0_n444f_bp0[0]=1, __kepler_boundary_p0_n444f_bp1[0]=1, __kepler_boundary_p0_n444f_bp2[0]=1, __kepler_boundary_p0_n444f_bp3[0]=1
+  cycle 21: rst[0]=0, test[0]=1, d_in[0]=0, d_in[1]=0, d_in[2]=0, d_in[3]=1, __kepler_boundary_p0_n444f_bp0[0]=0, __kepler_boundary_p0_n444f_bp1[0]=0, __kepler_boundary_p0_n444f_bp2[0]=0, __kepler_boundary_p0_n444f_bp3[0]=0
+  cycle 22: rst[0]=0, test[0]=1, d_in[0]=0, d_in[1]=1, d_in[2]=1, d_in[3]=1, __kepler_boundary_p0_n444f_bp0[0]=1, __kepler_boundary_p0_n444f_bp1[0]=0, __kepler_boundary_p0_n444f_bp2[0]=0, __kepler_boundary_p0_n444f_bp3[0]=0
+  cycle 23: rst[0]=0, test[0]=1, d_in[0]=1, d_in[1]=1, d_in[2]=0, d_in[3]=0, __kepler_boundary_p0_n444f_bp0[0]=0, __kepler_boundary_p0_n444f_bp1[0]=0, __kepler_boundary_p0_n444f_bp2[0]=0, __kepler_boundary_p0_n444f_bp3[0]=0
+  cycle 24: rst[0]=0, test[0]=1, d_in[0]=0, d_in[1]=0, d_in[2]=0, d_in[3]=0, __kepler_boundary_p0_n444f_bp0[0]=0, __kepler_boundary_p0_n444f_bp1[0]=0, __kepler_boundary_p0_n444f_bp2[0]=0, __kepler_boundary_p0_n444f_bp3[0]=0
+  cycle 25: rst[0]=0, test[0]=1, d_in[0]=0, d_in[1]=0, d_in[2]=0, d_in[3]=0, __kepler_boundary_p0_n444f_bp0[0]=0, __kepler_boundary_p0_n444f_bp1[0]=0, __kepler_boundary_p0_n444f_bp2[0]=1, __kepler_boundary_p0_n444f_bp3[0]=0
+  cycle 26: rst[0]=0, test[0]=0, d_in[0]=0, d_in[1]=0, d_in[2]=0, d_in[3]=0, __kepler_boundary_p0_n444f_bp0[0]=0, __kepler_boundary_p0_n444f_bp1[0]=0, __kepler_boundary_p0_n444f_bp2[0]=0, __kepler_boundary_p0_n444f_bp3[0]=1
+  cycle 27: rst[0]=0, test[0]=0, d_in[0]=0, d_in[1]=1, d_in[2]=1, d_in[3]=1, __kepler_boundary_p0_n444f_bp0[0]=0, __kepler_boundary_p0_n444f_bp1[0]=0, __kepler_boundary_p0_n444f_bp2[0]=0, __kepler_boundary_p0_n444f_bp3[0]=0
+  cycle 28: rst[0]=0, test[0]=0, d_in[0]=1, d_in[1]=1, d_in[2]=0, d_in[3]=0, __kepler_boundary_p0_n444f_bp0[0]=1, __kepler_boundary_p0_n444f_bp1[0]=0, __kepler_boundary_p0_n444f_bp2[0]=0, __kepler_boundary_p0_n444f_bp3[0]=1
+  cycle 29: rst[0]=0, test[0]=0, d_in[0]=1, d_in[1]=0, d_in[2]=0, d_in[3]=0, __kepler_boundary_p0_n444f_bp0[0]=0, __kepler_boundary_p0_n444f_bp1[0]=0, __kepler_boundary_p0_n444f_bp2[0]=0, __kepler_boundary_p0_n444f_bp3[0]=0
+  cycle 30: rst[0]=0, test[0]=0, d_in[0]=0, d_in[1]=0, d_in[2]=0, d_in[3]=0, __kepler_boundary_p0_n444f_bp0[0]=0, __kepler_boundary_p0_n444f_bp1[0]=0, __kepler_boundary_p0_n444f_bp2[0]=0, __kepler_boundary_p0_n444f_bp3[0]=0
+Observed output mismatches at cycle 30:
+  d_out[0]: design0=0, design1=1
+Traceback for first differing point `d_out[0]` at cycle 30:
+  design0 cone to environment inputs:
+    step 0: 454.Y[0]
+    step 1: 452.Y[0], 452.Y[1], 452.Y[2], 452.Y[3], 453.[0], 79.Y[0], 79.Y[1], 79.Y[2], 79.Y[3]
+    step 2: 230.[0], 450.Y[0], 450.Y[1], 450.Y[2], 450.Y[3], 451.[0], 78.[0], 84.Y[0], 84.Y[1], 84.Y[2], 84.Y[3], 898.Q[0], ... +7 more
+    step 3: 136.[0], 137.[0], 214.[0], 227.[0], 232.Y[0], 232.Y[1], 232.Y[2], 232.Y[3], 232.Y[4], 276.Y[0], 276.Y[1], 276.Y[2], ... +24 more
+    step 4: 138.[0], 2.[0], 229.Y[0], 229.Y[1], 229.Y[2], 229.Y[3], 229.Y[4], 231.[0], 274.Y[0], 274.Y[1], 274.Y[2], 274.Y[3], ... +39 more
+    step 5: 1000.Q[0], 1000.Q[1], 1000.Q[2], 1000.Q[3], 125.[0], 126.[0], 127.[0], 128.[0], 140.[0], 19.[0], 226.Y[0], 226.Y[1], ... +46 more
+    step 6: 103.[0], 104.[0], 105.[0], 106.[0], 113.[0], 118.[0], 121.[0], 134.[0], 18.[0], 224.Y[0], 224.Y[1], 224.Y[2], ... +51 more
+    step 7: 112.[0], 117.[0], 120.[0], 14.[0], 17.[0], 221.Y[0], 221.Y[1], 221.Y[2], 221.Y[3], 221.Y[4], 223.[0], 268.Y[0], ... +57 more
+    step 8: 107.[0], 108.[0], 109.[0], 111.[0], 114.[0], 116.[0], 119.[0], 16.[0], 217.Y[0], 217.Y[1], 217.Y[2], 217.Y[3], ... +87 more
+    step 9: 115.[0], 13.[0], 15.[0], 208.Y[0], 208.Y[1], 208.Y[2], 208.Y[3], 208.Y[4], 213.Y[0], 213.Y[1], 213.Y[2], 213.Y[3], ... +87 more
+    step 10: 12.[0], 200.Y[0], 200.Y[1], 200.Y[2], 200.Y[3], 200.Y[4], 206.Y[0], 206.Y[1], 207.[0], 212.Y[0], 212.Y[1], 212.Y[2], ... +95 more
+    step 11: 10.[0], 133.[0], 189.[0], 199.Y[0], 199.Y[1], 199.Y[2], 199.Y[3], 202.[0], 211.Y[0], 211.Y[1], 211.Y[2], 211.Y[3], ... +97 more
+    ... +30 more trace steps
+  design1 cone to environment inputs:
+    step 0: _0944_.Y[0]
+    step 1: _0665_.Y[0], _0941_.Y[0], _0943_.Y[0]
+    step 2: _0657_.Y[0], _0658_.Y[0], _0663_.Y[0], _0664_.Y[0], _0876_.Y[0], _0916_.Y[0], _0920_.Y[0], _0942_.Y[0], u_fobuf_24_g0.Y[0], u_sram.DO[0]
+    step 3: _0648_.Y[0], _0656_.Y[0], _0801_.Y[0], _0867_.Y[0], _0871_.Y[0], _0875_.Y[0], _0877_.Y[0], _0881_.Y[0], _0887_.Y[0], _0891_.Y[0], _0914_.Y[0], _0919_.Y[0], ... +15 more
+    step 4: _0620_.Y[0], _0621_.Y[0], _0643_.Y[0], _0647_.Y[0], _0649_.Y[0], _0653_.Y[0], _0718_.Y[0], _0818_.Y[0], _0824_.Y[0], _0840_.Y[0], _0857_.Y[0], _0858_.Y[0], ... +58 more
+    step 5: _0571_.Y[0], _0584_.Y[0], _0608_.Y[0], _0611_.Y[0], _0616_.Y[0], _0646_.Y[0], _0652_.Y[0], _0694_.Y[0], _0714_.Y[0], _0717_.Y[0], _0803_.Y[0], _0806_.Y[0], ... +75 more
+    step 6: _0582_.Y[0], _0604_.Y[0], _0606_.Y[0], _0607_.Y[0], _0610_.Y[0], _0614_.Y[0], _0615_.Y[0], _0630_.Y[0], _0633_.Y[0], _0642_.Y[0], _0645_.Y[0], _0650_.Y[0], ... +77 more
+    step 7: _0564_.Y[0], _0574_.Y[0], _0581_.Y[0], _0583_.Y[0], _0585_.Y[0], _0586_.Y[0], _0593_.Y[0], _0594_.Y[0], _0596_.Y[0], _0598_.Y[0], _0599_.Y[0], _0600_.Y[0], ... +74 more
+    step 8: _0575_.Y[0], _0588_.Y[0], _0589_.Y[0], _0592_.Y[0], _0595_.Y[0], _0597_.Y[0], _0618_.Y[0], _0622_.Y[0], _0631_.Y[0], _0635_.Y[0], _0636_.Y[0], _0637_.Y[0], ... +38 more
+    step 9: _0565_.Y[0], _0566_.Y[0], _0569_.Y[0], _0570_.Y[0], _0576_.Y[0], _0577_.Y[0], _0591_.Y[0], _0609_.Y[0], _0619_.Y[0], _0623_.Y[0], _0624_.Y[0], _0661_.Y[0], ... +27 more
+    step 10: _0567_.Y[0], _0659_.Y[0], _0672_.Y[0], _0673_.Y[0], _0676_.Y[0], _0677_.Y[0], _0696_.Y[0], _0698_.Y[0], _0699_.Y[0], _0704_.Y[0], _0707_.Y[0], _0708_.Y[0], ... +29 more
+    step 11: _0573_.Y[0], _0587_.Y[0], _0668_.Y[0], _0703_.Y[0], _0722_.Y[0], _0725_.Y[0], _0727_.Y[0], _0730_.Y[0], _0740_.Y[0], _0741_.Y[0], _0759_.Y[0], _0766_.Y[0], ... +22 more
+    ... +6 more trace steps
+  cone terms only in design0: 10.[0], 1000.Q[0], 1000.Q[1], 1000.Q[2], 1000.Q[3], 101.[0], 102.[0], 103.[0], 104.[0], 105.[0], 106.[0], 107.[0], 108.[0], 109.[0], 110.[0], 111.[0], 112.[0], 113.[0], 114.[0], 115.[0], ... +1371 more
+  cone terms only in design1: _0564_.Y[0], _0565_.Y[0], _0566_.Y[0], _0567_.Y[0], _0568_.Y[0], _0569_.Y[0], _0570_.Y[0], _0571_.Y[0], _0572_.Y[0], _0573_.Y[0], _0574_.Y[0], _0575_.Y[0], _0576_.Y[0], _0577_.Y[0], _0578_.Y[0], _0579_.Y[0], _0580_.Y[0], _0581_.Y[0], _0582_.Y[0], _0583_.Y[0], ... +583 more
+
