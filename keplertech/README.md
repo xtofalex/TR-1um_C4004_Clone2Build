@@ -6,6 +6,9 @@ open-source tools from KeplerTech:
 
 * [**Kepler-Formal**](https://github.com/keplertech/kepler-formal): sequential
   equivalence (SEC), output by output, cycle by cycle, for every input sequence.
+* [**naja-schematic**](https://github.com/keplertech/naja-schematic):
+  schematic viewer for naja netlists (desktop, browser, notebook), used here
+  to draw each counterexample.
 * Icarus Verilog: replay and lockstep random simulation.
 
 Two questions:
@@ -40,6 +43,36 @@ directories.
 - Random simulation is evidence, not proof.
 - The trials do not clear the SRAM after reset. Words never written are unknown (X), and SEC compares only binary-defined outputs.
 
+## Counterexample diagrams (preview)
+
+When a check finds a difference, `cex_diagrams.py` reads the counterexample
+from Kepler-Formal's log and draws it with
+[naja-schematic](https://github.com/keplertech/naja-schematic). It needs no
+display, and each SVG/PNG takes about a second. The same view opens in the
+interactive viewer, to explore the design from there:
+
+```sh
+pip install naja-schematic
+naja-schematic --sv tools/kepler-formal/regress/c4004_rtl/rtl_03_bug.v --top cpu_top --open
+```
+
+**RTL 03 with a bug vs RTL 01.** The output `bus_d[0]` differs at cycle 8.
+The drawing shows its fan-in, back to the registers, each named on its output.
+The edited register, `pc_init_n`, is in red on the left: it selects whether the
+program counter is read from its register copy or from the SRAM.
+
+![RTL 03 with a bug vs RTL 01: fan-in cone of bus_d[0], the edited register pc_init_n in red](docs/cex/rtl_03_bug.png)
+
+**Trial 10 netlist with one NAND2 replaced by a NOR2.** The changed cell is in
+red, with the net it drives and, in magenta, its fan-in back to the flip-flops.
+`d_out[0]` differs at cycle 18.
+
+![Trial 10 netlist, mutant 80: the NAND2 _1066_ replaced by a NOR2, its fan-in and fan-out](docs/cex/mutant_nand2_80.png)
+
+All diagrams, SVG and PNG: [`docs/cex/`](docs/cex/) (`rtl_02_bug`,
+`rtl_03_bug`, `mutant_nand2_1`, `mutant_nand2_40`, `mutant_nand2_80`).
+Regenerate them with `tools/naja-venv/bin/python cex_diagrams.py`.
+
 ## Why RTL 03 and 04 need step 8
 
 Trial 02 keeps a copy of the program counter in registers beside the SRAM.
@@ -73,6 +106,7 @@ RTL 01–04 are now in Kepler-Formal's regression (`regress/c4004_rtl/`).
 | `replay.sh`, `sim/` | counterexample replay and lockstep simulation benches |
 | `random_sim.sh` | lockstep random simulation, 5 seeds × 10⁶ cycles × 2 stimulus edges |
 | `sim_provenance.sh` | which sources the stored simulation logs and binaries of each trial came from |
+| `cex_diagrams.py`, `docs/cex/` | counterexample diagrams drawn with naja-schematic |
 | `repro/` | reproducers `shadow.v`, `shadow_nib.v` (`run.sh`, `tb_nib.v`) |
 
 Example, RTL 03 vs 01:
@@ -85,6 +119,6 @@ The runs also set the `KEPLER_SEC_PDR_DUAL_RAIL_SINGLETON_*_BUDGET` variables
 recorded in each `status.txt`.
 
 **Tools:** Kepler-Formal `3f1648b` (main), Release build in `tools/`, which is
-not committed; Icarus Verilog.
+not committed; naja-schematic 0.3.0 and najaeda 0.7.35 (pip); Icarus Verilog.
 
 **Compressed logs:** large `run.log` files are stored as `run.log.xz`.
